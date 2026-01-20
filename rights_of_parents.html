@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rights of Parents in Islam - Birr al-Walidayn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #667eea;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .rights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .right-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .right-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+        
+        .right-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .forbidden-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .forbidden-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .forbidden-section .highlight {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        .forbidden-section p {
+            line-height: 1.6;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        
+        .practical-tips {
+            background: #f7fafc;
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+        
+        .practical-tips h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .tips-list {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .tip-item .number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .tip-item .content {
+            flex: 1;
+        }
+        
+        .tip-item h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .tip-item p {
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rights of Parents in Islam</h1>
+            <div class="arabic">بِرّ الوالدين</div>
+            <div class="arabic" style="font-size: 1.3em;">Birr al-Walidayn</div>
+            <div class="ayah">
+                "And your Lord has decreed that you not worship except Him, and to parents, good treatment. Whether one or both of them reach old age [while] with you, say not to them [so much as], 'uff,' and do not repel them but speak to them a noble word."<br>
+                <strong>- Quran 17:23</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>⭐ The Central Principle ⭐</h2>
+                <p>Honouring parents is mentioned right after the worship of Allah, showing its immense importance in Islam. It is one of the greatest acts of worship.</p>
+            </div>
+            
+            <h2 style="text-align: center; color: #2d3748; margin-bottom: 30px; font-size: 2em;">Essential Rights of Parents</h2>
+            
+            <div class="rights-grid">
+                <div class="right-card">
+                    <div class="icon">💬</div>
+                    <h3>Speak Kindly</h3>
+                    <p>Always use respectful, gentle words. Lower your voice and speak with humility and love.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">👂</div>
+                    <h3>Listen & Obey</h3>
+                    <p>Listen attentively to their advice and obey them in all matters that are not sinful.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🤲</div>
+                    <h3>Make Du'a</h3>
+                    <p>Pray for them regularly, especially "Rabbir hamhuma kama rabbayani sagheera" (My Lord, have mercy upon them as they brought me up when I was small).</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">💝</div>
+                    <h3>Show Gratitude</h3>
+                    <p>Thank them for their sacrifices, care, and love. Express appreciation often.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🏠</div>
+                    <h3>Care in Old Age</h3>
+                    <p>Provide for their needs, especially when they are elderly. Never show irritation or impatience.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🤝</div>
+                    <h3>Physical Help</h3>
+                    <p>Assist them with daily tasks, help them move, and be physically present when needed.</p>
+                </div>
+            </div>
+            
+            <div class="forbidden-section">
+                <h2>🚫 What is Strictly Forbidden 🚫</h2>
+                <div class="highlight">
+                    Even saying "Uff" (a slight expression of irritation) is prohibited!
+                </div>
+                <p style="margin-top: 20px;">This means:</p>
+                <p>❌ No sighing in annoyance<br>
+                ❌ No eye-rolling<br>
+                ❌ No harsh tones<br>
+                ❌ No shouting or raising your voice<br>
+                ❌ No showing displeasure with their requests</p>
+            </div>
+            
+            <div class="practical-tips">
+                <h2>💡 Practical Ways to Honor Parents</h2>
+                <div class="tips-list">
+                    <div class="tip-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Daily Check-ins</h4>
+                            <p>Ask about their day, their health, and their needs. Show genuine interest in their lives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Help Without Being Asked</h4>
+                            <p>Notice what needs to be done and do it. Don't wait to be asked.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Prioritize Their Company</h4>
+                            <p>Spend quality time with them. Put away distractions like phones when with them.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Honor Their Friends</h4>
+                            <p>Treat their friends and relatives with respect and kindness.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Make Things Easy</h4>
+                            <p>Simplify tasks for them, anticipate difficulties, and remove obstacles from their path.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tip-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>After Their Passing</h4>
+                            <p>Continue to honor them through du'a, charity on their behalf, and fulfilling their wishes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                <h2>🌟 The Beautiful Reward 🌟</h2>
+                <p>"Paradise lies at the feet of your mother" - Prophet Muhammad ﷺ<br><br>
+                The pleasure of Allah is in the pleasure of parents, and His displeasure is in their displeasure.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah grant us the ability to honor our parents and earn His pleasure through them. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

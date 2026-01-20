@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Islamic Interaction Between Non-Mahram Men and Women</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #667eea;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .definition-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .definition-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .definition-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .definition-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .definition-card ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .definition-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .guidelines-section {
+            margin: 40px 0;
+        }
+        
+        .guidelines-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .guideline-card {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .guideline-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .guideline-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .guideline-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .guideline-card .detail-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .guideline-card .detail-box ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .allowed-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .allowed-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .allowed-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .allowed-item h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .allowed-item p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .forbidden-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .forbidden-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .forbidden-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .forbidden-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .forbidden-box p {
+            line-height: 1.6;
+        }
+        
+        .wisdom-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .wisdom-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .wisdom-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .wisdom-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .wisdom-box p {
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Proper Islamic Interaction Between Non-Mahram Men and Women</h1>
+            <div class="ayah">
+                "Tell the believing men to lower their gaze and guard their private parts. That is purer for them. And tell the believing women to lower their gaze and guard their private parts."<br>
+                <strong>- Quran 24:30-31</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>🛡️ The Purpose: Protection & Purity 🛡️</h2>
+                <p>Islamic guidelines for interaction between non-mahram men and women are designed to protect dignity, prevent fitnah (temptation), and maintain moral purity in society. These boundaries create a healthy, respectful environment for everyone.</p>
+            </div>
+            
+            <div class="definition-section">
+                <h2>📖 Understanding the Terms 📖</h2>
+                
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <h3>👨‍👩‍👧‍👦 Mahram</h3>
+                        <p><strong>People you can NEVER marry</strong></p>
+                        <ul>
+                            <li>Parents & grandparents</li>
+                            <li>Children & grandchildren</li>
+                            <li>Siblings</li>
+                            <li>Aunts & uncles</li>
+                            <li>Nieces & nephews</li>
+                            <li>In-laws (specific relations)</li>
+                            <li>Foster/milk relations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="definition-card">
+                        <h3>🚫 Non-Mahram</h3>
+                        <p><strong>People you could potentially marry</strong></p>
+                        <ul>
+                            <li>Cousins</li>
+                            <li>Friends (opposite gender)</li>
+                            <li>Colleagues</li>
+                            <li>Classmates</li>
+                            <li>Anyone not in mahram category</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guidelines-section">
+                <h2>📋 Core Guidelines for Interaction 📋</h2>
+                
+                <div class="guideline-card">
+                    <div class="icon">👀</div>
+                    <h3>1. Lower the Gaze (Ghadd al-Basr)</h3>
+                    <p>Both men and women are commanded to lower their gaze when interacting with non-mahram. This doesn't mean never looking at someone's face when necessary, but avoiding lustful or prolonged staring.</p>
+                    <div class="detail-box">
+                        <ul>
+                            <li><strong>What it means:</strong> Look briefly when needed for legitimate purposes (work, education, medical), then look away</li>
+                            <li><strong>Avoid:</strong> Staring, gazing at attractive features, or looking with desire</li>
+                            <li><strong>Prophet's advice ﷺ:</strong> "O Ali, do not follow a glance with another, for you are forgiven the first, but not the second"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guideline-card">
+                    <div class="icon">🗣️</div>
+                    <h3>2. Appropriate Speech</h3>
+                    <p>Communication should be clear, respectful, and purposeful without unnecessary softness, flirtation, or inappropriate topics.</p>
+                    <div class="detail-box">
+                        <ul>
+                            <li><strong>Speak professionally:</strong> Direct, respectful, and to the point</li>
+                            <li><strong>Avoid softening the voice:</strong> The Quran warns against this specifically (33:32)</li>
+                            <li><strong>No flirtation:</strong> Avoid compliments about appearance, romantic topics, or suggestive language</li>
+                            <li><strong>Stick to necessary topics:</strong> Work, education, legitimate needs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guideline-card">
+                    <div class="icon">🤝</div>
+                    <h3>3. Physical Contact (Khalwah Avoidance)</h3>
+                    <p>Avoid unnecessary physical contact and being alone together (khalwah) in private settings.</p>
+                    <div class="detail-box">
+                        <ul>
+                            <li><strong>No handshaking:</strong> The Prophet ﷺ never shook hands with non-mahram women</li>
+                            <li><strong>No khalwah:</strong> Don't be alone together in a secluded place. "Satan is the third" when non-mahram are alone together</li>
+                            <li><strong>Maintain distance:</strong> Keep appropriate physical space during interactions</li>
+                            <li><strong>Public settings:</strong> Interactions should be in presence of others or observable by others</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guideline-card">
+                    <div class="icon">👗</div>
+                    <h3>4. Modest Dress (Hijab & Covering)</h3>
+                    <p>Both men and women must dress modestly when in the presence of non-mahram.</p>
+                    <div class="detail-box">
+                        <ul>
+                            <li><strong>For women:</strong> Hijab covering hair, loose-fitting clothing covering body except face and hands</li>
+                            <li><strong>For men:</strong> Cover from navel to knee minimum, avoid tight or revealing clothing</li>
+                            <li><strong>Purpose:</strong> Prevent attraction and maintain dignity</li>
+                            <li><strong>Both genders:</strong> Avoid perfume/scent that may attract opposite gender</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="guideline-card">
+                    <div class="icon">💼</div>
+                    <h3>5. Professional Boundaries</h3>
+                    <p>Maintain professional relationships without crossing into personal friendship territory.</p>
+                    <div class="detail-box">
+                        <ul>
+                            <li><strong>Keep it professional:</strong> Work/study collaborations are fine with proper conduct</li>
+                            <li><strong>Avoid unnecessary socializing:</strong> No casual hangouts, coffee dates, or personal time together</li>
+                            <li><strong>Group settings are safer:</strong> If socializing is necessary, do so in groups</li>
+                            <li><strong>No exclusive friendships:</strong> Close personal friendships with non-mahram should be avoided</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="allowed-section">
+                <h2>✅ What IS Permitted ✅</h2>
+                
+                <div class="allowed-item">
+                    <h3>💼 Professional Interactions</h3>
+                    <p>Working together, conducting business, academic collaboration, and professional communication are all permitted when done with proper Islamic etiquette and boundaries.</p>
+                </div>
+                
+                <div class="allowed-item">
+                    <h3>🏥 Medical Care</h3>
+                    <p>Seeking medical treatment from opposite gender doctors when necessary, though same-gender is preferred when available and appropriate.</p>
+                </div>
+                
+                <div class="allowed-item">
+                    <h3>📚 Education</h3>
+                    <p>Learning from teachers of opposite gender, studying in mixed educational settings with proper conduct and modesty maintained.</p>
+                </div>
+                
+                <div class="allowed-item">
+                    <h3>🛒 Business Transactions</h3>
+                    <p>Buying, selling, and conducting financial transactions. The Prophet's ﷺ wife Khadijah was a businesswoman.</p>
+                </div>
+                
+                <div class="allowed-item">
+                    <h3>👋 Necessary Conversation</h3>
+                    <p>Speaking for legitimate purposes: asking directions, seeking help, work matters, educational questions - all permitted with proper conduct.</p>
+                </div>
+                
+                <div class="allowed-item">
+                    <h3>🕌 Islamic Activities</h3>
+                    <p>Participating in religious events, community service, and Islamic education in mixed settings with proper boundaries.</p>
+                </div>
+            </div>
+            
+            <div class="forbidden-section">
+                <h2>🚫 What is NOT Permitted 🚫</h2>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Khalwah (Seclusion)</h4>
+                    <p>Being alone with non-mahram in a private place where others cannot see or enter. The Prophet ﷺ said: "No man is alone with a woman but Satan is the third."</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Physical Contact</h4>
+                    <p>Handshaking, hugging, or any physical touch between non-mahram. The Prophet ﷺ said: "It is better for one of you to be struck in the head with an iron needle than to touch a woman who is not permissible to him."</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Casual/Close Friendships</h4>
+                    <p>Developing close personal friendships, hanging out casually, or spending unnecessary personal time together.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Flirting & Romantic Talk</h4>
+                    <p>Any romantic conversation, flirtation, or suggestive communication is completely forbidden.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Revealing Clothing</h4>
+                    <p>Dressing in tight, revealing, or attractive clothing in presence of non-mahram.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Private Messaging Without Need</h4>
+                    <p>Unnecessary private conversations, chatting, or texting that goes beyond legitimate purpose.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Excessive Mingling</h4>
+                    <p>Unnecessary free mixing and socializing beyond what's required for work, education, or community needs.</p>
+                </div>
+            </div>
+            
+            <div class="wisdom-section">
+                <h2>🌟 The Wisdom Behind the Guidelines 🌟</h2>
+                
+                <div class="wisdom-box">
+                    <h3>🛡️ Protection from Sin</h3>
+                    <p>These boundaries prevent situations that could lead to forbidden relationships (zina) or inappropriate attraction. Prevention is easier than dealing with consequences.</p>
+                </div>
+                
+                <div class="wisdom-box">
+                    <h3>💎 Preservation of Dignity</h3>
+                    <p>These rules protect the dignity and honor of both men and women, treating them as valuable rather than objects of desire.</p>
+                </div>
+                
+                <div class="wisdom-box">
+                    <h3>🏠 Family Protection</h3>
+                    <p>Clear boundaries protect marriages and families from jealousy, mistrust, and infidelity.</p>
+                </div>
+                
+                <div class="wisdom-box">
+                    <h3>🌍 Healthy Society</h3>
+                    <p>When everyone follows these guidelines, society becomes safer, more respectful, and morally healthier for all.</p>
+                </div>
+                
+                <div class="wisdom-box">
+                    <h3>🤲 Spiritual Purity</h3>
+                    <p>Following these rules keeps the heart pure and focused on Allah, preventing the heart from becoming attached to forbidden relationships.</p>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>💡 Practical Balance 💡</h2>
+                <p>These guidelines don't mean you can't function in modern society! Muslims can work, study, and participate in community life. The key is maintaining boundaries, proper conduct, and always keeping Allah's pleasure as the priority. When in doubt, ask yourself: Would I be comfortable doing this in front of my parents? In front of Allah?</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah help us maintain proper conduct, protect our honor and dignity, and keep our hearts and actions pure. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

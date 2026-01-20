@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rights of Neighbors in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5af19 0%, #f12711 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #f5af19;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .importance-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .importance-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .importance-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .importance-box h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .importance-box p {
+            color: #4a5568;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        
+        .rights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .right-card {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .right-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .right-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin: 50px 0 30px 0;
+            text-align: center;
+        }
+        
+        .practical-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .practical-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .practical-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .practical-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .practical-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .practical-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .practical-item .content p {
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .forbidden-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .forbidden-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .forbidden-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .forbidden-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .forbidden-box p {
+            line-height: 1.6;
+        }
+        
+        .types-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .types-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .type-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .type-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .type-card p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .type-card .highlight {
+            background: #a8edea;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .rewards-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .rewards-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .reward-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .reward-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .reward-item p {
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rights of Neighbors in Islam</h1>
+            <div class="ayah">
+                "Worship Allah and associate nothing with Him, and to parents do good, and to relatives, orphans, the needy, the near neighbor, the neighbor farther away, the companion at your side, the traveler, and those whom your right hands possess. Indeed, Allah does not like those who are self-deluding and boastful."<br>
+                <strong>- Quran 4:36</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>🏘️ The Importance of Neighbors 🏘️</h2>
+                <p>Being good to neighbors is mentioned right after worshipping Allah and being good to parents in the Quran. The Prophet ﷺ emphasized neighbor's rights so much that he said he thought the Angel Jibreel would make neighbors inheritors of each other!</p>
+            </div>
+            
+            <div class="importance-section">
+                <h2>🌟 Why It Matters So Much 🌟</h2>
+                
+                <div class="importance-box">
+                    <h3>Sign of Faith</h3>
+                    <p>"Whoever believes in Allah and the Last Day, let him be kind to his neighbor." - Prophet Muhammad ﷺ</p>
+                </div>
+                
+                <div class="importance-box">
+                    <h3>True Believer vs. Hypocrite</h3>
+                    <p>"By Allah, he does not believe! By Allah, he does not believe! By Allah, he does not believe!" The Companions asked: "Who, O Messenger of Allah?" He said: "The one whose neighbor is not safe from his harm." - Prophet Muhammad ﷺ</p>
+                </div>
+                
+                <div class="importance-box">
+                    <h3>Path to Paradise</h3>
+                    <p>"He will not enter Paradise whose neighbor is not secure from his wrongful conduct." - Prophet Muhammad ﷺ</p>
+                </div>
+            </div>
+            
+            <h2 class="section-title">💚 Essential Rights of Neighbors 💚</h2>
+            
+            <div class="rights-grid">
+                <div class="right-card">
+                    <div class="icon">🤝</div>
+                    <h3>Greet Them</h3>
+                    <p>Say salam, smile, and be friendly. A simple greeting creates warmth and connection in the community.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🍲</div>
+                    <h3>Share Food</h3>
+                    <p>Share your meals with them. The Prophet ﷺ said: "He is not a true believer who eats his fill while his neighbor is hungry."</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🏥</div>
+                    <h3>Visit When Sick</h3>
+                    <p>Check on them when they're ill, offer help, make du'a for their recovery, and show compassion.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">😢</div>
+                    <h3>Console in Hardship</h3>
+                    <p>Be there during difficult times. Offer condolences, support, and practical help when tragedy strikes.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🎉</div>
+                    <h3>Congratulate in Joy</h3>
+                    <p>Share in their happiness. Congratulate them on good news, celebrations, and achievements.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Protect Their Honor</h3>
+                    <p>Defend them in their absence, don't gossip about them, and protect their reputation and privacy.</p>
+                </div>
+            </div>
+            
+            <div class="practical-section">
+                <h2>💡 Practical Ways to Be a Good Neighbor 💡</h2>
+                
+                <div class="practical-grid">
+                    <div class="practical-item">
+                        <div class="icon">🔇</div>
+                        <div class="content">
+                            <h4>Avoid Causing Harm</h4>
+                            <p>Keep noise levels down, don't block their driveway, control pets, and be mindful of anything that might disturb them.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🤲</div>
+                        <div class="content">
+                            <h4>Offer Help Without Being Asked</h4>
+                            <p>If you see they need help with heavy bags, yard work, or anything else, offer assistance proactively.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🎁</div>
+                        <div class="content">
+                            <h4>Give Small Gifts</h4>
+                            <p>Share fruits from your garden, baked goods, or small thoughtful gifts. The Prophet ﷺ encouraged exchanging gifts to increase love.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🚪</div>
+                        <div class="content">
+                            <h4>Check on Them Regularly</h4>
+                            <p>Especially elderly neighbors or those living alone. A quick visit or call can make a huge difference.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🛒</div>
+                        <div class="content">
+                            <h4>Help with Errands</h4>
+                            <p>If you're going to the store, ask if they need anything. Offer rides if they need transport.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">👁️</div>
+                        <div class="content">
+                            <h4>Watch Over Their Property</h4>
+                            <p>Keep an eye on their home when they're away. Report any suspicious activity and help maintain security.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">😊</div>
+                        <div class="content">
+                            <h4>Tolerate Minor Inconveniences</h4>
+                            <p>Be patient and forgiving of small mistakes or annoyances. Overlook minor issues with good character.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🚗</div>
+                        <div class="content">
+                            <h4>Respect Their Space</h4>
+                            <p>Don't park in their spot, maintain boundaries, and ask permission before using shared spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="types-section">
+                <h2>👥 Types of Neighbors & Their Rights 👥</h2>
+                
+                <div class="type-card">
+                    <h3>🏠 The Closest Neighbor (Up to 40 Houses)</h3>
+                    <p>The Prophet ﷺ defined a neighbor as anyone within 40 houses in each direction. These have the strongest rights over you.</p>
+                    <div class="highlight">Highest Priority - Build Close Relationships</div>
+                </div>
+                
+                <div class="type-card">
+                    <h3>👨‍👩‍👦 Muslim Neighbor</h3>
+                    <p>A Muslim neighbor has three rights: the right of a neighbor, the right of Islam (brotherhood), and the right of kinship if they're also related to you.</p>
+                    <div class="highlight">Three-Fold Rights</div>
+                </div>
+                
+                <div class="type-card">
+                    <h3>🌍 Non-Muslim Neighbor</h3>
+                    <p>Islam commands excellent treatment of non-Muslim neighbors too. They have the full right of neighborliness. Your good character may be their introduction to Islam.</p>
+                    <div class="highlight">Full Neighbor Rights + Dawah Opportunity</div>
+                </div>
+                
+                <div class="type-card">
+                    <h3>👴 Elderly or Vulnerable Neighbors</h3>
+                    <p>They deserve extra care, frequent visits, and special attention to their needs. The Prophet ﷺ emphasized respecting elders.</p>
+                    <div class="highlight">Extra Care and Attention</div>
+                </div>
+            </div>
+            
+            <div class="forbidden-section">
+                <h2>🚫 What's Forbidden Toward Neighbors 🚫</h2>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Causing Any Harm</h4>
+                    <p>Physical, emotional, or property damage. This is a major sin that can prevent Paradise entry.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Backbiting & Gossip</h4>
+                    <p>Talking about them negatively or spreading their private matters is strictly forbidden.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Coveting Their Possessions</h4>
+                    <p>Envy, jealousy, or desiring what they have destroys relationships and is spiritually harmful.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Showing Off or Arrogance</h4>
+                    <p>Making them feel inferior with your wealth, status, or possessions violates Islamic character.</p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h4>❌ Ignoring Them in Need</h4>
+                    <p>Knowing they're struggling and not helping when you can is contrary to Islamic values.</p>
+                </div>
+            </div>
+            
+            <div class="rewards-section">
+                <h2>🎁 Beautiful Rewards 🎁</h2>
+                
+                <div class="reward-item">
+                    <h3>🏆 Entry to Paradise</h3>
+                    <p>Being good to neighbors is a direct path to Jannah. The Prophet ﷺ connected it with true faith.</p>
+                </div>
+                
+                <div class="reward-item">
+                    <h3>💝 Allah's Love</h3>
+                    <p>Those who maintain good relations with neighbors earn Allah's pleasure and love.</p>
+                </div>
+                
+                <div class="reward-item">
+                    <h3>🤝 Strong Community</h3>
+                    <p>Good neighbor relations create safe, caring, supportive communities where everyone thrives.</p>
+                </div>
+                
+                <div class="reward-item">
+                    <h3>😇 Peace of Mind</h3>
+                    <p>Living harmoniously with neighbors brings tranquility, security, and happiness to your daily life.</p>
+                </div>
+                
+                <div class="reward-item">
+                    <h3>📈 Increased Blessings</h3>
+                    <p>Kindness to neighbors brings barakah to your home, family, and provision.</p>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>✨ Remember ✨</h2>
+                <p>Start with a smile and a greeting. Be the neighbor you'd want to have. Whether they reciprocate or not, your reward is with Allah. Small acts of kindness create big changes in the community!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah help us be the best neighbors and create communities filled with love, care, and Islamic values. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

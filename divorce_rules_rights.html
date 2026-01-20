@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divorce Rules and Rights in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #4facfe;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .important-note {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 8px 20px rgba(255, 154, 158, 0.3);
+        }
+        
+        .important-note h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .important-note p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .types-section {
+            margin: 40px 0;
+        }
+        
+        .types-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .type-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .type-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .type-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .type-card .details {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .type-card .details ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .procedure-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .procedure-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .step-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .step-item .number {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+        
+        .step-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .step-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .rights-section {
+            margin: 40px 0;
+        }
+        
+        .rights-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .rights-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .rights-card {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .rights-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .rights-card ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .reconciliation-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .reconciliation-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .reconciliation-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .reconciliation-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .reconciliation-box p {
+            line-height: 1.6;
+        }
+        
+        .guidelines-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .guidelines-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .guideline-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .guideline-item h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .guideline-item p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Divorce Rules and Rights in Islam</h1>
+            <div class="ayah">
+                "Divorce is twice. Then [a woman] is to be retained in kindness or released with good treatment. And it is not lawful for you to take anything of what you have given them unless both fear that they will not be able to keep [within] the limits of Allah."<br>
+                <strong>- Quran 2:229</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>⚖️ Islam's Balanced Approach ⚖️</h2>
+                <p>Islam permits divorce as a last resort when marriage becomes untenable, but it is "the most disliked of permissible things" to Allah. Islam provides clear rules to protect both parties' rights and encourages reconciliation whenever possible.</p>
+            </div>
+            
+            <div class="important-note">
+                <h3>🌙 Important Prophetic Teaching 🌙</h3>
+                <p>"The most hateful of permissible things to Allah is divorce." - Prophet Muhammad ﷺ<br><br>
+                This means divorce is allowed when necessary, but every effort should be made to save the marriage first through counseling, family mediation, and sincere effort from both parties.</p>
+            </div>
+            
+            <div class="types-section">
+                <h2>📋 Types of Divorce in Islam 📋</h2>
+                
+                <div class="type-card">
+                    <h3>1️⃣ Talaq (Husband-Initiated Divorce)</h3>
+                    <p>The husband has the right to pronounce divorce. However, this right comes with strict conditions and serious consequences.</p>
+                    <div class="details">
+                        <ul>
+                            <li><strong>Must be in sound mind:</strong> Not in anger, intoxication, or under duress</li>
+                            <li><strong>One pronouncement at a time:</strong> Not three at once (this is a major sin)</li>
+                            <li><strong>During tuhr (clean period):</strong> Not during menstruation or after recent relations</li>
+                            <li><strong>Witnesses recommended:</strong> Should be done in presence of witnesses</li>
+                            <li><strong>Financial obligations continue:</strong> Must pay maintenance during waiting period</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="type-card">
+                    <h3>2️⃣ Khul' (Wife-Initiated Divorce)</h3>
+                    <p>The wife has the right to seek divorce by returning her mahr (dowry) or part of it, usually when she cannot continue the marriage.</p>
+                    <div class="details">
+                        <ul>
+                            <li><strong>Woman's right:</strong> She can request divorce even without husband's approval</li>
+                            <li><strong>Islamic court can grant it:</strong> If the husband refuses unreasonably</li>
+                            <li><strong>Returns mahr:</strong> Usually she returns the dowry or agrees to forgo financial rights</li>
+                            <li><strong>Valid reasons:</strong> Incompatibility, inability to fulfill marital duties, harm</li>
+                            <li><strong>Immediate separation:</strong> Usually becomes final with one pronouncement</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="type-card">
+                    <h3>3️⃣ Judicial Divorce (Court-Ordered)</h3>
+                    <p>Either spouse can seek divorce through Islamic court for valid reasons.</p>
+                    <div class="details">
+                        <ul>
+                            <li><strong>Valid grounds include:</strong> Abuse, neglect, failure to provide, abandonment, harm</li>
+                            <li><strong>Evidence required:</strong> Must prove legitimate grounds for divorce</li>
+                            <li><strong>Court investigates:</strong> Attempts reconciliation before granting divorce</li>
+                            <li><strong>Protects rights:</strong> Ensures both parties' rights are protected</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="type-card">
+                    <h3>4️⃣ Mutual Consent (Mubara'ah)</h3>
+                    <p>Both parties mutually agree to separate peacefully.</p>
+                    <div class="details">
+                        <ul>
+                            <li><strong>Most amicable:</strong> Both agree marriage isn't working</li>
+                            <li><strong>Negotiate terms:</strong> Financial settlements decided by mutual agreement</li>
+                            <li><strong>Immediate effect:</strong> Usually final upon agreement</li>
+                            <li><strong>Less trauma:</strong> Generally easier on all parties including children</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="procedure-section">
+                <h2>📝 The Proper Divorce Procedure (Talaq)</h2>
+                
+                <div class="step-item">
+                    <div class="number">1</div>
+                    <div class="content">
+                        <h4>First Pronouncement</h4>
+                        <p>Husband says "I divorce you" ONE time (not three). This should be done when wife is in clean period (not menstruating) and they haven't had relations since her last period ended. This begins the 'Iddah (waiting period).</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="number">2</div>
+                    <div class="content">
+                        <h4>'Iddah Period - First Phase (Revocable)</h4>
+                        <p>Wife waits for approximately one menstrual cycle (or 3 months if no menstruation). During this time, the husband can take her back without needing a new marriage contract. Both should live in same house and he must provide for her. Reconciliation is strongly encouraged.</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="number">3</div>
+                    <div class="content">
+                        <h4>Second Pronouncement (If No Reconciliation)</h4>
+                        <p>If they don't reconcile and husband pronounces divorce a second time (in a subsequent clean period), another 'Iddah begins. He can still take her back during this period without a new contract.</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="number">4</div>
+                    <div class="content">
+                        <h4>'Iddah Period - Second Phase</h4>
+                        <p>Another waiting period begins (one menstrual cycle). Husband can still reconcile. Both parties should seriously consider reconciliation, seek counsel, and pray Istikhara.</p>
+                    </div>
+                </div>
+                
+                <div class="step-item">
+                    <div class="number">5</div>
+                    <div class="content">
+                        <h4>Third Pronouncement OR End of 'Iddah</h4>
+                        <p>If husband pronounces divorce a third time OR if the 'Iddah after second divorce ends without reconciliation, the divorce becomes final and irrevocable. They cannot remarry each other unless specific conditions are met.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rights-section">
+                <h2>⚖️ Rights During and After Divorce ⚖️</h2>
+                
+                <div class="rights-grid">
+                    <div class="rights-card">
+                        <h3>👰 Wife's Rights</h3>
+                        <ul>
+                            <li><strong>Keep her mahr:</strong> In talaq, she keeps all the dowry given to her</li>
+                            <li><strong>Maintenance during 'Iddah:</strong> Housing and financial support during waiting period</li>
+                            <li><strong>Child custody (hadhanah):</strong> Generally has custody of young children (boys until ~7, girls until puberty)</li>
+                            <li><strong>Child support:</strong> Father must provide financially for children regardless of custody</li>
+                            <li><strong>Mut'ah (consolation gift):</strong> A parting gift from husband as kindness</li>
+                            <li><strong>Dignity and respect:</strong> Must not be slandered or treated badly</li>
+                            <li><strong>Right to remarry:</strong> After 'Iddah, she is free to remarry</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rights-card">
+                        <h3>🤵 Husband's Rights</h3>
+                        <ul>
+                            <li><strong>Access to children:</strong> Right to visitation and relationship with his children</li>
+                            <li><strong>Right to reconcile:</strong> During revocable divorce period, can reconcile</li>
+                            <li><strong>Financial clarity:</strong> Right to clear agreement on support obligations</li>
+                            <li><strong>Dignity and respect:</strong> Should not be slandered or treated badly</li>
+                            <li><strong>Right to remarry:</strong> After divorce is final, can remarry</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rights-card">
+                        <h3>👶 Children's Rights</h3>
+                        <ul>
+                            <li><strong>Relationship with both parents:</strong> Right to love and care from both</li>
+                            <li><strong>Financial support:</strong> Father must provide for their needs</li>
+                            <li><strong>Stable environment:</strong> Parents should minimize trauma and conflict</li>
+                            <li><strong>Islamic upbringing:</strong> Both parents responsible for religious education</li>
+                            <li><strong>Not used as pawns:</strong> Should not be manipulated or used to hurt other parent</li>
+                            <li><strong>Protection from harm:</strong> Physical and emotional wellbeing prioritized</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reconciliation-section">
+                <h2>💚 Emphasis on Reconciliation 💚</h2>
+                
+                <div class="reconciliation-box">
+                    <h3>🕌 Family Mediation</h3>
+                    <p>The Quran commands: "And if you fear dissension between the two, send an arbitrator from his people and an arbitrator from her people. If they both desire reconciliation, Allah will cause it between them." (4:35)</p>
+                </div>
+                
+                <div class="reconciliation-box">
+                    <h3>🤲 Seek Allah's Help</h3>
+                    <p>Both parties should pray Istikhara, make sincere du'a, and seek Allah's guidance. Many marriages can be saved with patience, forgiveness, and effort.</p>
+                </div>
+                
+                <div class="reconciliation-box">
+                    <h3>👥 Professional Counseling</h3>
+                    <p>Seek help from Islamic counselors, scholars, or family therapists who understand Islamic values and can help resolve conflicts.</p>
+                </div>
+                
+                <div class="reconciliation-box">
+                    <h3>⏰ The 'Iddah Period</h3>
+                    <p>The waiting period is designed to allow time for emotions to cool, reflection to happen, and reconciliation to be possible. Use this time wisely.</p>
+                </div>
+            </div>
+            
+            <div class="guidelines-section">
+                <h2>✨ Islamic Etiquette in Divorce ✨</h2>
+                
+                <div class="guideline-item">
+                    <h4>🤝 Part with Kindness</h4>
+                    <p>The Quran says: "retain [her] in kindness or release [her] with good treatment" (2:229). Even in divorce, maintain respect, dignity, and good character.</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <h4>🤐 Protect Privacy</h4>
+                    <p>Don't publicize marital problems or air dirty laundry. Protect each other's reputation and honor.</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <h4>🚫 Avoid Harm</h4>
+                    <p>Don't harm each other financially, emotionally, or socially. The Prophet ﷺ warned against harming others.</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <h4>👶 Prioritize Children</h4>
+                    <p>Put children's wellbeing first. Don't turn them against the other parent or use them as weapons. Co-parent with maturity.</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <h4>💰 Fulfill Financial Obligations</h4>
+                    <p>The husband must fulfill all financial duties honestly and completely. The wife should not demand beyond what is fair.</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <h4>🙏 Make Du'a</h4>
+                    <p>Pray for each other's wellbeing, for healing, and for what's best for everyone involved, especially the children.</p>
+                </div>
+                
+                <div class="guideline-item">
+                    <h4>🕊️ Forgive</h4>
+                    <p>Try to forgive past hurts. Holding grudges only harms you. Moving forward with forgiveness brings peace.</p>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>🌟 Final Reminder 🌟</h2>
+                <p>Divorce is permitted when necessary, but it should always be the last resort after exhausting all other options. If it becomes inevitable, it should be conducted with dignity, fairness, kindness, and in accordance with Islamic law. Both parties should fear Allah, fulfill their obligations, and treat each other with the respect befitting those who once shared a sacred bond.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah protect all marriages and grant wisdom, patience, and good character to all spouses. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

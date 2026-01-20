@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rights and Responsibilities Between Spouses in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #fa709a;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .mutual-rights-section {
+            margin: 40px 0;
+        }
+        
+        .mutual-rights-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .mutual-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .mutual-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .mutual-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .mutual-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .mutual-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .mutual-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .rights-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .rights-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .rights-list {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .right-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .right-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .right-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .right-item .content p {
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .husband-rights {
+            background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 230, 207, 0.3);
+        }
+        
+        .wife-rights {
+            background: linear-gradient(135deg, #ffd3a5 0%, #fd6585 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 211, 165, 0.3);
+        }
+        
+        .prophetic-guidance {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .prophetic-guidance h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .hadith-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .golden-rules {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .golden-rules h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .rule-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .rule-item h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .rule-item p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rights & Responsibilities Between Spouses</h1>
+            <div class="ayah">
+                "And among His signs is that He created for you mates from among yourselves, that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought."<br>
+                <strong>- Quran 30:21</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>💑 The Foundation of Marriage 💑</h2>
+                <p>Marriage in Islam is built on mutual love (mawaddah), mercy (rahmah), and tranquility (sakinah). Both spouses have rights AND responsibilities toward each other, creating a balanced, harmonious partnership.</p>
+            </div>
+            
+            <div class="mutual-rights-section">
+                <h2>🤝 Mutual Rights & Responsibilities 🤝</h2>
+                <div class="mutual-grid">
+                    <div class="mutual-card">
+                        <div class="icon">💕</div>
+                        <h3>Love & Kindness</h3>
+                        <p>Both spouses must treat each other with love, compassion, and gentleness. Express affection and appreciation regularly.</p>
+                    </div>
+                    
+                    <div class="mutual-card">
+                        <div class="icon">🤗</div>
+                        <h3>Respect & Dignity</h3>
+                        <p>Honor each other's feelings, opinions, and dignity. Never humiliate or belittle your spouse, especially in public.</p>
+                    </div>
+                    
+                    <div class="mutual-card">
+                        <div class="icon">🔒</div>
+                        <h3>Loyalty & Trust</h3>
+                        <p>Be faithful and trustworthy. Protect each other's secrets and honor. Build a relationship based on mutual trust.</p>
+                    </div>
+                    
+                    <div class="mutual-card">
+                        <div class="icon">🗣️</div>
+                        <h3>Good Communication</h3>
+                        <p>Speak gently, listen attentively, and resolve conflicts with wisdom and patience. Never use harsh words.</p>
+                    </div>
+                    
+                    <div class="mutual-card">
+                        <div class="icon">🤲</div>
+                        <h3>Spiritual Growth</h3>
+                        <p>Help each other grow closer to Allah. Pray together, remind each other of good, and support religious practice.</p>
+                    </div>
+                    
+                    <div class="mutual-card">
+                        <div class="icon">🏠</div>
+                        <h3>Shared Home</h3>
+                        <p>Work together to create a peaceful, loving home environment. Both contribute to the household's wellbeing.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wife-rights">
+                <h2>👰 Rights of the Wife</h2>
+                <div class="rights-list">
+                    <div class="right-item">
+                        <div class="icon">💰</div>
+                        <div class="content">
+                            <h4>Financial Support (Nafaqah)</h4>
+                            <p>The husband must provide for his wife's needs: food, clothing, housing, and other reasonable expenses according to his means. She is not obligated to spend her own wealth on household expenses.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">💎</div>
+                        <div class="content">
+                            <h4>Mahr (Dowry)</h4>
+                            <p>The wife has an absolute right to her mahr, which is hers to keep and use as she wishes. It is a gift from the husband and a requirement of the marriage contract.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">😊</div>
+                        <div class="content">
+                            <h4>Kind Treatment</h4>
+                            <p>The husband must treat his wife with kindness, compassion, and patience. The Prophet ﷺ said: "The best of you are those who are best to their wives."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">⚖️</div>
+                        <div class="content">
+                            <h4>Justice & Fairness</h4>
+                            <p>If there is more than one wife, the husband must treat all wives fairly and justly in terms of time, housing, and expenses.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">🛡️</div>
+                        <div class="content">
+                            <h4>Protection & Security</h4>
+                            <p>The husband must protect his wife physically, emotionally, and socially. He should defend her honor and ensure her safety and wellbeing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">📚</div>
+                        <div class="content">
+                            <h4>Education & Growth</h4>
+                            <p>The wife has the right to learn about her religion and pursue beneficial knowledge. The husband should support her spiritual and intellectual development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">👪</div>
+                        <div class="content">
+                            <h4>Family Connections</h4>
+                            <p>The wife has the right to maintain good relations with her family, visit them, and be kind to them (within Islamic boundaries).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="husband-rights">
+                <h2>🤵 Rights of the Husband</h2>
+                <div class="rights-list">
+                    <div class="right-item">
+                        <div class="icon">👑</div>
+                        <div class="content">
+                            <h4>Leadership & Respect</h4>
+                            <p>The husband is the head of the household with the responsibility of leadership. The wife should respect his position and cooperate with his reasonable decisions made in consultation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">👂</div>
+                        <div class="content">
+                            <h4>Obedience in Good</h4>
+                            <p>The wife should obey her husband in matters that are good and permissible (ma'ruf). She is not obligated to obey in anything sinful or harmful.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">🏡</div>
+                        <div class="content">
+                            <h4>Home Management</h4>
+                            <p>The wife is responsible for managing the household affairs, though this is cooperation, not servitude. Creating a peaceful home environment benefits the whole family.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">🔐</div>
+                        <div class="content">
+                            <h4>Protection of Honor & Property</h4>
+                            <p>The wife should safeguard her husband's honor, reputation, and property in his absence. She should not allow anyone into the home without his knowledge/permission.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-item">
+                        <div class="icon">💝</div>
+                        <div class="content">
+                            <h4>Affection & Companionship</h4>
+                            <p>The wife should show love, care, and be a good companion to her husband. The marital relationship should be a source of comfort and tranquility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="prophetic-guidance">
+                <h2>🌙 Prophetic Wisdom on Marriage 🌙</h2>
+                
+                <div class="hadith-box">
+                    <strong>On Treating Wives Well:</strong><br>
+                    "The best of you are those who are best to their wives, and I am the best of you to my wives." - Prophet Muhammad ﷺ
+                </div>
+                
+                <div class="hadith-box">
+                    <strong>On Mutual Support:</strong><br>
+                    "The believing men and believing women are allies of one another." - Quran 9:71
+                </div>
+                
+                <div class="hadith-box">
+                    <strong>On Patience:</strong><br>
+                    "Let not a believing man hate a believing woman. If he dislikes one of her characteristics, he will be pleased with another." - Prophet Muhammad ﷺ
+                </div>
+                
+                <div class="hadith-box">
+                    <strong>On Kindness:</strong><br>
+                    "A believing man should not hate a believing woman; if he dislikes one of her traits, he will be pleased with another." - Prophet Muhammad ﷺ
+                </div>
+            </div>
+            
+            <div class="golden-rules">
+                <h2>✨ Golden Rules for a Blessed Marriage ✨</h2>
+                
+                <div class="rule-item">
+                    <h3>🗣️ 1. Communicate with Wisdom</h3>
+                    <p>Talk about issues calmly, listen to understand not just to respond, and never let anger control your words. Go to bed having resolved conflicts.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>🎁 2. Appreciate the Small Things</h3>
+                    <p>Express gratitude for what your spouse does. The Prophet ﷺ warned against ungratefulness from wives, but both spouses should show appreciation daily.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>🚫 3. Never Shame Publicly</h3>
+                    <p>Protect each other's dignity in public. Disagreements should be handled privately with respect and love.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>💭 4. Think Well of Each Other</h3>
+                    <p>Always give your spouse the benefit of the doubt. Assume the best intentions and avoid suspicion without evidence.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>🤝 5. Work as a Team</h3>
+                    <p>Make decisions together through consultation (shura). Support each other's dreams and work toward shared goals.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>🔄 6. Forgive Quickly</h3>
+                    <p>Don't hold grudges. Forgive mistakes and move forward. Remember that Allah loves those who forgive.</p>
+                </div>
+                
+                <div class="rule-item">
+                    <h3>🌱 7. Keep Growing Together</h3>
+                    <p>Learn the religion together, pray together, and help each other become better Muslims and better people.</p>
+                </div>
+            </div>
+            
+            <div class="key-principle" style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);">
+                <h2>💖 Remember 💖</h2>
+                <p>Marriage is not about perfection—it's about two imperfect people working together with patience, love, and the help of Allah to build something beautiful. The best marriages are those where both spouses strive to give more than they take.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah bless all marriages with love, mercy, and tranquility. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

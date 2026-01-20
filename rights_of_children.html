@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rights of Children in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #89f7fe;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .rights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .right-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .right-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .right-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin: 50px 0 30px 0;
+            text-align: center;
+        }
+        
+        .spiritual-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .spiritual-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .spiritual-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .spiritual-item h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .spiritual-item p {
+            line-height: 1.6;
+        }
+        
+        .emotional-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .emotional-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .emotional-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .emotional-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .emotional-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .emotional-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .emotional-item .content p {
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        
+        .fairness-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .fairness-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .fairness-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .fairness-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .fairness-box p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .fairness-box .highlight {
+            background: #ffeaa7;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .prophetic-wisdom {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .prophetic-wisdom h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .hadith-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .hadith-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .hadith-card .source {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rights of Children in Islam</h1>
+            <div class="ayah">
+                "O you who have believed, protect yourselves and your families from a Fire whose fuel is people and stones."<br>
+                <strong>- Quran 66:6</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>👶 Children Are a Trust (Amanah) 👶</h2>
+                <p>Children are a gift from Allah and a trust placed in parents' care. Parents are responsible for their physical, emotional, intellectual, and spiritual wellbeing. How you raise them will be asked about on the Day of Judgment.</p>
+            </div>
+            
+            <h2 class="section-title">🌟 Essential Rights of Children 🌟</h2>
+            
+            <div class="rights-grid">
+                <div class="right-card">
+                    <div class="icon">🍼</div>
+                    <h3>Basic Needs</h3>
+                    <p>Provide food, clothing, shelter, healthcare, and all necessities for a healthy life according to your means.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">💕</div>
+                    <h3>Love & Affection</h3>
+                    <p>Show love, hug your children, kiss them, and express your affection. The Prophet ﷺ kissed his grandchildren and showed them great tenderness.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">📚</div>
+                    <h3>Education</h3>
+                    <p>Provide them with both religious and worldly education. Teach them Quran, Islamic knowledge, and skills for life success.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🎯</div>
+                    <h3>Good Character</h3>
+                    <p>Teach them Islamic values: honesty, kindness, respect, patience, and good manners through your example and guidance.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">⚖️</div>
+                    <h3>Fair Treatment</h3>
+                    <p>Treat all your children equally and fairly. Don't favor one over another in gifts, attention, or treatment.</p>
+                </div>
+                
+                <div class="right-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Protection</h3>
+                    <p>Protect them from physical and emotional harm, bad influences, and environments that could damage their faith or character.</p>
+                </div>
+            </div>
+            
+            <div class="spiritual-section">
+                <h2>🌙 Spiritual & Religious Rights 🌙</h2>
+                
+                <div class="spiritual-item">
+                    <h4>🕌 Teach Them About Allah</h4>
+                    <p>Introduce them to Allah's love, mercy, and greatness from an early age. Make Islam beautiful and accessible to them through your words and actions.</p>
+                </div>
+                
+                <div class="spiritual-item">
+                    <h4>📿 Prayer (Salah)</h4>
+                    <p>Encourage prayer from age 7, make it obligatory at age 10. Be patient in teaching them and make it a joyful part of their routine, not a burden.</p>
+                </div>
+                
+                <div class="spiritual-item">
+                    <h4>📖 Quran & Islamic Studies</h4>
+                    <p>Teach them to read, recite, and understand the Quran. Share stories of the Prophets and Companions. Make Islamic knowledge engaging and relevant to their lives.</p>
+                </div>
+                
+                <div class="spiritual-item">
+                    <h4>🤲 Good Deeds & Akhlaq</h4>
+                    <p>Encourage charity, kindness to others, and good character. Praise them when they do good and gently correct them when they err.</p>
+                </div>
+                
+                <div class="spiritual-item">
+                    <h4>👥 Islamic Community</h4>
+                    <p>Connect them with the Muslim community. Take them to the masjid, Islamic events, and help them build friendships with good Muslim peers.</p>
+                </div>
+            </div>
+            
+            <div class="emotional-section">
+                <h2>💖 Emotional & Psychological Rights 💖</h2>
+                
+                <div class="emotional-grid">
+                    <div class="emotional-item">
+                        <div class="icon">🤗</div>
+                        <div class="content">
+                            <h4>Emotional Security</h4>
+                            <p>Create a home filled with love, warmth, and stability. Children need to feel safe, valued, and accepted for who they are.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emotional-item">
+                        <div class="icon">👂</div>
+                        <div class="content">
+                            <h4>Listen to Them</h4>
+                            <p>Take their feelings, thoughts, and concerns seriously. Give them time and attention. Show them that their voice matters.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emotional-item">
+                        <div class="icon">🎉</div>
+                        <div class="content">
+                            <h4>Celebrate Their Achievements</h4>
+                            <p>Acknowledge their efforts and successes, big or small. Encourage their talents and interests with genuine enthusiasm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emotional-item">
+                        <div class="icon">🌱</div>
+                        <div class="content">
+                            <h4>Allow Age-Appropriate Independence</h4>
+                            <p>As they grow, give them appropriate freedom and responsibility. Trust them and help them develop confidence and decision-making skills.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emotional-item">
+                        <div class="icon">😌</div>
+                        <div class="content">
+                            <h4>Never Humiliate or Shame</h4>
+                            <p>Correct mistakes privately with kindness. Never mock, ridicule, or embarrass them, especially in front of others.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emotional-item">
+                        <div class="icon">🎮</div>
+                        <div class="content">
+                            <h4>Time for Play & Joy</h4>
+                            <p>Let children be children. They have the right to play, have fun, and enjoy their childhood within Islamic boundaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fairness-section">
+                <h2>⚖️ Justice & Fair Treatment ⚖️</h2>
+                
+                <div class="fairness-box">
+                    <h3>Equal Treatment Among Children</h3>
+                    <p>The Prophet ﷺ emphasized treating children equally. Don't favor boys over girls or one child over another in gifts, attention, or love.</p>
+                    <div class="highlight">
+                        "Fear Allah and treat your children [with equal] fairness." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+                
+                <div class="fairness-box">
+                    <h3>Daughters Have Equal Rights</h3>
+                    <p>Islam gives daughters the same rights as sons to love, education, care, and respect. The Prophet ﷺ said:</p>
+                    <div class="highlight">
+                        "Whoever has three daughters or three sisters, or two daughters or two sisters, and lives with them in a good manner and has fear of Allah regarding them, then Paradise is for him."
+                    </div>
+                </div>
+                
+                <div class="fairness-box">
+                    <h3>No Favoritism</h3>
+                    <p>When giving gifts, make them equal. When showing affection, be balanced. Favoritism creates resentment, jealousy, and psychological harm.</p>
+                </div>
+            </div>
+            
+            <div class="prophetic-wisdom">
+                <h2>💫 Beautiful Prophetic Examples 💫</h2>
+                
+                <div class="hadith-card">
+                    <p>"He is not one of us who does not show mercy to our young ones and respect to our old ones."</p>
+                    <div class="source">- Prophet Muhammad ﷺ</div>
+                </div>
+                
+                <div class="hadith-card">
+                    <p>"When a man looks at his child and smiles at them, he receives a reward for that."</p>
+                    <div class="source">- Islamic Teaching</div>
+                </div>
+                
+                <div class="hadith-card">
+                    <p>The Prophet ﷺ would shorten prayers when he heard a baby crying, out of mercy for the mother.</p>
+                    <div class="source">- From the Sunnah</div>
+                </div>
+                
+                <div class="hadith-card">
+                    <p>The Prophet ﷺ would play with children, let them ride on his back, and race with them.</p>
+                    <div class="source">- From the Sunnah</div>
+                </div>
+                
+                <div class="hadith-card">
+                    <p>"The best of you are those who are best to their families, and I am the best among you to my family."</p>
+                    <div class="source">- Prophet Muhammad ﷺ</div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>🌟 Practical Parenting Tips 🌟</h2>
+                <p><strong>Ages 0-7:</strong> Be gentle, play with them, show abundant love and affection.<br><br>
+                <strong>Ages 7-14:</strong> Teach them, discipline with wisdom, encourage good habits.<br><br>
+                <strong>Ages 14+:</strong> Be their friend and advisor, respect their growing independence while guiding them.<br><br>
+                <strong>Always:</strong> Make dua for them constantly, be the best role model, and remember that your patience with them is an act of worship!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah help us raise righteous children who are a source of continuous reward (sadaqah jariyah) for us. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

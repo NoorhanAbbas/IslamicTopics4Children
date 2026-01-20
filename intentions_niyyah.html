@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intentions (Niyyah) in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #6a11cb;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #6a11cb;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .hadith {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .fundamental-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .fundamental-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .fundamental-box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .fundamental-box .arabic-hadith {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .fundamental-box .translation {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .fundamental-box .source {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .fundamental-box p {
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+        
+        .power-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .power-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .power-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .power-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .power-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .power-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .power-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .transform-section {
+            margin: 40px 0;
+        }
+        
+        .transform-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .transform-grid {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .transform-item {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .transform-item .mundane {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .transform-item .mundane h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .transform-item .mundane p {
+            color: #718096;
+            font-size: 0.95em;
+        }
+        
+        .transform-item .arrow {
+            text-align: center;
+            font-size: 2em;
+            color: #6a11cb;
+            margin: 10px 0;
+        }
+        
+        .transform-item .worship {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .transform-item .worship h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .transform-item .worship p {
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .ikhlas-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .ikhlas-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .comparison-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-card.sincere {
+            border: 3px solid #84fab0;
+        }
+        
+        .comparison-card.showing-off {
+            border: 3px solid #ff6b6b;
+        }
+        
+        .comparison-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .comparison-card ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .comparison-card .result {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .comparison-card.sincere .result {
+            color: #2d8659;
+        }
+        
+        .comparison-card.showing-off .result {
+            color: #c53030;
+        }
+        
+        .riya-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .riya-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .riya-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .riya-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .riya-box p {
+            line-height: 1.6;
+        }
+        
+        .riya-box ul {
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .multiple-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .multiple-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .example-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .example-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .example-box .action {
+            background: #6a11cb;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        .example-box .intentions-list {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .example-box .intentions-list h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .example-box .intentions-list ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .renew-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .renew-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .renew-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .renew-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .renew-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .renew-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .renew-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .checking-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .checking-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .questions-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .questions-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .question-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #6a11cb;
+        }
+        
+        .question-item p {
+            color: #4a5568;
+            font-weight: 500;
+        }
+        
+        .worship-vs-worldly {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .worship-vs-worldly h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .vs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .vs-card {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        .vs-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .vs-card ul {
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .practical-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .practical-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .practical-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .practical-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .practical-item .number {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .practical-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .practical-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Intentions (Niyyah) in Islam</h1>
+            <div class="arabic">النِّيَّة</div>
+            <div class="hadith">
+                <strong>The Most Fundamental Hadith:</strong><br>
+                "Actions are judged by intentions, and every person will be rewarded according to their intention."<br>
+                <strong>- Prophet Muhammad ﷺ (Sahih Bukhari & Muslim)</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>💎 The Foundation of All Deeds 💎</h2>
+                <p>Your intention determines whether your action is worship or just habit, whether it's accepted by Allah or rejected, whether you get reward or nothing. The same physical action can lead to Paradise or be worthless—all based on intention!</p>
+            </div>
+            
+            <div class="fundamental-section">
+                <h2>📖 The Most Important Hadith 📖</h2>
+                
+                <div class="fundamental-box">
+                    <div class="arabic-hadith">
+                        إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى
+                    </div>
+                    <div class="translation">
+                        "Actions are (judged) by intentions, and every person will have what they intended."
+                    </div>
+                    <div class="source">
+                        - Sahih Bukhari & Muslim
+                    </div>
+                    <p>This hadith is so important that scholars say it is one-third of Islamic knowledge! It was placed at the beginning of Sahih Bukhari to show that everything in Islam starts with intention.</p>
+                </div>
+                
+                <div class="fundamental-box">
+                    <h3 style="margin-bottom: 15px;">Why This Hadith is So Powerful</h3>
+                    <p>✨ It shows Allah judges what's in your heart, not just outward actions<br>
+                    ✨ It protects you from showing off (riya')<br>
+                    ✨ It transforms everyday actions into worship<br>
+                    ✨ It means you can earn reward for things you never did (if you intended)<br>
+                    ✨ It's the scale by which all actions are weighed on the Day of Judgment</p>
+                </div>
+            </div>
+            
+            <div class="power-section">
+                <h2>⚡ The Power of Intention ⚡</h2>
+                
+                <div class="power-grid">
+                    <div class="power-card">
+                        <div class="icon">✅</div>
+                        <h3>Can Make Invalid Actions Valid</h3>
+                        <p>Prayer without intention is just exercise. With correct intention, it becomes worship that connects you to Allah.</p>
+                    </div>
+                    
+                    <div class="power-card">
+                        <div class="icon">❌</div>
+                        <h3>Can Make Valid Actions Invalid</h3>
+                        <p>Praying to show off to others? It's rejected. Giving charity to gain praise? No reward. Good intention is essential!</p>
+                    </div>
+                    
+                    <div class="power-card">
+                        <div class="icon">⭐</div>
+                        <h3>Multiplies Your Rewards</h3>
+                        <p>One action with multiple good intentions earns multiple rewards. More on this below!</p>
+                    </div>
+                    
+                    <div class="power-card">
+                        <div class="icon">🎁</div>
+                        <h3>Gives Reward Without Action</h3>
+                        <p>If you intended to do good but couldn't, Allah may reward you for your intention! The Prophet ﷺ said good intentions are written as good deeds.</p>
+                    </div>
+                    
+                    <div class="power-card">
+                        <div class="icon">🔄</div>
+                        <h3>Transforms Mundane into Sacred</h3>
+                        <p>Sleep becomes worship if you intend to rest so you can wake up for Fajr. Eating becomes worship if you intend to strengthen your body for Allah's service.</p>
+                    </div>
+                    
+                    <div class="power-card">
+                        <div class="icon">⚖️</div>
+                        <h3>The Scale on Judgment Day</h3>
+                        <p>On the Day of Judgment, Allah will judge your intentions, not just what people saw. This is both comforting and sobering!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="transform-section">
+                <h2>🌟 Transforming Mundane Acts into Worship 🌟</h2>
+                
+                <div class="transform-grid">
+                    <div class="transform-item">
+                        <div class="mundane">
+                            <h4>😴 Sleeping</h4>
+                            <p>Without intention: Just rest</p>
+                        </div>
+                        <div class="arrow">⬇️</div>
+                        <div class="worship">
+                            <h4>✨ Worship Through Sleep</h4>
+                            <p>"I sleep to rest my body so I can wake up energized for Fajr prayer and serve Allah better tomorrow."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transform-item">
+                        <div class="mundane">
+                            <h4>🍽️ Eating</h4>
+                            <p>Without intention: Just satisfying hunger</p>
+                        </div>
+                        <div class="arrow">⬇️</div>
+                        <div class="worship">
+                            <h4>✨ Worship Through Eating</h4>
+                            <p>"I eat to strengthen my body to worship Allah, serve His creation, and fulfill my responsibilities. I thank Allah for this provision."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transform-item">
+                        <div class="mundane">
+                            <h4>💼 Going to Work</h4>
+                            <p>Without intention: Just making money</p>
+                        </div>
+                        <div class="arrow">⬇️</div>
+                        <div class="worship">
+                            <h4>✨ Worship Through Work</h4>
+                            <p>"I work to earn halal income to support my family, be independent and not burden others, and to contribute positively to society—all seeking Allah's pleasure."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transform-item">
+                        <div class="mundane">
+                            <h4>📚 Studying</h4>
+                            <p>Without intention: Just getting a degree</p>
+                        </div>
+                        <div class="arrow">⬇️</div>
+                        <div class="worship">
+                            <h4>✨ Worship Through Studying</h4>
+                            <p>"I study to gain beneficial knowledge, serve humanity with my skills, and use my education for good causes that please Allah."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transform-item">
+                        <div class="mundane">
+                            <h4>🏃 Exercising</h4>
+                            <p>Without intention: Just staying fit</p>
+                        </div>
+                        <div class="arrow">⬇️</div>
+                        <div class="worship">
+                            <h4>✨ Worship Through Exercise</h4>
+                            <p>"I exercise to keep my body healthy so I can worship Allah better, have energy for good deeds, and take care of the trust (body) Allah gave me."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transform-item">
+                        <div class="mundane">
+                            <h4>💑 Spending Time with Spouse</h4>
+                            <p>Without intention: Just companionship</p>
+                        </div>
+                        <div class="arrow">⬇️</div>
+                        <div class="worship">
+                            <h4>✨ Worship Through Marriage</h4>
+                            <p>"I spend quality time with my spouse to fulfill their rights, strengthen our marriage as an act of worship, and build a righteous family."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ikhlas-section">
+                <h2>💎 Sincerity (Ikhlas) vs. Showing Off (Riya') 💎</h2>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-card sincere">
+                        <h3>✅ Ikhlas (Sincerity)</h3>
+                        <ul>
+                            <li>Doing things solely for Allah's pleasure</li>
+                            <li>Not caring if people see or praise you</li>
+                            <li>Happy to do good deeds in private</li>
+                            <li>Same effort in worship whether alone or with people</li>
+                            <li>Don't mention your good deeds constantly</li>
+                            <li>Feel uncomfortable when praised</li>
+                            <li>Your motivation is Allah's reward, not people's approval</li>
+                        </ul>
+                        <div class="result">
+                            ✨ Result: Actions accepted, huge rewards, peace of heart
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-card showing-off">
+                        <h3>❌ Riya' (Showing Off)</h3>
+                        <ul>
+                            <li>Doing good deeds to be seen and praised</li>
+                            <li>Praying better when people are watching</li>
+                            <li>Giving charity publicly to gain reputation</li>
+                            <li>Mentioning your good deeds to others</li>
+                            <li>Feeling proud when people praise you</li>
+                            <li>Less motivated when alone</li>
+                            <li>Your goal is people's admiration, not Allah's pleasure</li>
+                        </ul>
+                        <div class="result">
+                            ⚠️ Result: Actions rejected, no reward, possible punishment!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="riya-section">
+                <h2>⚠️ The Danger of Showing Off (Riya') ⚠️</h2>
+                
+                <div class="riya-box">
+                    <h4>🔥 Riya' is Hidden Shirk</h4>
+                    <p>The Prophet ﷺ said: "What I fear most for you is minor shirk (associating partners with Allah)." When asked what it was, he said: "Riya' (showing off)."</p>
+                    <p style="margin-top: 10px;">Why? Because you're doing the action partly for Allah and partly for people's approval—you've made people's praise a partner alongside Allah's pleasure!</p>
+                </div>
+                
+                <div class="riya-box">
+                    <h4>💔 Your Good Deeds Can Be Thrown in Your Face</h4>
+                    <p>The Prophet ﷺ said the first three people judged on the Day of Judgment will include:</p>
+                    <ul>
+                        <li>A scholar who learned to be called a scholar—thrown into the Fire</li>
+                        <li>A warrior who fought to be called brave—thrown into the Fire</li>
+                        <li>A wealthy person who gave charity to be praised—thrown into the Fire</li>
+                    </ul>
+                    <p style="margin-top: 10px;">They did good deeds but for the wrong reason. Allah will tell them: "You got your reward already (people's praise in the world)."</p>
+                </div>
+                
+                <div class="riya-box">
+                    <h4>🛡️ How to Protect Yourself from Riya'</h4>
+                    <ul>
+                        <li>Keep many good deeds secret—known only to you and Allah</li>
+                        <li>Check your intention before, during, and after actions</li>
+                        <li>Don't tell people about your good deeds unless necessary</li>
+                        <li>Feel uncomfortable with praise, redirect it to Allah</li>
+                        <li>When people praise you, say "Alhamdulillah" and move on</li>
+                        <li>Ask yourself: Would I still do this if no one would ever know?</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="multiple-section">
+                <h2>🎁 Multiple Intentions for Single Acts 🎁</h2>
+                
+                <p style="color: #2d3748; text-align: center; margin-bottom: 25px; font-size: 1.1em; line-height: 1.6;">
+                    One of the beautiful aspects of Islam is that you can have multiple good intentions for a single action, and you get rewarded for EACH intention! This multiplies your rewards exponentially.
+                </p>
+                
+                <div class="example-box">
+                    <h3>Example 1: Teaching Islamic Knowledge</h3>
+                    <div class="action">You Teach a Class on Quran</div>
+                    <div class="intentions-list">
+                        <h4>Multiple Intentions (Multiple Rewards!):</h4>
+                        <ul>
+                            <li>✅ Seeking Allah's pleasure</li>
+                            <li>✅ Fulfilling the obligation to spread beneficial knowledge</li>
+                            <li>✅ Helping students learn and grow in faith</li>
+                            <li>✅ Earning halal income to support your family</li>
+                            <li>✅ Contributing to the Muslim community</li>
+                            <li>✅ Benefiting from the continuous rewards (sadaqah jariyah)</li>
+                            <li>✅ Following the Sunnah of teaching</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="example-box">
+                    <h3>Example 2: Going to the Masjid for Friday Prayer</h3>
+                    <div class="action">You Walk to Jumu'ah</div>
+                    <div class="intentions-list">
+                        <h4>Multiple Intentions (Multiple Rewards!):</h4>
+                        <ul>
+                            <li>✅ Fulfilling the obligation of Jumu'ah</li>
+                            <li>✅ Seeking the reward for each step to the masjid</li>
+                            <li>✅ Joining the congregation (27 times the reward)</li>
+                            <li>✅ Learning from the khutbah</li>
+                            <li>✅ Connecting with the Muslim community</li>
+                            <li>✅ Making du'a for forgiveness on the blessed day</li>
+                            <li>✅ Walking to gain the reward (not driving)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="example-box">
+                    <h3>Example 3: Visiting Your Parents</h3>
+                    <div class="action">You Visit Your Elderly Parents</div>
+                    <div class="intentions-list">
+                        <h4>Multiple Intentions (Multiple Rewards!):</h4>
+                        <ul>
+                            <li>✅ Fulfilling the obligation of being good to parents (birr al-walidayn)</li>
+                            <li>✅ Maintaining family ties (silat al-rahm)</li>
+                            <li>✅ Seeking Allah's pleasure</li>
+                            <li>✅ Earning reward for each moment spent with them</li>
+                            <li>✅ Making them happy</li>
+                            <li>✅ Checking on their health and needs</li>
+                            <li>✅ Teaching your children how to treat grandparents</li>
+                            <li>✅ Hoping Allah will make your children treat you well</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="renew-section">
+                <h2>🔄 Renewing Intentions Regularly 🔄</h2>
+                
+                <div class="renew-grid">
+                    <div class="renew-item">
+                        <div class="icon">⏰</div>
+                        <div class="content">
+                            <h4>Before Each Action</h4>
+                            <p>Before you do anything significant, pause and clarify your intention. "Why am I doing this? Is it for Allah?" This takes only seconds but changes everything.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="renew-item">
+                        <div class="icon">🔄</div>
+                        <div class="content">
+                            <h4>During Long-Term Actions</h4>
+                            <p>For ongoing commitments (job, studies, marriage), renew your intention regularly. Your initial good intention can weaken over time, so refresh it often!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="renew-item">
+                        <div class="icon">🌙</div>
+                        <div class="content">
+                            <h4>Daily Renewal</h4>
+                            <p>Each morning, remind yourself: "Today, everything I do is for Allah's sake." This sets the tone for your entire day.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="renew-item">
+                        <div class="icon">💭</div>
+                        <div class="content">
+                            <h4>When You Notice Weakening</h4>
+                            <p>If you catch yourself doing something for the wrong reasons, stop and renew your intention immediately. It's never too late to correct your niyyah!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="renew-item">
+                        <div class="icon">📿</div>
+                        <div class="content">
+                            <h4>Make It a Habit</h4>
+                            <p>Get in the habit of saying "Bismillah" before actions. This simple phrase reminds you that you're doing it for Allah, not yourself.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checking-section">
+                <h2>✅ Checking Intentions Before Major Decisions ✅</h2>
+                
+                <div class="questions-box">
+                    <h3>Ask Yourself These Questions:</h3>
+                    
+                    <div class="question-item">
+                        <p>❓ Am I doing this primarily for Allah's pleasure or for worldly gain/people's approval?</p>
+                    </div>
+                    
+                    <div class="question-item">
+                        <p>❓ Would I still do this if no one would ever know about it?</p>
+                    </div>
+                    
+                    <div class="question-item">
+                        <p>❓ If this brings me worldly loss but pleases Allah, am I willing to do it?</p>
+                    </div>
+                    
+                    <div class="question-item">
+                        <p>❓ Am I comfortable announcing this decision and intention publicly?</p>
+                    </div>
+                    
+                    <div class="question-item">
+                        <p>❓ How will this decision affect my relationship with Allah?</p>
+                    </div>
+                    
+                    <div class="question-item">
+                        <p>❓ Is this decision based on what Allah wants or what I want?</p>
+                    </div>
+                    
+                    <div class="question-item">
+                        <p>❓ Will I be proud to meet Allah having made this choice?</p>
+                    </div>
+                </div>
+                
+                <div class="questions-box">
+                    <h3>Important Decisions That Need Intention Checks:</h3>
+                    <p style="color: #4a5568; line-height: 1.8; padding: 0 20px;">
+                        • Career choices and job changes<br>
+                        • Marriage decisions<br>
+                        • Major purchases and investments<br>
+                        • Moving to a new place<br>
+                        • Starting a business<br>
+                        • Taking on leadership roles<br>
+                        • Pursuing higher education<br>
+                        • Having children<br>
+                        • Any commitment that will affect your time, energy, and priorities
+                    </p>
+                </div>
+            </div>
+            
+            <div class="worship-vs-worldly">
+                <h2>🕌 Intention in Worship vs. Worldly Matters 🌍</h2>
+                
+                <div class="vs-grid">
+                    <div class="vs-card">
+                        <h3>🕌 Acts of Worship</h3>
+                        <ul>
+                            <li><strong>Must be for Allah alone:</strong> Prayer, fasting, hajj, charity—these require pure intention for Allah</li>
+                            <li><strong>Any show-off invalidates it:</strong> Even a trace of riya' in worship is dangerous</li>
+                            <li><strong>Specific intention needed:</strong> You must intend to pray Dhuhr (not just pray), fast Ramadan (not just fast)</li>
+                            <li><strong>Can't have mixed intentions:</strong> Can't pray to show off AND for Allah</li>
+                            <li><strong>Examples:</strong> Salah, sawm, zakah, hajj, dhikr, reciting Quran</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="vs-card">
+                        <h3>🌍 Worldly Matters</h3>
+                        <ul>
+                            <li><strong>Can have mixed intentions:</strong> Work for Allah's pleasure AND to support family—both are good!</li>
+                            <li><strong>Worldly benefit is okay:</strong> Studying for knowledge AND good career—both fine</li>
+                            <li><strong>Primary intention matters:</strong> As long as pleasing Allah is your main goal, worldly benefits are okay</li>
+                            <li><strong>Transform to worship with intention:</strong> Normal activities become worship when done with right intention</li>
+                            <li><strong>Examples:</strong> Working, studying, marriage, eating, sleeping, exercising</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin-top: 25px;">
+                    <h3 style="margin-bottom: 15px; text-align: center;">⚖️ The Key Principle ⚖️</h3>
+                    <p style="line-height: 1.6; text-align: center;">
+                        For pure acts of worship, your intention must be exclusively for Allah. For worldly matters, you can intend both pleasing Allah and gaining worldly benefit, as long as pleasing Allah is your primary intention and the worldly pursuit is halal.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="practical-section">
+                <h2>💡 Practical Steps to Improve Your Intentions 💡</h2>
+                
+                <div class="practical-grid">
+                    <div class="practical-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Morning Intention Setting</h4>
+                            <p>Every morning when you wake up, say: "Today, I intend everything I do for Allah's sake." This frames your entire day as worship.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Before-Action Pause</h4>
+                            <p>Before any significant action, pause for 2-3 seconds and clarify your intention silently in your heart.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Regular Self-Audits</h4>
+                            <p>Weekly or monthly, review your major activities and ask: "Why am I really doing this?" Be honest with yourself.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Make Du'a for Sincerity</h4>
+                            <p>Regularly pray: "O Allah, make my intention pure for You alone. Protect me from riya' and grant me ikhlas."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Keep Secret Good Deeds</h4>
+                            <p>Deliberately do some good deeds that NO ONE knows about except Allah. This trains your heart in sincerity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Learn to Redirect Praise</h4>
+                            <p>When praised, immediately say "Alhamdulillah" and thank Allah in your heart. Don't dwell on people's words.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Study Lives of the Pious</h4>
+                            <p>Read about the Companions and righteous predecessors to see examples of pure intention and sincerity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Don't Announce Everything</h4>
+                            <p>Not every good deed needs to be shared on social media or told to others. Some things are just between you and Allah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>✨ Remember ✨</h2>
+                <p>Your intention is the foundation of every action. A small deed with sincere intention is better than a huge deed done for show. Check your heart, purify your intention, and watch as your normal daily life becomes filled with worship and rewards!<br><br>
+                The difference between a believer whose life is full of rewards and one whose life passes by with little benefit is often just... <strong>intention</strong>.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah grant us sincerity in all our intentions and purify our hearts from showing off. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

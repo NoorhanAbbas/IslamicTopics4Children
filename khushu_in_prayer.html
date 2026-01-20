@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushu' - Humility and Concentration in Prayer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #2c3e50;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .definition-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .definition-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .definition-box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .definition-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .definition-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .definition-box ul {
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .importance-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .importance-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .importance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .importance-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .importance-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .importance-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .importance-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .developing-section {
+            margin: 40px 0;
+        }
+        
+        .developing-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .step-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .step-card .step-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .step-card .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            flex: 1;
+        }
+        
+        .step-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .step-card ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .step-card .highlight {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .understanding-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .understanding-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .prayer-part {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .prayer-part h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .prayer-part .arabic {
+            color: #2c3e50;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 10px 0;
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        .prayer-part .translation {
+            color: #4a5568;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .prayer-part .meaning {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .prayer-part .meaning h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .prayer-part .meaning p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .distractions-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .distractions-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .distraction-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .distraction-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .distraction-item h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .distraction-item .icon {
+            font-size: 1.5em;
+        }
+        
+        .distraction-item .problem {
+            color: #c53030;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .distraction-item .solution {
+            background: #f0fff4;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .distraction-item .solution h4 {
+            color: #2d8659;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .distraction-item .solution ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .journey-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .journey-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .journey-timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .journey-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .journey-step {
+            position: relative;
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .journey-step::before {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: 30px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #c471f5;
+        }
+        
+        .journey-step h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .journey-step p {
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+        
+        .practical-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .practical-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .practical-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .practical-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .practical-item .number {
+            background: rgba(255,255,255,0.3);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .practical-item .content h4 {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .practical-item .content p {
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Khushu' in Prayer</h1>
+            <div class="arabic">الخشوع في الصلاة</div>
+            <div class="arabic" style="font-size: 1.3em;">Humility and Concentration</div>
+            <div class="ayah">
+                "Successful indeed are the believers: Those who offer their prayers with khushu' (humility and full submissiveness)."<br>
+                <strong>- Quran 23:1-2</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>🤲 The Heart of Prayer 🤲</h2>
+                <p>Khushu' is not just standing quietly in prayer—it's the profound awareness that you are standing before Allah, the Creator of the heavens and the earth. It's when your heart is fully present, your mind is focused, and your soul is humbled before the Almighty. Prayer without khushu' is like a body without a soul.</p>
+            </div>
+            
+            <div class="definition-section">
+                <h2>💎 What is Khushu'? 💎</h2>
+                
+                <div class="definition-box">
+                    <h3>📖 Linguistic Meaning</h3>
+                    <p>Khushu' (خشوع) in Arabic comes from the root خ-ش-ع which means:</p>
+                    <ul>
+                        <li>Humility and submissiveness</li>
+                        <li>Stillness and tranquility</li>
+                        <li>The lowering and humbling of oneself</li>
+                        <li>Softness of the heart toward Allah</li>
+                    </ul>
+                </div>
+                
+                <div class="definition-box">
+                    <h3>🎯 Islamic Definition</h3>
+                    <p>Khushu' in prayer is a state of:</p>
+                    <ul>
+                        <li><strong>Heart Presence:</strong> Your heart is with Allah, not wandering elsewhere</li>
+                        <li><strong>Mind Focus:</strong> You understand what you're saying and doing</li>
+                        <li><strong>Body Stillness:</strong> Your limbs are calm, not fidgeting or rushing</li>
+                        <li><strong>Soul Submission:</strong> You feel the weight of standing before your Creator</li>
+                        <li><strong>Complete Awareness:</strong> Consciousness of Allah watching you</li>
+                    </ul>
+                </div>
+                
+                <div class="definition-box">
+                    <h3>💭 What Khushu' Feels Like</h3>
+                    <p>When you have khushu', you experience:</p>
+                    <ul>
+                        <li>A sense of awe and reverence—you're speaking to the King of Kings</li>
+                        <li>Fear and hope—fear of Allah's punishment, hope for His mercy</li>
+                        <li>Your heart softens, sometimes even tears flow</li>
+                        <li>The dunya (worldly matters) fades from your mind</li>
+                        <li>Time feels different—the prayer feels shorter when you have khushu'</li>
+                        <li>You don't want the prayer to end</li>
+                        <li>Peace and tranquility fill your heart</li>
+                    </ul>
+                </div>
+                
+                <div class="definition-box">
+                    <h3>⚠️ What Khushu' is NOT</h3>
+                    <ul>
+                        <li><strong>NOT just physical stillness:</strong> You can stand perfectly still but your mind wanders—that's not khushu'</li>
+                        <li><strong>NOT crying:</strong> Some people cry in prayer, others don't. Khushu' is in the heart, not just the tears</li>
+                        <li><strong>NOT slow motion:</strong> Moving extremely slowly doesn't equal khushu'. It's about presence, not speed</li>
+                        <li><strong>NOT automatic:</strong> Repeating movements without understanding or feeling—this is ritual, not khushu'</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="importance-section">
+                <h2>⭐ Why Khushu' Matters So Much ⭐</h2>
+                
+                <div class="importance-grid">
+                    <div class="importance-card">
+                        <div class="icon">📖</div>
+                        <h3>Allah Commands It</h3>
+                        <p>"Guard strictly the prayers, especially the middle prayer, and stand before Allah with khushu'." - Quran 2:238</p>
+                    </div>
+                    
+                    <div class="importance-card">
+                        <div class="icon">🎁</div>
+                        <h3>Determines Your Reward</h3>
+                        <p>The Prophet ﷺ said: "A person may pray and get nothing from it except tiredness." Only the portion of prayer done with awareness is rewarded!</p>
+                    </div>
+                    
+                    <div class="importance-card">
+                        <div class="icon">✨</div>
+                        <h3>Distinguishes Believers</h3>
+                        <p>"Successful indeed are the believers: Those who offer their prayers with khushu'." The FIRST quality of successful believers after faith itself!</p>
+                    </div>
+                    
+                    <div class="importance-card">
+                        <div class="icon">🔥</div>
+                        <h3>Prevents Sins</h3>
+                        <p>"Indeed, prayer prevents immorality and wrongdoing." But only when prayed with khushu'—when your heart is truly connected to Allah.</p>
+                    </div>
+                    
+                    <div class="importance-card">
+                        <div class="icon">❤️</div>
+                        <h3>Brings Peace</h3>
+                        <p>The Prophet ﷺ would say to Bilal: "Give us comfort with it, O Bilal!" (meaning the call to prayer). Prayer with khushu' is rest for the soul.</p>
+                    </div>
+                    
+                    <div class="importance-card">
+                        <div class="icon">⚖️</div>
+                        <h3>Accepted or Rejected</h3>
+                        <p>Scholars say prayer without khushu' is like a body without a soul—it may fulfill the obligation but doesn't bring the fruits and blessings of prayer.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="developing-section">
+                <h2>🌱 How to Develop Khushu' 🌱</h2>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h3>Prepare Before Prayer</h3>
+                    </div>
+                    <p>Khushu' begins before you even say "Allahu Akbar." Your preparation sets the tone for your entire prayer.</p>
+                    <ul>
+                        <li><strong>Make Wudu with Care:</strong> Don't rush it. Remember each part washes away sins. Make it a spiritual cleansing, not just physical.</li>
+                        <li><strong>Clear Your Mind:</strong> Take a moment before prayer to mentally "close the tabs" of worldly thoughts. Tell yourself: "I'm about to stand before Allah."</li>
+                        <li><strong>Arrive Early:</strong> If praying in the masjid, come early. Sit quietly, make dhikr, prepare your heart.</li>
+                        <li><strong>Choose a Clean, Quiet Spot:</strong> Minimize distractions. Pray where you won't be disturbed.</li>
+                        <li><strong>Turn Off Devices:</strong> Completely. Your phone can wait. Allah cannot.</li>
+                        <li><strong>Use the Bathroom:</strong> Empty your bladder so you're not distracted during prayer.</li>
+                    </ul>
+                    <div class="highlight">
+                        The Prophet ﷺ said: "When the time for prayer comes, one of you should not approach it while feeling the urge to relieve himself."
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h3>Remember Who You're Standing Before</h3>
+                    </div>
+                    <p>This is THE key to khushu'. You're not just reciting words—you're speaking to Allah, who sees you, hears you, and is closer to you than your jugular vein.</p>
+                    <ul>
+                        <li><strong>Visualize Allah's Greatness:</strong> Before you start, remind yourself: "Allah is watching me right now."</li>
+                        <li><strong>Remember Death:</strong> This could be your last prayer. Pray as if it's your final conversation with Allah.</li>
+                        <li><strong>Feel His Nearness:</strong> The Prophet ﷺ said: "When you stand in prayer, you are conversing with your Lord."</li>
+                        <li><strong>Know He Responds:</strong> When you recite Al-Fatihah, Allah responds to each line. You're in a dialogue, not a monologue!</li>
+                    </ul>
+                    <div class="highlight">
+                        "Pray the prayer of a person bidding farewell, as if you see Allah; and if you do not see Him, know that He sees you." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h3>Slow Down</h3>
+                    </div>
+                    <p>Rushing through prayer destroys khushu'. Each movement and recitation deserves time and attention.</p>
+                    <ul>
+                        <li><strong>Don't Rush:</strong> Prayer is quality over speed. 2 rak'ahs with khushu' are better than 10 rushed ones.</li>
+                        <li><strong>Pause Between Positions:</strong> Don't go straight from ruku to sujood. Pause. Let your body settle.</li>
+                        <li><strong>Recite Slowly:</strong> Don't race through Quran. Pronounce each word. Taste the words.</li>
+                        <li><strong>Give Each Pillar Its Due:</strong> Complete your ruku, your sujood. Don't peck like a chicken.</li>
+                    </ul>
+                    <div class="highlight">
+                        The Prophet ﷺ warned against "the prayer of the hypocrites"—praying so fast that the forehead barely touches the ground.
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <h3>Lower Your Gaze</h3>
+                    </div>
+                    <p>What you look at directly affects your concentration.</p>
+                    <ul>
+                        <li><strong>Look at the Place of Prostration:</strong> Don't let your eyes wander around the room.</li>
+                        <li><strong>In Tashahhud:</strong> Look at your finger as you point.</li>
+                        <li><strong>Close Your Eyes (if it helps):</strong> Some scholars permit this if it increases khushu', though keeping them open is the Sunnah.</li>
+                        <li><strong>Remove Visual Distractions:</strong> Don't pray facing pictures, TV, mirrors, or busy patterns.</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <h3>Seek Refuge from Shaytan</h3>
+                    </div>
+                    <p>The devil's primary goal is to ruin your salah by whispering distractions.</p>
+                    <ul>
+                        <li><strong>Before Starting:</strong> Say "A'udhu billahi min ash-shaytan ir-rajeem" with meaning and intention.</li>
+                        <li><strong>During Prayer:</strong> If you feel distracted, seek refuge again in your heart.</li>
+                        <li><strong>Know His Tricks:</strong> Shaytan will remind you of things you "forgot" to do, make you think of random things, create physical discomfort—recognize this as his work.</li>
+                    </ul>
+                    <div class="highlight">
+                        The Prophet ﷺ said: "When the call for prayer is made, the devil runs away passing wind so as not to hear the call."
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">6</div>
+                        <h3>Vary Your Recitation</h3>
+                    </div>
+                    <p>Repeating the same verses every prayer can make it mechanical. Mix it up!</p>
+                    <ul>
+                        <li><strong>Memorize Different Surahs:</strong> Don't always recite Al-Ikhlas. Learn Al-Kafirun, Al-Qadr, Al-Takathur, etc.</li>
+                        <li><strong>Recite Verses That Touch Your Heart:</strong> Pick verses that make you reflect on Allah's greatness, Mercy, or the Hereafter.</li>
+                        <li><strong>Understand What You Recite:</strong> Learn the meanings. When you understand, it transforms everything.</li>
+                        <li><strong>Repeat Meaningful Verses:</strong> In voluntary prayers, you can repeat a verse multiple times if it moves you.</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">7</div>
+                        <h3>Perfect Your Prayer's Form</h3>
+                    </div>
+                    <p>Proper physical prayer helps with spiritual presence.</p>
+                    <ul>
+                        <li><strong>Learn the Correct Positions:</strong> Hands placement, back straightness, head position—each detail matters.</li>
+                        <li><strong>Stand Still:</strong> Don't fidget, scratch, adjust your clothes unnecessarily.</li>
+                        <li><strong>Face the Qiblah:</strong> Both physically and with your heart.</li>
+                        <li><strong>Don't Look Around:</strong> Keep your gaze focused.</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">8</div>
+                        <h3>Increase Voluntary Prayers</h3>
+                    </div>
+                    <p>The more you pray, the better your khushu' becomes—it's practice!</p>
+                    <ul>
+                        <li><strong>Pray Sunnah Prayers:</strong> Rawatib (before/after obligatory prayers)</li>
+                        <li><strong>Tahajjud (Night Prayer):</strong> The best time for khushu'—quiet, dark, no distractions</li>
+                        <li><strong>Duha Prayer:</strong> Optional morning prayer</li>
+                        <li><strong>Don't Rush These:</strong> Use voluntary prayers to practice and perfect your khushu'</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">9</div>
+                        <h3>Purify Your Heart Daily</h3>
+                    </div>
+                    <p>Khushu' in prayer reflects the state of your heart outside of prayer.</p>
+                    <ul>
+                        <li><strong>Avoid Major Sins:</strong> Sin hardens the heart and makes khushu' nearly impossible</li>
+                        <li><strong>Repent Regularly:</strong> Tawbah softens the heart</li>
+                        <li><strong>Make Dhikr Throughout the Day:</strong> Constant remembrance of Allah keeps your heart alive</li>
+                        <li><strong>Reduce Distractions Outside Prayer:</strong> Less social media, less music, less haram content = better focus in prayer</li>
+                        <li><strong>Recite Quran Daily:</strong> It purifies the heart and makes you more present</li>
+                    </ul>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-header">
+                        <div class="step-number">10</div>
+                        <h3>Make Du'a for Khushu'</h3>
+                    </div>
+                    <p>Khushu' is a gift from Allah. Ask Him for it!</p>
+                    <ul>
+                        <li><strong>Before Prayer:</strong> "O Allah, help me remember You, thank You, and perfect my worship of You"</li>
+                        <li><strong>In Sujood:</strong> "O Allah, grant me khushu' in my prayer"</li>
+                        <li><strong>After Prayer:</strong> Ask Allah to accept what you just prayed and increase your khushu' next time</li>
+                    </ul>
+                    <div class="highlight">
+                        The Prophet ﷺ used to say: "O Allah, I seek refuge in You from a heart that does not have khushu'."
+                    </div>
+                </div>
+            </div>
+            
+            <div class="understanding-section">
+                <h2>📖 Understanding What You Say in Prayer 📖</h2>
+                
+                <div class="prayer-part">
+                    <h3>🤲 Takbir (Opening)</h3>
+                    <div class="arabic">اللهُ أَكْبَرُ</div>
+                    <div class="translation">Allahu Akbar - Allah is the Greatest</div>
+                    <div class="meaning">
+                        <h4>💭 What This Means:</h4>
+                        <p>You're declaring that Allah is greater than everything—greater than your work, your worries, your phone, your desires. You're mentally leaving the dunya behind and entering a sacred space. When you say this, you're saying: "Nothing matters more than this moment with Allah."</p>
+                    </div>
+                </div>
+                
+                <div class="prayer-part">
+                    <h3>📿 Al-Fatihah (The Opening)</h3>
+                    <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                    <div class="translation">In the name of Allah, the Most Merciful, the Most Compassionate</div>
+                    <div class="meaning">
+                        <p><strong>You're invoking Allah's beautiful names.</strong> You begin with His mercy and compassion—reminding yourself that despite your sins, He is Merciful.</p>
+                    </div>
+                    
+                    <div class="arabic" style="margin-top: 15px;">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
+                    <div class="translation">All praise is due to Allah, Lord of all the worlds</div>
+                    <div class="meaning">
+                        <p><strong>Allah responds:</strong> "My servant has praised Me."<br>
+                        You're acknowledging that EVERYTHING belongs to Allah. He created the universe, He sustains it, He controls it. You praise Him for all blessings.</p>
+                    </div>
+                    
+                    <div class="arabic" style="margin-top: 15px;">الرَّحْمَٰنِ الرَّحِيمِ</div>
+                    <div class="translation">The Most Merciful, the Most Compassionate</div>
+                    <div class="meaning">
+                        <p><strong>Allah responds:</strong> "My servant has extolled Me."<br>
+                        You're repeating His mercy—because you NEED His mercy. Without it, you're lost.</p>
+                    </div>
+                    
+                    <div class="arabic" style="margin-top: 15px;">مَالِكِ يَوْمِ الدِّينِ</div>
+                    <div class="translation">Master of the Day of Judgment</div>
+                    <div class="meaning">
+                        <p><strong>Allah responds:</strong> "My servant has glorified Me."<br>
+                        You're remembering that there's a Day when you'll stand before Him and give account. This should make you tremble and hope simultaneously.</p>
+                    </div>
+                    
+                    <div class="arabic" style="margin-top: 15px;">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div>
+                    <div class="translation">You alone we worship, and You alone we ask for help</div>
+                    <div class="meaning">
+                        <p><strong>Allah responds:</strong> "This is between Me and My servant, and My servant shall have what he asked for."<br>
+                        You're declaring exclusive devotion. No partners, no intermediaries. Just You, O Allah. And you're admitting complete dependence—I can't do anything without Your help.</p>
+                    </div>
+                    
+                    <div class="arabic" style="margin-top: 15px;">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div>
+                    <div class="translation">Guide us to the straight path</div>
+                    <div class="meaning">
+                        <p><strong>Allah responds:</strong> "This is for My servant, and My servant shall have what he asked for."<br>
+                        You're asking for guidance. Not just once—EVERY SINGLE PRAYER, multiple times a day. Because you need constant guidance. The path is narrow; without Allah's help, you'll stray.</p>
+                    </div>
+                    
+                    <div class="arabic" style="margin-top: 15px;">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div>
+                    <div class="translation">The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray</div>
+                    <div class="meaning">
+                        <p>You're asking: Make me like the prophets, the righteous, the martyrs—not like those who knew the truth and rejected it, or those who are lost in ignorance. You're asking for THE most important thing: to die on the right path.</p>
+                    </div>
+                </div>
+                
+                <div class="prayer-part">
+                    <h3>🙇 Ruku (Bowing)</h3>
+                    <div class="arabic">سُبْحَانَ رَبِّيَ الْعَظِيمِ</div>
+                    <div class="translation">Glory be to my Lord, the Most Great</div>
+                    <div class="meaning">
+                        <h4>💭 What This Means:</h4>
+                        <p>You're physically humbling yourself, bowing before the Almighty. You declare His perfection and magnificence. Think: I'm bowing to the One who created galaxies, who holds the universe in His hand. How small I am before Him!</p>
+                    </div>
+                </div>
+                
+                <div class="prayer-part">
+                    <h3>🤲 Rising from Ruku</h3>
+                    <div class="arabic">سَمِعَ اللهُ لِمَنْ حَمِدَهُ</div>
+                    <div class="translation">Allah hears whoever praises Him</div>
+                    <div class="arabic" style="margin-top: 10px;">رَبَّنَا وَلَكَ الْحَمْدُ</div>
+                    <div class="translation">Our Lord, and to You is all praise</div>
+                    <div class="meaning">
+                        <h4>💭 What This Means:</h4>
+                        <p>Allah HEARS you. He's listening to your praise right now. You acknowledge that He deserves all praise—for creating you, sustaining you, guiding you, forgiving you.</p>
+                    </div>
+                </div>
+                
+                <div class="prayer-part">
+                    <h3>🙏 Sujood (Prostration)</h3>
+                    <div class="arabic">سُبْحَانَ رَبِّيَ الْأَعْلَى</div>
+                    <div class="translation">Glory be to my Lord, the Most High</div>
+                    <div class="meaning">
+                        <h4>💭 What This Means:</h4>
+                        <p>This is the CLOSEST you are to Allah—your forehead on the ground, the most humble position a human can take. You declare His Highness while you're at your lowest. This is the position where du'a is most accepted. Feel the honor of this moment!</p>
+                    </div>
+                </div>
+                
+                <div class="prayer-part">
+                    <h3>☝️ Tashahhud</h3>
+                    <div class="arabic">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ</div>
+                    <div class="translation">All greetings of humility are for Allah, and all prayers and goodness. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah.</div>
+                    <div class="meaning">
+                        <h4>💭 What This Means:</h4>
+                        <p>You're greeting the Prophet ﷺ as if he's present. You're connecting to the entire brotherhood of believers—past, present, and future. You're part of a global ummah united in worship.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="distractions-section">
+                <h2>🚫 Avoiding Distractions 🚫</h2>
+                
+                <div class="distraction-grid">
+                    <div class="distraction-item">
+                        <h3><span class="icon">💭</span> Mental Wandering</h3>
+                        <p class="problem">❌ The Problem: Your mind drifts to work, shopping lists, arguments, plans, random thoughts.</p>
+                        <div class="solution">
+                            <h4>✅ Solutions:</h4>
+                            <ul>
+                                <li><strong>Catch and redirect:</strong> When you notice your mind wandering, gently bring it back. Don't get frustrated—just refocus.</li>
+                                <li><strong>Understand what you're saying:</strong> If you know the meaning, your mind engages more.</li>
+                                <li><strong>Visualize the words:</strong> When you say "Lord of the worlds," think of the vastness of creation.</li>
+                                <li><strong>Pause between verses:</strong> Don't rush. Give your brain time to process.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="distraction-item">
+                        <h3><span class="icon">📱</span> External Distractions</h3>
+                        <p class="problem">❌ The Problem: Phone notifications, people talking, TV sounds, visual distractions in the room.</p>
+                        <div class="solution">
+                            <h4>✅ Solutions:</h4>
+                            <ul>
+                                <li><strong>Turn off ALL devices:</strong> Not silent mode—OFF. Or leave them in another room.</li>
+                                <li><strong>Choose a quiet spot:</strong> Away from noise and movement.</li>
+                                <li><strong>Use a sutrah (barrier):</strong> Something in front of you so people don't walk by.</li>
+                                <li><strong>Pray facing a blank wall:</strong> Not toward busy patterns, mirrors, or windows with views.</li>
+                                <li><strong>In the masjid:</strong> Come early for a spot with fewer distractions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="distraction-item">
+                        <h3><span class="icon">🏃</span> Rushing</h3>
+                        <p class="problem">❌ The Problem: You're praying fast to "get it over with" because you have things to do.</p>
+                        <div class="solution">
+                            <h4>✅ Solutions:</h4>
+                            <ul>
+                                <li><strong>Change your mindset:</strong> Prayer isn't an interruption of your day—it's the PURPOSE of your day.</li>
+                                <li><strong>Schedule around prayer:</strong> Not prayer around your schedule.</li>
+                                <li><strong>Remember the scales:</strong> What's 10 minutes of your time compared to eternity?</li>
+                                <li><strong>Quality over speed:</strong> 2 slow rak'ahs beat 4 rushed ones.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="distraction-item">
+                        <h3><span class="icon">😴</span> Physical Discomfort or Sleepiness</h3>
+                        <p class="problem">❌ The Problem: You're too tired, hungry, need the bathroom, uncomfortable clothing.</p>
+                        <div class="solution">
+                            <h4>✅ Solutions:</h4>
+                            <ul>
+                                <li><strong>Get enough sleep:</strong> Especially for Fajr. Sleep early.</li>
+                                <li><strong>Eat moderately:</strong> Don't pray on an empty stomach or overly full.</li>
+                                <li><strong>Use the bathroom first:</strong> Even if you don't feel urgent—go anyway.</li>
+                                <li><strong>Wear comfortable clothes:</strong> Not too tight, not too loose, appropriate length.</li>
+                                <li><strong>For Fajr specifically:</strong> Splash water on your face, do light movement to wake up.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="distraction-item">
+                        <h3><span class="icon">😈</span> Shaytan's Whispers</h3>
+                        <p class="problem">❌ The Problem: The devil actively tries to ruin your prayer with random thoughts, doubts, or making you forget.</p>
+                        <div class="solution">
+                            <h4>✅ Solutions:</h4>
+                            <ul>
+                                <li><strong>Recognize it as his work:</strong> That random thought about groceries? That's Shaytan.</li>
+                                <li><strong>Seek refuge:</strong> "A'udhu billahi min ash-shaytan ir-rajeem" (even mentally during prayer).</li>
+                                <li><strong>Don't engage:</strong> Don't start mentally arguing with the whisper—just dismiss it and refocus.</li>
+                                <li><strong>Spit lightly to your left:</strong> Three times (as taught by the Prophet ﷺ when Shaytan whispers).</li>
+                                <li><strong>Increase your dhikr outside prayer:</strong> The more you remember Allah daily, the less power Shaytan has over you.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="distraction-item">
+                        <h3><span class="icon">🔄</span> Mechanical Repetition</h3>
+                        <p class="problem">❌ The Problem: You've prayed so many times that it's just automatic movements without thought.</p>
+                        <div class="solution">
+                            <h4>✅ Solutions:</h4>
+                            <ul>
+                                <li><strong>Vary your recitation:</strong> Different surahs, different verses.</li>
+                                <li><strong>Study what you recite:</strong> Learn tafsir (explanation) of the surahs you pray with.</li>
+                                <li><strong>Imagine this is your first prayer:</strong> Or your last. Pray like a beginner who's amazed by the honor.</li>
+                                <li><strong>Focus on one aspect each prayer:</strong> Today focus on sujood. Tomorrow on understanding Al-Fatihah. Build gradually.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="journey-section">
+                <h2>🌙 The Spiritual Journey Through Salah 🌙</h2>
+                
+                <div class="journey-timeline">
+                    <div class="journey-step">
+                        <h3>1️⃣ Standing Before the King</h3>
+                        <p><strong>Takbir:</strong> You leave the dunya behind. "Allahu Akbar"—nothing is greater than this moment.</p>
+                        <p><strong>Feel:</strong> Awe, reverence, slight fear. You're about to speak to the Creator of everything.</p>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <h3>2️⃣ The Conversation Begins</h3>
+                        <p><strong>Al-Fatihah:</strong> You speak, Allah responds. You praise Him, He acknowledges. You ask for guidance, He promises to answer.</p>
+                        <p><strong>Feel:</strong> Intimacy, hope. The Almighty is responding to YOU, personally.</p>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <h3>3️⃣ Listening to His Words</h3>
+                        <p><strong>Quran Recitation:</strong> After your request, you recite His Book—His words to you. It's like reading a letter from your Beloved.</p>
+                        <p><strong>Feel:</strong> Love, attentiveness. Every verse is guidance, mercy, warning, promise.</p>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <h3>4️⃣ Submitting in Humility</h3>
+                        <p><strong>Ruku:</strong> You bow before His Greatness. Your back bends in humility. "Glory to my Lord, the Most Great."</p>
+                        <p><strong>Feel:</strong> Your own smallness before His magnificence.</p>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <h3>5️⃣ Rising in Gratitude</h3>
+                        <p><strong>Standing After Ruku:</strong> He hears your praise. You thank Him—for everything.</p>
+                        <p><strong>Feel:</strong> Gratitude flooding your heart. So many blessings you can't even count them.</p>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <h3>6️⃣ The Closest Point</h3>
+                        <p><strong>Sujood:</strong> Your forehead touches the earth—the lowest physical position, but the highest spiritual station. "Glory to my Lord, the Most High."</p>
+                        <p><strong>Feel:</strong> Complete submission. Peace. This is where you're closest to Allah. Make your most sincere du'a here.</p>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <h3>7️⃣ Sitting in Reflection</h3>
+                        <p><strong>Tashahhud:</strong> You testify to Allah's Oneness and the Prophet's message. You greet the Prophet ﷺ and all righteous servants.</p>
+                        <p><strong>Feel:</strong> Unity with the global Ummah, connection to the Prophet ﷺ, reaffirmation of faith.</p>
+                    </div>
+                    
+                    <div class="journey-step">
+                        <h3>8️⃣ Returning to the World</h3>
+                        <p><strong>Tasleem:</strong> "Peace be upon you..." You end the prayer, but the effects should remain with you.</p>
+                        <p><strong>Feel:</strong> Refreshed, spiritually charged, ready to face the world with renewed purpose.</p>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin-top: 25px;">
+                    <h3 style="margin-bottom: 15px;">💎 The Transformation</h3>
+                    <p style="line-height: 1.6;">Prayer with khushu' is not just a ritual—it's a spiritual ascension. You entered as a servant burdened by the dunya; you leave as a soul that has conversed with its Creator. The Prophet ﷺ called it Mi'raj (ascension) because prayer is your journey upward to Allah, just as his Mi'raj was his physical and spiritual ascension.</p>
+                </div>
+            </div>
+            
+            <div class="practical-section">
+                <h2>💡 Practical Daily Tips 💡</h2>
+                
+                <div class="practical-grid">
+                    <div class="practical-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Start with One Prayer</h4>
+                            <p>Don't try to perfect all five prayers at once. Pick one (maybe Fajr or Isha when you're less rushed) and really focus on khushu' in that prayer. Once it becomes habit, add another.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Set Alarms Early</h4>
+                            <p>Give yourself 10 minutes before prayer time to prepare mentally and physically. Rushing kills khushu'.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Learn One New Meaning Per Week</h4>
+                            <p>Study the translation and tafsir of one verse or du'a from your prayer each week. Deep understanding builds khushu'.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Use Prayer Beads for Counting</h4>
+                            <p>For dhikr after prayer. This keeps your hands busy (less fidgeting) and helps you focus.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Create a Prayer Corner</h4>
+                            <p>A specific clean, quiet place just for prayer. Your mind will associate this spot with khushu'.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Pray with Others When Possible</h4>
+                            <p>Congregation helps with focus. The imam's recitation, the unity, the atmosphere—all aid khushu'.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Journal Your Progress</h4>
+                            <p>After each prayer, mentally rate your khushu' (1-10). Track patterns. What helps? What hurts? Adjust accordingly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Make It Personal</h4>
+                            <p>In sujood, pour out your heart to Allah in your own words (after the required dhikr). This creates emotional connection.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">9</div>
+                        <div class="content">
+                            <h4>Don't Give Up!</h4>
+                            <p>Some days will be better than others. Shaytan works hard to ruin your salah. Keep trying. Each prayer is a new chance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">10</div>
+                        <div class="content">
+                            <h4>Remember the End Goal</h4>
+                            <p>This isn't about perfection—it's about connection. You're building a relationship with Allah, one prayer at a time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>✨ Final Reminder ✨</h2>
+                <p>Khushu' is a journey, not a destination. Even the Prophet ﷺ worked on his concentration in prayer throughout his life. Some prayers will feel spiritually elevated; others will be a struggle. What matters is that you keep trying, keep improving, keep coming back to Allah five times a day. Each prayer with khushu' is like a seed planted in Paradise. Water those seeds daily, and watch your garden grow.<br><br>
+                "Indeed, prayer prohibits immorality and wrongdoing, and the remembrance of Allah is greater." - Quran 29:45</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah grant us khushu' in our prayers and make salah the coolness of our eyes. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Manners and Etiquette (Adab)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #8e44ad;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #8e44ad;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .hadith {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .adab-section {
+            margin: 40px 0;
+        }
+        
+        .adab-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .adab-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .adab-box h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .adab-box .icon {
+            font-size: 1.5em;
+        }
+        
+        .adab-box .dua-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .adab-box .dua-box .arabic {
+            color: #8e44ad;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        
+        .adab-box .dua-box .transliteration {
+            color: #2d3748;
+            margin-bottom: 5px;
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .adab-box .dua-box .translation {
+            color: #4a5568;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .adab-box ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .adab-box .etiquette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .adab-box .etiquette-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .adab-box .etiquette-item h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .adab-box .etiquette-item p {
+            color: #4a5568;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+        
+        .speech-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .speech-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .speech-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .speech-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        
+        .speech-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .speech-item p {
+            line-height: 1.6;
+        }
+        
+        .relations-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .relations-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .relations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+        }
+        
+        .relation-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .relation-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .relation-card ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .appearance-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .appearance-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .appearance-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .appearance-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .appearance-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .appearance-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .appearance-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .masjid-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .masjid-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .masjid-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .masjid-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .masjid-item .number {
+            background: rgba(255,255,255,0.3);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .masjid-item .content h4 {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .masjid-item .content p {
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        .learning-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .learning-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .learning-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .learning-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .learning-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .learning-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .prophet-section {
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .prophet-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .prophet-box {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .prophet-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .prophet-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .prophet-box ul {
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .relations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Islamic Manners and Etiquette</h1>
+            <div class="arabic">الأدب الإسلامي</div>
+            <div class="arabic" style="font-size: 1.3em;">Adab</div>
+            <div class="hadith">
+                "I was only sent to perfect good character."<br>
+                <strong>- Prophet Muhammad ﷺ (Al-Muwatta)</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>✨ The Essence of Islam is Good Character ✨</h2>
+                <p>Adab (Islamic etiquette and manners) is not just about outward behavior—it's a reflection of your faith, character, and relationship with Allah. Every action, from how you greet someone to how you enter your home, is an opportunity for worship when done with the right intention and according to the Sunnah.</p>
+            </div>
+            
+            <div class="adab-section">
+                <h2>👋 Greeting and Shaking Hands 👋</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🤝</span> The Islamic Greeting</h3>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</div>
+                        <div class="transliteration">As-salamu alaikum wa rahmatullahi wa barakatuh</div>
+                        <div class="translation">"Peace be upon you, and the mercy of Allah and His blessings"</div>
+                    </div>
+                    
+                    <h4 style="color: #2d3748; margin: 15px 0 10px 0;">Etiquette of Greeting:</h4>
+                    <ul>
+                        <li><strong>Initiate salam:</strong> The one riding greets the one walking, the one walking greets the one sitting, the smaller group greets the larger group, the young greet the elders</li>
+                        <li><strong>Respond is obligatory:</strong> Returning the greeting is wajib (obligatory). At minimum say "Wa alaikum assalam"</li>
+                        <li><strong>Better response:</strong> The Prophet ﷺ said to respond with better or equal. If someone says "Assalamu alaikum," you say "Wa alaikum assalam wa rahmatullahi wa barakatuh"</li>
+                        <li><strong>Greet everyone:</strong> Greet those you know and those you don't know</li>
+                        <li><strong>Greet when entering and leaving:</strong> Say salam when entering a gathering and when leaving</li>
+                        <li><strong>Smile:</strong> Greet with a cheerful, smiling face—it's charity!</li>
+                    </ul>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🤝</span> Shaking Hands</h3>
+                    <p style="color: #4a5568; line-height: 1.6; margin-bottom: 15px;">The Prophet ﷺ said: "When two Muslims meet and shake hands, they are forgiven before they part."</p>
+                    
+                    <div class="etiquette-grid">
+                        <div class="etiquette-item">
+                            <h4>✅ Shake with Right Hand</h4>
+                            <p>Always use the right hand when shaking hands. The right hand is for noble acts.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>✅ Firm but Gentle</h4>
+                            <p>Not too soft (shows weakness) nor too hard (shows aggression). Balanced and respectful.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>✅ With Warmth</h4>
+                            <p>Show genuine warmth and sincerity. The Prophet's ﷺ handshake was warm and he didn't pull away first.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>❌ Non-Mahram</h4>
+                            <p>Men and women who are not mahram to each other should not shake hands.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>🏠 Entering and Leaving the Home 🏠</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🚪</span> Entering Your Home</h3>
+                    
+                    <div class="etiquette-grid">
+                        <div class="etiquette-item">
+                            <h4>1️⃣ Right Foot First</h4>
+                            <p>Step in with your right foot when entering.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>2️⃣ Say Bismillah</h4>
+                            <p>Say "Bismillah" when entering.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>3️⃣ Give Salam</h4>
+                            <p>Greet your family with "Assalamu alaikum" even if no one is home.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>4️⃣ Make Du'a</h4>
+                            <p>The Prophet ﷺ would make du'a when entering.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا</div>
+                        <div class="transliteration">Bismillahi walajna, wa bismillahi kharajna, wa 'ala Allahi rabbina tawakkalna</div>
+                        <div class="translation">"In the name of Allah we enter, in the name of Allah we leave, and upon Allah our Lord we depend"</div>
+                    </div>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">👋</span> Leaving Your Home</h3>
+                    
+                    <div class="etiquette-grid">
+                        <div class="etiquette-item">
+                            <h4>1️⃣ Left Foot First</h4>
+                            <p>Step out with your left foot when leaving.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>2️⃣ Say Bismillah</h4>
+                            <p>Begin with "Bismillah" when leaving.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>3️⃣ Make Du'a</h4>
+                            <p>Ask Allah for protection and guidance outside.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ، لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ</div>
+                        <div class="transliteration">Bismillah, tawakkaltu 'ala Allah, la hawla wa la quwwata illa billah</div>
+                        <div class="translation">"In the name of Allah, I place my trust in Allah; there is no might nor power except with Allah"</div>
+                    </div>
+                    
+                    <p style="color: #4a5568; line-height: 1.6; margin-top: 15px; background: white; padding: 15px; border-radius: 10px;">
+                        <strong>The Prophet ﷺ said:</strong> "When a person says this (the above du'a) upon leaving his home, it will be said to him: 'You are guided, defended and protected.' The devils will move away from him."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>🍽️ Eating and Drinking Etiquette 🍽️</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🍴</span> Before Eating</h3>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">بِسْمِ اللَّهِ</div>
+                        <div class="transliteration">Bismillah</div>
+                        <div class="translation">"In the name of Allah"</div>
+                    </div>
+                    
+                    <p style="color: #4a5568; margin-top: 10px;"><strong>If you forget to say Bismillah at the beginning:</strong></p>
+                    <div class="dua-box">
+                        <div class="arabic">بِسْمِ اللَّهِ أَوَّلَهُ وَآخِرَهُ</div>
+                        <div class="transliteration">Bismillahi awwalahu wa akhirahu</div>
+                        <div class="translation">"In the name of Allah, at its beginning and at its end"</div>
+                    </div>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🍽️</span> While Eating</h3>
+                    <ul>
+                        <li><strong>Eat with your right hand:</strong> The Prophet ﷺ said: "The devil eats with his left hand and drinks with his left hand"</li>
+                        <li><strong>Eat from what is in front of you:</strong> Don't reach across the dish unless it's mixed food or fruit</li>
+                        <li><strong>Take small bites:</strong> Don't stuff your mouth. Chew properly</li>
+                        <li><strong>Don't blow on hot food:</strong> Wait for it to cool naturally</li>
+                        <li><strong>Don't criticize the food:</strong> The Prophet ﷺ never criticized food. If he liked it, he ate; if not, he left it</li>
+                        <li><strong>Eat moderately:</strong> Don't overeat. Fill 1/3 with food, 1/3 with water, 1/3 with air</li>
+                        <li><strong>Don't recline while eating:</strong> The Prophet ﷺ sat upright</li>
+                        <li><strong>Clean up fallen food:</strong> Remove any harm from it and eat it (don't waste)</li>
+                    </ul>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🥤</span> Drinking Etiquette</h3>
+                    <ul>
+                        <li><strong>Say Bismillah before drinking</strong></li>
+                        <li><strong>Drink with your right hand</strong></li>
+                        <li><strong>Drink while sitting:</strong> The Prophet ﷺ forbade drinking while standing (except when necessary)</li>
+                        <li><strong>Drink in three breaths:</strong> Remove the cup from your mouth, breathe outside the cup, then drink again. Do this three times</li>
+                        <li><strong>Don't breathe into the vessel:</strong> Take it away from your mouth to breathe</li>
+                        <li><strong>Don't drink directly from a large container:</strong> Pour into a glass/cup</li>
+                    </ul>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🤲</span> After Eating</h3>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ</div>
+                        <div class="transliteration">Alhamdulillah alladhi at'amana wa saqana wa ja'alana muslimeen</div>
+                        <div class="translation">"All praise is due to Allah who has fed us and given us drink and made us Muslims"</div>
+                    </div>
+                    
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Lick your fingers:</strong> The Prophet ﷺ said: "When one of you eats, let him lick his fingers, for he does not know in which part of the food the blessing is"</li>
+                        <li><strong>Clean the dish:</strong> Wipe it clean with a piece of bread or your fingers</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>🚽 Bathroom Etiquette 🚽</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🚻</span> Entering the Bathroom</h3>
+                    
+                    <div class="etiquette-grid">
+                        <div class="etiquette-item">
+                            <h4>1️⃣ Left Foot First</h4>
+                            <p>Enter with your left foot (opposite of entering clean places).</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>2️⃣ Say the Du'a</h4>
+                            <p>Seek Allah's protection from evil spirits.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>3️⃣ Remove Anything with Allah's Name</h4>
+                            <p>Don't take Quran, Islamic books, or items with Allah's name inside.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">بِسْمِ اللَّهِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ</div>
+                        <div class="transliteration">Bismillah, Allahumma inni a'udhu bika minal khubthi wal khaba'ith</div>
+                        <div class="translation">"In the name of Allah. O Allah, I seek refuge in You from male and female evil spirits"</div>
+                    </div>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">📜</span> Inside the Bathroom</h3>
+                    <ul>
+                        <li><strong>Don't talk:</strong> No speaking inside unless absolutely necessary</li>
+                        <li><strong>Don't make dhikr or recite Quran:</strong> This is not the place for remembrance of Allah</li>
+                        <li><strong>Use left hand for istinja (cleaning):</strong> Never use the right hand</li>
+                        <li><strong>Don't face or turn back to Qiblah:</strong> When relieving yourself</li>
+                        <li><strong>Sit if possible:</strong> Don't urinate while standing unless necessary</li>
+                        <li><strong>Be clean and thorough:</strong> Make sure no impurity remains</li>
+                        <li><strong>Use water for cleaning:</strong> Istinja with water is more thorough and cleaner</li>
+                    </ul>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">👋</span> Leaving the Bathroom</h3>
+                    
+                    <div class="etiquette-grid">
+                        <div class="etiquette-item">
+                            <h4>1️⃣ Right Foot First</h4>
+                            <p>Exit with your right foot.</p>
+                        </div>
+                        
+                        <div class="etiquette-item">
+                            <h4>2️⃣ Say the Du'a</h4>
+                            <p>Thank Allah for the blessing of being clean.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">غُفْرَانَكَ</div>
+                        <div class="transliteration">Ghufranaka</div>
+                        <div class="translation">"I seek Your forgiveness"</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>😴 Sleeping and Waking Up 😴</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🌙</span> Before Sleep</h3>
+                    
+                    <ul>
+                        <li><strong>Perform wudu:</strong> Sleep in a state of purity</li>
+                        <li><strong>Sleep on your right side:</strong> The Prophetic position</li>
+                        <li><strong>Place right hand under right cheek</strong></li>
+                        <li><strong>Face the Qiblah if possible</strong></li>
+                        <li><strong>Make dhikr and du'a</strong></li>
+                        <li><strong>Recite Ayat al-Kursi:</strong> For protection throughout the night</li>
+                        <li><strong>Recite the last three Surahs:</strong> Al-Ikhlas, Al-Falaq, An-Nas (three times each), blow on hands, wipe over body</li>
+                        <li><strong>Recite Surah Al-Mulk:</strong> It intercedes for its reciter</li>
+                    </ul>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا</div>
+                        <div class="transliteration">Bismika Allahumma amutu wa ahya</div>
+                        <div class="translation">"In Your name, O Allah, I die and I live"</div>
+                    </div>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ، وَوَجَّهْتُ وَجْهِي إِلَيْكَ، وَفَوَّضْتُ أَمْرِي إِلَيْكَ، وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ، رَغْبَةً وَرَهْبَةً إِلَيْكَ، لاَ مَلْجَأَ وَلاَ مَنْجَا مِنْكَ إِلاَّ إِلَيْكَ، آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ، وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ</div>
+                        <div class="translation" style="margin-top: 10px;">"O Allah, I submit myself to You, I turn my face to You, I entrust my affairs to You, and I rely upon You for support, out of desire for You and fear of You. There is no refuge nor escape from You except to You. I believe in Your Book that You revealed, and Your Prophet whom You sent."</div>
+                    </div>
+                </div>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🌅</span> Upon Waking Up</h3>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ</div>
+                        <div class="transliteration">Alhamdulillah alladhi ahyana ba'da ma amatana wa ilayhin nushur</div>
+                        <div class="translation">"All praise is to Allah who gave us life after death and to Him is the resurrection"</div>
+                    </div>
+                    
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Wipe your face:</strong> Remove sleepiness</li>
+                        <li><strong>Look at the sky and recite specific verses:</strong> Last verses of Surah Al-Imran</li>
+                        <li><strong>Perform wudu:</strong> Start the day in purity</li>
+                        <li><strong>Use the siwak/miswak:</strong> Clean your teeth</li>
+                        <li><strong>Thank Allah for waking you up:</strong> Not everyone who slept woke up</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>🏥 Visiting the Sick 🏥</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">❤️</span> Etiquette of Visiting</h3>
+                    <ul>
+                        <li><strong>Visit promptly:</strong> Don't delay when you hear someone is sick</li>
+                        <li><strong>Choose appropriate time:</strong> Not too early or late, and not when they need rest</li>
+                        <li><strong>Keep visit short:</strong> Unless they specifically want you to stay longer</li>
+                        <li><strong>Sit near their head:</strong> Not at their feet</li>
+                        <li><strong>Make du'a for them:</strong> The sick person's du'a and the visitor's du'a are both accepted</li>
+                        <li><strong>Be cheerful and optimistic:</strong> Give them hope and comfort</li>
+                        <li><strong>Don't talk about death:</strong> Unless they bring it up</li>
+                        <li><strong>Offer practical help:</strong> Ask if they need anything (food, errands, company)</li>
+                    </ul>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">أَسْأَلُ اللَّهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ</div>
+                        <div class="transliteration">As'alullaha al-'Adheem Rabbal 'Arshil 'Adheem an yashfeek</div>
+                        <div class="translation">"I ask Allah the Almighty, Lord of the Mighty Throne, to cure you" (say 7 times)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>👥 Attending Gatherings 👥</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🪑</span> Gathering Etiquette</h3>
+                    <ul>
+                        <li><strong>Give salam when entering:</strong> Greet everyone in the gathering</li>
+                        <li><strong>Ask permission to sit:</strong> Don't just sit down without acknowledgment</li>
+                        <li><strong>Sit where there's space:</strong> Don't squeeze between two people without permission</li>
+                        <li><strong>Don't make people stand for you:</strong> The Prophet ﷺ disliked this</li>
+                        <li><strong>Make space for others:</strong> "Make room, Allah will make room for you"</li>
+                        <li><strong>Don't whisper:</strong> When three are present, don't whisper to one—it hurts the third</li>
+                        <li><strong>Listen attentively:</strong> Don't interrupt when others are speaking</li>
+                        <li><strong>Don't monopolize conversation:</strong> Give others a chance to speak</li>
+                        <li><strong>Lower your voice:</strong> Don't be the loudest in the room</li>
+                        <li><strong>Don't speak about what you don't know</strong></li>
+                        <li><strong>Give salam when leaving:</strong> Don't just slip out</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>✈️ Traveling Etiquette ✈️</h2>
+                
+                <div class="adab-box">
+                    <h3><span class="icon">🧳</span> Before and During Travel</h3>
+                    
+                    <div class="dua-box">
+                        <div class="arabic">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ</div>
+                        <div class="transliteration">Subhanal ladhi sakhkhara lana hadha wa ma kunna lahu muqrineen, wa inna ila rabbina lamunqalibun</div>
+                        <div class="translation">"Glory to Him who has subjected this to us, and we could never have it (by our efforts). And to our Lord, surely, we are returning."</div>
+                    </div>
+                    
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Make istikhara:</strong> Seek Allah's guidance on your journey</li>
+                        <li><strong>Appoint a leader:</strong> The Prophet ﷺ said when three travel, they should appoint one as leader</li>
+                        <li><strong>Travel in groups:</strong> Safer and more rewarding</li>
+                        <li><strong>Pray on time:</strong> Combine/shorten prayers as permitted when traveling</li>
+                        <li><strong>Be kind to travel companions:</strong> Patient, helpful, cheerful</li>
+                        <li><strong>Return quickly:</strong> Don't prolong the journey unnecessarily</li>
+                        <li><strong>Bring gifts for family:</strong> The Prophet ﷺ encouraged this</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="speech-section">
+                <h2>🗣️ Speaking: The Tongue 🗣️</h2>
+                
+                <div class="speech-grid">
+                    <div class="speech-item">
+                        <h3>✅ Good Speech</h3>
+                        <p>"Whoever believes in Allah and the Last Day, let him speak good or remain silent." - Prophet ﷺ</p>
+                        <ul style="padding-left: 25px; margin-top: 10px; line-height: 1.8;">
+                            <li>Speak the truth even if it's bitter</li>
+                            <li>Use kind and gentle words</li>
+                            <li>Speak clearly and directly (no vague hints)</li>
+                            <li>Lower your voice—loudness isn't strength</li>
+                            <li>Think before you speak</li>
+                            <li>Praise people for good deeds</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="speech-item">
+                        <h3>❌ Harmful Speech to Avoid</h3>
+                        <ul style="padding-left: 25px; line-height: 1.8;">
+                            <li><strong>Lying:</strong> Major sin, even small "white lies"</li>
+                            <li><strong>Backbiting (Gheebah):</strong> Mentioning what your brother dislikes behind his back</li>
+                            <li><strong>Slander (Buhtan):</strong> Saying falsehood about someone</li>
+                            <li><strong>Tale-bearing (Nameemah):</strong> Carrying gossip to cause harm</li>
+                            <li><strong>Mocking/Ridiculing:</strong> Making fun of others</li>
+                            <li><strong>Cursing/Vulgarity:</strong> The Prophet ﷺ never used foul language</li>
+                            <li><strong>Arguing for the sake of arguing:</strong> Debating just to win</li>
+                            <li><strong>Excessive speech:</strong> Talking too much without benefit</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="speech-item">
+                        <h3>🎯 Controlling Your Tongue</h3>
+                        <p style="margin-bottom: 10px;">"Whoever guarantees me what is between his jaws and what is between his legs, I guarantee him Paradise." - Prophet ﷺ</p>
+                        <ul style="padding-left: 25px; line-height: 1.8;">
+                            <li>The tongue can throw you into Hellfire</li>
+                            <li>Every word is recorded by angels</li>
+                            <li>You'll be held accountable for your speech</li>
+                            <li>Before speaking, ask: Is it true? Is it kind? Is it necessary?</li>
+                            <li>Silence is safety—when in doubt, stay quiet</li>
+                            <li>Make dhikr to busy your tongue with good</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relations-section">
+                <h2>👴👶 Dealing with Elders and Children 👴👶</h2>
+                
+                <div class="relations-grid">
+                    <div class="relation-card">
+                        <h3>🧓 Respecting Elders</h3>
+                        <ul>
+                            <li><strong>Stand for them:</strong> Show respect when they enter</li>
+                            <li><strong>Address them respectfully:</strong> Use titles, don't call by first name</li>
+                            <li><strong>Let them speak first:</strong> Don't interrupt or speak over them</li>
+                            <li><strong>Walk behind them:</strong> Not ahead unless guiding</li>
+                            <li><strong>Help them:</strong> Assist with physical tasks</li>
+                            <li><strong>Seek their advice:</strong> Value their wisdom and experience</li>
+                            <li><strong>Never raise your voice to them</strong></li>
+                            <li><strong>Visit them regularly:</strong> Check on their wellbeing</li>
+                            <li><strong>Make du'a for them</strong></li>
+                        </ul>
+                        <p style="margin-top: 15px; background: #f7fafc; padding: 15px; border-radius: 10px; color: #4a5568; font-weight: 600;">
+                            "He is not one of us who does not show mercy to our young ones and respect to our elders." - Prophet ﷺ
+                        </p>
+                    </div>
+                    
+                    <div class="relation-card">
+                        <h3>👶 Being Kind to Children</h3>
+                        <ul>
+                            <li><strong>Greet them:</strong> Say salam to children too</li>
+                            <li><strong>Show affection:</strong> The Prophet ﷺ kissed children, played with them</li>
+                            <li><strong>Be patient with them:</strong> Don't get easily annoyed</li>
+                            <li><strong>Listen to them:</strong> Their concerns are important to them</li>
+                            <li><strong>Teach gently:</strong> Not harshly or impatiently</li>
+                            <li><strong>Play with them:</strong> The Prophet ﷺ raced with Aisha, let children ride on his back</li>
+                            <li><strong>Don't embarrass them:</strong> Correct privately</li>
+                            <li><strong>Make du'a for them</strong></li>
+                            <li><strong>Be a good role model:</strong> They learn by watching</li>
+                        </ul>
+                        <p style="margin-top: 15px; background: #f7fafc; padding: 15px; border-radius: 10px; color: #4a5568; font-weight: 600;">
+                            The Prophet ﷺ would shorten his prayer when he heard a baby crying, showing mercy to the mother.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="appearance-section">
+                <h2>👔 Dress and Appearance 👔</h2>
+                
+                <div class="appearance-grid">
+                    <div class="appearance-item">
+                        <div class="icon">🧼</div>
+                        <div class="content">
+                            <h4>Cleanliness and Hygiene</h4>
+                            <p>Cleanliness is half of faith. Maintain personal hygiene: bathe regularly, use miswak/toothbrush, clip nails, remove unwanted hair, wear clean clothes, use pleasant (not strong) perfume.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="appearance-item">
+                        <div class="icon">👗</div>
+                        <div class="content">
+                            <h4>Modesty in Dress</h4>
+                            <p>Both men and women must dress modestly. Cover your 'awrah (private parts). For men: navel to knee minimum. For women: everything except face and hands in presence of non-mahram. Avoid tight, transparent, or revealing clothing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="appearance-item">
+                        <div class="icon">✂️</div>
+                        <div class="content">
+                            <h4>Grooming</h4>
+                            <p>Keep hair and beard neat and clean. The Prophet ﷺ kept his hair to his shoulders or earlobes, combed it, and applied oil. Men are encouraged to keep beards and trim mustaches.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="appearance-item">
+                        <div class="icon">👔</div>
+                        <div class="content">
+                            <h4>Appropriate for the Occasion</h4>
+                            <p>Dress appropriately for different occasions. For Jumu'ah and Eid, wear your best clothes. For work, dress professionally. The Prophet ﷺ had special clothes for special occasions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="appearance-item">
+                        <div class="icon">🚫</div>
+                        <div class="content">
+                            <h4>What to Avoid</h4>
+                            <p>For men: Don't wear gold or silk. Don't let garments hang below the ankles out of pride. For women: Don't imitate men in dress. Both: Don't wear clothing with haram symbols, offensive images, or that imitates other religions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="appearance-item">
+                        <div class="icon">🤲</div>
+                        <div class="content">
+                            <h4>Gratitude for Clothing</h4>
+                            <p>When wearing new clothes, thank Allah and make du'a: "Alhamdulillah alladhi kasani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah" - All praise to Allah who clothed me with this and provided it without any might or power from me.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="masjid-section">
+                <h2>🕌 Using the Masjid 🕌</h2>
+                
+                <div class="masjid-grid">
+                    <div class="masjid-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Enter with Right Foot</h4>
+                            <p>Step in with your right foot and say: "Allahumma iftah li abwaba rahmatika" - O Allah, open for me the doors of Your mercy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="masjid-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Pray Tahiyyat al-Masjid</h4>
+                            <p>Pray two rak'at (greeting of the masjid) before sitting down.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="masjid-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Keep Clean and Fragrant</h4>
+                            <p>Don't come to the masjid with bad breath (from garlic/onions) or body odor. Wear clean clothes and use pleasant scent.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="masjid-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Maintain Silence</h4>
+                            <p>The masjid is for worship and dhikr, not for loud conversations or worldly talk. Speak quietly if necessary.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="masjid-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>No Eating Strong-Smelling Food</h4>
+                            <p>Don't bring food that smells to the masjid. Respect the sanctity of the space and those praying.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="masjid-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Don't Cross in Front of Someone Praying</h4>
+                            <p>Wait or go around. If someone tries to pass in front of you while you're praying, use a sutrah (barrier) in front of you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="masjid-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Children in the Masjid</h4>
+                            <p>Bring children but teach them masjid etiquette. Don't let them run around, scream, or disturb others. The Prophet ﷺ allowed children but taught discipline.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="masjid-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Leave with Left Foot</h4>
+                            <p>Exit with your left foot and say: "Allahumma inni as'aluka min fadlika" - O Allah, I ask You from Your bounty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="learning-section">
+                <h2>📚 Learning and Teaching 📚</h2>
+                
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <div class="icon">🎓</div>
+                        <h3>As a Student</h3>
+                        <p>Respect your teacher, listen attentively, don't interrupt, ask questions respectfully, apply what you learn, make du'a for your teacher, and be grateful for knowledge received.</p>
+                    </div>
+                    
+                    <div class="learning-card">
+                        <div class="icon">👨‍🏫</div>
+                        <h3>As a Teacher</h3>
+                        <p>Teach with sincerity for Allah's sake, be patient with students, teach according to their level, use examples, repeat when needed, and make learning engaging and beneficial.</p>
+                    </div>
+                    
+                    <div class="learning-card">
+                        <div class="icon">🤝</div>
+                        <h3>In Study Circles</h3>
+                        <p>Come prepared, participate actively, respect others' opinions, don't monopolize discussion, listen when others speak, stay on topic, and end with du'a.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="prophet-section">
+                <h2>✨ The Prophet ﷺ: Perfect Example of Manners ✨</h2>
+                
+                <div class="prophet-box">
+                    <h3>🌟 His Character</h3>
+                    <p>When Aisha (RA) was asked about the Prophet's ﷺ character, she said: "His character was the Quran." He embodied every good quality and avoided every bad one.</p>
+                </div>
+                
+                <div class="prophet-box">
+                    <h3>💎 Examples of His Perfect Manners</h3>
+                    <ul>
+                        <li><strong>With everyone:</strong> He greeted children, servants, and nobles with the same respect</li>
+                        <li><strong>Humility:</strong> He helped with household chores, mended his clothes, milked goats</li>
+                        <li><strong>Generosity:</strong> He never refused anyone who asked, gave away everything he had</li>
+                        <li><strong>Patience:</strong> Even when people harmed him, he remained patient and forgiving</li>
+                        <li><strong>Truthfulness:</strong> Even his enemies called him "Al-Amin" (The Trustworthy)</li>
+                        <li><strong>Kindness:</strong> To his wives, children, animals—everyone and everything</li>
+                        <li><strong>Justice:</strong> He was fair even when it went against his own family</li>
+                        <li><strong>Modesty:</strong> More modest than a virgin in her chamber</li>
+                        <li><strong>Cheerfulness:</strong> He smiled often, laughed with his companions</li>
+                        <li><strong>Cleanliness:</strong> Always well-groomed, smelled beautiful</li>
+                        <li><strong>Perfect guest and host:</strong> Gracious in both roles</li>
+                        <li><strong>Never rude or vulgar:</strong> Never used bad language or raised his voice unnecessarily</li>
+                    </ul>
+                </div>
+                
+                <div class="prophet-box">
+                    <h3>🎯 Following His Example</h3>
+                    <p>"There has certainly been for you in the Messenger of Allah an excellent pattern for anyone whose hope is in Allah and the Last Day." - Quran 33:21</p>
+                    <p style="margin-top: 15px;">Every aspect of his life—how he ate, slept, walked, talked, treated people—is a model for us. Study his Seerah (biography), learn his manners, and strive to emulate him in everything. The more you follow his example, the more Allah will love you.</p>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>✨ Remember ✨</h2>
+                <p>Good manners (Adab) are not just social customs—they are acts of worship that draw you closer to Allah. The Prophet ﷺ said: "The best among you are those with the best manners and character." Make perfecting your character a lifelong journey. Every interaction is an opportunity to practice Prophetic manners and earn rewards.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah grant us excellent character and manners, and help us follow the beautiful example of Prophet Muhammad ﷺ. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

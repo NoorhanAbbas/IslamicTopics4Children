@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan - The Blessed Month</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #1e3c72;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .significance-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .significance-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .significance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .significance-card {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .significance-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .significance-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .significance-card p {
+            line-height: 1.6;
+        }
+        
+        .fasting-section {
+            margin: 40px 0;
+        }
+        
+        .fasting-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .fasting-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .fasting-box h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        
+        .fasting-box p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .fasting-box ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .fasting-box .highlight {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: 600;
+            text-align: center;
+            color: #2d3748;
+        }
+        
+        .rules-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .rules-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .rules-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .rules-card.breaks {
+            border-left: 5px solid #f56565;
+        }
+        
+        .rules-card.doesnt-break {
+            border-left: 5px solid #48bb78;
+        }
+        
+        .rules-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .rules-card ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .exempt-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .exempt-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .exempt-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .exempt-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .exempt-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .exempt-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .exempt-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .meals-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .meals-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .meals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+        }
+        
+        .meal-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .meal-card .icon {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .meal-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+        
+        .meal-card .dua {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .meal-card .dua .arabic {
+            color: #1e3c72;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .meal-card .dua .translation {
+            color: #4a5568;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+        
+        .meal-card ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .last-ten-section {
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .last-ten-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .last-ten-box {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .last-ten-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .last-ten-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .last-ten-box .signs {
+            background: rgba(255,215,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .last-ten-box .signs h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .last-ten-box .signs ul {
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .worship-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .worship-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .worship-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .worship-card {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        .worship-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .worship-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .worship-card p {
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .mistakes-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .mistakes-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .mistakes-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .mistake-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .mistake-item .number {
+            background: rgba(255,255,255,0.3);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .mistake-item .content h4 {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .mistake-item .content p {
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        .preparation-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .preparation-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .preparation-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .preparation-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .preparation-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .preparation-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .preparation-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .momentum-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .momentum-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .momentum-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .momentum-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .momentum-box p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .momentum-box ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .training-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .training-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .training-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .training-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .training-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .training-card p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .rules-grid, .meals-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ramadan - The Blessed Month</h1>
+            <div class="arabic">رمضان المبارك</div>
+            <div class="ayah">
+                "O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous."<br>
+                <strong>- Quran 2:183</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>🌙 The Most Blessed Month 🌙</h2>
+                <p>Ramadan is the ninth month of the Islamic calendar, during which the Quran was revealed. It is a month of fasting, increased worship, spiritual reflection, and community. The gates of Paradise are opened, the gates of Hell are closed, and the devils are chained. It is a special time when Allah's mercy and forgiveness overflow.</p>
+            </div>
+            
+            <div class="significance-section">
+                <h2>✨ Why Ramadan is So Special ✨</h2>
+                
+                <div class="significance-grid">
+                    <div class="significance-card">
+                        <div class="icon">📖</div>
+                        <h3>Month of the Quran</h3>
+                        <p>The Quran was first revealed to Prophet Muhammad ﷺ in Ramadan. The Angel Jibreel would review the Quran with him every Ramadan.</p>
+                    </div>
+                    
+                    <div class="significance-card">
+                        <div class="icon">🚪</div>
+                        <h3>Gates of Paradise Open</h3>
+                        <p>The Prophet ﷺ said: "When Ramadan comes, the gates of Paradise are opened, the gates of Hell are closed, and the devils are chained."</p>
+                    </div>
+                    
+                    <div class="significance-card">
+                        <div class="icon">⭐</div>
+                        <h3>Laylatul Qadr</h3>
+                        <p>One night in Ramadan is better than a thousand months (83+ years). Worship on this night brings immense rewards.</p>
+                    </div>
+                    
+                    <div class="significance-card">
+                        <div class="icon">🕌</div>
+                        <h3>Pillar of Islam</h3>
+                        <p>Fasting in Ramadan is one of the Five Pillars of Islam, obligatory upon every able adult Muslim.</p>
+                    </div>
+                    
+                    <div class="significance-card">
+                        <div class="icon">🤲</div>
+                        <h3>Month of Forgiveness</h3>
+                        <p>"Whoever fasts Ramadan with faith and seeking reward, all his previous sins will be forgiven." - Prophet Muhammad ﷺ</p>
+                    </div>
+                    
+                    <div class="significance-card">
+                        <div class="icon">💝</div>
+                        <h3>Special Rewards</h3>
+                        <p>Every good deed is multiplied in Ramadan. A voluntary deed equals an obligatory one, and an obligatory deed is multiplied 70 times or more.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fasting-section">
+                <h2>🌅 Fasting: Rules, Benefits, and Spiritual Wisdom 🌅</h2>
+                
+                <div class="fasting-box">
+                    <h3>📋 Basic Rules of Fasting</h3>
+                    <ul>
+                        <li><strong>Intention (Niyyah):</strong> Must intend to fast before Fajr (dawn). Can be in your heart, doesn't need to be spoken.</li>
+                        <li><strong>Fasting Period:</strong> From true dawn (Fajr) until sunset (Maghrib)</li>
+                        <li><strong>Abstain From:</strong> Food, drink, marital relations, and anything that breaks the fast</li>
+                        <li><strong>Eid al-Fitr:</strong> Fasting on the first day of Shawwal (Eid) is forbidden—it's a day of celebration!</li>
+                        <li><strong>Make-up Fasts:</strong> If you miss days, you must make them up before next Ramadan</li>
+                    </ul>
+                </div>
+                
+                <div class="fasting-box">
+                    <h3>💪 Physical Benefits of Fasting</h3>
+                    <ul>
+                        <li>Detoxification and cellular regeneration (autophagy)</li>
+                        <li>Improved insulin sensitivity and blood sugar control</li>
+                        <li>Weight loss and improved metabolism</li>
+                        <li>Reduced inflammation in the body</li>
+                        <li>Improved heart health</li>
+                        <li>Enhanced brain function and focus</li>
+                        <li>Strengthened immune system</li>
+                        <li>Better digestive health through giving the system rest</li>
+                    </ul>
+                </div>
+                
+                <div class="fasting-box">
+                    <h3>🌟 Spiritual Benefits of Fasting</h3>
+                    <ul>
+                        <li><strong>Taqwa (God-consciousness):</strong> The main purpose—you develop awareness of Allah</li>
+                        <li><strong>Self-discipline:</strong> Training your nafs (ego) to obey Allah, not desires</li>
+                        <li><strong>Empathy:</strong> Feeling what the hungry and poor feel daily</li>
+                        <li><strong>Gratitude:</strong> Appreciating the blessings of food and drink</li>
+                        <li><strong>Forgiveness of sins:</strong> Fasting with faith and seeking reward erases previous sins</li>
+                        <li><strong>Closeness to Allah:</strong> Increased worship, du'a, and remembrance</li>
+                        <li><strong>Breaking bad habits:</strong> A month to reset and abandon sins</li>
+                        <li><strong>Patience (Sabr):</strong> Developing patience through resisting desires</li>
+                        <li><strong>Quranic connection:</strong> More time for recitation and reflection</li>
+                        <li><strong>Community bonding:</strong> Breaking fast together, praying together</li>
+                    </ul>
+                    <div class="highlight">
+                        "Fasting is a shield. When one of you is fasting, let him not use foul language or raise his voice, and if someone insults him or wants to fight, let him say: I am fasting." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rules-section">
+                <h2>⚖️ What Breaks the Fast & What Doesn't ⚖️</h2>
+                
+                <div class="rules-grid">
+                    <div class="rules-card breaks">
+                        <h3>❌ What BREAKS the Fast</h3>
+                        <ul>
+                            <li>Eating or drinking anything intentionally</li>
+                            <li>Smoking or vaping</li>
+                            <li>Marital relations during fasting hours</li>
+                            <li>Intentional vomiting</li>
+                            <li>Menstruation or postpartum bleeding starts (women must break fast)</li>
+                            <li>Masturbation</li>
+                            <li>Taking injections for nutrition (not medicine)</li>
+                            <li>Deliberately swallowing phlegm from throat</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: 600; background: #fff5f5; padding: 15px; border-radius: 10px; color: #c53030;">
+                            ⚠️ If you break your fast intentionally without valid reason, you must make it up AND pay kaffarah (major expiation) for some violations like marital relations.
+                        </p>
+                    </div>
+                    
+                    <div class="rules-card doesnt-break">
+                        <h3>✅ What DOESN'T Break the Fast</h3>
+                        <ul>
+                            <li>Accidentally eating or drinking (forgot you were fasting)</li>
+                            <li>Swallowing your own saliva</li>
+                            <li>Taking a shower or swimming (as long as you don't swallow water)</li>
+                            <li>Using eye drops or ear drops</li>
+                            <li>Applying perfume, lotion, or makeup</li>
+                            <li>Brushing teeth (if you don't swallow toothpaste/water)</li>
+                            <li>Using miswak (tooth stick)</li>
+                            <li>Medical injections that aren't for nutrition</li>
+                            <li>Blood tests or donating blood</li>
+                            <li>Tasting food (without swallowing)</li>
+                            <li>Unintentional vomiting</li>
+                            <li>Dreams or thoughts (even if about food/drink)</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: 600; background: #f0fff4; padding: 15px; border-radius: 10px; color: #2d8659;">
+                            ✅ If you forgot you were fasting and ate/drank, complete your fast! Allah fed and gave you drink. No need to make it up.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exempt-section">
+                <h2>🤲 Who is Exempt from Fasting 🤲</h2>
+                
+                <div class="exempt-grid">
+                    <div class="exempt-item">
+                        <div class="icon">👶</div>
+                        <div class="content">
+                            <h4>Children (Not Yet Reached Puberty)</h4>
+                            <p>Fasting is not obligatory until puberty. However, children should be encouraged to practice fasting (half days, weekends) to build the habit before it becomes obligatory.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exempt-item">
+                        <div class="icon">🏥</div>
+                        <div class="content">
+                            <h4>The Sick</h4>
+                            <p>Those with illness where fasting would worsen their condition or delay recovery can break their fast. They must make up the days later. If chronically ill, they pay fidyah (feeding a poor person for each day).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exempt-item">
+                        <div class="icon">👵</div>
+                        <div class="content">
+                            <h4>The Elderly</h4>
+                            <p>If fasting is too difficult or harmful for elderly people, they can pay fidyah instead of fasting—feeding one poor person for each day of Ramadan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exempt-item">
+                        <div class="icon">✈️</div>
+                        <div class="content">
+                            <h4>Travelers</h4>
+                            <p>Those on a journey (generally 48+ miles) can choose to break their fast and make it up later. However, if fasting doesn't cause hardship, it's better to fast.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exempt-item">
+                        <div class="icon">🤰</div>
+                        <div class="content">
+                            <h4>Pregnant Women</h4>
+                            <p>If fasting poses risk to the mother or baby, she can break her fast. She should make up the days later. Some scholars say she can pay fidyah if making up is too difficult.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exempt-item">
+                        <div class="icon">👶</div>
+                        <div class="content">
+                            <h4>Breastfeeding Mothers</h4>
+                            <p>If fasting reduces milk supply or harms the baby, she can break her fast and make up the days later (or pay fidyah if making up is too hard).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exempt-item">
+                        <div class="icon">🩸</div>
+                        <div class="content">
+                            <h4>Menstruating or Postpartum Women</h4>
+                            <p>Women during menstruation or postpartum bleeding MUST NOT fast (it's forbidden). They make up the days after Ramadan. No fidyah needed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exempt-item">
+                        <div class="icon">⚠️</div>
+                        <div class="content">
+                            <h4>Extreme Circumstances</h4>
+                            <p>Those in war zones, extreme weather, or facing death if they fast. They make up days later or pay fidyah depending on the situation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="meals-section">
+                <h2>🍽️ Suhoor and Iftar - Importance and Etiquette 🍽️</h2>
+                
+                <div class="meals-grid">
+                    <div class="meal-card">
+                        <div class="icon">🌅</div>
+                        <h3>Suhoor (Pre-Dawn Meal)</h3>
+                        
+                        <p style="color: #2d3748; font-weight: 600; margin-bottom: 15px;">The meal eaten before Fajr to prepare for the fast</p>
+                        
+                        <div class="dua">
+                            <div class="arabic">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+                            <div class="translation">In the name of Allah, the Most Merciful, the Most Compassionate</div>
+                        </div>
+                        
+                        <h4 style="color: #2d3748; margin: 15px 0 10px 0;">Importance:</h4>
+                        <ul>
+                            <li>"Eat suhoor, for in suhoor there is blessing (barakah)" - Prophet ﷺ</li>
+                            <li>Physical: Provides energy and hydration for the day</li>
+                            <li>Spiritual: Following the Sunnah brings barakah</li>
+                            <li>Differentiates us from others' fasting (People of the Book didn't eat suhoor)</li>
+                            <li>Even dates and water count—don't skip it!</li>
+                        </ul>
+                        
+                        <h4 style="color: #2d3748; margin: 15px 0 10px 0;">Etiquette & Tips:</h4>
+                        <ul>
+                            <li>Eat as late as possible (but stop before Fajr adhan)</li>
+                            <li>Choose nutritious, slow-digesting foods (whole grains, protein, healthy fats)</li>
+                            <li>Hydrate well—drink plenty of water</li>
+                            <li>Avoid very salty or sugary foods (cause thirst)</li>
+                            <li>Dates, oats, eggs, yogurt are excellent choices</li>
+                            <li>Wake up family lovingly, make it a bonding time</li>
+                            <li>After eating, pray Fajr or at least make dhikr and du'a</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="meal-card">
+                        <div class="icon">🌆</div>
+                        <h3>Iftar (Breaking the Fast)</h3>
+                        
+                        <p style="color: #2d3748; font-weight: 600; margin-bottom: 15px;">The meal to break the fast at sunset (Maghrib time)</p>
+                        
+                        <div class="dua">
+                            <div class="arabic">اللَّهُمَّ لَكَ صُمْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ</div>
+                            <div class="translation">"O Allah, for You I have fasted and with Your provision I break my fast"</div>
+                        </div>
+                        
+                        <div class="dua" style="margin-top: 10px;">
+                            <div class="arabic">ذَهَبَ الظَّمَأُ وَابْتَلَّتِ الْعُرُوقُ وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ</div>
+                            <div class="translation">"The thirst is gone, the veins are moistened, and the reward is confirmed, if Allah wills"</div>
+                        </div>
+                        
+                        <h4 style="color: #2d3748; margin: 15px 0 10px 0;">Importance:</h4>
+                        <ul>
+                            <li>The du'a at time of breaking fast is accepted—make sincere du'a!</li>
+                            <li>Sharing iftar earns the same reward as the fasting person</li>
+                            <li>Community bonding through shared meals</li>
+                            <li>Moment of gratitude to Allah for sustenance</li>
+                        </ul>
+                        
+                        <h4 style="color: #2d3748; margin: 15px 0 10px 0;">Etiquette & Tips:</h4>
+                        <ul>
+                            <li>Break fast immediately when Maghrib time enters—don't delay</li>
+                            <li>Start with dates and water (following the Sunnah)</li>
+                            <li>Make du'a before eating—it's a special accepted time!</li>
+                            <li>Eat moderately—don't overeat or your worship will suffer</li>
+                            <li>Invite others to share your iftar (guests, poor, neighbors)</li>
+                            <li>Pray Maghrib prayer before the main meal</li>
+                            <li>Be grateful—remember those who have no food to break their fast with</li>
+                            <li>Avoid wasting food</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="last-ten-section">
+                <h2>🌙 The Last Ten Nights & Laylatul Qadr 🌙</h2>
+                
+                <div class="last-ten-box">
+                    <h3>✨ The Most Powerful Nights of the Year ✨</h3>
+                    <p>The last ten nights of Ramadan are the most blessed. The Prophet ﷺ would strive harder in these nights than any other time of the year. He would wake his family, stay up in prayer, and dedicate himself entirely to worship.</p>
+                    <p style="margin-top: 10px;">"Whoever spends the nights of Ramadan in prayer out of faith and in the hope of reward, he will be forgiven his previous sins." - Prophet Muhammad ﷺ</p>
+                </div>
+                
+                <div class="last-ten-box">
+                    <h3>⭐ Laylatul Qadr - The Night of Power ⭐</h3>
+                    <p><strong>The greatest night of the entire year!</strong> One night better than 1000 months (over 83 years) of worship. The Quran was first revealed on this night.</p>
+                    
+                    <p style="margin-top: 15px; font-weight: 600; background: rgba(255,215,0,0.3); padding: 15px; border-radius: 10px;">"The Night of Power is better than a thousand months. The angels and the Spirit descend therein by permission of their Lord for every matter. Peace it is until the emergence of dawn." - Quran 97:3-5</p>
+                    
+                    <div class="signs">
+                        <h4>🔍 Signs of Laylatul Qadr:</h4>
+                        <ul>
+                            <li>A sense of peace and tranquility</li>
+                            <li>The night is neither too hot nor too cold</li>
+                            <li>The next morning, the sun rises without strong rays (appears white/pale)</li>
+                            <li>You feel an unusual spiritual sweetness</li>
+                            <li>The night may feel longer than usual</li>
+                        </ul>
+                    </div>
+                    
+                    <p style="margin-top: 15px;"><strong>When is it?</strong> Hidden in the last ten nights, most likely on an odd night (21st, 23rd, 25th, 27th, 29th). The 27th night is most commonly believed, but the Prophet ﷺ instructed us to seek it in all the last ten nights.</p>
+                    
+                    <div class="dua" style="background: rgba(255,215,0,0.2); padding: 20px; border-radius: 10px; margin-top: 15px; text-align: center;">
+                        <h4 style="margin-bottom: 10px;">🤲 Special Du'a for Laylatul Qadr:</h4>
+                        <div style="font-size: 1.3em; color: #ffd700; margin: 10px 0;">اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي</div>
+                        <div style="font-style: italic;">"O Allah, You are Forgiving and love forgiveness, so forgive me"</div>
+                        <div style="margin-top: 10px; font-size: 0.9em;">Aisha (RA) asked: "If I know which night is Laylatul Qadr, what should I say?" The Prophet ﷺ taught her this du'a.</div>
+                    </div>
+                </div>
+                
+                <div class="last-ten-box">
+                    <h3>🕌 I'tikaf (Spiritual Retreat)</h3>
+                    <p>Secluding oneself in the masjid during the last ten days of Ramadan, dedicating time purely to worship without worldly distractions.</p>
+                    <ul style="padding-left: 25px; line-height: 1.8; margin-top: 10px;">
+                        <li><strong>Purpose:</strong> Seeking Laylatul Qadr and focusing entirely on Allah</li>
+                        <li><strong>Who:</strong> The Prophet ﷺ did it every Ramadan; highly recommended for men, permissible for women</li>
+                        <li><strong>Where:</strong> In the masjid, preferably for the full last ten days/nights</li>
+                        <li><strong>Activities:</strong> Quran recitation, prayer, dhikr, du'a, learning—no worldly talk</li>
+                        <li><strong>Leave only for:</strong> Necessities like bathroom, required ghusl</li>
+                        <li><strong>Reward:</strong> Immense closeness to Allah, spiritual renewal, seeking the greatest night</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="worship-section">
+                <h2>📿 Increased Worship in Ramadan 📿</h2>
+                
+                <div class="worship-grid">
+                    <div class="worship-card">
+                        <div class="icon">📖</div>
+                        <h3>Quran Recitation</h3>
+                        <p>The month of the Quran! Aim to complete at least one full reading. The Prophet ﷺ reviewed the entire Quran with Jibreel every Ramadan (twice in his final Ramadan).</p>
+                    </div>
+                    
+                    <div class="worship-card">
+                        <div class="icon">🌙</div>
+                        <h3>Tarawih Prayers</h3>
+                        <p>Special night prayers in Ramadan. Praying with the imam until he finishes earns the reward of praying the whole night. "Whoever stands (in prayer) in Ramadan with faith and seeking reward, his previous sins are forgiven."</p>
+                    </div>
+                    
+                    <div class="worship-card">
+                        <div class="icon">🤲</div>
+                        <h3>Du'a & Dhikr</h3>
+                        <p>Make abundant du'a, especially at iftar time (accepted du'a time). Remember Allah constantly. Your du'as in Ramadan have special acceptance.</p>
+                    </div>
+                    
+                    <div class="worship-card">
+                        <div class="icon">💰</div>
+                        <h3>Charity & Zakat</h3>
+                        <p>The Prophet ﷺ was most generous in Ramadan. Give charity abundantly—it's multiplied. Many pay their annual zakat in Ramadan for maximum reward.</p>
+                    </div>
+                    
+                    <div class="worship-card">
+                        <div class="icon">🕌</div>
+                        <h3>Praying in Congregation</h3>
+                        <p>Attend the masjid for prayers, especially Tarawih. Praying in congregation multiplies your reward 27 times.</p>
+                    </div>
+                    
+                    <div class="worship-card">
+                        <div class="icon">📚</div>
+                        <h3>Seeking Knowledge</h3>
+                        <p>Attend Islamic lectures, study tafsir, learn about your religion. Knowledge gained in Ramadan with the right intention is immensely rewarding.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mistakes-section">
+                <h2>⚠️ Common Mistakes in Ramadan ⚠️</h2>
+                
+                <div class="mistakes-grid">
+                    <div class="mistake-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Sleeping All Day</h4>
+                            <p>Using sleep to "escape" the fast defeats its purpose. Ramadan is for increased worship, not sleeping through it. Stay productive and worshipful.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Overeating at Iftar</h4>
+                            <p>Breaking your fast with a feast defeats the spiritual benefits. Eat moderately—you need energy for Tarawih and night worship!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Neglecting Suhoor</h4>
+                            <p>Skipping suhoor removes the barakah and makes fasting much harder. Even eating dates and drinking water counts—don't skip it!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Fasting Only from Food</h4>
+                            <p>Ramadan fasting includes guarding your tongue, eyes, ears, and heart. Avoid gossip, backbiting, lying, anger, and watching/listening to haram.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Wasting Time on Entertainment</h4>
+                            <p>Spending hours on TV, social media, or games wastes the blessed time of Ramadan. Prioritize Quran, prayer, and beneficial activities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Neglecting Family</h4>
+                            <p>Being irritable, angry, or neglectful of family because you're fasting contradicts Ramadan's spirit. Be extra patient and kind.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Excessive Shopping & Preparation</h4>
+                            <p>Turning Ramadan into a month of shopping sprees and extravagant meals. Keep it simple—focus on worship, not worldly matters.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Only Worshipping in Ramadan</h4>
+                            <p>Being super religious in Ramadan then abandoning worship after. The goal is to build habits that last the whole year!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">9</div>
+                        <div class="content">
+                            <h4>Ignoring the Last Ten Nights</h4>
+                            <p>Many people slow down towards the end when they should be striving hardest! The last ten nights are the MOST important—don't miss them.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mistake-item">
+                        <div class="number">10</div>
+                        <div class="content">
+                            <h4>Not Making Personal Du'a</h4>
+                            <p>Just saying "Ameen" to others' du'as. Make your own sincere, heartfelt du'a for yourself, your family, the ummah. Allah is waiting to answer!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preparation-section">
+                <h2>🎯 Preparing for Ramadan (Sha'ban) 🎯</h2>
+                
+                <div class="preparation-grid">
+                    <div class="preparation-item">
+                        <div class="icon">🗓️</div>
+                        <div class="content">
+                            <h4>Start Fasting in Sha'ban</h4>
+                            <p>The Prophet ﷺ used to fast most of Sha'ban. This prepares your body and builds the habit before Ramadan arrives.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preparation-item">
+                        <div class="icon">💰</div>
+                        <div class="content">
+                            <h4>Settle Debts and Obligations</h4>
+                            <p>Clear your debts, return what you borrowed, settle financial matters so you can focus purely on worship in Ramadan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preparation-item">
+                        <div class="icon">🤝</div>
+                        <div class="content">
+                            <h4>Seek Forgiveness from People</h4>
+                            <p>If you wronged anyone, apologize and reconcile before Ramadan. Start the blessed month with a clean slate.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preparation-item">
+                        <div class="icon">🤲</div>
+                        <div class="content">
+                            <h4>Make Sincere Tawbah</h4>
+                            <p>Repent from all sins and resolve to avoid them in Ramadan and beyond. Start fresh with a pure heart.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preparation-item">
+                        <div class="icon">📚</div>
+                        <div class="content">
+                            <h4>Learn About Ramadan</h4>
+                            <p>Study the fiqh (rulings) of fasting, learn about Ramadan's virtues, and understand how to maximize the month.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preparation-item">
+                        <div class="icon">🎯</div>
+                        <div class="content">
+                            <h4>Set Spiritual Goals</h4>
+                            <p>Plan what you want to accomplish: complete Quran reading, pray all Tarawih, give X amount in charity, memorize specific surahs, break specific bad habits.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preparation-item">
+                        <div class="icon">🏃</div>
+                        <div class="content">
+                            <h4>Increase Worship Gradually</h4>
+                            <p>Start praying extra prayers, reading more Quran, making more dhikr in Sha'ban so Ramadan doesn't feel like a shock to the system.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preparation-item">
+                        <div class="icon">📱</div>
+                        <div class="content">
+                            <h4>Plan to Reduce Distractions</h4>
+                            <p>Decide now to limit TV, social media, and entertainment in Ramadan. Delete time-wasting apps, plan screen-free times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="momentum-section">
+                <h2>🚀 Maintaining the Momentum After Ramadan 🚀</h2>
+                
+                <div class="momentum-box">
+                    <h3>❌ The Post-Ramadan Drop</h3>
+                    <p>Many Muslims are extremely devoted in Ramadan, then completely abandon good habits on Eid. The masjids are full in Ramadan and empty after. This shows the worship was for Ramadan, not for Allah—and Allah is the Lord of all months, not just Ramadan!</p>
+                    <p style="margin-top: 10px; background: #fef5e7; padding: 15px; border-radius: 10px; color: #856404; font-weight: 600;">"The sign that Allah accepted your Ramadan is that you continue good deeds after it ends."</p>
+                </div>
+                
+                <div class="momentum-box">
+                    <h3>✅ How to Keep the Momentum</h3>
+                    <ul>
+                        <li><strong>Fast Six Days of Shawwal:</strong> The Prophet ﷺ said whoever fasts Ramadan then six days of Shawwal, it's like fasting the entire year</li>
+                        <li><strong>Continue Quran Daily:</strong> Don't abandon the Quran after Ramadan. Keep a daily portion, even if smaller than in Ramadan</li>
+                        <li><strong>Maintain Night Prayer:</strong> Even if just 2 raka'at of Tahajjud, keep the connection established in Ramadan</li>
+                        <li><strong>Regular Voluntary Fasting:</strong> Mondays/Thursdays, white days (13th, 14th, 15th of lunar month)</li>
+                        <li><strong>Consistent Charity:</strong> Set up regular donations, don't let generosity die with Ramadan</li>
+                        <li><strong>Dhikr and Du'a:</strong> Morning and evening adhkar, du'a before sleep—maintain these habits</li>
+                        <li><strong>Guard Your Tongue:</strong> The discipline you learned—avoid gossip, backbiting, lying year-round</li>
+                        <li><strong>Attend the Masjid:</strong> Keep going to congregational prayers, don't make Ramadan the only time</li>
+                        <li><strong>Islamic Gatherings:</strong> Continue seeking knowledge through classes, lectures, study circles</li>
+                    </ul>
+                </div>
+                
+                <div class="momentum-box">
+                    <h3>🎯 Make It Realistic and Sustainable</h3>
+                    <p>You don't have to maintain Ramadan's intensity year-round—that's unrealistic and will lead to burnout. But you SHOULD maintain consistent, sustainable worship:</p>
+                    <ul>
+                        <li>If you read 2 juz daily in Ramadan, read at least half a juz daily after</li>
+                        <li>If you prayed all Tarawih, keep 2 raka'at Tahajjud regularly</li>
+                        <li>If you gave lots of charity, set up a monthly automatic donation</li>
+                        <li>If you stopped watching TV in Ramadan, limit it year-round</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-weight: 600; background: #e8f5e9; padding: 15px; border-radius: 10px; color: #2d8659;">The Prophet ﷺ said: "The most beloved deeds to Allah are those done consistently, even if they are small."</p>
+                </div>
+            </div>
+            
+            <div class="training-section">
+                <h2>🏋️ Ramadan as a Training Ground 🏋️</h2>
+                
+                <div class="training-grid">
+                    <div class="training-card">
+                        <h3>💪 Self-Discipline Training</h3>
+                        <p>Ramadan trains you to control your desires and impulses. If you can resist food and drink for 30 days, you can resist sinful desires year-round. Use this training!</p>
+                    </div>
+                    
+                    <div class="training-card">
+                        <h3>⏰ Time Management</h3>
+                        <p>Managing Suhoor, work, worship, Iftar, Tarawih teaches you to prioritize and manage time effectively. Apply these skills all year.</p>
+                    </div>
+                    
+                    <div class="training-card">
+                        <h3>📿 Spiritual Habits</h3>
+                        <p>Quran reading, night prayer, dhikr, du'a—habits formed in 30 days can become lifelong practices. The neural pathways are built; keep using them!</p>
+                    </div>
+                    
+                    <div class="training-card">
+                        <h3>🗣️ Guarding the Tongue</h3>
+                        <p>Learning to control speech, avoid gossip, and speak kindly isn't just for Ramadan. This is an essential character trait for all Muslims always.</p>
+                    </div>
+                    
+                    <div class="training-card">
+                        <h3>🤲 Consistent Worship</h3>
+                        <p>Praying on time, avoiding sins, increasing dhikr—these shouldn't be temporary. Ramadan shows you that you CAN do it. Now keep doing it!</p>
+                    </div>
+                    
+                    <div class="training-card">
+                        <h3>❤️ Community Connection</h3>
+                        <p>The unity, brotherhood, and community support in Ramadan should continue. Keep attending the masjid, supporting each other, building bonds.</p>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 25px; border-radius: 15px; margin-top: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2d3748; margin-bottom: 15px; text-align: center;">💡 The True Test 💡</h3>
+                    <p style="color: #4a5568; line-height: 1.6; text-align: center;">
+                        Ramadan is the training camp. The rest of the year is the real test. Did you just worship the month, or did you worship Allah, the Lord of all months? The answer shows in your actions after Ramadan ends.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>🌙 Final Reminder 🌙</h2>
+                <p>"O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous (develop taqwa)." - Quran 2:183<br><br>
+                The purpose of Ramadan is taqwa—consciousness of Allah that continues throughout the year. If Ramadan didn't increase your taqwa, you missed its purpose. Make this Ramadan transformative. Let it change you permanently. And when Ramadan comes again next year, may you be a better Muslim than you were this year.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah allow us to witness many Ramadans, accept our fasting and worship, and grant us Laylatul Qadr. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

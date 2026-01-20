@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seeking Knowledge in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #2193b0;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .obligation-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .obligation-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .hadith-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .hadith-box p {
+            color: #4a5568;
+            line-height: 1.6;
+            font-style: italic;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .hadith-box .source {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .types-section {
+            margin: 40px 0;
+        }
+        
+        .types-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .type-card {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .type-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .type-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .type-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .type-card .examples {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .type-card .examples h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .type-card .examples ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .essential-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .essential-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .essential-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .essential-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .essential-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .essential-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .essential-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .adab-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .adab-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .adab-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .adab-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .adab-item .number {
+            background: rgba(255,255,255,0.3);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3em;
+            flex-shrink: 0;
+        }
+        
+        .adab-item .content h4 {
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .adab-item .content p {
+            line-height: 1.6;
+        }
+        
+        .rewards-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .rewards-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .reward-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .reward-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .reward-card p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .balance-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .balance-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .balance-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .balance-item h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .balance-item p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .balance-item .highlight {
+            background: #a8edea;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .warning-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .warning-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .warning-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .warning-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .warning-box p {
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Seeking Knowledge in Islam</h1>
+            <div class="ayah">
+                "Say, 'Are those who know equal to those who do not know?' Only they will remember [who are] people of understanding."<br>
+                <strong>- Quran 39:9</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>📚 Knowledge: A Sacred Obligation 📚</h2>
+                <p>Seeking knowledge is not just encouraged in Islam—it is an obligation upon every Muslim. The Prophet ﷺ said: "Seeking knowledge is an obligation upon every Muslim." This pursuit of knowledge continues from the cradle to the grave.</p>
+            </div>
+            
+            <div class="obligation-section">
+                <h2>🌟 The High Status of Knowledge 🌟</h2>
+                
+                <div class="hadith-box">
+                    <p>"Whoever travels a path in search of knowledge, Allah will make easy for him a path to Paradise."</p>
+                    <div class="source">- Prophet Muhammad ﷺ</div>
+                </div>
+                
+                <div class="hadith-box">
+                    <p>"The superiority of the scholar over the worshipper is like the superiority of the moon over the rest of the stars."</p>
+                    <div class="source">- Prophet Muhammad ﷺ</div>
+                </div>
+                
+                <div class="hadith-box">
+                    <p>"The angels lower their wings for the seeker of knowledge out of pleasure with what he is doing."</p>
+                    <div class="source">- Prophet Muhammad ﷺ</div>
+                </div>
+                
+                <div class="hadith-box">
+                    <p>"Allah raises the ranks of those who believe and those who have been given knowledge."</p>
+                    <div class="source">- Quran 58:11</div>
+                </div>
+            </div>
+            
+            <div class="types-section">
+                <h2>📋 Types of Knowledge Obligations 📋</h2>
+                
+                <div class="type-card">
+                    <div class="icon">⭐</div>
+                    <h3>Fard 'Ayn (Individual Obligation)</h3>
+                    <p>Knowledge that EVERY Muslim must learn for themselves. This is obligatory on each person and cannot be delegated to others.</p>
+                    <div class="examples">
+                        <h4>Essential Individual Knowledge:</h4>
+                        <ul>
+                            <li><strong>'Aqeedah (Belief):</strong> The Six Pillars of Iman - belief in Allah, Angels, Books, Prophets, Day of Judgment, Qadr</li>
+                            <li><strong>Pillars of Islam:</strong> How to perform Shahada, Salah, Zakat, Sawm, Hajj (if able)</li>
+                            <li><strong>Taharah (Purification):</strong> Wudu, ghusl, tayammum, what breaks wudu</li>
+                            <li><strong>Salah (Prayer):</strong> How to pray correctly, prayer times, what invalidates prayer</li>
+                            <li><strong>Halal & Haram:</strong> What's permissible and forbidden in your daily life</li>
+                            <li><strong>Business Ethics:</strong> Basic Islamic rules for your work and transactions</li>
+                            <li><strong>Family Rights:</strong> Rights and obligations in your specific family role</li>
+                            <li><strong>Basic Recitation:</strong> Al-Fatihah and short surahs for prayer</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="type-card">
+                    <div class="icon">🤝</div>
+                    <h3>Fard Kifayah (Communal Obligation)</h3>
+                    <p>Knowledge that must exist in the Muslim community, but not everyone needs to learn it in depth. If enough people know it, the obligation is lifted from others.</p>
+                    <div class="examples">
+                        <h4>Specialized Community Knowledge:</h4>
+                        <ul>
+                            <li><strong>Islamic Scholarship:</strong> In-depth fiqh, hadith sciences, Quranic exegesis</li>
+                            <li><strong>Islamic Medicine:</strong> Medical knowledge with Islamic ethics</li>
+                            <li><strong>Islamic Finance:</strong> Detailed knowledge of Islamic banking and economics</li>
+                            <li><strong>Da'wah & Teaching:</strong> Specialized knowledge to teach and guide others</li>
+                            <li><strong>Islamic Law:</strong> Detailed fiqh for judges and legal experts</li>
+                            <li><strong>Arabic Language:</strong> Deep linguistic knowledge for translation and scholarship</li>
+                            <li><strong>Essential Sciences:</strong> Engineering, medicine, education that serve the Ummah</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="essential-section">
+                <h2>🎯 What You MUST Learn for Your Life 🎯</h2>
+                
+                <div class="essential-grid">
+                    <div class="essential-card">
+                        <div class="icon">🕌</div>
+                        <h3>For Worship</h3>
+                        <p>Learn what's necessary to perform your obligatory acts of worship correctly: prayer, fasting, zakat calculations if you have wealth.</p>
+                    </div>
+                    
+                    <div class="essential-card">
+                        <div class="icon">💼</div>
+                        <h3>For Your Work</h3>
+                        <p>Learn the Islamic rules relevant to your profession: halal earnings, honest dealings, contracts, ethics in your field.</p>
+                    </div>
+                    
+                    <div class="essential-card">
+                        <div class="icon">👨‍👩‍👧‍👦</div>
+                        <h3>For Your Family Role</h3>
+                        <p>If married, learn spousal rights. If a parent, learn children's rights. If a child, learn parents' rights.</p>
+                    </div>
+                    
+                    <div class="essential-card">
+                        <div class="icon">🏠</div>
+                        <h3>For Daily Life</h3>
+                        <p>Learn what's halal/haram in food, dress, relationships, entertainment, and social interactions you encounter daily.</p>
+                    </div>
+                    
+                    <div class="essential-card">
+                        <div class="icon">💰</div>
+                        <h3>For Your Wealth</h3>
+                        <p>If you have wealth, learn how to calculate and pay zakat. Learn about riba (interest) to avoid it in transactions.</p>
+                    </div>
+                    
+                    <div class="essential-card">
+                        <div class="icon">🗣️</div>
+                        <h3>For Your Interactions</h3>
+                        <p>Learn Islamic etiquette for speech, behavior with others, and proper conduct with Muslims and non-Muslims.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="adab-section">
+                <h2>🌙 Adab (Etiquette) of Seeking & Sharing Knowledge 🌙</h2>
+                
+                <div class="adab-grid">
+                    <div class="adab-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Have Pure Intention (Ikhlas)</h4>
+                            <p>Seek knowledge for Allah's pleasure, not for status, pride, or showing off. The Prophet ﷺ warned that the first to be thrown into the Fire include someone who learned knowledge to be called a scholar.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Be Humble</h4>
+                            <p>Never be arrogant about your knowledge. The more you learn, the more you realize how much you don't know. Arrogance destroys the blessing of knowledge.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Respect Your Teachers</h4>
+                            <p>Honor those who teach you. Show gratitude, listen attentively, don't argue disrespectfully, and make du'a for them. The scholars are the inheritors of the Prophets.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Practice What You Learn</h4>
+                            <p>Knowledge without action is like a tree without fruit. Apply what you learn in your daily life. Knowledge that doesn't lead to action is a proof against you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Be Patient & Persistent</h4>
+                            <p>Learning takes time. Don't rush or become frustrated. Memorize carefully, review regularly, and be consistent even when progress seems slow.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Verify from Reliable Sources</h4>
+                            <p>Check the authenticity of what you learn. Learn from qualified scholars. Don't spread knowledge without verification, as you'll be asked about it.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Teach Others</h4>
+                            <p>Share beneficial knowledge with others. Teaching reinforces your own learning and spreads good. The best charity is knowledge that benefits others continuously.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Say "I Don't Know" When You Don't</h4>
+                            <p>It's better to admit ignorance than to speak without knowledge. Saying "I don't know" is half of knowledge. Never fabricate or guess when teaching others.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">9</div>
+                        <div class="content">
+                            <h4>Make Du'a for Knowledge</h4>
+                            <p>Ask Allah to increase your knowledge and understanding. The Quran teaches us to say: "Rabbi zidni 'ilma" (My Lord, increase me in knowledge).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="adab-item">
+                        <div class="number">10</div>
+                        <div class="content">
+                            <h4>Be Gentle When Teaching</h4>
+                            <p>Teach with kindness, patience, and wisdom. Don't look down on those who know less. Remember, you were once a beginner too.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="rewards-section">
+                <h2>🎁 Rewards of Seeking & Teaching Knowledge 🎁</h2>
+                
+                <div class="reward-card">
+                    <h3>🚪 Path to Paradise</h3>
+                    <p>The Prophet ﷺ said: "Whoever follows a path in the pursuit of knowledge, Allah will make a path to Paradise easy for him."</p>
+                </div>
+                
+                <div class="reward-card">
+                    <h3>😇 Angels' Prayer</h3>
+                    <p>"Everything in the heavens and the earth, even the fish in the depths of the sea, ask forgiveness for the scholar." - Prophet Muhammad ﷺ</p>
+                </div>
+                
+                <div class="reward-card">
+                    <h3>💎 Continuous Charity (Sadaqah Jariyah)</h3>
+                    <p>When you die, your deeds stop except for three things: ongoing charity, beneficial knowledge you taught, and a righteous child who prays for you.</p>
+                </div>
+                
+                <div class="reward-card">
+                    <h3>📈 Raised Ranks</h3>
+                    <p>Allah raises the ranks of those who have knowledge in this life and the next. Knowledge is a means of honor and elevation.</p>
+                </div>
+                
+                <div class="reward-card">
+                    <h3>🌟 Rewards Continue After Death</h3>
+                    <p>Every time someone benefits from knowledge you taught or shared, you continue receiving rewards even after death.</p>
+                </div>
+                
+                <div class="reward-card">
+                    <h3>🛡️ Protection from Evil</h3>
+                    <p>Knowledge protects you from falling into sin and misguidance. It illuminates your path and helps you distinguish right from wrong.</p>
+                </div>
+            </div>
+            
+            <div class="balance-section">
+                <h2>⚖️ Balance Between Religious & Worldly Knowledge ⚖️</h2>
+                
+                <div class="balance-item">
+                    <h3>Both Are Important</h3>
+                    <p>Islam doesn't separate religious and worldly knowledge completely. Both are necessary and can be acts of worship when done with the right intention.</p>
+                    <div class="highlight">
+                        "Work for your worldly life as if you will live forever, and work for your afterlife as if you will die tomorrow."
+                    </div>
+                </div>
+                
+                <div class="balance-item">
+                    <h3>Priority Matters</h3>
+                    <p><strong>First Priority:</strong> Learn what's necessary for your deen (religion) - how to worship correctly and avoid major sins.</p>
+                    <p><strong>Second Priority:</strong> Learn worldly knowledge that helps you earn halal income, serve humanity, and contribute to society.</p>
+                    <p>Don't excel in worldly studies while remaining ignorant of basic Islamic obligations!</p>
+                </div>
+                
+                <div class="balance-item">
+                    <h3>Worldly Knowledge Can Be 'Ibadah</h3>
+                    <p>Learning medicine, engineering, teaching, or any beneficial field can be an act of worship if:</p>
+                    <ul style="padding-left: 25px; margin-top: 10px;">
+                        <li>Your intention is to please Allah and serve His creation</li>
+                        <li>You use it in halal ways that benefit society</li>
+                        <li>You don't neglect your religious obligations</li>
+                        <li>You acknowledge Allah as the source of all knowledge</li>
+                    </ul>
+                </div>
+                
+                <div class="balance-item">
+                    <h3>Integration Not Separation</h3>
+                    <p>The best approach is to integrate Islamic values into whatever field you study. A Muslim doctor should know medical ethics from Islamic perspective. A Muslim engineer should work with honesty and excellence as acts of worship.</p>
+                </div>
+            </div>
+            
+            <div class="warning-section">
+                <h2>⚠️ Avoiding Harmful & Useless Knowledge ⚠️</h2>
+                
+                <div class="warning-box">
+                    <h4>🚫 Harmful Knowledge</h4>
+                    <p>Avoid learning things that lead to sin, corruption, or harm: magic, fortune-telling, content that promotes immorality, detailed knowledge of how to commit sins, conspiracy theories that spread discord.</p>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>⏰ Useless Knowledge</h4>
+                    <p>The Prophet ﷺ used to seek refuge in Allah from "knowledge that doesn't benefit." Don't waste time on trivial pursuits, celebrity gossip, excessive entertainment trivia, or debates on hypothetical issues.</p>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>💔 Knowledge Without Action</h4>
+                    <p>The worst kind of knowledge is that which you learn but don't practice. It becomes a proof against you on the Day of Judgment.</p>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>🎭 Knowledge for Show</h4>
+                    <p>Seeking knowledge to show off, to be called a scholar, or to gain worldly status rather than Allah's pleasure is severely warned against in Islam.</p>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>📱 Information Overload</h4>
+                    <p>In our digital age, be selective. Not every article, video, or social media post needs your attention. Focus on beneficial, authentic knowledge from reliable sources.</p>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>🌟 Practical Steps to Seek Knowledge 🌟</h2>
+                <p><strong>Start Small:</strong> Begin with basics—learn proper prayer, essential beliefs, daily rulings.<br><br>
+                <strong>Find Good Teachers:</strong> Learn from qualified scholars, either locally or through verified online courses.<br><br>
+                <strong>Read Authentic Books:</strong> Start with beginner-friendly books on 'aqeedah, fiqh, and seerah.<br><br>
+                <strong>Be Consistent:</strong> Even 15 minutes daily is better than occasional long sessions.<br><br>
+                <strong>Study Groups:</strong> Learn with others—it's more motivating and you can help each other.<br><br>
+                <strong>Review Regularly:</strong> Knowledge needs repetition to stick. Review what you've learned.<br><br>
+                <strong>Apply Immediately:</strong> Put what you learn into practice right away!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah increase us all in beneficial knowledge and grant us the ability to practice what we learn. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

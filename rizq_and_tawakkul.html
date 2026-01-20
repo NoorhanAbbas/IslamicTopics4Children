@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizq and Tawakkul in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #11998e;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #11998e;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .definition-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .definition-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .definition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .definition-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .definition-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .definition-card .arabic-term {
+            color: #11998e;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .definition-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .belief-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .belief-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .belief-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .belief-item .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .belief-item h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .belief-item p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .belief-item .hadith {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-style: italic;
+            color: #4a5568;
+            text-align: center;
+        }
+        
+        .balance-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .balance-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .balance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .balance-card {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .balance-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .balance-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .balance-card p {
+            line-height: 1.6;
+        }
+        
+        .halal-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .halal-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .halal-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .halal-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .halal-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .halal-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .halal-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .tests-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .tests-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .test-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .test-card h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .test-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .test-card .examples {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .test-card .examples h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .test-card .examples ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .contentment-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .contentment-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .contentment-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .contentment-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .contentment-box p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .contentment-box .highlight {
+            background: #ffeaa7;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .envy-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .envy-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .envy-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .envy-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .envy-box p {
+            line-height: 1.6;
+        }
+        
+        .dua-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .dua-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .dua-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .dua-card .arabic {
+            color: #11998e;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .dua-card .translation {
+            color: #4a5568;
+            font-style: italic;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .dua-card .source {
+            color: #2d3748;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+        
+        .practical-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .practical-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .practical-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .practical-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .practical-item .number {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .practical-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .practical-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rizq and Tawakkul in Islam</h1>
+            <div class="arabic">الرزق والتوكل</div>
+            <div class="arabic" style="font-size: 1.3em;">Provision and Trust in Allah</div>
+            <div class="ayah">
+                "And there is no creature on earth but that upon Allah is its provision, and He knows its place of dwelling and place of storage. All is in a clear register."<br>
+                <strong>- Quran 11:6</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>🌟 The Foundation of Trust 🌟</h2>
+                <p>Rizq (provision) is guaranteed by Allah for every living creature. Our duty is to work hard, take the means, and then trust completely in Allah for the results. This balance between effort and reliance on Allah is the essence of Tawakkul.</p>
+            </div>
+            
+            <div class="definition-section">
+                <h2>📖 Understanding the Concepts 📖</h2>
+                
+                <div class="definition-grid">
+                    <div class="definition-card">
+                        <div class="arabic-term">رِزْق</div>
+                        <h3>Rizq (Provision)</h3>
+                        <p>Everything Allah provides for you: wealth, food, health, knowledge, relationships, and all blessings. It's not just money—it includes all forms of sustenance and provision.</p>
+                    </div>
+                    
+                    <div class="definition-card">
+                        <div class="arabic-term">توكل</div>
+                        <h3>Tawakkul (Trust in Allah)</h3>
+                        <p>Complete reliance on Allah after taking the necessary means. It means doing your part, then trusting Allah with full confidence that He will take care of the outcome.</p>
+                    </div>
+                    
+                    <div class="definition-card">
+                        <div class="arabic-term">قناعة</div>
+                        <h3>Qana'ah (Contentment)</h3>
+                        <p>Being satisfied and grateful with what Allah has provided, without constantly desiring more or comparing yourself to others. True richness is richness of the heart.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="belief-section">
+                <h2>💚 Core Beliefs About Rizq 💚</h2>
+                
+                <div class="belief-item">
+                    <div class="icon">📜</div>
+                    <h3>Your Rizq is Already Written</h3>
+                    <p>Before you were born, Allah wrote your provision in detail. It will reach you at the appointed time, no more and no less.</p>
+                    <div class="hadith">
+                        "If you were to rely upon Allah with the reliance He is due, He would provide for you just as He provides for the birds. They go out in the morning with empty stomachs and return full." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+                
+                <div class="belief-item">
+                    <div class="icon">🔒</div>
+                    <h3>No One Can Take What's Yours</h3>
+                    <p>What Allah has decreed for you cannot be taken by anyone else. Don't compete anxiously or envy others—your portion is guaranteed and protected by Allah.</p>
+                    <div class="hadith">
+                        "Know that if the entire creation were to gather together to benefit you, they would not benefit you except with what Allah had already prescribed for you." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+                
+                <div class="belief-item">
+                    <div class="icon">⏰</div>
+                    <h3>Rizq Comes at Its Appointed Time</h3>
+                    <p>Sometimes provision may seem delayed, but it comes exactly when Allah knows it's best for you. Trust His wisdom and perfect timing.</p>
+                    <div class="hadith">
+                        "No soul will die until it has completed its provision (rizq) and its appointed term." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+                
+                <div class="belief-item">
+                    <div class="icon">🌍</div>
+                    <h3>Allah Provides for All Creation</h3>
+                    <p>From the smallest ant to the largest whale, from birds in the sky to fish in the depths—Allah sustains every creature. He will certainly not forget you!</p>
+                    <div class="hadith">
+                        "And how many a creature carries not its [own] provision. Allah provides for it and for you." - Quran 29:60
+                    </div>
+                </div>
+            </div>
+            
+            <div class="balance-section">
+                <h2>⚖️ The Perfect Balance: Effort + Trust ⚖️</h2>
+                
+                <div class="balance-grid">
+                    <div class="balance-card">
+                        <div class="icon">💪</div>
+                        <h3>Work & Take Means</h3>
+                        <p>Islam commands you to work, plan, and take all necessary practical steps. The Prophet ﷺ said: "Tie your camel, then trust in Allah."</p>
+                    </div>
+                    
+                    <div class="balance-card">
+                        <div class="icon">🤲</div>
+                        <h3>Trust in Allah's Plan</h3>
+                        <p>After doing your part, trust completely in Allah for the results. Don't let anxiety control you—Allah is in charge of outcomes.</p>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin-top: 25px;">
+                    <h3 style="text-align: center; margin-bottom: 15px; font-size: 1.4em;">❌ Wrong Approaches ❌</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;"><strong>Mistake #1 - Laziness:</strong> "Allah will provide, so I don't need to work." This is NOT tawakkul—it's laziness and goes against Islamic teachings.</p>
+                    <p style="margin-bottom: 15px; line-height: 1.6;"><strong>Mistake #2 - Anxiety:</strong> "I've done everything, but I'm still worried sick about the outcome." This shows lack of trust in Allah despite taking means.</p>
+                    <p style="line-height: 1.6;"><strong>✅ Correct Approach:</strong> Work diligently as if everything depends on you, then trust completely in Allah as if everything depends on Him.</p>
+                </div>
+            </div>
+            
+            <div class="halal-section">
+                <h2>✅ Earning Through Halal Means ONLY ✅</h2>
+                
+                <div class="halal-grid">
+                    <div class="halal-item">
+                        <div class="icon">🚫</div>
+                        <div class="content">
+                            <h4>Halal Income is Non-Negotiable</h4>
+                            <p>The Prophet ﷺ said: "Allah is pure and accepts only what is pure." Never compromise your religion for worldly gain. Haram wealth brings no blessing (barakah).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="halal-item">
+                        <div class="icon">💰</div>
+                        <div class="content">
+                            <h4>Avoid These Haram Sources</h4>
+                            <p>Interest (riba), gambling, alcohol/drugs, fraud/deception, theft, bribery, exploiting others, selling haram products, working in haram industries.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="halal-item">
+                        <div class="icon">😇</div>
+                        <div class="content">
+                            <h4>Quality Over Quantity</h4>
+                            <p>A little halal wealth with barakah is far better than abundant haram wealth that brings no peace. The Prophet ﷺ said: "A person's du'a will not be accepted if their food, drink, and clothing are from haram sources."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="halal-item">
+                        <div class="icon">🏆</div>
+                        <div class="content">
+                            <h4>Excellence in Halal Work</h4>
+                            <p>"Allah loves when one of you does a job, that he does it with excellence (itqan)." Do your halal work with honesty, skill, and integrity—this itself is worship.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="halal-item">
+                        <div class="icon">🔍</div>
+                        <div class="content">
+                            <h4>Verify Your Income Sources</h4>
+                            <p>If you're unsure whether your job or income source is halal, consult knowledgeable scholars. Don't gamble with your afterlife for worldly comfort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tests-section">
+                <h2>⚖️ Tests Through Wealth AND Poverty ⚖️</h2>
+                
+                <div class="test-card">
+                    <h3>💎 The Test of Wealth</h3>
+                    <p>Wealth is a test from Allah. Many people think poverty is a test but wealth is a blessing—but actually, wealth can be an even harder test!</p>
+                    <div class="examples">
+                        <h4>Common Pitfalls of Wealth:</h4>
+                        <ul>
+                            <li><strong>Arrogance & Pride:</strong> Thinking you earned it yourself and forgetting Allah</li>
+                            <li><strong>Stinginess:</strong> Hoarding wealth and not spending in Allah's way</li>
+                            <li><strong>Negligence of Allah:</strong> Becoming too busy with dunya to worship</li>
+                            <li><strong>Oppression:</strong> Using wealth to harm or exploit others</li>
+                            <li><strong>Attachment:</strong> Making wealth your god instead of a means</li>
+                        </ul>
+                        <h4 style="margin-top: 15px;">How to Pass This Test:</h4>
+                        <ul>
+                            <li>Be grateful to Allah constantly</li>
+                            <li>Give zakah and sadaqah generously</li>
+                            <li>Use wealth for good causes and helping others</li>
+                            <li>Remain humble—wealth is a test, not a sign of Allah's love</li>
+                            <li>Don't let wealth make you forget death and the afterlife</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="test-card">
+                    <h3>🤲 The Test of Poverty/Limited Means</h3>
+                    <p>Limited resources are also a test. The question is: will you remain patient, grateful, and steadfast in faith?</p>
+                    <div class="examples">
+                        <h4>Common Pitfalls of Poverty:</h4>
+                        <ul>
+                            <li><strong>Complaining:</strong> Being ungrateful and questioning Allah's wisdom</li>
+                            <li><strong>Envy:</strong> Resenting others for their blessings</li>
+                            <li><strong>Despair:</strong> Losing hope in Allah's mercy and provision</li>
+                            <li><strong>Haram Shortcuts:</strong> Turning to haram means to get rich quickly</li>
+                            <li><strong>Weak Faith:</strong> Thinking Allah has abandoned you</li>
+                        </ul>
+                        <h4 style="margin-top: 15px;">How to Pass This Test:</h4>
+                        <ul>
+                            <li>Be patient (sabr) and trust Allah's plan</li>
+                            <li>Be grateful for what you have, even if it's little</li>
+                            <li>Work hard through halal means only</li>
+                            <li>Make du'a and ask Allah for increase in provision</li>
+                            <li>Remember: poverty is not a sign of Allah's displeasure</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="test-card" style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);">
+                    <h3 style="text-align: center;">💡 Important Reminder 💡</h3>
+                    <p style="text-align: center; font-weight: 600;">Neither wealth nor poverty indicates Allah's love or anger. Both are tests! Some of the most beloved people to Allah were poor (like many Companions), and some were wealthy (like Prophet Sulayman). What matters is your response to your situation.</p>
+                </div>
+            </div>
+            
+            <div class="contentment-section">
+                <h2>😌 Qana'ah: The Treasure of Contentment 😌</h2>
+                
+                <div class="contentment-box">
+                    <h3>💎 True Richness is in the Heart</h3>
+                    <p>The Prophet ﷺ said: "Richness is not having many possessions, but richness is the richness of the soul (contentment of heart)."</p>
+                    <p>You can have millions but feel poor because you always want more. Or you can have little but feel rich because you're content with what Allah gave you.</p>
+                    <div class="highlight">
+                        "Whoever wakes up secure in his dwelling, healthy in his body, having food for his day, it is as if the entire world has been given to him." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+                
+                <div class="contentment-box">
+                    <h3>🌟 How to Develop Contentment</h3>
+                    <p><strong>1. Look at those with less:</strong> The Prophet ﷺ said: "Look at those below you and do not look at those above you, for it is more suitable that you not discredit Allah's favor upon you."</p>
+                    <p><strong>2. Count your blessings:</strong> Focus on what you have, not what you lack. Health, family, food, shelter, iman—these are priceless.</p>
+                    <p><strong>3. Remember the afterlife:</strong> This life is temporary. Excessive attachment to worldly things steals your peace.</p>
+                    <p><strong>4. Trust Allah's wisdom:</strong> He knows what's best for you better than you know yourself.</p>
+                    <div class="highlight">
+                        "O Allah, make my provision sufficient for me and bless me in it." - Prophetic Du'a
+                    </div>
+                </div>
+                
+                <div class="contentment-box">
+                    <h3>🚫 Contentment Does NOT Mean:</h3>
+                    <p>• Being lazy or not working to improve your situation<br>
+                    • Accepting injustice or not standing up for your rights<br>
+                    • Not pursuing lawful ambitions and goals<br>
+                    • Neglecting your family's needs</p>
+                    <p style="margin-top: 15px;"><strong>Contentment means:</strong> Being at peace with what Allah has provided while still working hard to improve, but without anxiety, envy, or forgetting gratitude.</p>
+                </div>
+            </div>
+            
+            <div class="envy-section">
+                <h2>⚠️ The Danger of Envy (Hasad) ⚠️</h2>
+                
+                <div class="envy-box">
+                    <h4>🔥 Envy Destroys Good Deeds</h4>
+                    <p>The Prophet ﷺ warned: "Beware of envy, for envy consumes good deeds just as fire consumes wood."</p>
+                </div>
+                
+                <div class="envy-box">
+                    <h4>💔 Why Envy is So Harmful</h4>
+                    <p>• Shows dissatisfaction with Allah's decree<br>
+                    • Indicates ingratitude for your own blessings<br>
+                    • Causes anxiety, stress, and unhappiness<br>
+                    • Destroys relationships and community bonds<br>
+                    • Wastes time you could spend on productivity</p>
+                </div>
+                
+                <div class="envy-box">
+                    <h4>✅ How to Overcome Envy</h4>
+                    <p>1. <strong>Make du'a for the person:</strong> When you feel envy, immediately pray for that person's continued blessings<br>
+                    2. <strong>Remember your own blessings:</strong> Count what Allah gave YOU<br>
+                    3. <strong>Trust Allah's wisdom:</strong> He distributes as He wills for His wise reasons<br>
+                    4. <strong>Know your rizq is protected:</strong> No one can take what's meant for you<br>
+                    5. <strong>Focus on your own journey:</strong> Compete only with your past self</p>
+                </div>
+                
+                <div class="envy-box">
+                    <h4>💚 What IS Allowed: Ghbtah (Positive Emulation)</h4>
+                    <p>It's permissible to admire someone's blessing and wish for something similar WITHOUT wishing for it to be taken from them. "I wish I could be as knowledgeable/generous/skilled" is good motivation, not envy!</p>
+                </div>
+            </div>
+            
+            <div class="dua-section">
+                <h2>🤲 Make Du'a While Taking Action 🤲</h2>
+                
+                <div class="dua-card">
+                    <div class="arabic">اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ</div>
+                    <div class="translation">"O Allah, suffice me with Your halal against Your haram, and make me independent by Your bounty of all others besides You."</div>
+                    <div class="source">- Authentic Du'a from the Prophet ﷺ</div>
+                </div>
+                
+                <div class="dua-card">
+                    <div class="arabic">اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى</div>
+                    <div class="translation">"O Allah, I ask You for guidance, piety, chastity, and contentment."</div>
+                    <div class="source">- Sahih Muslim</div>
+                </div>
+                
+                <div class="dua-card">
+                    <div class="arabic">رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ</div>
+                    <div class="translation">"My Lord, indeed I am, for whatever good You would send down to me, in need."</div>
+                    <div class="source">- Du'a of Prophet Musa (Quran 28:24)</div>
+                </div>
+                
+                <div style="background: white; padding: 25px; border-radius: 15px; margin-top: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2d3748; margin-bottom: 15px; text-align: center;">The Balanced Approach</h3>
+                    <p style="color: #4a5568; line-height: 1.6; text-align: center;">Make sincere du'a to Allah for provision, success, and barakah. At the same time, actively pursue opportunities, apply for jobs, learn new skills, network, and work hard. Don't just sit and make du'a—take action! And don't just take action—remember to make du'a! Both together is the Prophetic way.</p>
+                </div>
+            </div>
+            
+            <div class="practical-section">
+                <h2>💡 Practical Steps to Live with Tawakkul 💡</h2>
+                
+                <div class="practical-grid">
+                    <div class="practical-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Start Every Task with Bismillah</h4>
+                            <p>Begin all efforts by saying "Bismillah" (In the name of Allah) to acknowledge that success comes from Him, not from your abilities alone.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Make Istikharah for Important Decisions</h4>
+                            <p>Pray the prayer of seeking guidance when making major decisions. Trust that Allah will guide you to what's best.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Work Hard, Then Let Go</h4>
+                            <p>Give your best effort in planning and execution, then release the anxiety about results. Your job is to try; Allah's job is to decree the outcome.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Keep Morning & Evening Adhkar</h4>
+                            <p>Daily remembrance includes powerful du'as for protection, provision, and Allah's sufficiency. These build your tawakkul.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Give Sadaqah Regularly</h4>
+                            <p>The Prophet ﷺ said: "Charity does not decrease wealth." Giving regularly trains your heart to trust Allah and opens doors of provision.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Avoid Haram at All Costs</h4>
+                            <p>Never compromise your values for money. Allah will provide through halal means if you remain patient and steadfast.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Practice Gratitude Daily</h4>
+                            <p>Thank Allah for what you have every day. Gratitude attracts more blessings: "If you are grateful, I will surely increase you." (14:7)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Remember Death Frequently</h4>
+                            <p>Remembering death (and that you can't take wealth with you) helps you maintain perspective and not obsess over worldly provision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>✨ The Beautiful Promise ✨</h2>
+                <p>"And whoever fears Allah - He will make for him a way out. And will provide for him from where he does not expect. And whoever relies upon Allah - then He is sufficient for him. Indeed, Allah will accomplish His purpose. Allah has already set for everything a [decreed] extent."<br><br>
+                <strong>- Quran 65:2-3</strong></p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah grant us halal, blessed provision and make us among those who truly trust in Him. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

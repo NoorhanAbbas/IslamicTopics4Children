@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community and Brotherhood in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #fc5c7d;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .foundation-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .foundation-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .foundation-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        
+        .foundation-box .hadith {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .foundation-box .source {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .rights-section {
+            margin: 40px 0;
+        }
+        
+        .rights-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .rights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .right-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .right-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .right-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .right-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .right-card .hadith-ref {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-style: italic;
+            color: #4a5568;
+            text-align: center;
+            font-size: 0.95em;
+        }
+        
+        .enjoining-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .enjoining-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .enjoining-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .enjoining-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .enjoining-box p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .enjoining-box .guidelines {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .enjoining-box .guidelines h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .enjoining-box .guidelines ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .nasiha-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .nasiha-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .nasiha-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .nasiha-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .nasiha-item .number {
+            background: linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .nasiha-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .nasiha-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .forbidden-section {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(238, 90, 111, 0.3);
+        }
+        
+        .forbidden-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .forbidden-box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .forbidden-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .forbidden-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .forbidden-box .definition {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        
+        .forbidden-box ul {
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .covering-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .covering-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .balance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .balance-card {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        .balance-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .balance-card p {
+            line-height: 1.6;
+        }
+        
+        .balance-card ul {
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .social-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .social-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .social-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .social-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .social-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .social-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .justice-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .justice-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .justice-box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .justice-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .justice-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .justice-box .examples {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .justice-box .examples h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .justice-box .examples ul {
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .contribution-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .contribution-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .contribution-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .contribution-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .contribution-item h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .contribution-item p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .contribution-item .examples-box {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .contribution-item .examples-box h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .contribution-item .examples-box ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .practical-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .practical-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .practical-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .practical-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .practical-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .practical-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .practical-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Community and Brotherhood in Islam</h1>
+            <div class="ayah">
+                "The believers are but brothers, so make settlement between your brothers. And fear Allah that you may receive mercy."<br>
+                <strong>- Quran 49:10</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>🤝 We Are One Ummah 🤝</h2>
+                <p>Muslims are one body—when one part hurts, the whole body feels the pain. We have rights and responsibilities toward each other that create a strong, caring, and just community. Brotherhood in Islam goes beyond blood relations to create bonds of faith, mutual support, and shared purpose.</p>
+            </div>
+            
+            <div class="foundation-section">
+                <h2>🌟 The Foundation of Brotherhood 🌟</h2>
+                
+                <div class="foundation-box">
+                    <div class="hadith">
+                        "The believer to another believer is like a building whose different parts support each other."
+                    </div>
+                    <div class="source">- Prophet Muhammad ﷺ (Sahih Bukhari)</div>
+                </div>
+                
+                <div class="foundation-box">
+                    <div class="hadith">
+                        "The example of the believers in their mutual love, mercy, and compassion is like that of a body. If one part of it feels pain, the whole body suffers with sleeplessness and fever."
+                    </div>
+                    <div class="source">- Prophet Muhammad ﷺ (Sahih Muslim)</div>
+                </div>
+                
+                <div class="foundation-box">
+                    <div class="hadith">
+                        "None of you truly believes until he loves for his brother what he loves for himself."
+                    </div>
+                    <div class="source">- Prophet Muhammad ﷺ (Sahih Bukhari & Muslim)</div>
+                </div>
+            </div>
+            
+            <div class="rights-section">
+                <h2>💚 Rights of Muslims Upon Each Other 💚</h2>
+                
+                <div class="rights-grid">
+                    <div class="right-card">
+                        <div class="icon">👋</div>
+                        <h3>Return the Salam</h3>
+                        <p>When someone greets you with "Assalamu alaikum," you must respond with "Wa alaikum assalam" or better. This is an obligation, not optional!</p>
+                        <div class="hadith-ref">
+                            "The rights of a Muslim over another Muslim are six... and he mentioned: When you meet him, greet him with salam." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">🏥</div>
+                        <h3>Visit the Sick</h3>
+                        <p>When your Muslim brother or sister is sick, it's your duty to visit them, comfort them, make du'a for them, and help if they need anything.</p>
+                        <div class="hadith-ref">
+                            "Feed the hungry, visit the sick, and free the captives." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">⚰️</div>
+                        <h3>Attend Funerals</h3>
+                        <p>Attending the funeral prayer (Janazah) and burial of a Muslim is a communal obligation. Show up for your community in their time of loss.</p>
+                        <div class="hadith-ref">
+                            "Whoever attends a funeral until the prayer is offered will have one qirat of reward, and whoever stays until the burial will have two qirats." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">🎉</div>
+                        <h3>Accept Invitations</h3>
+                        <p>When a Muslim invites you to a wedding, celebration, or meal (especially walimah), accept the invitation unless you have a valid excuse.</p>
+                        <div class="hadith-ref">
+                            "If one of you is invited to a wedding feast, let him attend it." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">🤧</div>
+                        <h3>Say Yarhamukallah When Someone Sneezes</h3>
+                        <p>When your Muslim brother sneezes and says "Alhamdulillah," you should respond with "Yarhamukallah" (May Allah have mercy on you).</p>
+                        <div class="hadith-ref">
+                            "When one of you sneezes and says 'Alhamdulillah,' it is obligatory upon every Muslim who hears him to say 'Yarhamukallah.'" - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">🤝</div>
+                        <h3>Help in Times of Need</h3>
+                        <p>Support your brother or sister when they're in difficulty—financially, emotionally, or practically. Be there for each other.</p>
+                        <div class="hadith-ref">
+                            "Whoever relieves a believer of distress in this world, Allah will relieve him of distress on the Day of Resurrection." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">💕</div>
+                        <h3>Love for Allah's Sake</h3>
+                        <p>Love your brothers and sisters sincerely for the sake of Allah, not for worldly benefit. This creates the purest bonds.</p>
+                        <div class="hadith-ref">
+                            "Seven will be shaded by Allah on the Day when there is no shade... [including] two people who love each other for Allah's sake." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">🙏</div>
+                        <h3>Make Du'a for Them</h3>
+                        <p>Pray for your Muslim brothers and sisters in their absence. The angels say "Ameen, and for you the same."</p>
+                        <div class="hadith-ref">
+                            "The supplication of a Muslim for his brother in his absence is answered." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="right-card">
+                        <div class="icon">😊</div>
+                        <h3>Smile and Show Good Character</h3>
+                        <p>Meet your fellow Muslims with a cheerful face. Smiling at your brother is charity and spreads positivity in the community.</p>
+                        <div class="hadith-ref">
+                            "Do not belittle any good deed, even meeting your brother with a cheerful face." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="enjoining-section">
+                <h2>📢 Enjoining Good and Forbidding Evil 📢</h2>
+                
+                <div class="enjoining-box">
+                    <h3>🎯 A Core Responsibility</h3>
+                    <p>One of the defining characteristics of the Muslim Ummah is that we encourage each other toward good and discourage evil. This is not optional—it's an obligation upon every Muslim according to their ability.</p>
+                    <p style="margin-top: 10px; font-style: italic; background: #f7fafc; padding: 15px; border-radius: 10px;">
+                        "You are the best nation produced for mankind. You enjoin what is right and forbid what is wrong and believe in Allah." - Quran 3:110
+                    </p>
+                </div>
+                
+                <div class="enjoining-box">
+                    <h3>⚖️ The Three Levels of Action</h3>
+                    <div class="guidelines">
+                        <p style="color: #4a5568; margin-bottom: 15px;">The Prophet ﷺ taught us three levels of responding to evil, in order of priority:</p>
+                        <ul>
+                            <li><strong>1. With Your Hand (Physical Action):</strong> For those in positions of authority—parents, leaders, officials. Stop the evil directly if you have the power and authority to do so.</li>
+                            <li><strong>2. With Your Tongue (Speech):</strong> Speak up against the evil. Advise, counsel, remind. This is what most people should do.</li>
+                            <li><strong>3. With Your Heart (Internal Rejection):</strong> At minimum, hate the evil in your heart and don't participate. This is the weakest level of faith.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="enjoining-box">
+                    <h3>💡 How to Enjoin Good and Forbid Evil WITH WISDOM</h3>
+                    <div class="guidelines">
+                        <h4>Essential Guidelines:</h4>
+                        <ul>
+                            <li><strong>Private First:</strong> Advise people privately before publicly. Preserve their dignity.</li>
+                            <li><strong>Be Gentle and Kind:</strong> Use soft words, show compassion. Harshness pushes people away.</li>
+                            <li><strong>Start with Yourself:</strong> Practice what you preach. Don't be a hypocrite.</li>
+                            <li><strong>Have Knowledge:</strong> Make sure what you're forbidding is actually wrong and what you're commanding is actually obligatory.</li>
+                            <li><strong>Consider Consequences:</strong> Don't cause greater harm while trying to fix lesser harm.</li>
+                            <li><strong>Be Patient:</strong> Change takes time. Don't give up if people don't listen immediately.</li>
+                            <li><strong>Right Intention:</strong> Do it for Allah's sake, not to show off or feel superior.</li>
+                            <li><strong>Wisdom and Timing:</strong> Choose the right time and place. Don't embarrass people publicly.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="enjoining-box" style="background: #fff3cd; color: #856404;">
+                    <h3>⚠️ Common Mistakes to Avoid</h3>
+                    <p><strong>❌ Being Harsh and Judgmental:</strong> Turning people away from Islam with harshness<br>
+                    <strong>❌ Public Shaming:</strong> Exposing people's sins publicly<br>
+                    <strong>❌ Focusing on Minor Issues:</strong> Making a big deal about small matters while ignoring major sins<br>
+                    <strong>❌ Not Practicing It Yourself:</strong> Commanding others while you don't do it<br>
+                    <strong>❌ Lacking Knowledge:</strong> Forbidding what's permissible or allowing what's forbidden<br>
+                    <strong>❌ Being Selective:</strong> Only correcting people you don't like while ignoring your friends' mistakes</p>
+                </div>
+            </div>
+            
+            <div class="nasiha-section">
+                <h2>💬 Giving Sincere Advice (Nasiha) 💬</h2>
+                
+                <p style="color: #2d3748; text-align: center; margin-bottom: 25px; font-size: 1.1em; line-height: 1.6;">
+                    The Prophet ﷺ said: "Religion is sincerity (nasiha)." When asked "To whom?", he replied: "To Allah, His Book, His Messenger, the leaders of the Muslims, and the common people."
+                </p>
+                
+                <div class="nasiha-grid">
+                    <div class="nasiha-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Sincere Intention</h4>
+                            <p>Give advice purely for the benefit of the person and to please Allah, not to show off your knowledge or feel superior.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nasiha-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Private, Not Public</h4>
+                            <p>Advise people privately to protect their dignity. Public advice often leads to defensiveness and embarrassment. "Advise privately, praise publicly."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nasiha-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Gentle Approach</h4>
+                            <p>Use kind words, soft tone, and show genuine care. The Prophet ﷺ said: "Whoever is deprived of gentleness is deprived of all good."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nasiha-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Right Time and Place</h4>
+                            <p>Choose when the person is receptive. Not when they're angry, stressed, or in front of others. Timing matters!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nasiha-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Focus on the Issue, Not the Person</h4>
+                            <p>Address the behavior, not attack their character. "This action is problematic" not "You're a bad person."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nasiha-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Listen to Their Side</h4>
+                            <p>After giving advice, listen to their perspective. They might have reasons or context you're not aware of. Be willing to admit if you were wrong.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nasiha-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Don't Force Acceptance</h4>
+                            <p>Your job is to advise sincerely, not to force them to change. After you've given good advice, leave the matter. Guidance is from Allah.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nasiha-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Make Du'a for Them</h4>
+                            <p>After advising, make sincere du'a for the person that Allah guides them and makes it easy for them to change.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forbidden-section">
+                <h2>🚫 Forbidden Speech That Destroys Community 🚫</h2>
+                
+                <div class="forbidden-box">
+                    <h3>1️⃣ Backbiting (Gheebah)</h3>
+                    <div class="definition">
+                        "Mentioning your brother in a way he would dislike (behind his back)."
+                    </div>
+                    <p>The Prophet ﷺ defined backbiting clearly: even if what you say is TRUE, if you say it behind someone's back and they wouldn't like it, it's backbiting.</p>
+                    <p style="margin-top: 10px;"><strong>Examples:</strong></p>
+                    <ul>
+                        <li>"Did you see how she dresses? Not very modest..."</li>
+                        <li>"He's so lazy, he never gets anything done on time"</li>
+                        <li>"She's gained so much weight lately"</li>
+                        <li>"His recitation is terrible, he makes so many mistakes"</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-weight: 600; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px;">
+                        ⚠️ The Quran compares backbiting to eating your dead brother's flesh! (49:12) This shows how disgusting it is to Allah.
+                    </p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h3>2️⃣ Slander (Buht an)</h3>
+                    <div class="definition">
+                        "Saying something false about someone that they would dislike."
+                    </div>
+                    <p>This is even worse than backbiting—you're lying AND harming their reputation. This is a major sin.</p>
+                    <p style="margin-top: 10px;"><strong>Examples:</strong></p>
+                    <ul>
+                        <li>Spreading false rumors about someone</li>
+                        <li>Accusing someone of something they didn't do</li>
+                        <li>Exaggerating their faults or adding things that aren't true</li>
+                    </ul>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h3>3️⃣ Tale-Bearing (Nameemah)</h3>
+                    <div class="definition">
+                        "Conveying speech from one person to another to cause harm between them."
+                    </div>
+                    <p>"Did you know what he said about you? He said..." This creates enmity, breaks relationships, and destroys community trust.</p>
+                    <p style="margin-top: 15px; font-weight: 600; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px;">
+                        ⚠️ The Prophet ﷺ said: "The tale-bearer will not enter Paradise." This shows its severity!
+                    </p>
+                </div>
+                
+                <div class="forbidden-box">
+                    <h3>✅ Exceptions: When Can You Mention Someone's Faults?</h3>
+                    <p>In specific situations, mentioning someone's faults is permissible:</p>
+                    <ul>
+                        <li><strong>Seeking help to stop oppression:</strong> "This person is oppressing me, I need help"</li>
+                        <li><strong>Asking for Islamic ruling:</strong> "My husband does X, is this allowed?"</li>
+                        <li><strong>Warning others from harm:</strong> "Don't do business with him, he cheated me"</li>
+                        <li><strong>Public sinner:</strong> Someone openly sinning with no shame</li>
+                        <li><strong>Identifying someone:</strong> "The tall brother" or "the one who limps" (if no other way)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="covering-section">
+                <h2>🛡️ Covering Faults vs. Addressing Harm 🛡️</h2>
+                
+                <div class="balance-grid">
+                    <div class="balance-card">
+                        <h3>✅ Cover Others' Faults</h3>
+                        <p>The general principle is to cover the faults of Muslims and not expose their sins.</p>
+                        <ul>
+                            <li>"Whoever covers a Muslim, Allah will cover him in this world and the Hereafter" - Prophet ﷺ</li>
+                            <li>Don't spread people's mistakes and sins</li>
+                            <li>Give them the benefit of the doubt</li>
+                            <li>If you see a private sin, keep it private</li>
+                            <li>Advise them privately, don't expose them</li>
+                            <li>Make du'a for them, don't gossip about them</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="balance-card">
+                        <h3>⚠️ Address Harmful Behavior</h3>
+                        <p>However, if someone's behavior is harming others or the community, it must be addressed appropriately.</p>
+                        <ul>
+                            <li>If someone is abusing others, report to authorities</li>
+                            <li>If spreading wrong teachings, scholars must warn</li>
+                            <li>If someone is a danger, warn those at risk</li>
+                            <li>Public sins harming the community need addressing</li>
+                            <li>Don't cover for oppressors or criminals</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin-top: 25px;">
+                    <h3 style="margin-bottom: 15px; text-align: center;">💡 The Balance 💡</h3>
+                    <p style="line-height: 1.6; text-align: center;">
+                        Cover people's private sins and mistakes. But don't cover for oppression, abuse, or public harm. There's a difference between protecting someone's dignity and enabling harm to others. Use wisdom!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="social-section">
+                <h2>🤲 Social Responsibility & Helping the Needy 🤲</h2>
+                
+                <div class="social-grid">
+                    <div class="social-card">
+                        <div class="icon">🍞</div>
+                        <h3>Feed the Hungry</h3>
+                        <p>Providing food to those in need is one of the greatest acts of charity and a key to Paradise. The Prophet ﷺ said: "Feed the hungry, visit the sick, and free the captives."</p>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="icon">💰</div>
+                        <h3>Financial Support</h3>
+                        <p>Give zakah and sadaqah to help the poor and needy. Support orphans, widows, and those struggling financially. Your wealth is a trust from Allah.</p>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="icon">🏠</div>
+                        <h3>Help the Homeless</h3>
+                        <p>Support those without shelter, whether through direct help, supporting organizations, or advocacy. Everyone deserves a safe place to live.</p>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="icon">👕</div>
+                        <h3>Clothe the Needy</h3>
+                        <p>Provide clothing to those who lack it. The Prophet ﷺ said: "Whoever clothes a Muslim, Allah will clothe him from the green garments of Paradise."</p>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="icon">📚</div>
+                        <h3>Educate & Empower</h3>
+                        <p>Help people develop skills, get education, and become self-sufficient. Teaching is one of the most impactful forms of charity.</p>
+                    </div>
+                    
+                    <div class="social-card">
+                        <div class="icon">❤️</div>
+                        <h3>Emotional Support</h3>
+                        <p>Be there for those struggling emotionally or mentally. Listen, comfort, encourage. Sometimes a kind word is more valuable than money.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="justice-section">
+                <h2>⚖️ Being a Just Witness ⚖️</h2>
+                
+                <div class="justice-box">
+                    <h3>🎯 The Command to Stand for Justice</h3>
+                    <p>Allah commands us to be witnesses for justice, even if it goes against ourselves, our parents, or our relatives. Truth and justice must never be compromised for personal relationships or benefit.</p>
+                    <p style="font-style: italic; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; margin-top: 15px;">
+                        "O you who have believed, be persistently standing firm in justice, witnesses for Allah, even if it be against yourselves or parents and relatives. Whether one is rich or poor, Allah is more worthy of both. So follow not [personal] inclination, lest you not be just." - Quran 4:135
+                    </p>
+                </div>
+                
+                <div class="justice-box">
+                    <h3>💡 What This Means Practically</h3>
+                    <div class="examples">
+                        <h4>Examples of Just Witness:</h4>
+                        <ul>
+                            <li>If your family member wrongs someone, acknowledge it and support what's right</li>
+                            <li>Don't lie in court to protect a loved one</li>
+                            <li>If you witness injustice, speak up—even if the oppressor is your friend</li>
+                            <li>Don't falsify documents or testimonies for anyone</li>
+                            <li>Admit your own mistakes and wrongdoings honestly</li>
+                            <li>Don't favor the rich over the poor in disputes</li>
+                            <li>Support the truth even when it's unpopular</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="justice-box">
+                    <h3>⚠️ False Testimony is a Major Sin</h3>
+                    <p>The Prophet ﷺ listed false testimony among the greatest sins, alongside associating partners with Allah and disobeying parents. Never lie in legal matters or bear false witness!</p>
+                </div>
+            </div>
+            
+            <div class="contribution-section">
+                <h2>🌟 Contributing Your Skills for Community Benefit 🌟</h2>
+                
+                <div class="contribution-grid">
+                    <div class="contribution-item">
+                        <h3>💡 Every Skill is Valuable</h3>
+                        <p>Whatever expertise, knowledge, or skills Allah has blessed you with should be used to benefit the Muslim community and humanity at large. This is a form of worship and sadaqah jariyah (continuous charity).</p>
+                        <div class="examples-box">
+                            <h4>Your Educational Work as Example:</h4>
+                            <ul>
+                                <li>Developing MSc-level curriculum in Programming, NLP, and LLMs serves the Ummah</li>
+                                <li>Creating accessible educational content makes knowledge available to diverse students</li>
+                                <li>Interdisciplinary collaboration spreads beneficial knowledge across fields</li>
+                                <li>Teaching is sadaqah jariyah—every student who benefits earns you continuous reward</li>
+                                <li>Your intention transforms academic work into worship for Allah</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contribution-item">
+                        <h3>🎯 Different Ways to Contribute</h3>
+                        <div class="examples-box">
+                            <h4>Based on Your Skills:</h4>
+                            <ul>
+                                <li><strong>Doctors/Healthcare:</strong> Provide medical care, health education, free clinics</li>
+                                <li><strong>Teachers/Educators:</strong> Teach Islamic or secular subjects, tutor struggling students</li>
+                                <li><strong>Engineers/Tech:</strong> Build solutions for community needs, digital literacy programs</li>
+                                <li><strong>Lawyers:</strong> Provide legal aid, know-your-rights workshops</li>
+                                <li><strong>Tradespeople:</strong> Help repair homes, teach skills, community projects</li>
+                                <li><strong>Writers:</strong> Create beneficial content, translate resources</li>
+                                <li><strong>Business People:</strong> Create job opportunities, mentor entrepreneurs</li>
+                                <li><strong>Artists/Designers:</strong> Create Islamic educational materials, beautify spaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contribution-item">
+                        <h3>✨ The Reward</h3>
+                        <p>When you use your skills to benefit others:</p>
+                        <div class="examples-box">
+                            <ul>
+                                <li>✅ Every person who benefits earns you reward</li>
+                                <li>✅ The knowledge or skill you teach continues benefiting after you die</li>
+                                <li>✅ You strengthen the entire community</li>
+                                <li>✅ You fulfill the purpose Allah created you with those talents</li>
+                                <li>✅ You become part of the solution to community challenges</li>
+                                <li>✅ Your work becomes an act of worship, not just a job</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="practical-section">
+                <h2>💡 Practical Steps to Build Strong Community 💡</h2>
+                
+                <div class="practical-grid">
+                    <div class="practical-item">
+                        <div class="icon">🕌</div>
+                        <div class="content">
+                            <h4>Be Active in Your Masjid</h4>
+                            <p>Attend prayers, help with programs, volunteer for events. The masjid is the heart of the Muslim community.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">👋</div>
+                        <div class="content">
+                            <h4>Know Your Neighbors</h4>
+                            <p>Muslim and non-Muslim alike—greet them, check on them, help when they need it. Be the best neighbor.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🍽️</div>
+                        <div class="content">
+                            <h4>Share Food Regularly</h4>
+                            <p>When you cook, share with neighbors and those in need. Food builds bonds and shows care.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">📱</div>
+                        <div class="content">
+                            <h4>Check In on People</h4>
+                            <p>A simple text, call, or visit. "How are you?" can mean the world to someone going through difficulty.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🤝</div>
+                        <div class="content">
+                            <h4>Mediate When There's Conflict</h4>
+                            <p>If two Muslims have a dispute, try to make peace between them. Reconciliation is a great deed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🎓</div>
+                        <div class="content">
+                            <h4>Share Your Knowledge</h4>
+                            <p>Whatever you know—teach others. Academic, professional, Islamic knowledge—all beneficial.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">💼</div>
+                        <div class="content">
+                            <h4>Create Opportunities</h4>
+                            <p>Help people find jobs, connect them with resources, open doors when you can.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🚫</div>
+                        <div class="content">
+                            <h4>Stop Gossip When You Hear It</h4>
+                            <p>Don't participate in backbiting. Defend people in their absence or change the subject.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>🤝 Remember 🤝</h2>
+                <p>The strength of the Muslim Ummah lies in our unity, mutual support, and genuine care for one another. When we fulfill each other's rights, speak truthfully, advise sincerely, help the needy, and contribute our skills for the common good, we build a community that reflects the beauty of Islam.<br><br>
+                As the Prophet ﷺ said: "The believers, in their mutual love, mercy, and compassion, are like a single body—if one part complains, the whole body responds with wakefulness and fever."</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah unite our hearts, strengthen our bonds, and make us among those who benefit their communities. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

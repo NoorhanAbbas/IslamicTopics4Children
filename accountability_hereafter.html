@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accountability and the Hereafter in Islam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #434343;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .belief-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .belief-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .belief-box {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .belief-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .belief-box p {
+            line-height: 1.6;
+        }
+        
+        .timeline-section {
+            margin: 40px 0;
+        }
+        
+        .timeline-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .timeline-item {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .timeline-item .number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin: 0 auto 20px auto;
+        }
+        
+        .timeline-item h3 {
+            color: #2d3748;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .timeline-item p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-item .details {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        .timeline-item .details ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .accountability-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .accountability-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .accountability-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .accountability-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .accountability-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .accountability-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .accountability-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .accountability-card .hadith {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-style: italic;
+            color: #4a5568;
+            text-align: center;
+            font-size: 0.95em;
+        }
+        
+        .scales-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .scales-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .scales-visual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .scale-side {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .scale-side.good {
+            border: 3px solid #48bb78;
+        }
+        
+        .scale-side.bad {
+            border: 3px solid #f56565;
+        }
+        
+        .scale-side .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .scale-side h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .scale-side p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .destinations-section {
+            margin: 40px 0;
+        }
+        
+        .destinations-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .destination-card {
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .destination-card.jannah {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+        }
+        
+        .destination-card.jahannam {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+        }
+        
+        .destination-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .destination-card.jannah h3 {
+            color: #2d3748;
+        }
+        
+        .destination-card .description {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .destination-card.jannah .description {
+            color: #2d3748;
+        }
+        
+        .destination-card.jahannam .description {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+        
+        .destination-card .features {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .destination-card.jannah .features {
+            color: #2d3748;
+        }
+        
+        .destination-card.jahannam .features {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+        
+        .destination-card .features h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .destination-card .features ul {
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .sins-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .sins-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .sins-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .sin-card {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        .sin-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .sin-card ul {
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .tawbah-section {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(132, 250, 176, 0.3);
+        }
+        
+        .tawbah-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .tawbah-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .tawbah-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .tawbah-box p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .tawbah-box .highlight {
+            background: #ffeaa7;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .conditions-grid {
+            display: grid;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .condition-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .condition-item .number {
+            background: linear-gradient(135d deg, #84fab0 0%, #8fd3f4 100%);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .condition-item .content {
+            flex: 1;
+        }
+        
+        .condition-item h4 {
+            color: #2d3748;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .condition-item p {
+            color: #4a5568;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .death-section {
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+            padding: 35px;
+            border-radius: 20px;
+            color: white;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .death-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .death-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .death-box h4 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .death-box p {
+            line-height: 1.6;
+        }
+        
+        .practical-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(168, 237, 234, 0.3);
+        }
+        
+        .practical-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .practical-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .practical-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .practical-item .icon {
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .practical-item .content h4 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        
+        .practical-item .content p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .scales-visual {
+                grid-template-columns: 1fr;
+            }
+            .destination-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Accountability and the Hereafter</h1>
+            <div class="ayah">
+                "Did you think that We created you in play (without purpose), and that you would not be brought back to Us?"<br>
+                <strong>- Quran 23:115</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>⚖️ The Ultimate Reality ⚖️</h2>
+                <p>Every human being will stand before Allah on the Day of Judgment to account for every action, word, and even thought. This life is a test, and the Hereafter is the permanent reality. How we live today determines our eternity.</p>
+            </div>
+            
+            <div class="belief-section">
+                <h2>🌙 Belief in the Day of Judgment 🌙</h2>
+                
+                <div class="belief-box">
+                    <h3>📖 A Pillar of Faith</h3>
+                    <p>Belief in the Day of Judgment (Yawm al-Qiyamah) is one of the Six Pillars of Iman. You cannot be a true believer without firmly believing that this day will come.</p>
+                </div>
+                
+                <div class="belief-box">
+                    <h3>⏰ When Will It Happen?</h3>
+                    <p>Only Allah knows when. The Prophet ﷺ said: "Knowledge of the Hour is with Allah alone." It will come suddenly, when people least expect it. The signs of its approach have been described in detail in the Quran and Sunnah.</p>
+                </div>
+                
+                <div class="belief-box">
+                    <h3>🎺 How It Will Begin</h3>
+                    <p>The Angel Israfil will blow the Trumpet (Sur). The first blow will cause everything in the heavens and earth to die. The second blow will resurrect all of creation for judgment. Every person who ever lived will be brought back to life.</p>
+                </div>
+                
+                <div class="belief-box">
+                    <h3>⏳ The Day's Length</h3>
+                    <p>The Quran says the Day of Judgment will be "fifty thousand years" (70:4) in length. Time will be different, and for believers it will pass quickly like the time between Dhuhr and Asr, but for disbelievers it will feel endless.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-section">
+                <h2>📅 Timeline: From Death to Eternity 📅</h2>
+                
+                <div class="timeline-item">
+                    <div class="number">1</div>
+                    <h3>💀 Death (Al-Mawt)</h3>
+                    <p>The Angel of Death (Malak al-Mawt) comes to take your soul. For believers, it's easy and gentle. For disbelievers, it's painful and terrifying.</p>
+                    <div class="details">
+                        <p><strong>What Happens:</strong></p>
+                        <ul>
+                            <li>Your soul is extracted from your body</li>
+                            <li>You see angels (beautiful for believers, terrifying for disbelievers)</li>
+                            <li>You're shown your place in Paradise or Hell</li>
+                            <li>The soul of a believer is taken up through the heavens</li>
+                            <li>The soul of a disbeliever is rejected and cast down</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="number">2</div>
+                    <h3>⚰️ The Grave - Barzakh (Life of the Grave)</h3>
+                    <p>After burial, you enter the life of Barzakh—the barrier between this world and the next. Here you'll be questioned and experience either comfort or punishment.</p>
+                    <div class="details">
+                        <p><strong>The Questioning (Munkar and Nakir):</strong></p>
+                        <ul>
+                            <li>Two angels come and ask three questions:</li>
+                            <li>"Who is your Lord?" (Man rabbuka?)</li>
+                            <li>"What is your religion?" (Ma deenuka?)</li>
+                            <li>"Who is this man (the Prophet)?" (Man nabiyyuka?)</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>For Believers:</strong></p>
+                        <ul>
+                            <li>They answer correctly with firm conviction</li>
+                            <li>Their grave becomes a garden from Paradise</li>
+                            <li>They see their place in Paradise</li>
+                            <li>They sleep peacefully and are visited by their good deeds</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>For Disbelievers:</strong></p>
+                        <ul>
+                            <li>They cannot answer or say "I don't know"</li>
+                            <li>Their grave becomes a pit from Hell</li>
+                            <li>They see their place in Hell</li>
+                            <li>They are punished until the Day of Resurrection</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="number">3</div>
+                    <h3>🎺 The Trumpet - Resurrection</h3>
+                    <p>The trumpet is blown, everyone who ever lived is resurrected, and all gather for the Day of Judgment.</p>
+                    <div class="details">
+                        <ul>
+                            <li>All bodies are reconstructed from a small bone at the base of the spine</li>
+                            <li>Souls are reunited with bodies</li>
+                            <li>People rise from their graves in the state they died</li>
+                            <li>All creatures—humans, jinn, animals—are gathered</li>
+                            <li>The sun is brought extremely close causing intense heat</li>
+                            <li>People sweat according to their sins (some up to ankles, some drowning in it)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="number">4</div>
+                    <h3>⚖️ The Standing (Al-Mawqif)</h3>
+                    <p>All of humanity stands waiting for judgment. This waiting can last for thousands of years, though believers will have shade and comfort.</p>
+                    <div class="details">
+                        <p><strong>What Happens During the Waiting:</strong></p>
+                        <ul>
+                            <li>People will be barefoot, naked, and uncircumcised (but too terrified to notice)</li>
+                            <li>Some will have shade under Allah's Throne (the 7 categories)</li>
+                            <li>People will desperately seek intercession</li>
+                            <li>Prophet Muhammad ﷺ will be granted permission to intercede</li>
+                            <li>Records of deeds are distributed (right hand or left hand)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="number">5</div>
+                    <h3>📖 The Reckoning (Al-Hisab)</h3>
+                    <p>Each person is questioned about their life in private. Everything is revealed—nothing hidden.</p>
+                    <div class="details">
+                        <p><strong>You'll Be Asked About:</strong></p>
+                        <ul>
+                            <li>Your life—how you spent it</li>
+                            <li>Your youth—how you used it</li>
+                            <li>Your wealth—how you earned and spent it</li>
+                            <li>Your knowledge—what you did with it</li>
+                            <li>Your body—how you utilized it</li>
+                        </ul>
+                        <p style="margin-top: 15px;"><strong>Witnesses Against You:</strong></p>
+                        <ul>
+                            <li>Your own limbs will testify against you</li>
+                            <li>The earth will testify about what you did on it</li>
+                            <li>Angels who recorded every deed</li>
+                            <li>The Prophets and righteous will testify</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="number">6</div>
+                    <h3>⚖️ The Scales (Al-Mizan)</h3>
+                    <p>Your deeds are weighed on the scales. Every atom of good and bad is measured.</p>
+                    <div class="details">
+                        <p><strong>How It Works:</strong></p>
+                        <ul>
+                            <li>Good deeds are placed on one side, bad deeds on the other</li>
+                            <li>Even the smallest deeds are weighed</li>
+                            <li>Some deeds are incredibly heavy (like saying "SubhanAllah wa bihamdihi")</li>
+                            <li>Some sins are incredibly heavy (like shirk, oppression)</li>
+                            <li>Those whose good deeds outweigh will succeed</li>
+                            <li>Those whose bad deeds outweigh will face punishment</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="number">7</div>
+                    <h3>🌉 The Bridge (As-Sirat)</h3>
+                    <p>A bridge stretched over Hell, thinner than a hair and sharper than a sword. Everyone must cross it.</p>
+                    <div class="details">
+                        <ul>
+                            <li>Believers cross according to their deeds—some like lightning, some slower</li>
+                            <li>Hypocrites and disbelievers will fall into Hell from the bridge</li>
+                            <li>There are hooks along the bridge that grab people based on their sins</li>
+                            <li>Prophet Muhammad ﷺ and other Prophets will be there making du'a</li>
+                            <li>The first to cross will be Prophet Muhammad ﷺ and his followers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="number">8</div>
+                    <h3>🏰 Final Destination: Jannah or Jahannam</h3>
+                    <p>After crossing the Sirat, believers enter Paradise. Those who fall enter Hell. Both are eternal.</p>
+                </div>
+            </div>
+            
+            <div class="accountability-section">
+                <h2>📝 Accountability for Everything 📝</h2>
+                
+                <div class="accountability-grid">
+                    <div class="accountability-card">
+                        <div class="icon">💭</div>
+                        <h3>Every Thought</h3>
+                        <p>Even the thoughts you hide in your heart—good or bad—are known to Allah and you may be held accountable for them.</p>
+                        <div class="hadith">
+                            "Allah has forgiven my Ummah for what whispers in their hearts as long as they don't act on it or speak it." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="accountability-card">
+                        <div class="icon">🗣️</div>
+                        <h3>Every Word</h3>
+                        <p>Every single word you speak is recorded. Idle talk, backbiting, lies, hurtful words—all written down.</p>
+                        <div class="hadith">
+                            "Whoever believes in Allah and the Last Day should speak good or remain silent." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="accountability-card">
+                        <div class="icon">🚶</div>
+                        <h3>Every Action</h3>
+                        <p>From the biggest to the smallest deed, everything is recorded. Even a smile in your brother's face is charity.</p>
+                        <div class="hadith">
+                            "Whoever does an atom's weight of good will see it, and whoever does an atom's weight of evil will see it." - Quran 99:7-8
+                        </div>
+                    </div>
+                    
+                    <div class="accountability-card">
+                        <div class="icon">👁️</div>
+                        <h3>What You Saw</h3>
+                        <p>Where you looked, what you watched, what you exposed your eyes to—all of it will be questioned.</p>
+                        <div class="hadith">
+                            "The eye commits fornication and its fornication is the lustful look." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                    
+                    <div class="accountability-card">
+                        <div class="icon">👂</div>
+                        <h3>What You Heard</h3>
+                        <p>What you listened to, what gatherings you attended, what you exposed your ears to—accountable for it all.</p>
+                        <div class="hadith">
+                            "Indeed, the hearing, sight, and heart - about all those you will be questioned." - Quran 17:36
+                        </div>
+                    </div>
+                    
+                    <div class="accountability-card">
+                        <div class="icon">⏰</div>
+                        <h3>Your Time</h3>
+                        <p>How you spent every moment of your life—wasted in useless things or invested in what benefits you in the afterlife?</p>
+                        <div class="hadith">
+                            "No one's feet will move on the Day of Resurrection until he is asked about his life and how he spent it." - Prophet Muhammad ﷺ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scales-section">
+                <h2>⚖️ The Scales (Al-Mizan) ⚖️</h2>
+                
+                <p style="color: #2d3748; text-align: center; margin-bottom: 25px; font-size: 1.1em; line-height: 1.6;">
+                    On the Day of Judgment, all deeds will be weighed on real scales. Everything you did—good or bad—will be measured with perfect justice.
+                </p>
+                
+                <div class="scales-visual">
+                    <div class="scale-side good">
+                        <div class="icon">✅</div>
+                        <h3>Good Deeds</h3>
+                        <p><strong>Heavy Deeds:</strong></p>
+                        <ul style="text-align: left; padding-left: 25px; margin-top: 10px; line-height: 1.8;">
+                            <li>Shahada said with conviction</li>
+                            <li>"SubhanAllah wa bihamdihi"</li>
+                            <li>Good character and manners</li>
+                            <li>Prayer in congregation</li>
+                            <li>Being good to parents</li>
+                            <li>Giving in charity</li>
+                            <li>Patience during hardship</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="scale-side bad">
+                        <div class="icon">❌</div>
+                        <h3>Bad Deeds</h3>
+                        <p><strong>Heavy Sins:</strong></p>
+                        <ul style="text-align: left; padding-left: 25px; margin-top: 10px; line-height: 1.8;">
+                            <li>Shirk (associating partners with Allah)</li>
+                            <li>Oppressing others</li>
+                            <li>Backbiting and slander</li>
+                            <li>Breaking family ties</li>
+                            <li>Lying and deception</li>
+                            <li>Harming others</li>
+                            <li>Arrogance and pride</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 25px; border-radius: 15px; margin-top: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2d3748; margin-bottom: 15px; text-align: center;">💡 Important Points About the Scales 💡</h3>
+                    <p style="color: #4a5568; line-height: 1.6; text-align: center;">
+                        ⚖️ The scales are real physical scales<br>
+                        ⚖️ Deeds will be given weight and physical form<br>
+                        ⚖️ Even the smallest deed matters—nothing is forgotten<br>
+                        ⚖️ Good deeds can erase bad deeds if you repented<br>
+                        ⚖️ Your intention determines the weight of your deeds<br>
+                        ⚖️ "SubhanAllah wa bihamdihi" fills the scales with good
+                    </p>
+                </div>
+            </div>
+            
+            <div class="destinations-section">
+                <h2>🏰 The Eternal Destinations 🏰</h2>
+                
+                <div class="destination-grid">
+                    <div class="destination-card jannah">
+                        <h3>✨ Jannah (Paradise) ✨</h3>
+                        
+                        <div class="description">
+                            <p style="line-height: 1.6; color: #4a5568;">
+                                <strong>The Reward for Believers:</strong> An eternal home of unimaginable beauty, pleasure, and peace. No pain, no sadness, no death, no aging—only endless joy in the presence of Allah.
+                            </p>
+                        </div>
+                        
+                        <div class="features">
+                            <h4>What's in Jannah:</h4>
+                            <ul>
+                                <li>Rivers of milk, honey, wine (that doesn't intoxicate), and pure water</li>
+                                <li>Palaces of gold, silver, and precious stones</li>
+                                <li>Gardens underneath which rivers flow</li>
+                                <li>Whatever your heart desires—just think it and it appears</li>
+                                <li>Eternal youth, beauty, and perfect health</li>
+                                <li>Reunion with loved ones who believed</li>
+                                <li>Servants, companions (Hoor al-Ayn), pure spouses</li>
+                                <li>Food and drink beyond imagination</li>
+                                <li>No negative emotions—no envy, anger, or sadness</li>
+                                <li><strong>GREATEST BLESSING: Seeing Allah's Face</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="description" style="margin-top: 15px;">
+                            <p style="line-height: 1.6; font-style: italic; text-align: center; color: #4a5568;">
+                                "Therein they will have whatever they desire, and with Us is more." - Quran 50:35
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card jahannam">
+                        <h3>🔥 Jahannam (Hell) 🔥</h3>
+                        
+                        <div class="description">
+                            <p style="line-height: 1.6;">
+                                <strong>The Punishment for Disbelievers:</strong> An eternal prison of unimaginable pain, torment, and despair. A place Allah prepared for those who rejected Him and persisted in major sins without repentance.
+                            </p>
+                        </div>
+                        
+                        <div class="features">
+                            <h4>What's in Jahannam:</h4>
+                            <ul>
+                                <li>Fire 70 times hotter than worldly fire</li>
+                                <li>Skin burns and is replaced repeatedly to feel pain again</li>
+                                <li>Boiling water and pus to drink</li>
+                                <li>Food that chokes and doesn't satisfy (Zaqqum tree)</li>
+                                <li>Chains, shackles, and garments of fire</li>
+                                <li>Scorching heat alternating with bitter cold</li>
+                                <li>Crying until no tears remain, then crying blood</li>
+                                <li>Intense thirst that's never quenched</li>
+                                <li>Punishment fitting each sin</li>
+                                <li>Eternal regret and despair</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="description" style="margin-top: 15px; background: rgba(0,0,0,0.3);">
+                            <p style="line-height: 1.6; font-weight: 600; text-align: center;">
+                                ⚠️ WARNING: For disbelievers and major sinners, Hell is ETERNAL. For sinful believers (who died with iman), they may be punished for a time but will eventually enter Paradise after their punishment is complete.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sins-section">
+                <h2>⚠️ Major and Minor Sins ⚠️</h2>
+                
+                <div class="sins-grid">
+                    <div class="sin-card">
+                        <h3>🔴 Major Sins (Kaba'ir)</h3>
+                        <p style="margin-bottom: 15px;">Very serious sins that require specific repentance and can lead to severe punishment if not repented from.</p>
+                        <ul>
+                            <li>Shirk (associating partners with Allah)</li>
+                            <li>Murder</li>
+                            <li>Zina (adultery/fornication)</li>
+                            <li>Consuming interest (riba)</li>
+                            <li>Stealing/theft</li>
+                            <li>False testimony</li>
+                            <li>Drinking alcohol</li>
+                            <li>Disobeying parents</li>
+                            <li>Breaking family ties</li>
+                            <li>Magic and sorcery</li>
+                            <li>Backbiting and slander</li>
+                            <li>Oppressing others</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sin-card">
+                        <h3>🟡 Minor Sins (Sagha'ir)</h3>
+                        <p style="margin-bottom: 15px;">Lesser sins that are still disliked by Allah but can be erased through good deeds, repentance, and acts of worship.</p>
+                        <ul>
+                            <li>Minor lies (not under oath)</li>
+                            <li>Gossiping without serious harm</li>
+                            <li>Wasting time excessively</li>
+                            <li>Looking at what's forbidden (glances)</li>
+                            <li>Small acts of dishonesty</li>
+                            <li>Breaking promises</li>
+                            <li>Being impatient or angry (without harm)</li>
+                            <li>Laziness in worship</li>
+                        </ul>
+                        <p style="margin-top: 15px; font-weight: 600;">⚠️ Warning: Minor sins done repeatedly can become major! And major sins done publicly harm the whole community.</p>
+                    </div>
+                </div>
+                
+                <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin-top: 25px;">
+                    <h3 style="margin-bottom: 15px; text-align: center;">💡 How to Erase Sins 💡</h3>
+                    <p style="line-height: 1.6;">
+                        ✅ Sincere repentance (Tawbah)<br>
+                        ✅ Good deeds that erase bad deeds<br>
+                        ✅ The five daily prayers<br>
+                        ✅ Friday prayer to Friday prayer<br>
+                        ✅ Ramadan to Ramadan<br>
+                        ✅ Hajj and Umrah<br>
+                        ✅ Trials and hardships (if borne with patience)<br>
+                        ✅ Du'a and seeking forgiveness<br>
+                        ✅ Fasting<br>
+                        ✅ Giving charity
+                    </p>
+                </div>
+            </div>
+            
+            <div class="tawbah-section">
+                <h2>🤲 Tawbah (Repentance) & Allah's Mercy 🤲</h2>
+                
+                <div class="tawbah-box">
+                    <h3>💚 Allah's Mercy is Greater Than All Sins</h3>
+                    <p>No matter what you've done, Allah's mercy can forgive it—even shirk if you repent before death. Allah says: "Say, 'O My servants who have transgressed against themselves, do not despair of the mercy of Allah. Indeed, Allah forgives all sins. Indeed, it is He who is the Forgiving, the Merciful.'" (Quran 39:53)</p>
+                    <div class="highlight">
+                        "Allah is more pleased with the repentance of His servant than one of you would be if he lost his camel in the desert then found it." - Prophet Muhammad ﷺ
+                    </div>
+                </div>
+                
+                <div class="tawbah-box">
+                    <h3>✅ Conditions for Valid Repentance</h3>
+                    
+                    <div class="conditions-grid">
+                        <div class="condition-item">
+                            <div class="number">1</div>
+                            <div class="content">
+                                <h4>Stop the Sin Immediately</h4>
+                                <p>You cannot repent while still committing the sin. Leave it completely.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="condition-item">
+                            <div class="number">2</div>
+                            <div class="content">
+                                <h4>Feel Genuine Regret</h4>
+                                <p>Be truly sorry for what you did. Regret is the essence of repentance.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="condition-item">
+                            <div class="number">3</div>
+                            <div class="content">
+                                <h4>Firm Intention Never to Return</h4>
+                                <p>Sincerely intend never to do it again. Don't plan to return to the sin.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="condition-item">
+                            <div class="number">4</div>
+                            <div class="content">
+                                <h4>Return Rights (If Applicable)</h4>
+                                <p>If you wronged someone, apologize and give back what you took. If you backbit, seek their forgiveness.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="condition-item">
+                            <div class="number">5</div>
+                            <div class="content">
+                                <h4>Repent Before It's Too Late</h4>
+                                <p>Before death or before the sun rises from the west (a major sign of the Day of Judgment).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tawbah-box">
+                    <h3>🌟 The Beauty of Tawbah</h3>
+                    <p>When you truly repent:</p>
+                    <ul style="padding-left: 25px; line-height: 1.8; color: #4a5568; margin-top: 10px;">
+                        <li>✨ Your sins are completely erased as if you never did them</li>
+                        <li>✨ Some scholars say your sins can even be transformed into good deeds!</li>
+                        <li>✨ Allah loves those who repent</li>
+                        <li>✨ You can become closer to Allah than before the sin</li>
+                        <li>✨ Angels celebrate your return</li>
+                        <li>✨ You earn the reward of one who repented</li>
+                    </ul>
+                    <div class="highlight" style="margin-top: 15px;">
+                        "And those who, when they commit an immorality or wrong themselves, remember Allah and seek forgiveness for their sins - and who can forgive sins except Allah?" - Quran 3:135
+                    </div>
+                </div>
+            </div>
+            
+            <div class="death-section">
+                <h2>💀 Living with Consciousness of Death 💀</h2>
+                
+                <div class="death-box">
+                    <h4>🎯 Remember Death Often (Dhikr al-Mawt)</h4>
+                    <p>The Prophet ﷺ said: "Remember often the destroyer of pleasures"—meaning death. Remembering death isn't morbid—it's wisdom. It puts life in perspective, helps you prioritize, and motivates you to do good before it's too late.</p>
+                </div>
+                
+                <div class="death-box">
+                    <h4>✅ How Remembering Death Benefits You</h4>
+                    <ul style="line-height: 1.8; padding-left: 25px; margin-top: 10px;">
+                        <li>Makes you value time and not waste it</li>
+                        <li>Prevents you from becoming attached to dunya</li>
+                        <li>Motivates you to repent quickly</li>
+                        <li>Makes you kinder and more forgiving</li>
+                        <li>Helps you avoid sins (ask yourself: What if I die doing this?)</li>
+                        <li>Makes you appreciate your blessings</li>
+                        <li>Encourages you to prepare for the afterlife</li>
+                        <li>Softens your heart</li>
+                    </ul>
+                </div>
+                
+                <div class="death-box">
+                    <h4>📿 Practical Ways to Remember Death</h4>
+                    <ul style="line-height: 1.8; padding-left: 25px; margin-top: 10px;">
+                        <li>Visit graveyards occasionally</li>
+                        <li>Attend funeral prayers (Janazah)</li>
+                        <li>Think: "What if I died today—am I ready?"</li>
+                        <li>Make du'a for a good death and ending</li>
+                        <li>Don't postpone good deeds—do them now</li>
+                        <li>Keep your affairs in order (will, debts settled)</li>
+                        <li>Imagine yourself being questioned in the grave</li>
+                        <li>Live as if each day could be your last</li>
+                    </ul>
+                </div>
+                
+                <div class="death-box" style="background: rgba(255,255,255,0.15);">
+                    <h4 style="text-align: center;">💡 The Wise Balance 💡</h4>
+                    <p style="text-align: center; margin-top: 10px;">
+                        Remember death enough to motivate you to do good and avoid evil, but not so much that you become paralyzed with fear or neglect your worldly duties. The Prophet ﷺ said: "Work for this world as if you'll live forever, and work for the Hereafter as if you'll die tomorrow."
+                    </p>
+                </div>
+            </div>
+            
+            <div class="practical-section">
+                <h2>💡 Practical Steps to Prepare for the Hereafter 💡</h2>
+                
+                <div class="practical-grid">
+                    <div class="practical-item">
+                        <div class="icon">📿</div>
+                        <div class="content">
+                            <h4>Increase Good Deeds</h4>
+                            <p>Pray regularly, give charity, help others, maintain family ties, and accumulate as many good deeds as you can.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🤲</div>
+                        <div class="content">
+                            <h4>Repent Immediately</h4>
+                            <p>Don't delay repentance. The moment you realize you've sinned, turn back to Allah. Tomorrow is not guaranteed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">💰</div>
+                        <div class="content">
+                            <h4>Settle Your Debts</h4>
+                            <p>Clear all debts to people. Financial rights must be returned. Write a will to ensure debts are paid after death.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🤝</div>
+                        <div class="content">
+                            <h4>Seek Forgiveness from People</h4>
+                            <p>If you wronged anyone, apologize and seek their forgiveness now. On the Day of Judgment, they'll take from your good deeds.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">📖</div>
+                        <div class="content">
+                            <h4>Learn About the Hereafter</h4>
+                            <p>Study the descriptions of the Day of Judgment, Paradise, and Hell. This knowledge motivates action.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">🕌</div>
+                        <div class="content">
+                            <h4>Strengthen Your Iman</h4>
+                            <p>Increase in worship, dhikr, Quran recitation, and connection with Allah. Strong faith = easy accounting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">💭</div>
+                        <div class="content">
+                            <h4>Guard Your Tongue</h4>
+                            <p>Every word is recorded. Avoid backbiting, lying, gossiping, and hurtful speech. Speak good or stay silent.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="icon">👁️</div>
+                        <div class="content">
+                            <h4>Lower Your Gaze</h4>
+                            <p>Protect your eyes from haram. What you watch, you'll be accountable for. Control what enters your heart through your eyes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>⚖️ Final Reminder ⚖️</h2>
+                <p>"Every soul will taste death. And you will only be given your full compensation on the Day of Resurrection. So whoever is drawn away from the Fire and admitted to Paradise has attained success. And what is the life of this world except the enjoyment of delusion."<br><br>
+                <strong>- Quran 3:185</strong><br><br>
+                This life is temporary. The Hereafter is eternal. Prepare now, for death can come at any moment, and there are no second chances after it arrives.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah grant us a good ending, an easy accounting, and Paradise as our final home. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

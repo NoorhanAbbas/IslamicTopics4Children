@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Character of the Prophet ﷺ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #0f2027;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #0f2027;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .ayah {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .intro-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .intro-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .intro-box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .intro-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .intro-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .intro-box .quote {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-style: italic;
+            font-weight: 600;
+        }
+        
+        .trait-section {
+            margin: 40px 0;
+        }
+        
+        .trait-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .trait-card .trait-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .trait-card .trait-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .trait-card h3 {
+            color: #2d3748;
+            font-size: 1.6em;
+            flex: 1;
+        }
+        
+        .trait-card .description {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .trait-card .description p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .trait-card .examples {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        .trait-card .examples h4 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .trait-card .example-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .trait-card .example-item .story-title {
+            color: #2d3748;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .trait-card .example-item p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .trait-card .lesson {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .trait-card .lesson h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .emulation-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .emulation-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .emulation-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .emulation-item {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .emulation-item .emulation-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .emulation-item .number {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            font-size: 1.2em;
+        }
+        
+        .emulation-item h3 {
+            color: #2d3748;
+            flex: 1;
+            font-size: 1.3em;
+        }
+        
+        .emulation-item .trait-name {
+            background: #fef5e7;
+            padding: 10px 15px;
+            border-radius: 8px;
+            color: #856404;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .emulation-item .actions {
+            margin-top: 10px;
+        }
+        
+        .emulation-item .actions ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .emulation-item .hadith-box {
+            background: #f0fff4;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-left: 4px solid #48bb78;
+        }
+        
+        .emulation-item .hadith-box p {
+            color: #2d8659;
+            font-style: italic;
+            line-height: 1.6;
+        }
+        
+        .testimony-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .testimony-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .testimony-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .testimony-box .person {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .testimony-box .testimony {
+            color: #4a5568;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        
+        .comparison-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .comparison-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .comparison-card {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+        }
+        
+        .comparison-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .comparison-card p {
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>The Character of the Prophet ﷺ</h1>
+            <div class="arabic">خُلُق النَّبِيّ ﷺ</div>
+            <div class="arabic" style="font-size: 1.3em;">The Perfect Example for All Humanity</div>
+            <div class="ayah">
+                "And indeed, you are of a great moral character."<br>
+                <strong>- Allah speaking to the Prophet Muhammad ﷺ (Quran 68:4)</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>✨ The Living Quran ✨</h2>
+                <p>When Aisha (RA) was asked about the character of the Prophet ﷺ, she said: "His character was the Quran." He didn't just recite the Book of Allah—he lived it. Every verse was embodied in his actions, every command demonstrated in his life. To know him is to know what it means to be the perfect human being.</p>
+            </div>
+            
+            <div class="intro-section">
+                <h2>🌟 Why Study His Character? 🌟</h2>
+                
+                <div class="intro-box">
+                    <h3>📖 Allah's Command</h3>
+                    <p>"There has certainly been for you in the Messenger of Allah an excellent pattern for anyone whose hope is in Allah and the Last Day and who remembers Allah often." - Quran 33:21</p>
+                    <div class="quote">
+                        Allah didn't just tell us to worship Him—He sent us a living example. The Prophet ﷺ is the practical demonstration of how to live Islam.
+                    </div>
+                </div>
+                
+                <div class="intro-box">
+                    <h3>💝 The Path to Allah's Love</h3>
+                    <p>"Say, [O Muhammad], 'If you love Allah, then follow me, [so] Allah will love you and forgive you your sins.'" - Quran 3:31</p>
+                    <div class="quote">
+                        Want Allah to love you? Follow the Prophet ﷺ. It's the direct path to winning Allah's love and forgiveness.
+                    </div>
+                </div>
+                
+                <div class="intro-box">
+                    <h3>⭐ Perfection in Every Aspect</h3>
+                    <p>He was perfect as a prophet, as a husband, as a father, as a friend, as a leader, as a neighbor, as a servant of Allah. In EVERY role, he excelled. There's no area of life where he doesn't provide guidance through his example.</p>
+                </div>
+            </div>
+            
+            <div class="trait-section">
+                <div class="trait-card">
+                    <div class="trait-header">
+                        <div class="trait-icon">🙇</div>
+                        <h3>His Humility (Tawadu')</h3>
+                    </div>
+                    
+                    <div class="description">
+                        <p>Despite being the final messenger of Allah, the leader of the Muslim community, and the most honored creation—he was the MOST humble person. He never saw himself as above anyone else, never demanded special treatment, never acted superior.</p>
+                    </div>
+                    
+                    <div class="examples">
+                        <h4>💎 Real Examples from His Life:</h4>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🧹 He Did His Own Chores</div>
+                            <p>Aisha (RA) was asked: "What did the Prophet do in his house?" She said: "He would mend his clothes, milk his goat, and serve himself." The leader of the Muslim nation did household chores!</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">👷 He Worked Alongside His Companions</div>
+                            <p>When building the mosque in Madinah, the Prophet ﷺ carried bricks and stones with the companions. They wanted him to rest, but he insisted on working. When digging the trench before the Battle of Khandaq, he dug alongside them, covered in dust.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🐑 He Served His Guests</div>
+                            <p>When guests came, he would serve them personally, pour their drinks, and make sure they were comfortable. He never expected others to serve him.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🚶 He Walked with the Poor</div>
+                            <p>He would walk in the marketplace with the poor, sit with the slaves, visit the sick regardless of their status. A slave girl could take him by the hand and lead him wherever she needed, and he would go with her.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🪑 He Sat on the Ground</div>
+                            <p>He ate on the floor, sat on the ground, slept on a mat that left marks on his side. When offered a soft bed, he refused, saying: "What have I to do with the world? I am like a traveler who rests under the shade of a tree and then moves on."</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">❌ He Refused Arrogance</div>
+                            <p>When people would stand up for him, he disliked it, saying: "Do not stand up for me as the non-Arabs stand up for one another." He forbade excessive praise and never allowed anyone to treat him like royalty.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson">
+                        <h4>💡 Lesson for Us:</h4>
+                        <p>True greatness is in humility. Don't think you're too important to help others, do simple tasks, or interact with "lower" status people. Serve others as he served.</p>
+                    </div>
+                </div>
+                
+                <div class="trait-card">
+                    <div class="trait-header">
+                        <div class="trait-icon">❤️</div>
+                        <h3>His Mercy and Compassion (Rahmah)</h3>
+                    </div>
+                    
+                    <div class="description">
+                        <p>Allah described him as "a mercy to the worlds." His heart overflowed with compassion for everyone—Muslims, non-Muslims, children, animals, even his enemies. He felt their pain as his own.</p>
+                    </div>
+                    
+                    <div class="examples">
+                        <h4>💎 Real Examples from His Life:</h4>
+                        
+                        <div class="example-item">
+                            <div class="story-title">👶 Gentleness with Children</div>
+                            <p>His grandchildren would climb on his back while he was praying, and he would extend his prostration so they could finish playing. He would shorten prayers when he heard a baby crying, showing mercy to the mother. He kissed children openly and showed affection.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">💧 He Wept for His Ummah</div>
+                            <p>In the last third of the night, he would cry in prostration, begging Allah: "My Ummah, my Ummah!" He worried about us constantly. Allah had to reassure him that He would please him with regards to his nation.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🕊️ Kindness to Animals</div>
+                            <p>He saw a mother bird whose chicks were taken. He immediately ordered their return, saying: "Who has distressed her by taking her children?" He forbade harming animals for sport. He taught that a woman entered Paradise because she gave water to a thirsty dog.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🤲 Forgiveness of Enemies</div>
+                            <p>When he conquered Makkah—the city that expelled him, tortured his companions, and killed his loved ones—he stood at the Ka'bah and asked: "What do you think I will do with you?" They said: "You are a noble brother and the son of a noble brother." He said: "Go, you are free." Complete amnesty for those who persecuted him for years!</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">👴 Patience with the Bedouin</div>
+                            <p>A Bedouin grabbed his cloak so hard it left marks on his neck and demanded: "Give me from Allah's wealth!" Instead of punishing him, the Prophet ﷺ smiled and ordered that he be given what he asked for.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">😢 Empathy for the Suffering</div>
+                            <p>When he saw a funeral, he stood up out of respect. Someone said: "It's a Jew's funeral." He replied: "Was he not a soul?" He honored the dead regardless of faith. When he saw someone struggling, his eyes would fill with tears.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson">
+                        <h4>💡 Lesson for Us:</h4>
+                        <p>Be merciful to ALL of Allah's creation. Don't just be kind when it's easy—show mercy when you have power to punish. Feel the pain of others and act to relieve it.</p>
+                    </div>
+                </div>
+                
+                <div class="trait-card">
+                    <div class="trait-header">
+                        <div class="trait-icon">⚖️</div>
+                        <h3>His Justice ('Adl)</h3>
+                    </div>
+                    
+                    <div class="description">
+                        <p>He was absolutely fair in every matter—no favoritism, no bias, no exceptions for family or friends. Truth and justice came first, even when it hurt him personally.</p>
+                    </div>
+                    
+                    <div class="examples">
+                        <h4>💎 Real Examples from His Life:</h4>
+                        
+                        <div class="example-item">
+                            <div class="story-title">⚔️ The Case of Fatimah</div>
+                            <p>When a woman from a noble family stole, people wanted to intercede for her. The Prophet ﷺ became angry and said: "The people before you were destroyed because when a noble person stole, they let him go, but when a weak person stole, they punished him. By Allah! If Fatimah the daughter of Muhammad stole, I would cut off her hand!" His own daughter would receive the same punishment as anyone else.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🤝 Fair Distribution</div>
+                            <p>When distributing war booty, he was scrupulously fair. Once someone said: "This division is not done seeking Allah's pleasure!" Instead of getting angry, he said: "May Allah have mercy on Moses; he was harmed more than this, yet he remained patient." He accepted criticism when it was about fairness.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">👨‍⚖️ Accepting Judgment Against Himself</div>
+                            <p>In a dispute with a Jewish man over a shield, the judge ruled in favor of the Jew. The Prophet ﷺ accepted the verdict without complaint, even though he was the leader of the community. This amazed the Jewish man so much that he became Muslim.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🎯 No Nepotism</div>
+                            <p>He appointed people based on competence, not family connections. When his uncle Abbas asked for a position, he refused because there were more qualified people. Merit mattered more than kinship.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson">
+                        <h4>💡 Lesson for Us:</h4>
+                        <p>Never let relationships, wealth, or status affect your judgment. Be fair even when it goes against your own interests or the interests of those you love. Justice is non-negotiable.</p>
+                    </div>
+                </div>
+                
+                <div class="trait-card">
+                    <div class="trait-header">
+                        <div class="trait-icon">🦁</div>
+                        <h3>His Courage (Shaja'ah)</h3>
+                    </div>
+                    
+                    <div class="description">
+                        <p>He was fearless in every sense—physically brave in battle, morally courageous in standing for truth, and spiritually bold in his complete trust in Allah.</p>
+                    </div>
+                    
+                    <div class="examples">
+                        <h4>💎 Real Examples from His Life:</h4>
+                        
+                        <div class="example-item">
+                            <div class="story-title">⚔️ Bravest in Battle</div>
+                            <p>Ali (RA) said: "When the battle grew fierce and the enemy attacked, we would take shelter behind the Prophet ﷺ." He was always at the front lines, never hiding or running. In the Battle of Uhud, when many companions fled, he stood firm calling them back.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🗣️ Speaking Truth to Power</div>
+                            <p>When the Quraysh leaders offered him wealth, kingship, and marriage to the most beautiful women if he'd stop preaching Islam, he refused. He said: "Even if they put the sun in my right hand and the moon in my left, I will not abandon this matter until Allah makes it prevail or I die trying."</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🌙 Alone in the Cave</div>
+                            <p>When hiding in the Cave of Thawr during Hijrah with Abu Bakr, the enemy was literally at the cave entrance. Abu Bakr was terrified, but the Prophet ﷺ said calmly: "Do not grieve; indeed Allah is with us." Complete trust in Allah despite danger.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">💪 Physical Strength</div>
+                            <p>In wrestling matches, he would compete with strong men. Rukana, the strongest wrestler in Arabia, challenged him and was defeated. His physical courage matched his moral courage.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🎤 Public Rebuke of Wrong</div>
+                            <p>When he saw something wrong in the mosque, he would address it immediately from the pulpit. He didn't fear public opinion—he cared only about Allah's opinion.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson">
+                        <h4>💡 Lesson for Us:</h4>
+                        <p>Stand up for what's right even when you're afraid. Physical courage is good, but moral courage—standing for truth when everyone opposes you—is greater. Trust Allah and be brave.</p>
+                    </div>
+                </div>
+                
+                <div class="trait-card">
+                    <div class="trait-header">
+                        <div class="trait-icon">🌱</div>
+                        <h3>His Patience (Sabr)</h3>
+                    </div>
+                    
+                    <div class="description">
+                        <p>He faced unimaginable trials—personal loss, persecution, physical harm, betrayal—yet he never complained, never despaired, never gave up. His patience was legendary.</p>
+                    </div>
+                    
+                    <div class="examples">
+                        <h4>💎 Real Examples from His Life:</h4>
+                        
+                        <div class="example-item">
+                            <div class="story-title">💔 Loss of Loved Ones</div>
+                            <p>He lost his mother at age 6, his grandfather at age 8, his beloved wife Khadijah, his uncle Abu Talib, six of his seven children in his lifetime—yet he never questioned Allah's wisdom. He wept (he was human), but he remained patient and submitted to Allah's decree.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🩸 Physical Torture in Ta'if</div>
+                            <p>When he went to Ta'if to preach Islam, they rejected him, mocked him, and set children to throw stones at him until his feet bled. His shoes were filled with blood. Angel Jibreel came and offered to crush the city between two mountains. The Prophet ﷺ said: "No! I hope that Allah will bring from their descendants people who will worship Allah alone." He prayed FOR them, not against them!</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">😢 The Year of Sorrow</div>
+                            <p>In one year, he lost his wife Khadijah and his uncle Abu Talib—his two main supporters. The pain was immense, but he continued his mission without pause. He called it "The Year of Sorrow" but he didn't break.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🏔️ Battle of Uhud</div>
+                            <p>His tooth was broken, his face was wounded, his beloved uncle Hamzah was killed and mutilated. Companions died around him. Yet he stood firm and rallied the Muslims. No despair, only trust in Allah.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">👶 Death of His Son Ibrahim</div>
+                            <p>When his infant son Ibrahim died, he wept. Companions were surprised, and he said: "The eye sheds tears and the heart grieves, but we say only what pleases our Lord. Indeed, we are grieved by your departure, O Ibrahim." Emotions are human, but he remained patient.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson">
+                        <h4>💡 Lesson for Us:</h4>
+                        <p>Life will test you with loss, pain, and hardship. Cry if you need to (it's human), but don't despair. Submit to Allah's decree and trust His wisdom. Patience is not suppressing emotions—it's maintaining faith despite the pain.</p>
+                    </div>
+                </div>
+                
+                <div class="trait-card">
+                    <div class="trait-header">
+                        <div class="trait-icon">😊</div>
+                        <h3>His Humor and Joy</h3>
+                    </div>
+                    
+                    <div class="description">
+                        <p>Despite the heavy responsibility of prophethood and the trials he faced, he had a beautiful sense of humor. He smiled often, laughed with his companions, and spread joy wherever he went.</p>
+                    </div>
+                    
+                    <div class="examples">
+                        <h4>💎 Real Examples from His Life:</h4>
+                        
+                        <div class="example-item">
+                            <div class="story-title">😄 Playful Jokes</div>
+                            <p>An old woman came to him and asked: "Will I enter Paradise?" He said with a smile: "Old women don't enter Paradise." She became sad. He then explained: "Because Allah will make you young again!" He joked to teach and uplift.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🏃 Racing with Aisha</div>
+                            <p>He raced with his wife Aisha (RA) in the desert. The first time she won, she was young and fast. Later, when she had gained weight, he won and said laughingly: "This is for that!" He was playful and fun with his spouse.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🐫 The Man and His Camel</div>
+                            <p>A man complained that his camel was skinny. The Prophet ﷺ said: "Don't you know that nothing carries your uncle except a camel?" playing with the fact that camels are our "uncles" (relatives) metaphorically. The man laughed.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">👶 Playing with Children</div>
+                            <p>He would let his grandchildren ride on his back while he crawled like a camel. When asked, he said: "They are the sweet-smelling flowers of this world." He genuinely enjoyed playing with kids.</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">😁 His Smile</div>
+                            <p>Abdullah ibn Harith said: "I have never seen anyone who smiled as much as the Messenger of Allah ﷺ." His smile was constant—a gift to everyone around him. He said: "Smiling in your brother's face is charity."</p>
+                        </div>
+                        
+                        <div class="example-item">
+                            <div class="story-title">🎭 But Always Truthful</div>
+                            <p>He said: "I joke, but I speak only the truth." His humor was clean, kind, and never at the expense of others. No mockery, no lies, no vulgarity—just pure, wholesome fun.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson">
+                        <h4>💡 Lesson for Us:</h4>
+                        <p>Being religious doesn't mean being gloomy! Smile, laugh, enjoy life—but keep it halal. Use humor to spread joy and bring people closer, but never lie, mock, or hurt others in the name of "joking."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimony-section">
+                <h2>🗣️ What Others Said About Him 🗣️</h2>
+                
+                <div class="testimony-box">
+                    <div class="person">💚 Aisha (RA) - His Wife</div>
+                    <div class="testimony">"His character was the Quran." She also said: "He never struck a servant or a woman, and he never took revenge for himself unless the limits of Allah were violated."</div>
+                </div>
+                
+                <div class="testimony-box">
+                    <div class="person">⚔️ Ali (RA) - His Cousin</div>
+                    <div class="testimony">"He was the most generous of people in giving, the most truthful in speech, the gentlest in temperament, and the noblest of them in lineage. Whoever saw him unexpectedly was awed by him, and whoever knew him loved him."</div>
+                </div>
+                
+                <div class="testimony-box">
+                    <div class="person">👴 Anas ibn Malik (RA) - His Servant</div>
+                    <div class="testimony">"I served the Prophet ﷺ for ten years. By Allah, he never said 'uff' (even a slight word of anger) to me, nor did he ever say about something I did: 'Why did you do that?' or about something I didn't do: 'Why didn't you do that?'"</div>
+                </div>
+                
+                <div class="testimony-box">
+                    <div class="person">🤝 Abu Sufyan - Former Enemy (Before Islam)</div>
+                    <div class="testimony">When questioned by the Roman Emperor Heraclius, Abu Sufyan (still a non-Muslim at the time) admitted: "He is truthful and does not lie. He commands us to pray, speak the truth, be chaste and keep good relations with our relatives." Even his enemies testified to his character!</div>
+                </div>
+                
+                <div class="testimony-box">
+                    <div class="person">📿 Khadijah (RA) - His First Wife</div>
+                    <div class="testimony">When he was frightened after the first revelation, she comforted him: "By Allah, Allah will never disgrace you! You keep good relations with your relatives, you help the poor and the destitute, you serve your guests generously, and you assist those who are afflicted with calamities."</div>
+                </div>
+                
+                <div class="testimony-box">
+                    <div class="person">📖 Allah - The Creator</div>
+                    <div class="testimony">"And indeed, you are of a great moral character." - Quran 68:4. The Creator Himself testified to the perfection of His character!</div>
+                </div>
+            </div>
+            
+            <div class="comparison-section">
+                <h2>🌟 More Beautiful Qualities 🌟</h2>
+                
+                <div class="comparison-grid">
+                    <div class="comparison-card">
+                        <h3>🧼 Cleanliness</h3>
+                        <p>He loved cleanliness and pleasant fragrances. His companions said his sweat smelled better than musk. He brushed his teeth frequently (siwak), bathed regularly, and wore clean clothes.</p>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <h3>🤐 Modesty</h3>
+                        <p>More modest than a virgin in her chamber. He lowered his gaze, never stared at people, and was extremely shy. Yet his modesty didn't prevent him from teaching clearly about intimate matters when needed.</p>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <h3>💰 Generosity</h3>
+                        <p>He gave away everything he had. If someone asked for something, he gave it immediately. He never said "no" to a request if he had the means. He died with his armor mortgaged to a Jew for barley to feed his family—that's how much he gave away!</p>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <h3>🤝 Trustworthiness</h3>
+                        <p>Called "Al-Amin" (The Trustworthy) even by his enemies. People would leave their valuables with him for safekeeping. When he left Makkah during Hijrah, he instructed Ali to return all the trusts to their owners.</p>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <h3>👂 Good Listener</h3>
+                        <p>He gave full attention to whoever spoke to him. Never interrupted, never looked away, never made anyone feel unimportant. When someone spoke, he turned his whole body toward them.</p>
+                    </div>
+                    
+                    <div class="comparison-card">
+                        <h3>💬 Perfect Speech</h3>
+                        <p>Never vulgar, never loud, never rambling. His words were concise, clear, and memorable. He spoke slowly so people could understand, and he would repeat important points three times.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="emulation-section">
+                <h2>🎯 How to Emulate Him Today 🎯</h2>
+                
+                <div class="emulation-grid">
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">1</div>
+                            <h3>Study His Life (Seerah)</h3>
+                        </div>
+                        <div class="trait-name">Foundation: You Can't Follow What You Don't Know</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Read authentic books about his biography</li>
+                                <li>Listen to Seerah lectures from reliable scholars</li>
+                                <li>Watch/listen to his life story regularly</li>
+                                <li>Teach his Seerah to your children</li>
+                                <li>Join Seerah study circles</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>The more you know about him, the more you'll love him. And the more you love him, the easier it becomes to follow him.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">2</div>
+                            <h3>Perfect Your Worship</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Complete Submission to Allah</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Pray as he prayed—with khushu', proper movements, understanding</li>
+                                <li>Fast as he fasted—Ramadan, Mondays/Thursdays, white days</li>
+                                <li>Give charity generously as he did</li>
+                                <li>Make dhikr throughout the day as was his practice</li>
+                                <li>Wake up for Tahajjud (night prayer) as he never missed it</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"Pray as you have seen me pray." - Prophet Muhammad ﷺ</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">3</div>
+                            <h3>Be Humble in Daily Life</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Humility</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Do your own chores—don't think you're too important</li>
+                                <li>Help with housework (as he did)</li>
+                                <li>Sit with people of all backgrounds, not just the "elite"</li>
+                                <li>Accept criticism gracefully</li>
+                                <li>Don't demand special treatment or titles</li>
+                                <li>Serve others even when you're the leader/boss/parent</li>
+                                <li>Dress modestly, not to show off wealth</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"Whoever humbles himself for Allah, Allah will elevate him."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">4</div>
+                            <h3>Show Mercy to All Creation</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Mercy and Compassion</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Be kind to children—play with them, listen to them, teach them gently</li>
+                                <li>Care for animals—don't harm them, feed strays, report abuse</li>
+                                <li>Forgive those who wrong you (as he forgave the people of Makkah)</li>
+                                <li>Visit the sick and elderly</li>
+                                <li>Help the poor and needy—give generously</li>
+                                <li>Be patient with difficult people (as he was with the Bedouin)</li>
+                                <li>Show respect to everyone, even those of other faiths</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"The merciful are shown mercy by the Most Merciful. Be merciful to those on earth, and the One in the heavens will be merciful to you."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">5</div>
+                            <h3>Be Absolutely Fair and Just</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Justice</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Don't show favoritism to family or friends</li>
+                                <li>In conflicts, judge by truth, not by who you like</li>
+                                <li>At work, promote based on merit, not nepotism</li>
+                                <li>With your children, be fair in gifts, attention, and discipline</li>
+                                <li>Pay workers fairly and on time</li>
+                                <li>Admit when you're wrong</li>
+                                <li>Stand up for justice even when it's unpopular</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"The just will be on platforms of light on the Day of Judgment—those who are just in their rulings, with their families, and in their responsibilities."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">6</div>
+                            <h3>Have Courage in Faith</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Courage</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Stand up for what's right even when people oppose you</li>
+                                <li>Don't hide your Islam—be open about your faith</li>
+                                <li>Speak truth to power when needed</li>
+                                <li>Defend those who are oppressed</li>
+                                <li>Don't fear people's criticism when doing what's right</li>
+                                <li>Have moral courage—stop wrong when you see it</li>
+                                <li>Trust Allah in difficult situations</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"The strong person is not the one who overcomes people by his strength, but the one who controls himself while in anger."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">7</div>
+                            <h3>Practice Patience in Trials</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Patience</div>
+                        <div class="actions">
+                            <ul>
+                                <li>When faced with loss, say "Inna lillahi wa inna ilayhi raji'un" and mean it</li>
+                                <li>Don't complain excessively about your problems</li>
+                                <li>Accept Allah's decree with grace</li>
+                                <li>Keep worshipping even when things are hard</li>
+                                <li>Make du'a but don't despair if it's not answered immediately</li>
+                                <li>Be patient with people's shortcomings</li>
+                                <li>Persevere in doing good even when you don't see results</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"How wonderful is the case of the believer! There is good for him in everything, and this is only for the believer. If prosperity attends him, he is grateful, and if adversity befalls him, he is patient."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">8</div>
+                            <h3>Spread Joy and Smile</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Humor and Joy</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Smile at people—it's charity!</li>
+                                <li>Use clean, halal humor to uplift others</li>
+                                <li>Play with your children and spouse</li>
+                                <li>Be cheerful, not gloomy, about religion</li>
+                                <li>Laugh with people, not at them</li>
+                                <li>Make gatherings enjoyable and positive</li>
+                                <li>But always speak the truth—never lie for a joke</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"Smiling in your brother's face is an act of charity."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">9</div>
+                            <h3>Perfect Your Character with Others</h3>
+                        </div>
+                        <div class="trait-name">Emulating: His Beautiful Manners</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Be the best spouse—help at home, show affection, communicate well</li>
+                                <li>Be the best parent—kind but firm, teaching by example</li>
+                                <li>Be the best neighbor—helpful, quiet, considerate</li>
+                                <li>Be the best employee/employer—honest, hardworking, fair</li>
+                                <li>Be the best friend—loyal, trustworthy, supportive</li>
+                                <li>Keep your promises and be punctual</li>
+                                <li>Listen when others speak, give full attention</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>"The best among you are those who are best to their families."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emulation-item">
+                        <div class="emulation-header">
+                            <div class="number">10</div>
+                            <h3>Make Constant Du'a</h3>
+                        </div>
+                        <div class="trait-name">Foundation: You Need Allah's Help</div>
+                        <div class="actions">
+                            <ul>
+                                <li>Ask Allah to help you follow the Prophet's ﷺ example</li>
+                                <li>Make du'a to have beautiful character</li>
+                                <li>Pray: "O Allah, guide me to the best of character, none can guide to it but You"</li>
+                                <li>Ask for Allah's love for you and the Prophet's intercession</li>
+                                <li>Seek refuge from bad character traits</li>
+                            </ul>
+                        </div>
+                        <div class="hadith-box">
+                            <p>The Prophet ﷺ used to say: "O Allah, guide me to the best of character—none can guide to the best of it but You. And protect me from bad character—none can protect from it but You."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>💫 Final Reminder 💫</h2>
+                <p>Following the Prophet ﷺ is not about imitating superficial things—it's about embodying his character, his values, his spirit. Start small. Pick one trait to work on this month. Next month, add another. Gradual, consistent change is better than temporary enthusiasm.<br><br>
+                Remember: He was a human being like us, which means his example is ACHIEVABLE. If it was impossible, Allah wouldn't have sent him as our model. Every effort you make to be like him brings you closer to Allah's love.<br><br>
+                "Say, [O Muhammad], 'If you love Allah, then follow me, [so] Allah will love you and forgive you your sins.'" - Quran 3:31</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah make us among those who truly love and follow the Prophet Muhammad ﷺ, and grant us his intercession on the Day of Judgment. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

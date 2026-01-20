@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following the Sunnah in Daily Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #1e3c72;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .header .arabic {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .hadith {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 15px;
+            color: #4a5568;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            margin: 40px 0;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .key-principle h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        
+        .key-principle p {
+            color: #4a5568;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .understanding-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            color: white;
+        }
+        
+        .understanding-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .understanding-box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px 0;
+        }
+        
+        .understanding-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .understanding-box p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .understanding-box ul {
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .understanding-box .highlight {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+        
+        .category-section {
+            margin: 40px 0;
+        }
+        
+        .category-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 30px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .category-card .category-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .category-card .category-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            flex-shrink: 0;
+        }
+        
+        .category-card h3 {
+            color: #2d3748;
+            font-size: 1.6em;
+            flex: 1;
+        }
+        
+        .category-card .intro {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        .sunnah-grid {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .sunnah-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .sunnah-item h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sunnah-item .icon {
+            font-size: 1.3em;
+        }
+        
+        .sunnah-item .description {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .sunnah-item .how-to {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .sunnah-item .how-to h5 {
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+        
+        .sunnah-item .how-to ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .sunnah-item .reward {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        .daily-routine-section {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 154, 158, 0.3);
+        }
+        
+        .daily-routine-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .routine-timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .routine-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: rgba(255,255,255,0.5);
+        }
+        
+        .routine-step {
+            position: relative;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .routine-step::before {
+            content: '';
+            position: absolute;
+            left: -32px;
+            top: 30px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #ff9a9e;
+        }
+        
+        .routine-step .time {
+            color: #ff9a9e;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .routine-step h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .routine-step ul {
+            color: #4a5568;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+        
+        .benefits-section {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(253, 203, 110, 0.3);
+        }
+        
+        .benefits-section h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-card .icon {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        
+        .benefit-card p {
+            color: #4a5568;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
+        .practical-section {
+            background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(196, 113, 245, 0.3);
+            color: white;
+        }
+        
+        .practical-section h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .practical-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .practical-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .practical-item .number {
+            background: rgba(255,255,255,0.3);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .practical-item .content h4 {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .practical-item .content p {
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #e2e8f0;
+            color: #718096;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Following the Sunnah in Daily Life</h1>
+            <div class="arabic">اتِّبَاع السُّنَّة في الحَيَاة اليَوْمِيَّة</div>
+            <div class="arabic" style="font-size: 1.3em;">Living Every Moment According to the Prophetic Way</div>
+            <div class="hadith">
+                "Whoever revives my Sunnah has loved me, and whoever loves me will be with me in Paradise."<br>
+                <strong>- Prophet Muhammad ﷺ (Tirmidhi)</strong>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="key-principle">
+                <h2>✨ Sunnah: A Complete Way of Life ✨</h2>
+                <p>The Sunnah is not just about religious rituals like prayer and fasting. It's a comprehensive lifestyle that covers EVERY aspect of your day—from the moment you wake up until you sleep. Following the Sunnah transforms ordinary actions into acts of worship and brings barakah (blessings) into your entire life. It's living as the Prophet ﷺ lived, in both worship and worldly matters.</p>
+            </div>
+            
+            <div class="understanding-section">
+                <h2>🌟 Understanding Sunnah Beyond Rituals 🌟</h2>
+                
+                <div class="understanding-box">
+                    <h3>❌ Common Misconception</h3>
+                    <p>Many people think Sunnah is only about:</p>
+                    <ul>
+                        <li>Praying extra prayers</li>
+                        <li>Fasting on Mondays and Thursdays</li>
+                        <li>Growing a beard (for men)</li>
+                        <li>Wearing specific clothing</li>
+                    </ul>
+                    <div class="highlight">
+                        While these ARE Sunnah, limiting Sunnah to just these things misses the bigger picture!
+                    </div>
+                </div>
+                
+                <div class="understanding-box">
+                    <h3>✅ The Complete Picture</h3>
+                    <p>Sunnah encompasses:</p>
+                    <ul>
+                        <li><strong>How you sleep</strong> - position, du'a, time</li>
+                        <li><strong>How you wake up</strong> - what you say, what you do first</li>
+                        <li><strong>How you eat and drink</strong> - manners, gratitude, moderation</li>
+                        <li><strong>How you dress</strong> - modesty, cleanliness, style</li>
+                        <li><strong>How you speak</strong> - truthfulness, kindness, wisdom</li>
+                        <li><strong>How you walk</strong> - humility, purpose, pace</li>
+                        <li><strong>How you treat people</strong> - family, neighbors, strangers, enemies</li>
+                        <li><strong>How you work</strong> - honesty, excellence, ethics</li>
+                        <li><strong>How you relax</strong> - permissible entertainment, family time</li>
+                        <li><strong>How you deal with emotions</strong> - anger, sadness, joy</li>
+                    </ul>
+                    <div class="highlight">
+                        The Prophet ﷺ showed us how to be excellent human beings in EVERY situation!
+                    </div>
+                </div>
+                
+                <div class="understanding-box">
+                    <h3>💎 Why This Matters</h3>
+                    <p>When you realize Sunnah covers everything, you understand that:</p>
+                    <ul>
+                        <li>Every moment can be worship if done according to Sunnah with the right intention</li>
+                        <li>Islam is not separate from "real life"—it IS the guide to real life</li>
+                        <li>You can earn rewards 24/7, not just during prayer times</li>
+                        <li>Following Sunnah protects you from harm and brings blessings in all areas</li>
+                        <li>The Prophet ﷺ is your role model in EVERYTHING, not just religion</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="category-section">
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">👔</div>
+                        <h3>Sunnah in Dress and Appearance</h3>
+                    </div>
+                    
+                    <div class="intro">
+                        Your appearance reflects your faith and your respect for yourself and others. The Prophet ﷺ was always clean, well-groomed, and modestly dressed. He taught that Allah loves to see the effects of His blessings on His servant.
+                    </div>
+                    
+                    <div class="sunnah-grid">
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🧼</span> Cleanliness and Hygiene</h4>
+                            <div class="description">
+                                The Prophet ﷺ emphasized cleanliness as half of faith. He was always clean and pleasant-smelling.
+                            </div>
+                            <div class="how-to">
+                                <h5>How to Follow:</h5>
+                                <ul>
+                                    <li>Bathe/shower regularly (at least once a week, preferably more)</li>
+                                    <li>Perform wudu before sleeping</li>
+                                    <li>Use miswak or brush teeth (at least twice daily)</li>
+                                    <li>Trim nails regularly (don't let them grow beyond 40 days)</li>
+                                    <li>Remove armpit and pubic hair (at least every 40 days)</li>
+                                    <li>Use pleasant (but not overpowering) fragrance</li>
+                                    <li>Wash hands before and after eating</li>
+                                    <li>Keep hair clean, combed, and oiled</li>
+                                </ul>
+                            </div>
+                            <div class="reward">
+                                ⭐ "Cleanliness is half of faith." - Prophet ﷺ
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">👗</span> Modesty in Clothing</h4>
+                            <div class="description">
+                                The Prophet ﷺ dressed modestly, covering his 'awrah (private parts), and taught both men and women to do the same.
+                            </div>
+                            <div class="how-to">
+                                <h5>How to Follow:</h5>
+                                <ul>
+                                    <li><strong>For men:</strong> Cover from navel to knee minimum; avoid tight or transparent clothing</li>
+                                    <li><strong>For women:</strong> Cover entire body except face and hands in presence of non-mahram; loose, not see-through</li>
+                                    <li>Wear clean, presentable clothes (not shabby or torn unnecessarily)</li>
+                                    <li>Men: Avoid wearing gold or silk</li>
+                                    <li>Men: Don't let garments hang below the ankles out of arrogance</li>
+                                    <li>Women: Don't imitate men in dress; men: don't imitate women</li>
+                                    <li>Avoid clothing with haram symbols or offensive images</li>
+                                    <li>Wear your best clothes for Jumu'ah and Eid</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">✂️</span> Hair and Grooming</h4>
+                            <div class="description">
+                                The Prophet ﷺ kept his hair neat, applied oil, and combed it regularly. For men, he encouraged keeping a beard.
+                            </div>
+                            <div class="how-to">
+                                <h5>How to Follow:</h5>
+                                <ul>
+                                    <li><strong>Men:</strong> Keep a beard (let it grow, trim mustache)</li>
+                                    <li>Comb and oil your hair—don't leave it disheveled</li>
+                                    <li>Part hair on the right side (he sometimes did this)</li>
+                                    <li>Keep hair and beard clean and well-maintained</li>
+                                    <li>Don't dye hair pure black to hide gray (other colors are okay)</li>
+                                    <li>Remove gray hair from the beard is disliked; leaving it is better</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">👞</span> Shoes and Entering/Exiting</h4>
+                            <div class="description">
+                                Even in simple actions like putting on shoes, the Prophet ﷺ had a beautiful Sunnah.
+                            </div>
+                            <div class="how-to">
+                                <h5>How to Follow:</h5>
+                                <ul>
+                                    <li>Put on the right shoe first, remove the left shoe first</li>
+                                    <li>Don't walk with only one shoe on</li>
+                                    <li>Untie laces when removing shoes (don't just kick them off)</li>
+                                    <li>Remove shoes before entering the masjid or your home</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🤲</span> Dressing Du'a</h4>
+                            <div class="description">
+                                Say the specific du'a when putting on new clothes or getting dressed.
+                            </div>
+                            <div class="how-to">
+                                <h5>When putting on clothes, say:</h5>
+                                <ul>
+                                    <li>Arabic: الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا، وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ</li>
+                                    <li>Translation: "All praise is to Allah who has clothed me with this and provided it for me without any might or power from me"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">🍽️</div>
+                        <h3>Sunnah in Eating and Drinking</h3>
+                    </div>
+                    
+                    <div class="intro">
+                        The way the Prophet ﷺ ate and drank was a perfect balance of enjoying Allah's blessings while maintaining health and gratitude. Every bite can be worship!
+                    </div>
+                    
+                    <div class="sunnah-grid">
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🤲</span> Before Eating</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li>Wash hands thoroughly</li>
+                                    <li>Say "Bismillah" (In the name of Allah)</li>
+                                    <li>If you forget, say when you remember: "Bismillah awwalahu wa akhirahu" (In the name of Allah, at its beginning and end)</li>
+                                    <li>Intend to eat for strength to worship Allah</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🍴</span> While Eating</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li><strong>Use your right hand</strong> - Never eat with the left</li>
+                                    <li><strong>Eat from what's in front of you</strong> - Don't reach across the dish</li>
+                                    <li><strong>Take small bites</strong> - Don't stuff your mouth</li>
+                                    <li><strong>Chew thoroughly</strong> - Don't gulp down food</li>
+                                    <li><strong>Sit down while eating</strong> - Don't walk around</li>
+                                    <li><strong>Don't blow on hot food</strong> - Wait for it to cool</li>
+                                    <li><strong>Don't criticize food</strong> - If you don't like it, just leave it</li>
+                                    <li><strong>Eat with others</strong> - There's barakah in eating together</li>
+                                    <li><strong>Don't lean while eating</strong> - Sit upright</li>
+                                    <li><strong>Eat moderately</strong> - Stop before you're completely full</li>
+                                </ul>
+                            </div>
+                            <div class="reward">
+                                ⭐ "The son of Adam does not fill any vessel worse than his stomach. It is enough for the son of Adam to eat a few mouthfuls to keep him going, but if he must do that, then one-third for food, one-third for drink, and one-third for air." - Prophet ﷺ
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🥤</span> Drinking Etiquette</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li><strong>Say Bismillah before drinking</strong></li>
+                                    <li><strong>Drink with your right hand</strong></li>
+                                    <li><strong>Sit while drinking</strong> - Standing is permitted in necessity but sitting is better</li>
+                                    <li><strong>Drink in three breaths</strong> - Remove cup from mouth, breathe, drink again</li>
+                                    <li><strong>Don't breathe into the cup</strong></li>
+                                    <li><strong>Don't drink from chipped side of cup</strong></li>
+                                    <li><strong>Look into the vessel</strong> - Make sure it's clean</li>
+                                    <li><strong>Pass drinks to the right</strong> - When sharing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🙏</span> After Eating</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li><strong>Lick your fingers</strong> - The Prophet ﷺ said you don't know where the barakah is in the food</li>
+                                    <li><strong>Clean the dish</strong> - Wipe it with bread or fingers</li>
+                                    <li><strong>Say Alhamdulillah</strong> - All praise is to Allah</li>
+                                    <li>Full du'a: "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مُسْلِمِينَ" - "All praise is to Allah who has fed us and given us drink and made us Muslims"</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🍯</span> Specific Foods the Prophet ﷺ Loved</h4>
+                            <div class="how-to">
+                                <h5>Try to include these in your diet:</h5>
+                                <ul>
+                                    <li><strong>Dates</strong> - Especially for breaking fast</li>
+                                    <li><strong>Honey</strong> - He loved it and recommended it</li>
+                                    <li><strong>Milk</strong> - Nutritious and blessed</li>
+                                    <li><strong>Barley</strong> - Simple, wholesome grain</li>
+                                    <li><strong>Pumpkin/Gourd</strong> - He enjoyed this vegetable</li>
+                                    <li><strong>Meat</strong> - Occasionally, not daily; sheep/goat/chicken</li>
+                                    <li><strong>Olive oil</strong> - "Eat olive oil and use it on your hair and skin"</li>
+                                    <li><strong>Cucumber</strong> - Especially with dates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">😴</div>
+                        <h3>Sunnah in Sleeping and Waking</h3>
+                    </div>
+                    
+                    <div class="intro">
+                        Even sleep becomes worship when done according to the Sunnah! The way you sleep and wake up sets the tone for your entire day and night.
+                    </div>
+                    
+                    <div class="sunnah-grid">
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🌙</span> Before Sleeping</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah Routine:</h5>
+                                <ul>
+                                    <li><strong>1. Perform Wudu</strong> - Sleep in a state of purity</li>
+                                    <li><strong>2. Shake/dust your bed</strong> - To remove any harmful creatures</li>
+                                    <li><strong>3. Lie on your right side</strong> - The Prophetic sleeping position</li>
+                                    <li><strong>4. Place right hand under right cheek</strong></li>
+                                    <li><strong>5. Face the Qiblah</strong> - If possible</li>
+                                    <li><strong>6. Say the bedtime adhkar:</strong></li>
+                                    <li>- Ayatul Kursi (for protection from shaytan)</li>
+                                    <li>- Last two verses of Surah Al-Baqarah</li>
+                                    <li>- Surah Al-Ikhlas, Al-Falaq, An-Nas (3 times each, blow on hands, wipe over body)</li>
+                                    <li>- Surah Al-Mulk (intercedes for its reciter)</li>
+                                    <li><strong>7. Make du'a:</strong> "Bismika Allahumma amutu wa ahya" - In Your name O Allah I die and I live</li>
+                                    <li><strong>8. Long du'a:</strong> "O Allah, I have submitted myself to You..."</li>
+                                    <li><strong>9. Sleep early</strong> - The Prophet ﷺ disliked staying up late unnecessarily</li>
+                                </ul>
+                            </div>
+                            <div class="reward">
+                                ⭐ "When you go to bed, perform wudu as you would for prayer, then lie down on your right side..." - Prophet ﷺ
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">☀️</span> Upon Waking</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah Routine:</h5>
+                                <ul>
+                                    <li><strong>1. Say the waking du'a immediately:</strong> "Alhamdulillah alladhi ahyana ba'da ma amatana wa ilayhi an-nushur" - All praise to Allah who gave us life after death and to Him is the resurrection</li>
+                                    <li><strong>2. Wipe your face</strong> - Remove traces of sleep</li>
+                                    <li><strong>3. Look at the sky and recite</strong> - Last verses of Surah Al-Imran (if you can)</li>
+                                    <li><strong>4. Use the siwak/miswak</strong> - Clean your teeth</li>
+                                    <li><strong>5. Wash your hands</strong> - Before putting them in water vessel</li>
+                                    <li><strong>6. Perform wudu</strong></li>
+                                    <li><strong>7. Pray Fajr on time</strong> - Don't go back to sleep!</li>
+                                    <li><strong>8. Make morning adhkar</strong> - Before sunrise</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">💤</span> Daytime Nap (Qailulah)</h4>
+                            <div class="description">
+                                The Prophet ﷺ would take a short rest after Dhuhr prayer. This is a Sunnah that gives you energy for the rest of the day and helps you wake up for Tahajjud.
+                            </div>
+                            <div class="how-to">
+                                <h5>How to Follow:</h5>
+                                <ul>
+                                    <li>Take a short nap after Dhuhr (10-30 minutes)</li>
+                                    <li>Don't make it too long (you'll feel groggy)</li>
+                                    <li>Make intention to rest so you have energy for worship</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">🗣️</div>
+                        <h3>Sunnah in Speaking</h3>
+                    </div>
+                    
+                    <div class="intro">
+                        Your tongue can either be your ticket to Paradise or your downfall. The Prophet ﷺ had perfect control over his speech—every word was intentional, beneficial, and kind.
+                    </div>
+                    
+                    <div class="sunnah-grid">
+                        <div class="sunnah-item">
+                            <h4><span class="icon">✅</span> Speak Good or Remain Silent</h4>
+                            <div class="description">
+                                "Whoever believes in Allah and the Last Day should speak good or remain silent." - Prophet ﷺ
+                            </div>
+                            <div class="how-to">
+                                <h5>How to Apply:</h5>
+                                <ul>
+                                    <li>Before speaking, ask: Is it true? Is it beneficial? Is it kind?</li>
+                                    <li>If the answer to any is "no," stay silent</li>
+                                    <li>Don't engage in useless talk just to fill silence</li>
+                                    <li>Quality over quantity—speak less, but make it meaningful</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">💬</span> How to Speak</h4>
+                            <div class="how-to">
+                                <h5>The Prophetic Way:</h5>
+                                <ul>
+                                    <li><strong>Speak clearly</strong> - Not too fast, not mumbling</li>
+                                    <li><strong>Lower your voice</strong> - Don't shout unnecessarily</li>
+                                    <li><strong>Speak directly</strong> - No vague hints or passive aggression</li>
+                                    <li><strong>Be concise</strong> - Don't ramble or repeat excessively</li>
+                                    <li><strong>Repeat important things 3 times</strong> - For emphasis and clarity</li>
+                                    <li><strong>Listen more than you speak</strong></li>
+                                    <li><strong>Give full attention</strong> - Turn your body to the speaker</li>
+                                    <li><strong>Don't interrupt</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">❌</span> What to Avoid</h4>
+                            <div class="how-to">
+                                <h5>The Prophet ﷺ never:</h5>
+                                <ul>
+                                    <li><strong>Lied</strong> - Even in jest (unless obvious harmless humor)</li>
+                                    <li><strong>Backbit</strong> - Never spoke ill of anyone behind their back</li>
+                                    <li><strong>Cursed or swore</strong> - Never used foul language</li>
+                                    <li><strong>Argued unnecessarily</strong> - Avoided debates for the sake of winning</li>
+                                    <li><strong>Mocked others</strong> - Never made fun of people</li>
+                                    <li><strong>Gossiped</strong> - Didn't engage in tale-bearing</li>
+                                    <li><strong>Spoke loudly</strong> - Wasn't the loudest in gatherings</li>
+                                    <li><strong>Talked excessively about worldly matters</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">😊</span> Positive Speech</h4>
+                            <div class="how-to">
+                                <h5>What the Prophet ﷺ encouraged:</h5>
+                                <ul>
+                                    <li><strong>Say Salam</strong> - Greet everyone you meet</li>
+                                    <li><strong>Make du'a for others</strong> - Pray for them in their presence and absence</li>
+                                    <li><strong>Give sincere advice</strong> - But privately and kindly</li>
+                                    <li><strong>Speak the truth</strong> - Even when it's difficult</li>
+                                    <li><strong>Encourage and praise</strong> - Acknowledge people's good deeds</li>
+                                    <li><strong>Speak gently</strong> - Soft words open hard hearts</li>
+                                    <li><strong>Make dhikr</strong> - Remember Allah throughout the day</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">🤝</div>
+                        <h3>Sunnah in Dealing with People</h3>
+                    </div>
+                    
+                    <div class="intro">
+                        How you treat people IS your Islam in action. The Prophet ﷺ was described as having the best character with everyone—family, friends, neighbors, strangers, and even enemies.
+                    </div>
+                    
+                    <div class="sunnah-grid">
+                        <div class="sunnah-item">
+                            <h4><span class="icon">👨‍👩‍👧‍👦</span> With Family</h4>
+                            <div class="how-to">
+                                <h5>The Prophet's Example:</h5>
+                                <ul>
+                                    <li><strong>With spouse:</strong> Helped with chores, showed affection, joked and played, consulted them, never raised his hand</li>
+                                    <li><strong>With children:</strong> Played with them, kissed them, carried them during prayer, taught them gently, listened to them</li>
+                                    <li><strong>With parents/elders:</strong> Utmost respect, served them, spoke gently, made du'a for them</li>
+                                    <li><strong>With relatives:</strong> Kept ties even when they cut him off, visited them, supported them financially</li>
+                                </ul>
+                            </div>
+                            <div class="reward">
+                                ⭐ "The best of you are those who are best to their families, and I am the best of you to my family." - Prophet ﷺ
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🏘️</span> With Neighbors</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li>Check on them regularly</li>
+                                    <li>Share food with them</li>
+                                    <li>Help them when they need it</li>
+                                    <li>Don't harm them (noise, blocking path, etc.)</li>
+                                    <li>Be patient with their shortcomings</li>
+                                    <li>Greet them when you see them</li>
+                                    <li>Visit them when they're sick</li>
+                                </ul>
+                            </div>
+                            <div class="reward">
+                                ⭐ "Jibril kept advising me about the neighbor until I thought he would make him an heir." - Prophet ﷺ
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">👥</span> With Friends and Companions</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li>Choose righteous friends who remind you of Allah</li>
+                                    <li>Be loyal—don't abandon friends in hard times</li>
+                                    <li>Advise them sincerely but privately</li>
+                                    <li>Help them when they need it</li>
+                                    <li>Visit them (especially when sick or sad)</li>
+                                    <li>Make du'a for them in their absence</li>
+                                    <li>Overlook minor mistakes</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">🌍</span> With Strangers and Everyone</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li><strong>Smile</strong> - It's charity!</li>
+                                    <li><strong>Give salam</strong> - To everyone, even strangers</li>
+                                    <li><strong>Help those in need</strong> - The elderly, disabled, lost, struggling</li>
+                                    <li><strong>Be humble</strong> - Don't act superior to anyone</li>
+                                    <li><strong>Control your anger</strong> - Respond to rudeness with kindness</li>
+                                    <li><strong>Fulfill promises</strong> - Be reliable and trustworthy</li>
+                                    <li><strong>Return borrowed items</strong> - In good condition, on time</li>
+                                    <li><strong>Be just</strong> - Fair in all your dealings</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sunnah-item">
+                            <h4><span class="icon">💼</span> At Work/Business</h4>
+                            <div class="how-to">
+                                <h5>The Sunnah:</h5>
+                                <ul>
+                                    <li><strong>Be honest</strong> - No lying, cheating, or deception</li>
+                                    <li><strong>Work with excellence</strong> - "Allah loves when one of you does something, he does it with excellence"</li>
+                                    <li><strong>Pay workers on time</strong> - Before their sweat dries</li>
+                                    <li><strong>Be kind to employees</strong> - Don't overburden them</li>
+                                    <li><strong>Fulfill contracts</strong> - Keep your word</li>
+                                    <li><strong>Earn halal income</strong> - Through permissible means</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="daily-routine-section">
+                <h2>📅 A Day in the Sunnah: Complete Routine 📅</h2>
+                
+                <div class="routine-timeline">
+                    <div class="routine-step">
+                        <div class="time">🌅 Before Fajr</div>
+                        <h4>Wake Up for Tahajjud (if possible)</h4>
+                        <ul>
+                            <li>Wake up in the last third of the night</li>
+                            <li>Pray 2-8 rak'at of voluntary prayer</li>
+                            <li>Make sincere du'a in sujood</li>
+                            <li>This was the Prophet's ﷺ most consistent voluntary prayer</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="routine-step">
+                        <div class="time">🌄 Fajr Time</div>
+                        <h4>Morning Routine</h4>
+                        <ul>
+                            <li>Say the waking du'a</li>
+                            <li>Use siwak, perform wudu</li>
+                            <li>Pray Fajr on time (in congregation for men)</li>
+                            <li>Stay in the masjid until sunrise if possible, making dhikr</li>
+                            <li>Pray 2 rak'at Duha prayer after 15 min of sunrise</li>
+                            <li>Recite morning adhkar before sunrise</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="routine-step">
+                        <div class="time">☀️ Morning</div>
+                        <h4>Start Your Day</h4>
+                        <ul>
+                            <li>Eat breakfast with family (dates, bread, milk)</li>
+                            <li>Say Bismillah and eat with right hand</li>
+                            <li>Leave home with the leaving du'a</li>
+                            <li>Put right shoe on first</li>
+                            <li>Work/study with excellence and honesty</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="routine-step">
+                        <div class="time">🌞 Dhuhr Time</div>
+                        <h4>Midday</h4>
+                        <ul>
+                            <li>Pray Dhuhr on time (in congregation for men)</li>
+                            <li>Pray 4 rak'at Sunnah before and 2 after</li>
+                            <li>Take a short Qailulah (nap) if possible</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="routine-step">
+                        <div class="time">🌤️ Asr Time</div>
+                        <h4>Afternoon</h4>
+                        <ul>
+                            <li>Pray Asr on time (in congregation for men)</li>
+                            <li>Continue your work/activities</li>
+                            <li>Help family members if needed</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="routine-step">
+                        <div class="time">🌅 Maghrib Time</div>
+                        <h4>Evening</h4>
+                        <ul>
+                            <li>Pray Maghrib immediately after sunset</li>
+                            <li>Break fast with dates if fasting</li>
+                            <li>Eat dinner with family</li>
+                            <li>Spend quality time with spouse and children</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="routine-step">
+                        <div class="time">🌙 Isha Time</div>
+                        <h4>Night</h4>
+                        <ul>
+                            <li>Pray Isha (in congregation for men)</li>
+                            <li>Pray Witr (minimum 1 rak'ah, better 3 or more)</li>
+                            <li>Recite evening adhkar</li>
+                            <li>Spend time with family—talk, laugh, teach</li>
+                            <li>Avoid staying up late without benefit</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="routine-step">
+                        <div class="time">😴 Bedtime</div>
+                        <h4>Prepare for Sleep</h4>
+                        <ul>
+                            <li>Perform wudu</li>
+                            <li>Shake/dust your bed</li>
+                            <li>Sleep on right side, hand under cheek</li>
+                            <li>Recite bedtime adhkar (Ayatul Kursi, last surahs, etc.)</li>
+                            <li>Make du'a before sleeping</li>
+                            <li>Sleep early (before midnight if possible)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefits-section">
+                <h2>🌟 Benefits of Living by the Sunnah 🌟</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="icon">❤️</div>
+                        <h3>Allah's Love</h3>
+                        <p>"If you love Allah, follow me, [so] Allah will love you and forgive your sins." Following the Sunnah is the direct path to Allah's love.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="icon">🌸</div>
+                        <h3>Barakah in Everything</h3>
+                        <p>When you follow the Sunnah, Allah puts barakah (blessings) in your time, wealth, health, and relationships. Everything becomes easier and more fruitful.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="icon">🛡️</div>
+                        <h3>Protection from Evil</h3>
+                        <p>Adhkar and Sunnah practices protect you from shaytan, evil eye, harm, and calamities. You're under Allah's protection 24/7.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="icon">⚖️</div>
+                        <h3>Heavy on the Scales</h3>
+                        <p>Every Sunnah action—even small ones—earns you rewards. They accumulate on your scale of good deeds on the Day of Judgment.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="icon">💎</div>
+                        <h3>Beautiful Character</h3>
+                        <p>Following the Sunnah naturally improves your character. You become more patient, kind, honest, humble, and beloved to people.</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="icon">🌅</div>
+                        <h3>Peace and Contentment</h3>
+                        <p>Living according to divine guidance brings inner peace. You know you're on the right path, and that brings tranquility to your heart.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="practical-section">
+                <h2>💡 Tips for Implementing Sunnah 💡</h2>
+                
+                <div class="practical-grid">
+                    <div class="practical-item">
+                        <div class="number">1</div>
+                        <div class="content">
+                            <h4>Start Small</h4>
+                            <p>Don't try to implement everything at once. Pick one or two Sunnah practices and make them habits. Once they're natural, add more. Gradual change lasts!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">2</div>
+                        <div class="content">
+                            <h4>Learn Properly</h4>
+                            <p>Study the authentic Sunnah from reliable sources. Not everything people call "Sunnah" is actually from the Prophet ﷺ. Verify before implementing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">3</div>
+                        <div class="content">
+                            <h4>Make the Right Intention</h4>
+                            <p>Intend to follow the Sunnah because you love the Prophet ﷺ and want to be like him—not to show off or appear more religious than others.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">4</div>
+                        <div class="content">
+                            <h4>Create Reminders</h4>
+                            <p>Put sticky notes, set phone alerts, use apps—whatever helps you remember the Sunnah throughout the day until it becomes automatic.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">5</div>
+                        <div class="content">
+                            <h4>Involve Your Family</h4>
+                            <p>Make it a family project! When everyone is following the Sunnah together, it becomes easier and more joyful. Teach your children from a young age.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">6</div>
+                        <div class="content">
+                            <h4>Don't Be Extreme</h4>
+                            <p>The Prophet ﷺ warned against extremism. Follow the Sunnah, but don't make life unbearably difficult for yourself or others. Balance and moderation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">7</div>
+                        <div class="content">
+                            <h4>Be Consistent</h4>
+                            <p>"The most beloved deeds to Allah are those done consistently, even if they are small." Do a little every day rather than a lot once.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="practical-item">
+                        <div class="number">8</div>
+                        <div class="content">
+                            <h4>Don't Judge Others</h4>
+                            <p>Just because you follow certain Sunnahs doesn't make you better than others. Focus on your own journey. Encourage others gently, don't criticize.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="key-principle">
+                <h2>💫 Remember 💫</h2>
+                <p>Following the Sunnah isn't about being rigid or making life difficult—it's about living the best possible life according to the wisdom of the Prophet ﷺ. Every Sunnah practice, no matter how small, is an act of love for the Prophet ﷺ and obedience to Allah. Start today with one thing. Tomorrow add another. Little by little, your entire life becomes a reflection of the Prophetic way.<br><br>
+                "None of you truly believes until I am more beloved to him than his father, his son, and all of mankind." - Prophet Muhammad ﷺ<br><br>
+                Love for the Prophet ﷺ is shown through following his example in everything you do. May Allah make us among those who love and follow him completely. Ameen!</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>May Allah grant us the ability to follow the Sunnah in all aspects of our lives and be with the Prophet ﷺ in Paradise. Ameen.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive collection of 17 beautifully designed Islamic education infographics covering fundamental aspects of Islamic knowledge, practice, and character development.">
+    <meta name="keywords" content="Islamic education, infographics, Quran, Hadith, Sunnah, Islamic knowledge, Muslim learning">
+    <meta name="author" content="Islamic Education Collection">
+    <title>Islamic Education Infographics Collection | مجموعة المعلومات التعليمية الإسلامية</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .language-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            font-weight: 600;
+            color: #667eea;
+            transition: all 0.3s ease;
+        }
+        
+        .language-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            background: white;
+            padding: 50px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .arabic-title {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .header p {
+            color: #4a5568;
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card .number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card .label {
+            color: #4a5568;
+            font-size: 1.1em;
+        }
+        
+        .section-title {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 40px 0 20px 0;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .section-title h2 {
+            color: #2d3748;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        .section-title .arabic {
+            color: #667eea;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+        
+        .infographics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .infographic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .infographic-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .infographic-card .icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .infographic-card h3 {
+            color: #2d3748;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        
+        .infographic-card p {
+            color: #4a5568;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            min-height: 60px;
+        }
+        
+        .infographic-card .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .infographic-card .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .feature-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .feature-card p {
+            color: #4a5568;
+            font-size: 0.95em;
+        }
+        
+        .how-to-use {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .how-to-use h3 {
+            color: #2d3748;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        
+        .how-to-step {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .how-to-step h4 {
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .how-to-step p {
+            color: #4a5568;
+        }
+        
+        .footer {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+        
+        .footer p {
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+        
+        .footer .dua {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        
+        .github-link {
+            display: inline-block;
+            background: #2d3748;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 20px 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .github-link:hover {
+            background: #1a202c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Arabic language support */
+        [dir="rtl"] {
+            text-align: right;
+        }
+        
+        [dir="rtl"] .how-to-step {
+            border-left: none;
+            border-right: 4px solid #667eea;
+        }
+        
+        /* Hide/show content based on language */
+        .lang-en { display: block; }
+        .lang-ar { display: none; }
+        
+        body.arabic .lang-en { display: none; }
+        body.arabic .lang-ar { display: block; }
+        body.arabic { direction: rtl; }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header .arabic-title {
+                font-size: 1.4em;
+            }
+            
+            .infographics-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .language-toggle {
+                top: 10px;
+                right: 10px;
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-toggle" onclick="toggleLanguage()">
+        <span class="lang-en">العربية</span>
+        <span class="lang-ar">English</span>
+    </div>
+    
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="lang-en">Islamic Education Infographics Collection</h1>
+            <h1 class="lang-ar">مجموعة المعلومات التعليمية الإسلامية</h1>
+            <div class="arabic-title lang-en">مجموعة المعلومات التعليمية الإسلامية</div>
+            <div class="arabic-title lang-ar">Islamic Education Infographics Collection</div>
+            <p class="lang-en">A comprehensive and growing collection of beautifully designed Islamic education infographics covering fundamental aspects of Islamic knowledge, practice, and character development. New topics added regularly.</p>
+            <p class="lang-ar">مجموعة شاملة ومتنامية من المخططات المعلوماتية التعليمية الإسلامية المصممة بشكل جميل، تغطي الجوانب الأساسية للمعرفة الإسلامية والممارسة وتطوير الشخصية. تضاف مواضيع جديدة بانتظام.</p>
+        </div>
+        
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">📚</div>
+                <div class="label lang-en">Growing Collection</div>
+                <div class="label lang-ar">مجموعة متنامية</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">100%</div>
+                <div class="label lang-en">Free & Open</div>
+                <div class="label lang-ar">مجاني ومفتوح</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">📱</div>
+                <div class="label lang-en">Mobile Friendly</div>
+                <div class="label lang-ar">متوافق مع الهاتف</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">🖨️</div>
+                <div class="label lang-en">Print Ready</div>
+                <div class="label lang-ar">جاهز للطباعة</div>
+            </div>
+        </div>
+        
+        <!-- Features -->
+        <div class="section-title">
+            <h2 class="lang-en">Features</h2>
+            <h2 class="lang-ar">المميزات</h2>
+            <div class="arabic lang-en">المميزات</div>
+            <div class="arabic lang-ar">Features</div>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon">🎨</div>
+                <h3 class="lang-en">Beautiful Design</h3>
+                <h3 class="lang-ar">تصميم جميل</h3>
+                <p class="lang-en">Each infographic has a unique, professional color scheme</p>
+                <p class="lang-ar">كل مخطط معلوماتي له نظام ألوان احترافي فريد</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📖</div>
+                <h3 class="lang-en">Comprehensive</h3>
+                <h3 class="lang-ar">شامل</h3>
+                <p class="lang-en">Covers topics from basic to advanced Islamic knowledge</p>
+                <p class="lang-ar">يغطي مواضيع من المعرفة الإسلامية الأساسية إلى المتقدمة</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔍</div>
+                <h3 class="lang-en">Authentic Sources</h3>
+                <h3 class="lang-ar">مصادر موثوقة</h3>
+                <p class="lang-en">Based on Quran, Sahih Hadith, and reliable scholarship</p>
+                <p class="lang-ar">بناءً على القرآن والحديث الصحيح والعلماء الموثوقين</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">👨‍👩‍👧‍👦</div>
+                <h3 class="lang-en">Family Friendly</h3>
+                <h3 class="lang-ar">مناسب للعائلة</h3>
+                <p class="lang-en">Suitable for all ages, from children to adults</p>
+                <p class="lang-ar">مناسب لجميع الأعمار من الأطفال إلى البالغين</p>
+            </div>
+        </div>
+        
+        <!-- Infographics List -->
+        <div class="section-title">
+            <h2 class="lang-en">Available Infographics</h2>
+            <h2 class="lang-ar">المخططات المعلوماتية المتاحة</h2>
+            <div class="arabic lang-en">المخططات المعلوماتية المتاحة</div>
+            <div class="arabic lang-ar">Available Infographics</div>
+            <p style="margin-top: 10px; color: #4a5568; font-size: 0.95em;" class="lang-en">More topics are being added regularly. Check back for new content!</p>
+            <p style="margin-top: 10px; color: #4a5568; font-size: 0.95em;" class="lang-ar">تُضاف المزيد من المواضيع بانتظام. تحقق مرة أخرى للحصول على محتوى جديد!</p>
+        </div>
+        
+        <div class="infographics-grid">
+            <div class="infographic-card">
+                <div class="icon">👨‍👩‍👦</div>
+                <h3 class="lang-en">Parents' Rights</h3>
+                <h3 class="lang-ar">حقوق الوالدين</h3>
+                <p class="lang-en">Comprehensive guide to the rights of parents in Islam and obligations of children</p>
+                <p class="lang-ar">دليل شامل لحقوق الوالدين في الإسلام وواجبات الأبناء</p>
+                <a href="parents_rights.html" class="button lang-en">View</a>
+                <a href="parents_rights.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">🤝</div>
+                <h3 class="lang-en">Kinship & Family Ties</h3>
+                <h3 class="lang-ar">صلة الرحم</h3>
+                <p class="lang-en">Maintaining family connections and the importance of strong bonds</p>
+                <p class="lang-ar">المحافظة على الروابط العائلية وأهمية الروابط القوية</p>
+                <a href="kinship_family_ties.html" class="button lang-en">View</a>
+                <a href="kinship_family_ties.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">💑</div>
+                <h3 class="lang-en">Spousal Rights</h3>
+                <h3 class="lang-ar">حقوق الزوجين</h3>
+                <p class="lang-en">Rights of husband and wife and building a strong Islamic marriage</p>
+                <p class="lang-ar">حقوق الزوج والزوجة وبناء زواج إسلامي قوي</p>
+                <a href="spousal_rights.html" class="button lang-en">View</a>
+                <a href="spousal_rights.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">👶</div>
+                <h3 class="lang-en">Children's Rights</h3>
+                <h3 class="lang-ar">حقوق الأطفال</h3>
+                <p class="lang-en">Rights children have over parents and proper Islamic upbringing</p>
+                <p class="lang-ar">الحقوق التي للأطفال على الوالدين والتربية الإسلامية الصحيحة</p>
+                <a href="childrens_rights.html" class="button lang-en">View</a>
+                <a href="childrens_rights.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">🏘️</div>
+                <h3 class="lang-en">Neighbors' Rights</h3>
+                <h3 class="lang-ar">حقوق الجيران</h3>
+                <p class="lang-en">How to be a good neighbor according to Islamic teachings</p>
+                <p class="lang-ar">كيف تكون جارًا صالحًا وفقًا للتعاليم الإسلامية</p>
+                <a href="neighbors_rights.html" class="button lang-en">View</a>
+                <a href="neighbors_rights.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">👫</div>
+                <h3 class="lang-en">Gender Interaction</h3>
+                <h3 class="lang-ar">التفاعل بين الجنسين</h3>
+                <p class="lang-en">Islamic guidelines for interaction between men and women</p>
+                <p class="lang-ar">المبادئ الإسلامية للتفاعل بين الرجال والنساء</p>
+                <a href="gender_interaction.html" class="button lang-en">View</a>
+                <a href="gender_interaction.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">💔</div>
+                <h3 class="lang-en">Divorce in Islam</h3>
+                <h3 class="lang-ar">الطلاق في الإسلام</h3>
+                <p class="lang-en">Islamic perspective on divorce, when permitted, and life after</p>
+                <p class="lang-ar">المنظور الإسلامي للطلاق ومتى يُسمح به والحياة بعده</p>
+                <a href="divorce_islamic_perspective.html" class="button lang-en">View</a>
+                <a href="divorce_islamic_perspective.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">📚</div>
+                <h3 class="lang-en">Seeking Knowledge</h3>
+                <h3 class="lang-ar">طلب العلم</h3>
+                <p class="lang-en">The obligation and etiquette of seeking Islamic knowledge</p>
+                <p class="lang-ar">وجوب وآداب طلب العلم الإسلامي</p>
+                <a href="seeking_knowledge.html" class="button lang-en">View</a>
+                <a href="seeking_knowledge.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">💰</div>
+                <h3 class="lang-en">Rizq & Tawakkul</h3>
+                <h3 class="lang-ar">الرزق والتوكل</h3>
+                <p class="lang-en">Understanding provision and true reliance on Allah</p>
+                <p class="lang-ar">فهم الرزق والتوكل الحقيقي على الله</p>
+                <a href="rizq_tawakkul.html" class="button lang-en">View</a>
+                <a href="rizq_tawakkul.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">💭</div>
+                <h3 class="lang-en">Power of Intentions</h3>
+                <h3 class="lang-ar">قوة النيات</h3>
+                <p class="lang-en">How intentions determine rewards and purifying your niyyah</p>
+                <p class="lang-ar">كيف تحدد النيات الأجر وتطهير نيتك</p>
+                <a href="intentions_niyyah.html" class="button lang-en">View</a>
+                <a href="intentions_niyyah.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">⚖️</div>
+                <h3 class="lang-en">Accountability</h3>
+                <h3 class="lang-ar">المحاسبة</h3>
+                <p class="lang-en">Day of Judgment and preparing for the Hereafter</p>
+                <p class="lang-ar">يوم القيامة والاستعداد للآخرة</p>
+                <a href="accountability_hereafter.html" class="button lang-en">View</a>
+                <a href="accountability_hereafter.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">🤲</div>
+                <h3 class="lang-en">Community & Brotherhood</h3>
+                <h3 class="lang-ar">المجتمع والأخوة</h3>
+                <p class="lang-en">Rights of Muslims and building strong communities</p>
+                <p class="lang-ar">حقوق المسلمين وبناء مجتمعات قوية</p>
+                <a href="community_brotherhood.html" class="button lang-en">View</a>
+                <a href="community_brotherhood.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">🌙</div>
+                <h3 class="lang-en">Ramadan</h3>
+                <h3 class="lang-ar">رمضان</h3>
+                <p class="lang-en">The blessed month: fasting rules, etiquette, and maximizing blessings</p>
+                <p class="lang-ar">الشهر المبارك: قواعد الصيام وآدابه وتعظيم البركات</p>
+                <a href="ramadan_blessed_month.html" class="button lang-en">View</a>
+                <a href="ramadan_blessed_month.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">🎩</div>
+                <h3 class="lang-en">Islamic Manners (Adab)</h3>
+                <h3 class="lang-ar">الأدب الإسلامي</h3>
+                <p class="lang-en">Comprehensive guide to Islamic etiquette in all aspects of life</p>
+                <p class="lang-ar">دليل شامل للآداب الإسلامية في جميع جوانب الحياة</p>
+                <a href="islamic_manners_adab.html" class="button lang-en">View</a>
+                <a href="islamic_manners_adab.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">🕌</div>
+                <h3 class="lang-en">Khushu' in Prayer</h3>
+                <h3 class="lang-ar">الخشوع في الصلاة</h3>
+                <p class="lang-en">Developing humility and concentration in salah</p>
+                <p class="lang-ar">تطوير الخشوع والتركيز في الصلاة</p>
+                <a href="khushu_in_prayer.html" class="button lang-en">View</a>
+                <a href="khushu_in_prayer.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">⭐</div>
+                <h3 class="lang-en">Prophet's Character ﷺ</h3>
+                <h3 class="lang-ar">خُلق النبي ﷺ</h3>
+                <p class="lang-en">His humility, mercy, justice, courage, and how to emulate him</p>
+                <p class="lang-ar">تواضعه ورحمته وعدله وشجاعته وكيفية الاقتداء به</p>
+                <a href="character_of_prophet.html" class="button lang-en">View</a>
+                <a href="character_of_prophet.html" class="button lang-ar">عرض</a>
+            </div>
+            
+            <div class="infographic-card">
+                <div class="icon">🌟</div>
+                <h3 class="lang-en">Following the Sunnah</h3>
+                <h3 class="lang-ar">اتباع السنة</h3>
+                <p class="lang-en">Implementing Prophetic practices in daily life</p>
+                <p class="lang-ar">تطبيق الممارسات النبوية في الحياة اليومية</p>
+                <a href="following_sunnah_daily_life.html" class="button lang-en">View</a>
+                <a href="following_sunnah_daily_life.html" class="button lang-ar">عرض</a>
+            </div>
+        </div>
+        
+        <!-- How to Use -->
+        <div class="section-title">
+            <h2 class="lang-en">How to Use</h2>
+            <h2 class="lang-ar">كيفية الاستخدام</h2>
+            <div class="arabic lang-en">كيفية الاستخدام</div>
+            <div class="arabic lang-ar">How to Use</div>
+        </div>
+        
+        <div class="how-to-use">
+            <div class="how-to-step">
+                <h4 class="lang-en">📱 View Online</h4>
+                <h4 class="lang-ar">📱 المشاهدة عبر الإنترنت</h4>
+                <p class="lang-en">Click on any infographic card above to view it directly in your browser. No download required!</p>
+                <p class="lang-ar">انقر على أي بطاقة مخطط معلوماتي أعلاه لعرضه مباشرة في متصفحك. لا حاجة للتنزيل!</p>
+            </div>
+            
+            <div class="how-to-step">
+                <h4 class="lang-en">💾 Download</h4>
+                <h4 class="lang-ar">💾 التنزيل</h4>
+                <p class="lang-en">Right-click on any infographic page and select "Save As" to download it to your device.</p>
+                <p class="lang-ar">انقر بزر الماوس الأيمن على أي صفحة مخطط معلوماتي وحدد "حفظ باسم" لتنزيله على جهازك.</p>
+            </div>
+            
+            <div class="how-to-step">
+                <h4 class="lang-en">🖨️ Print</h4>
+                <h4 class="lang-ar">🖨️ الطباعة</h4>
+                <p class="lang-en">Open any infographic and press Ctrl+P (Windows) or Cmd+P (Mac) to print. All designs are print-optimized.</p>
+                <p class="lang-ar">افتح أي مخطط معلوماتي واضغط على Ctrl+P (Windows) أو Cmd+P (Mac) للطباعة. جميع التصميمات محسّنة للطباعة.</p>
+            </div>
+            
+            <div class="how-to-step">
+                <h4 class="lang-en">📤 Share</h4>
+                <h4 class="lang-ar">📤 المشاركة</h4>
+                <p class="lang-en">Share the website link or downloaded files with family, friends, and your community.</p>
+                <p class="lang-ar">شارك رابط الموقع أو الملفات المحملة مع العائلة والأصدقاء ومجتمعك.</p>
+            </div>
+        </div>
+        
+        <!-- GitHub Links -->
+        <div style="text-align: center; margin: 40px 0;">
+            <a href="https://github.com/yourusername/islamic-infographics" class="github-link" target="_blank">
+                <span class="lang-en">⭐ View on GitHub</span>
+                <span class="lang-ar">⭐ عرض على GitHub</span>
+            </a>
+            <a href="README.md" class="github-link">
+                <span class="lang-en">📖 Read Full Documentation</span>
+                <span class="lang-ar">📖 اقرأ الوثائق الكاملة</span>
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p class="lang-en">Created with love for the sake of Allah ﷻ</p>
+            <p class="lang-ar">تم الإنشاء بحب لوجه الله ﷻ</p>
+            <p class="lang-en">May this collection be a source of benefit for the Ummah and a means of drawing closer to Allah.</p>
+            <p class="lang-ar">نسأل الله أن تكون هذه المجموعة مصدر نفع للأمة ووسيلة للتقرب إلى الله.</p>
+            <div class="dua">
+                <p class="lang-en">وَصَلَّى اللهُ عَلَى نَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ</p>
+                <p class="lang-ar">وَصَلَّى اللهُ عَلَى نَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ</p>
+            </div>
+            <p style="margin-top: 20px; color: #718096; font-size: 0.9em;" class="lang-en">
+                Free for personal and educational use. Please maintain attribution when sharing.
+            </p>
+            <p style="margin-top: 20px; color: #718096; font-size: 0.9em;" class="lang-ar">
+                مجاني للاستخدام الشخصي والتعليمي. يرجى الحفاظ على الإسناد عند المشاركة.
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('arabic');
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

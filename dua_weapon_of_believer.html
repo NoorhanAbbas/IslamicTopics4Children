@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du'a: The Weapon of the Believer - Islamic Infographic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #434343, #000000);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .arabic {
+            font-size: 1.8em;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        
+        .header .verse {
+            font-style: italic;
+            font-size: 1.1em;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .key-principle h2 {
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .key-principle p {
+            font-size: 1.15em;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .section h2 {
+            color: #434343;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h3 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+        
+        .hadith-box {
+            background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #00796b;
+            font-style: italic;
+        }
+        
+        .hadith-box strong {
+            color: #00796b;
+        }
+        
+        .quran-box {
+            background: linear-gradient(135deg, #fff9c4, #fff59d);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #f57f17;
+        }
+        
+        .quran-box strong {
+            color: #f57f17;
+        }
+        
+        .point-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .point-list li {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .point-list li strong {
+            color: #434343;
+            font-size: 1.1em;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #c2185b;
+        }
+        
+        .dua-card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #764ba2;
+        }
+        
+        .dua-card .arabic-text {
+            font-size: 1.4em;
+            text-align: right;
+            color: #434343;
+            margin-bottom: 10px;
+            line-height: 2;
+            font-weight: bold;
+        }
+        
+        .dua-card .transliteration {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .dua-card .meaning {
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+        
+        .dua-card .source {
+            font-size: 0.9em;
+            color: #764ba2;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        .times-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .time-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+        }
+        
+        .time-card .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .time-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #c62828;
+        }
+        
+        .warning-box h3 {
+            color: #c62828;
+            margin-bottom: 10px;
+        }
+        
+        .success-box {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        .success-box h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
+        .practical-steps {
+            background: linear-gradient(135deg, #e1bee7, #ce93d8);
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .practical-steps h2 {
+            color: #4a148c;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .steps-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .steps-list li {
+            counter-increment: step-counter;
+            padding: 15px 15px 15px 60px;
+            margin: 15px 0;
+            background: white;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #4a148c;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .etiquette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .etiquette-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            border-bottom: 3px solid #764ba2;
+        }
+        
+        .etiquette-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #434343, #000000);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .footer .dua {
+            font-size: 1.3em;
+            font-style: italic;
+            margin: 15px 0;
+            color: #ffd700;
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #7b1fa2;
+            font-style: italic;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .times-grid, .etiquette-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤲 Du'a: The Weapon of the Believer 🤲</h1>
+            <div class="arabic">الدُّعَاءُ سِلَاحُ الْمُؤْمِنِ</div>
+            <div class="verse">
+                "And your Lord says: 'Call upon Me; I will respond to you.' Indeed, those who disdain My worship will enter Hell [rendered] contemptible."<br>
+                <strong>(Qur'an 40:60)</strong>
+            </div>
+        </div>
+
+        <div class="key-principle">
+            <h2>🌟 The Direct Line to Allah</h2>
+            <p>Du'a is the most powerful tool a believer possesses—a direct conversation with the Creator of the universe, with no intermediary, no appointment needed, no protocol to follow. It is worship in its purest form, an expression of complete dependence on Allah, and a demonstration of absolute certainty in His power and mercy. The Prophet ﷺ called it <strong>"the essence of worship"</strong> and <strong>"the weapon of the believer."</strong> Through du'a, the weak become strong, the poor become rich, the sick find healing, and hearts find peace. It is Allah's gift to humanity—a standing invitation to speak directly to Him, at any time, in any language, from anywhere.</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>💎 The Power and Importance of Du'a</h2>
+                
+                <div class="quran-box">
+                    <strong>Allah's Promise:</strong> "And when My servants ask you, [O Muhammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me. So let them respond to Me [by obedience] and believe in Me that they may be [rightly] guided."<br>
+                    <strong>(Qur'an 2:186)</strong>
+                </div>
+
+                <h3>🔥 Why Du'a is Called the Weapon of the Believer</h3>
+                <ul class="point-list">
+                    <li><strong>⚔️ It Changes Destiny:</strong> The Prophet ﷺ said: "Nothing repels the Divine Decree except du'a, and nothing increases lifespan except good deeds." (Jami' at-Tirmidhi 2139). Du'a has the power to alter what is written, to push back calamities, and to bring blessings that weren't previously destined.</li>
+                    
+                    <li><strong>🛡️ It is Your Protection:</strong> "Du'a benefits for what has happened and for what has not yet happened, so you must, O servants of Allah, hold fast to du'a." (Jami' at-Tirmidhi 3548). It protects you from harm before it reaches you and removes harm after it has occurred.</li>
+                    
+                    <li><strong>💪 It is the Essence of Worship:</strong> The Prophet ﷺ said: "Du'a is worship itself." (Sunan Abi Dawud 1479). When you raise your hands in supplication, you are acknowledging Allah's power, His mercy, His knowledge, and your complete dependence on Him.</li>
+                    
+                    <li><strong>👑 It is Nobility, Not Humiliation:</strong> The Prophet ﷺ said: "Whoever does not ask of Allah, He becomes angry with him." (Jami' at-Tirmidhi 3373). Allah loves to be asked! He wants you to turn to Him. Asking Allah is not begging—it is honoring Him by recognizing that He alone can fulfill your needs.</li>
+                    
+                    <li><strong>🌊 It Never Goes to Waste:</strong> The Prophet ﷺ said: "There is no Muslim who makes du'a—in which there is nothing sinful or cutting of family ties—except that Allah will give him one of three things: either his du'a will be answered quickly, or it will be stored for him in the hereafter, or an equivalent evil will be averted from him." The Companions said: "Then we will make plenty of du'a!" He ﷺ said: "Allah is more generous." (Musnad Ahmad 11149)</li>
+                    
+                    <li><strong>⚡ It is Easier Than You Think:</strong> Unlike charity (which requires wealth) or physical worship (which requires health), du'a only requires a heart and a tongue. The poorest person has the same access to Allah as the richest. The sick person confined to bed can raise their heart in du'a just as powerfully as the healthiest.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🎯 The Prophet's Clear Statement:</strong> "The most excellent worship is du'a." (Sahih al-Jami' 1133). This means that standing in prayer, giving charity, fasting—all of these are great, but the act of turning to Allah and asking Him directly is the highest form of worship you can perform.
+                </div>
+
+                <div class="hadith-box">
+                    <strong>A Warning Against Abandoning Du'a:</strong> The Prophet ﷺ said: "If one of you does not ask Allah, He becomes angry with him." (Jami' at-Tirmidhi 3373). Not making du'a is a sign of arrogance, as if you don't need Allah. The believer is in constant need, and du'a expresses that neediness beautifully.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📿 The Etiquette of Making Du'a</h2>
+                
+                <p>While Allah accepts du'a in any state, observing proper etiquette increases the likelihood of acceptance and shows respect for this sacred act of worship.</p>
+
+                <div class="etiquette-grid">
+                    <div class="etiquette-card">
+                        <div class="icon">💧</div>
+                        <h4>Make Wudu</h4>
+                        <p>Be in a state of purity when possible</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">🧭</div>
+                        <h4>Face the Qiblah</h4>
+                        <p>Turn toward the Ka'bah when making du'a</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">🤲</div>
+                        <h4>Raise Your Hands</h4>
+                        <p>Lift your palms as if receiving something</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">💖</div>
+                        <h4>Show Humility</h4>
+                        <p>Approach with a broken heart and sincere need</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">✨</div>
+                        <h4>Begin with Praise</h4>
+                        <p>Start by praising Allah and His beautiful names</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">💚</div>
+                        <h4>Send Salawat</h4>
+                        <p>Bless the Prophet ﷺ before and after</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">🙏</div>
+                        <h4>Be Persistent</h4>
+                        <p>Repeat your du'a three times</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">🌟</div>
+                        <h4>Use Allah's Names</h4>
+                        <p>Call upon Him by His beautiful names</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">😌</div>
+                        <h4>Lower Your Voice</h4>
+                        <p>Make du'a in a moderate, humble tone</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">💯</div>
+                        <h4>Have Certainty</h4>
+                        <p>Be completely certain that Allah will respond</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">🚫</div>
+                        <h4>Avoid Haram Income</h4>
+                        <p>Eat and earn from halal sources</p>
+                    </div>
+                    
+                    <div class="etiquette-card">
+                        <div class="icon">😢</div>
+                        <h4>Weep if Possible</h4>
+                        <p>Shed tears of sincerity and need</p>
+                    </div>
+                </div>
+
+                <div class="hadith-box">
+                    <strong>The Complete Du'a:</strong> Ibn Mas'ud (may Allah be pleased with him) said that the Prophet ﷺ taught them to begin du'a by saying: "All praise is due to Allah. We praise Him, seek His help, and ask for His forgiveness. We seek refuge in Allah from the evil of our souls and the consequences of our deeds. Whomever Allah guides, none can lead astray, and whomever Allah leads astray, none can guide." Then send salawat on the Prophet ﷺ, then make your du'a.
+                </div>
+
+                <h3>🎯 Specific Etiquettes from the Sunnah</h3>
+                <ul class="point-list">
+                    <li><strong>🤲 How to Raise Your Hands:</strong> The Prophet ﷺ would raise his hands with palms facing upward, as if receiving something from the sky. After finishing, he would wipe his face with his hands (though some scholars say this specific action is weak in authenticity).</li>
+                    
+                    <li><strong>📢 The Volume:</strong> Allah says: "Call upon your Lord in humility and privately; indeed, He does not like transgressors" (Qur'an 7:55). Make du'a audibly enough for yourself to hear, but not so loudly that you disturb others.</li>
+                    
+                    <li><strong>🎭 Inner Sincerity:</strong> The Prophet ﷺ said: "Call upon Allah while being certain of being answered, and know that Allah does not respond to a du'a from a distracted and heedless heart." (Jami' at-Tirmidhi 3479)</li>
+                    
+                    <li><strong>🔄 Persistence:</strong> Don't give up if you don't see immediate results. The Prophet ﷺ said: "The du'a of any one of you will be answered so long as he does not seek to hasten it and does not say, 'I made du'a but it was not answered.'" (Sahih Muslim 2735)</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h3>⚠️ Things to Avoid in Du'a</h3>
+                    <ul>
+                        <li>❌ Don't be hasty and expect immediate results</li>
+                        <li>❌ Don't make du'a for sinful things or to harm others</li>
+                        <li>❌ Don't make du'a to cut family ties</li>
+                        <li>❌ Don't be aggressive or demanding in tone</li>
+                        <li>❌ Don't make elaborate, rhyming du'as just to impress people</li>
+                        <li>❌ Don't say "If You will" (in sha Allah) in du'a—ask with certainty!</li>
+                        <li>❌ Don't make du'a while consuming haram income</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⏰ Times When Du'a is Most Likely Accepted</h2>
+                
+                <p>While Allah hears every du'a at all times, there are specific moments when acceptance is especially near. The wise believer takes advantage of these golden opportunities.</p>
+
+                <div class="times-grid">
+                    <div class="time-card">
+                        <div class="icon">🌙</div>
+                        <h3>Last Third of the Night</h3>
+                        <p>Allah descends to the lowest heaven and asks: "Who is calling upon Me that I may answer him? Who is asking of Me that I may give him?" (Sahih al-Bukhari 1145)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🕌</div>
+                        <h3>Between Adhan & Iqamah</h3>
+                        <p>The Prophet ﷺ said: "Du'a made between the adhan and iqamah is not rejected." (Sunan Abi Dawud 521)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🙇</div>
+                        <h3>During Sujud (Prostration)</h3>
+                        <p>"The closest a servant is to his Lord is when he is in prostration, so make abundant du'a." (Sahih Muslim 482)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🕋</div>
+                        <h3>On Fridays</h3>
+                        <p>There is an hour on Friday when du'a is not rejected. Most scholars say it's the last hour before Maghrib or during the khutbah. (Sahih al-Bukhari 935)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🌧️</div>
+                        <h3>When It's Raining</h3>
+                        <p>The Prophet ﷺ encouraged du'a when rain falls, saying it's a time of mercy descending. (Authentic, Imam Ahmad)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🍽️</div>
+                        <h3>While Fasting (Before Breaking Fast)</h3>
+                        <p>"There are three whose du'a is not rejected: the fasting person until he breaks his fast..." (Jami' at-Tirmidhi 3598)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">✈️</div>
+                        <h3>The Traveler</h3>
+                        <p>"Three du'as are answered without doubt: the du'a of the oppressed, the du'a of the traveler, and the du'a of the parent for their child." (Jami' at-Tirmidhi 1905)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">😭</div>
+                        <h3>When Oppressed</h3>
+                        <p>The Prophet ﷺ warned: "Beware of the du'a of the oppressed, for there is no barrier between it and Allah." (Sahih al-Bukhari 2448)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🤱</div>
+                        <h3>Parent for Their Child</h3>
+                        <p>The du'a of a parent for their child is one of the most powerful and readily accepted du'as. (Jami' at-Tirmidhi 1905)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">💧</div>
+                        <h3>After Drinking Zamzam</h3>
+                        <p>"The water of Zamzam is for whatever purpose it is drunk for." (Sunan Ibn Majah 3062)</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🌅</div>
+                        <h3>After Obligatory Prayers</h3>
+                        <p>The moments immediately after the five daily prayers are blessed times for du'a before giving the tasleem.</p>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="icon">🤲</div>
+                        <h3>When Hearing the Call to Prayer</h3>
+                        <p>The Prophet ﷺ said: "When you hear the muezzin, repeat what he says, then send salawat upon me... then ask Allah to grant me al-Wasilah... and whoever asks for that for me, my intercession will be guaranteed for him on the Day of Resurrection." (Sahih Muslim 384)</p>
+                    </div>
+                </div>
+
+                <div class="success-box">
+                    <h3>💡 Pro Tip: Create a "Golden Hour" Du'a List</h3>
+                    <p>Keep a list of your most important du'as ready for these special times. When the last third of the night arrives, when you're in sujud, when it's Friday afternoon—pull out your list and make those crucial du'as. Don't waste these precious moments!</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📖 Comprehensive Du'as from the Qur'an and Sunnah</h2>
+                
+                <p>The most powerful du'as are those taught by Allah in the Qur'an and by the Prophet Muhammad ﷺ. Here are essential du'as every believer should memorize and use regularly:</p>
+
+                <h3>🌟 From the Qur'an</h3>
+
+                <div class="dua-card">
+                    <div class="arabic-text">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</div>
+                    <div class="transliteration">Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar</div>
+                    <div class="meaning"><strong>Meaning:</strong> "Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire."</div>
+                    <div class="source">(Qur'an 2:201) - The Prophet's most frequent du'a</div>
+                </div>
+
+                <div class="dua-card">
+                    <div class="arabic-text">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ</div>
+                    <div class="transliteration">Rabbana la tuzigh quloobana ba'da idh hadaytana wa hab lana mil-ladunka rahmah, innaka antal-Wahhab</div>
+                    <div class="meaning"><strong>Meaning:</strong> "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower."</div>
+                    <div class="source">(Qur'an 3:8) - For steadfastness in faith</div>
+                </div>
+
+                <div class="dua-card">
+                    <div class="arabic-text">رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ</div>
+                    <div class="transliteration">Rabbana zalamna anfusana wa il-lam taghfir lana wa tarhamna lanakoonanna minal-khasireen</div>
+                    <div class="meaning"><strong>Meaning:</strong> "Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers."</div>
+                    <div class="source">(Qur'an 7:23) - Du'a of Adam and Hawwa (peace be upon them)</div>
+                </div>
+
+                <div class="dua-card">
+                    <div class="arabic-text">رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِّن لِّسَانِي يَفْقَهُوا قَوْلِي</div>
+                    <div class="transliteration">Rabbish-rah li sadri wa yassir li amri wahlul 'uqdatan min lisani yafqahu qawli</div>
+                    <div class="meaning"><strong>Meaning:</strong> "My Lord, expand for me my breast [with assurance] and ease for me my task and untie the knot from my tongue that they may understand my speech."</div>
+                    <div class="source">(Qur'an 20:25-28) - Du'a of Musa (peace be upon him)</div>
+                </div>
+
+                <div class="dua-card">
+                    <div class="arabic-text">رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَصْلِحْ لِي فِي ذُرِّيَّتِي ۖ إِنِّي تُبْتُ إِلَيْكَ وَإِنِّي مِنَ الْمُسْلِمِينَ</div>
+                    <div class="transliteration">Rabbi awzi'ni an ashkura ni'matakal-lati an'amta 'alayya wa 'ala walidayya wa an a'mala salihan tardahu wa aslih li fi dhurriyyati inni tubtu ilayka wa inni minal-muslimeen</div>
+                    <div class="meaning"><strong>Meaning:</strong> "My Lord, enable me to be grateful for Your favor which You have bestowed upon me and upon my parents and to do righteousness of which You approve. And make righteous for me my offspring. Indeed, I have repented to You, and indeed, I am of the Muslims."</div>
+                    <div class="source">(Qur'an 46:15) - For gratitude and righteous children</div>
+                </div>
+
+                <h3>💚 From the Sunnah of the Prophet ﷺ</h3>
+
+                <div class="dua-card">
+                    <div class="arabic-text">اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي</div>
+                    <div class="transliteration">Allahumma inni as'alukal-'afiyata fid-dunya wal-akhirah. Allahumma inni as'alukal-'afwa wal-'afiyata fi deeni wa dunyaya wa ahli wa mali. Allahum-mastur 'awrati wa amin raw'ati. Allahum-mahfazni mim bayni yadayya wa min khalfi wa 'an yameeni wa 'an shimali wa min fawqi wa a'oodhu bi'azhamatika an ughtala min tahti</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, I ask You for well-being in this world and the Hereafter. O Allah, I ask You for forgiveness and well-being in my religion, my worldly affairs, my family and my wealth. O Allah, conceal my faults and calm my fears. O Allah, guard me from in front of me and behind me, from my right and my left, and from above me, and I seek refuge in Your Magnificence from being unexpectedly destroyed from beneath me."</div>
+                    <div class="source">(Sunan Abi Dawud 5074) - Morning and evening protection</div>
+                </div>
+
+                <div class="dua-card">
+                    <div class="arabic-text">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ</div>
+                    <div class="transliteration">Allahumma inni a'oodhu bika minal-hammi wal-hazan, wa a'oodhu bika minal-'ajzi wal-kasal, wa a'oodhu bika minal-jubni wal-bukhl, wa a'oodhu bika min ghalabatid-dayni wa qahrir-rijal</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, I seek refuge in You from worry and grief, from incapacity and laziness, from cowardice and miserliness, and from being overcome by debt and overpowered by men."</div>
+                    <div class="source">(Sahih al-Bukhari 6369) - For anxiety and hardship</div>
+                </div>
+
+                <div class="dua-card">
+                    <div class="arabic-text">اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا</div>
+                    <div class="transliteration">Allahumma inni as'aluka 'ilman nafi'a, wa rizqan tayyiba, wa 'amalan mutaqabbala</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, I ask You for beneficial knowledge, wholesome provision, and acceptable deeds."</div>
+                    <div class="source">(Sunan Ibn Majah 925) - Morning du'a for blessings</div>
+                </div>
+
+                <div class="dua-card">
+                    <div class="arabic-text">اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى</div>
+                    <div class="transliteration">Allahumma inni as'alukal-huda wat-tuqa wal-'afafa wal-ghina</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, I ask You for guidance, piety, chastity, and contentment."</div>
+                    <div class="source">(Sahih Muslim 2721) - For spiritual and material well-being</div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>💡 The Power of Prophetic Du'as:</strong> These du'as were carefully chosen by the Prophet ﷺ who had the most eloquent speech and deepest knowledge of what to ask from Allah. Memorizing and using them regularly connects you to his blessed tongue and guarantees you're asking for the right things in the best way.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Du'as for Specific Situations</h2>
+
+                <h3>😰 When Feeling Anxiety or Distress</h3>
+                <div class="dua-card">
+                    <div class="arabic-text">اللَّهُمَّ إِنِّي عَبْدُكَ ابْنُ عَبْدِكَ ابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ، أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ، أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ، أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي، وَنُورَ صَدْرِي، وَجَلَاءَ حُزْنِي، وَذَهَابَ هَمِّي</div>
+                    <div class="transliteration">Allahumma inni 'abduka ibnu 'abdika ibnu amatika, nasiyati biyadika, madin fiyya hukmuka, 'adlun fiyya qada'uka. As'aluka bikulli ismin huwa laka sammayta bihi nafsaka aw anzaltahu fi kitabika aw 'allamtahu ahadan min khalqika awista'tharta bihi fi 'ilmil-ghaybi 'indaka an taj'alal-Qur'ana rabi'a qalbi wa nura sadri wa jala'a huzni wa dhahaba hammi</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, I am Your servant, son of Your servant, son of Your maidservant. My forelock is in Your hand, Your command over me is forever executed and Your decree over me is just. I ask You by every name belonging to You which You have named Yourself with, or revealed in Your Book, or You taught to any of Your creation, or You have preserved in the knowledge of the Unseen with You, that You make the Qur'an the life of my heart and the light of my chest, and a departure for my sorrow and a release for my anxiety."</div>
+                    <div class="source">(Musnad Ahmad 3712) - The Prophet ﷺ said whoever says this will have their worries removed</div>
+                </div>
+
+                <h3>🧭 When Seeking Guidance (Istikhara)</h3>
+                <div class="dua-card">
+                    <div class="arabic-text">اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ، وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ، وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ، فَإِنَّكَ تَقْدِرُ وَلَا أَقْدِرُ، وَتَعْلَمُ وَلَا أَعْلَمُ، وَأَنْتَ عَلَّامُ الْغُيُوبِ، اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ [mention the matter] خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ، وَإِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ شَرٌّ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ، وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ</div>
+                    <div class="transliteration">Allahumma inni astakhiruka bi'ilmika wa astaqdiruka biqudratika wa as'aluka min fadlikal-'azim, fa'innaka taqdiru wa la aqdir, wa ta'lamu wa la a'lam, wa anta 'allamul-ghuyub. Allahumma in kunta ta'lamu anna hadhal-amra [mention matter] khayrun li fi deeni wa ma'ashi wa 'aqibati amri faqdurhu li wa yassirhu li thumma barik li fih. Wa in kunta ta'lamu anna hadhal-amra sharrun li fi deeni wa ma'ashi wa 'aqibati amri fasrifhu 'anni wasrifni 'anhu waqdur liyal-khayra haythu kana thumma ardini bih</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, I seek Your guidance by virtue of Your knowledge, and I seek ability by virtue of Your power, and I ask You of Your great bounty. You have power; I have none. And You know; I know not. You are the Knower of hidden things. O Allah, if in Your knowledge, this matter [mention it] is good for me in my religion, my livelihood and my affairs, then ordain it for me, make it easy for me, and bless it for me. And if in Your knowledge it is bad for me in my religion, my livelihood and my affairs, then turn it away from me, and turn me away from it. And ordain for me the good wherever it may be and make me pleased with it."</div>
+                    <div class="source">(Sahih al-Bukhari 1166) - Pray 2 rak'ahs then make this du'a</div>
+                </div>
+
+                <h3>✈️ When Traveling</h3>
+                <div class="dua-card">
+                    <div class="arabic-text">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ. اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَٰذَا الْبِرَّ وَالتَّقْوَىٰ، وَمِنَ الْعَمَلِ مَا تَرْضَىٰ، اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَٰذَا وَاطْوِ عَنَّا بُعْدَهُ، اللَّهُمَّ أَنتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الْأَهْلِ</div>
+                    <div class="transliteration">Subhanallahi sakhkhara lana hadha wa ma kunna lahu muqrinin wa inna ila Rabbina lamunqalibun. Allahumma inna nas'aluka fi safarina hadhal-birra wat-taqwa wa minal-'amali ma tarda. Allahumma hawwin 'alayna safarana hadha watwi 'anna bu'dahu. Allahumma antas-sahibu fis-safari wal-khalifatu fil-ahl</div>
+                    <div class="meaning"><strong>Meaning:</strong> "Glory be to Him who has subjected this to us, and we could never have it [by our efforts]. And to our Lord we will surely return. O Allah, we ask You on this our journey for goodness and piety, and for works that are pleasing to You. O Allah, make this journey easy for us and shorten its distance for us. O Allah, You are the Companion on the journey and the Guardian of the family."</div>
+                    <div class="source">(Sahih Muslim 1342)</div>
+                </div>
+
+                <h3>😴 Before Sleep</h3>
+                <div class="dua-card">
+                    <div class="arabic-text">بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا</div>
+                    <div class="transliteration">Bismika Allahumma amutu wa ahya</div>
+                    <div class="meaning"><strong>Meaning:</strong> "In Your name, O Allah, I die and I live."</div>
+                    <div class="source">(Sahih al-Bukhari 6324)</div>
+                </div>
+
+                <h3>🌅 Upon Waking Up</h3>
+                <div class="dua-card">
+                    <div class="arabic-text">الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ</div>
+                    <div class="transliteration">Alhamdu lillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushur</div>
+                    <div class="meaning"><strong>Meaning:</strong> "All praise is for Allah who gave us life after having taken it from us, and unto Him is the resurrection."</div>
+                    <div class="source">(Sahih al-Bukhari 6312)</div>
+                </div>
+
+                <h3>💼 When Entering the Market/Workplace</h3>
+                <div class="dua-card">
+                    <div class="arabic-text">لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لَا يَمُوتُ بِيَدِهِ الْخَيْرُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ</div>
+                    <div class="transliteration">La ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamdu yuhyi wa yumitu wa huwa hayyun la yamut, biyadihil-khayr, wa huwa 'ala kulli shay'in qadir</div>
+                    <div class="meaning"><strong>Meaning:</strong> "None has the right to be worshipped but Allah alone, Who has no partner. His is the dominion and His is the praise. He gives life and He causes death, and He is Ever Living and never dies. In His Hand is all good, and He is Able to do all things."</div>
+                    <div class="source">(Jami' at-Tirmidhi 3428) - You get a million good deeds, a million sins erased, and ranks raised by a million!</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🤝 The Etiquette of Saying "Ameen"</h2>
+                
+                <div class="hadith-box">
+                    <strong>The Power of Ameen:</strong> The Prophet ﷺ said: "When the Imam says 'Ameen', then say 'Ameen', for whoever's 'Ameen' coincides with the 'Ameen' of the angels will have his previous sins forgiven." (Sahih al-Bukhari 780)
+                </div>
+
+                <h3>📿 What "Ameen" Means</h3>
+                <p>"Ameen" (آمين) means "O Allah, respond" or "O Allah, accept this du'a." It's not just a casual word—it's itself a du'a asking Allah to grant what was just requested.</p>
+
+                <h3>✅ When to Say Ameen</h3>
+                <ul class="point-list">
+                    <li><strong>After Surah Al-Fatihah in Prayer:</strong> Both the Imam and those praying behind him should say "Ameen" aloud after the Imam finishes reciting Al-Fatihah in prayers where the Imam recites aloud (Fajr, Maghrib, 'Isha). In silent prayers, say it quietly.</li>
+                    
+                    <li><strong>When Someone Makes Du'a for You:</strong> When a person makes a good du'a in your presence or for you, say "Ameen" to affirm it and ask Allah to accept it.</li>
+                    
+                    <li><strong>When Making Du'a Together:</strong> If you're making du'a in a group (like after a lesson or at a gathering), those listening should say "Ameen" to each supplication.</li>
+                    
+                    <li><strong>For Good Du'as in General:</strong> Whenever you hear a righteous du'a being made—even if you overhear it or hear it in a lecture—say "Ameen" to it.</li>
+                </ul>
+
+                <div class="success-box">
+                    <h3>💫 The Reward of Supporting Others' Du'as</h3>
+                    <p>When you say "Ameen" to someone else's du'a, the angels say "Ameen" for you to receive the same! The Prophet ﷺ said: "When a Muslim makes du'a for his brother in his absence, the angel says: 'And for you the same.'" (Sahih Muslim 2733)</p>
+                </div>
+
+                <div class="warning-box">
+                    <h3>⚠️ Important Notes</h3>
+                    <ul>
+                        <li>Don't say "Ameen" to du'as that ask for harm, cut family ties, or contain sinful requests</li>
+                        <li>Say it with sincerity and presence of heart, not just as a habit</li>
+                        <li>In Shafi'i and Hanbali schools, it's preferred to say "Ameen" loudly after Al-Fatihah; in Hanafi and Maliki schools, it's said quietly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⏳ Why Some Du'as Seem "Unanswered"</h2>
+                
+                <p>This is one of the most important topics to understand, because many people give up on du'a when they don't see immediate results. But Allah's wisdom is infinite, and His response is guaranteed—just not always in the way or timing we expect.</p>
+
+                <div class="hadith-box">
+                    <strong>The Guarantee from Allah:</strong> The Prophet ﷺ said: "There is no Muslim who calls upon Allah, without sin or cutting family ties, but that Allah will give him one of three things: either his du'a will be answered quickly, or it will be stored for him in the Hereafter, or an equivalent evil will be averted from him." They said, "Then we will make plenty of du'a!" He said, "Allah is more generous." (Musnad Ahmad 11149)
+                </div>
+
+                <h3>🎯 The Three Forms of Response</h3>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Response Type</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Immediate Grant</strong></td>
+                            <td>Allah gives you exactly what you asked for, when you asked for it</td>
+                            <td>You made du'a for a job, and you got the job offer shortly after</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Stored for Akhirah</strong></td>
+                            <td>The reward is saved for you as hasanat (good deeds) that you'll desperately need on the Day of Judgment</td>
+                            <td>You made du'a for something, but instead of getting it in dunya, you'll find mountains of reward waiting for you in the Hereafter</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Evil Averted</strong></td>
+                            <td>Allah uses your du'a to protect you from harm you didn't even know was coming</td>
+                            <td>You made du'a for a specific car, but didn't get it. Later you learned that model had a major safety recall. Allah protected you through "denying" your du'a.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🤔 Common Reasons for Delayed Response</h3>
+                <ul class="point-list">
+                    <li><strong>💎 What You Asked For Would Harm You:</strong> Allah knows the future; you don't. That job you desperately wanted might have destroyed your faith or your family. That person you wanted to marry might have made you miserable. Allah's "no" is protection.</li>
+                    
+                    <li><strong>⏰ The Timing Isn't Right Yet:</strong> Sometimes Allah delays to test your patience, strengthen your reliance on Him, or because the timing would be better later. The Prophet Zakariya (peace be upon him) made du'a for a child for years before Allah granted him Yahya.</li>
+                    
+                    <li><strong>🧹 Allah is Preparing You First:</strong> Maybe you need to develop certain qualities, learn certain lessons, or undergo purification before you're ready for what you asked for. The delay is part of the preparation.</li>
+                    
+                    <li><strong>💰 Haram Income:</strong> The Prophet ﷺ mentioned a man making du'a, but "his food is haram, his drink is haram, his clothing is haram, and he is nourished by haram, so how can he be answered?" (Sahih Muslim 1015). Check your income sources.</li>
+                    
+                    <li><strong>🙏 Weak Certainty:</strong> The Prophet ﷺ said: "Call upon Allah while being certain of being answered." (Jami' at-Tirmidhi 3479). Half-hearted du'as lacking conviction may not be answered in the way you want.</li>
+                    
+                    <li><strong>⚡ You're Not Making Enough Effort:</strong> As 'Umar ibn al-Khattab said: "Don't let your du'a for something fool you into thinking you don't need to work for it." Du'a + action is the formula.</li>
+                    
+                    <li><strong>🔗 You're Cutting Family Ties:</strong> The hadith specifically mentions that Allah won't respond to du'a if you're cutting family ties (severing relations with relatives). Mend those relationships!</li>
+                    
+                    <li><strong>💓 Allah Wants to Hear Your Voice:</strong> Sometimes Allah delays the response because He loves hearing you call upon Him. The delay draws you closer to Him, which is better than getting what you asked for.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🌟 A Beautiful Perspective:</strong> Ibn Qayyim (may Allah have mercy on him) said: "Sometimes you ask Allah for something and He doesn't give it to you. Not because He doesn't love you, but because He loves you. He knows that what's truly good for you is different from what you think is good for you, and He gives you according to His knowledge, not according to your desire."
+                </div>
+
+                <div class="quote-box">
+                    <strong>The Wisdom of Yusuf's Story:</strong> When Yusuf (peace be upon him) was thrown in the well, if Allah had immediately rescued him, he would have returned to his father as a shepherd boy. But through years of trials—slavery, false accusation, prison—Allah was preparing him to become the minister of Egypt. Sometimes the "no" or the delay is actually Allah setting up something far greater than you could imagine.
+                </div>
+
+                <div class="success-box">
+                    <h3>✅ What to Do While Waiting</h3>
+                    <ul>
+                        <li>✨ Keep making du'a—persistence is key!</li>
+                        <li>✨ Check yourself: Is your income halal? Are you maintaining family ties?</li>
+                        <li>✨ Take practical action alongside du'a</li>
+                        <li>✨ Trust Allah's timing and wisdom</li>
+                        <li>✨ Thank Allah for what you have while asking for what you want</li>
+                        <li>✨ Remember: Every du'a is answered in one of the three ways—none go to waste!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💝 Making Du'a for Others</h2>
+                
+                <div class="hadith-box">
+                    <strong>The Secret to Answered Du'a:</strong> The Prophet ﷺ said: "The du'a of a Muslim for his brother (in Islam) in his absence is readily accepted. An angel is appointed to his side. Whenever he makes a beneficial du'a for his brother, the appointed angel says: 'Ameen, and may you also be blessed with the same.'" (Sahih Muslim 2733)
+                </div>
+
+                <h3>🌟 Why Make Du'a for Others?</h3>
+                <ul class="point-list">
+                    <li><strong>🎁 You Get the Same Reward:</strong> When you sincerely make du'a for someone else, the angel says "Ameen, and for you the same!" You're essentially making du'a for yourself through making du'a for others.</li>
+                    
+                    <li><strong>💕 It Purifies the Heart:</strong> Making du'a for others—especially those who wronged you—removes jealousy, hatred, and malice from your heart. It's spiritual purification.</li>
+                    
+                    <li><strong>🔗 It Strengthens Bonds:</strong> When you pray for your family, friends, or even people you've never met, you create spiritual connections and increase love between Muslims.</li>
+                    
+                    <li><strong>⚖️ It's an Act of Justice:</strong> The Prophet ﷺ taught us to pray for the entire ummah, not just ourselves. This balances the self-centeredness that can creep into our worship.</li>
+                    
+                    <li><strong>📈 It Increases Blessings:</strong> The more generous you are in making du'a for others, the more Allah blesses you. Generosity in du'a leads to generosity in provisions.</li>
+                </ul>
+
+                <h3>👥 Who to Make Du'a For</h3>
+                <ul class="point-list">
+                    <li><strong>👪 Your Parents:</strong> This is mandated in the Qur'an: "My Lord, have mercy upon them as they brought me up when I was small" (17:24). Pray for their forgiveness, their health, their Jannah.</li>
+                    
+                    <li><strong>👨‍👩‍👧‍👦 Your Family:</strong> Your spouse, children, siblings, relatives—make regular, specific du'as for them by name.</li>
+                    
+                    <li><strong>🤝 Your Teachers and Mentors:</strong> Those who taught you knowledge or guided you—pray for them, as their reward continues through you.</li>
+                    
+                    <li><strong>🕌 The Muslim Ummah:</strong> The Prophet ﷺ used to pray for all Muslims. Say "Allahumma aghfir lil-mu'minina wal-mu'minat" (O Allah, forgive the believing men and women).</li>
+                    
+                    <li><strong>💔 Those Going Through Hardship:</strong> Pray for the oppressed, the sick, the poor, refugees, those suffering in war zones, prisoners of conscience.</li>
+                    
+                    <li><strong>😢 Your Enemies:</strong> Yes! The Prophet ﷺ prayed for guidance for those who persecuted him. Pray that Allah guides them or protects you from them.</li>
+                    
+                    <li><strong>⚰️ The Deceased:</strong> Especially your deceased parents and relatives. They can no longer do good deeds, but your du'a still benefits them.</li>
+                </ul>
+
+                <div class="dua-card">
+                    <h4>📝 A Comprehensive Du'a for Your Parents (Alive or Deceased)</h4>
+                    <div class="arabic-text">اللَّهُمَّ اغْفِرْ لَهُمَا وَارْحَمْهُمَا وَعَافِهِمَا وَاعْفُ عَنْهُمَا وَأَكْرِمْ نُزُلَهُمَا وَوَسِّعْ مُدْخَلَهُمَا وَاغْسِلْهُمَا بِالْمَاءِ وَالثَّلْجِ وَالْبَرَدِ وَنَقِّهِمَا مِنَ الذُّنُوبِ وَالْخَطَايَا كَمَا يُنَقَّى الثَّوْبُ الْأَبْيَضُ مِنَ الدَّنَسِ</div>
+                    <div class="transliteration">Allahummaghfir lahuma warhamhuma wa 'afihima wa'fu 'anhuma wa akrim nuzulahuma wa wassi' mudkhalahuma waghsilhuma bil-ma'i wath-thalji wal-barad, wa naqqihima minath-thunobi wal-khataya kama yunaqqath-thawbul-abyadu minad-danas</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, forgive them and have mercy on them, grant them health and pardon them. Honor their hospitality and expand their entrance (to Paradise). Wash them with water, snow, and hail, and cleanse them of sins and mistakes as a white garment is cleansed of dirt."</div>
+                </div>
+
+                <div class="success-box">
+                    <h3>💡 Create a Du'a List</h3>
+                    <p>Keep a written or mental list of people you regularly make du'a for. Include their names and specific needs. Go through this list daily, especially during blessed times like the last third of the night or in sujud. This practice keeps you connected to your community and ensures your relationships remain in the heart.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🏃‍♂️ The Relationship Between Du'a and Action</h2>
+                
+                <div class="quote-box">
+                    <strong>The Wisdom of 'Umar ibn al-Khattab:</strong> "Don't let your du'a for something fool you into thinking you don't have to work for it. After all, you make du'a for provision (rizq), but you know provision doesn't come down from the sky—you have to go out and earn it."
+                </div>
+
+                <h3>⚖️ The Balance: Trust in Allah + Take Action</h3>
+                <p>Islam teaches the perfect balance between <strong>tawakkul</strong> (reliance on Allah) and <strong>taking the means</strong> (doing your part). Du'a alone without effort is false hope. Effort alone without du'a is arrogance. The two together? That's the way of the Prophet ﷺ.</p>
+
+                <div class="hadith-box">
+                    <strong>The Famous Hadith of the Bedouin:</strong> A Bedouin man came to the Prophet ﷺ and asked: "Should I tie my camel and trust in Allah, or should I leave it untied and trust in Allah?" The Prophet ﷺ replied: <strong>"Tie your camel, then trust in Allah."</strong> (Jami' at-Tirmidhi 2517)
+                </div>
+
+                <h3>📊 Examples of Du'a + Action</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>What You Want</th>
+                            <th>Make Du'a</th>
+                            <th>Then Take Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Good Grades</strong></td>
+                            <td>Ask Allah for knowledge, understanding, and success</td>
+                            <td>Study hard, attend classes, ask questions, review material</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A Good Spouse</strong></td>
+                            <td>Ask Allah for a righteous spouse who will bring you closer to Him</td>
+                            <td>Work on yourself, make yourself marriage-ready, put yourself in halal situations to meet potential spouses</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Financial Stability</strong></td>
+                            <td>Ask Allah for halal provision and barakah in your wealth</td>
+                            <td>Work hard, develop skills, be smart with money, avoid debt, give in charity</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Good Health</strong></td>
+                            <td>Ask Allah for healing and well-being</td>
+                            <td>Exercise, eat well, see doctors, take medication, avoid harmful substances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jannah</strong></td>
+                            <td>Ask Allah to make you among the people of Paradise</td>
+                            <td>Pray your five daily prayers, do righteous deeds, avoid sins, treat people well</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Strong Faith</strong></td>
+                            <td>Ask Allah to increase your iman and keep you steadfast</td>
+                            <td>Study Islam, attend classes, keep good company, avoid doubtful matters, increase worship</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>🚫 Mistakes to Avoid</h3>
+                <div class="warning-box">
+                    <ul>
+                        <li><strong>❌ Making du'a without any effort:</strong> "I made du'a for a job, so I'm just waiting for it to come to me" → No! Make du'a AND apply to jobs!</li>
+                        <li><strong>❌ Working without making du'a:</strong> "I'm working so hard, I don't need to make du'a" → This is arrogance. Success is from Allah alone.</li>
+                        <li><strong>❌ Blaming du'a when you didn't do your part:</strong> "I made du'a to pass the exam but I failed! Du'a doesn't work!" → Did you study?</li>
+                        <li><strong>❌ Thinking du'a is just for lazy people:</strong> The most successful people in Islamic history made the most du'a AND worked the hardest.</li>
+                    </ul>
+                </div>
+
+                <div class="success-box">
+                    <h3>✅ The Prophet's Example</h3>
+                    <p>The Prophet ﷺ made du'a before battles AND prepared his army. He made du'a for provision AND worked as a shepherd and merchant. He made du'a for his ummah AND struggled tirelessly to guide them. He is our perfect example of combining both.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💚 Du'as the Prophet ﷺ Made Frequently</h2>
+                
+                <p>The Prophet ﷺ had certain du'as he would repeat often. Learning these gives us direct access to his blessed words and shows us what he prioritized asking Allah for.</p>
+
+                <div class="dua-card">
+                    <h4>1. His Most Frequent Du'a</h4>
+                    <div class="arabic-text">يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ</div>
+                    <div class="transliteration">Ya Muqallibal-qulub, thabbit qalbi 'ala deenik</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Turner of hearts, keep my heart firm upon Your religion."</div>
+                    <div class="source">(Jami' at-Tirmidhi 2140) - He said this constantly, showing his awareness that guidance is from Allah alone</div>
+                </div>
+
+                <div class="dua-card">
+                    <h4>2. For Forgiveness (Said 70-100 Times Daily)</h4>
+                    <div class="arabic-text">رَبِّ اغْفِرْ لِي وَتُبْ عَلَيَّ إِنَّكَ أَنْتَ التَّوَّابُ الْغَفُورُ</div>
+                    <div class="transliteration">Rabbighfir li wa tub 'alayya innaka antat-Tawwabul-Ghafur</div>
+                    <div class="meaning"><strong>Meaning:</strong> "My Lord, forgive me and accept my repentance, indeed You are the Oft-Returning, the Oft-Forgiving."</div>
+                    <div class="source">(Sunan Abi Dawud 1516) - He would say this between the two prostrations</div>
+                </div>
+
+                <div class="dua-card">
+                    <h4>3. When Leaving the House</h4>
+                    <div class="arabic-text">بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ أَوْ أُضَلَّ، أَوْ أَزِلَّ أَوْ أُزَلَّ، أَوْ أَظْلِمَ أَوْ أُظْلَمَ، أَوْ أَجْهَلَ أَوْ يُجْهَلَ عَلَيَّ</div>
+                    <div class="transliteration">Bismillah, tawakkaltu 'alallah, wa la hawla wa la quwwata illa billah. Allahumma inni a'udhu bika an adilla aw udalla, aw azilla aw uzalla, aw azlima aw uzlama, aw ajhala aw yujhala 'alayy</div>
+                    <div class="meaning"><strong>Meaning:</strong> "In the name of Allah, I have placed my trust in Allah; there is no might and no power except with Allah. O Allah, I seek refuge in You lest I stray or be led astray, or slip or be made to slip, or cause injustice or suffer injustice, or do wrong or have wrong done to me."</div>
+                    <div class="source">(Sunan Abi Dawud 5095) - Complete protection for leaving home</div>
+                </div>
+
+                <div class="dua-card">
+                    <h4>4. In the Morning and Evening (Multiple Times)</h4>
+                    <div class="arabic-text">حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ</div>
+                    <div class="transliteration">Hasbiyallahu la ilaha illa Huwa, 'alayhi tawakkaltu, wa Huwa Rabbul-'Arshil-'Azim</div>
+                    <div class="meaning"><strong>Meaning:</strong> "Allah is sufficient for me. There is no deity except Him. Upon Him I have relied, and He is the Lord of the Great Throne."</div>
+                    <div class="source">(Qur'an 9:129 & Sunan Abi Dawud 5081) - Whoever says this 7 times morning and evening, Allah suffices him in all his concerns</div>
+                </div>
+
+                <div class="dua-card">
+                    <h4>5. After Every Fard Prayer</h4>
+                    <div class="arabic-text">اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ</div>
+                    <div class="transliteration">Allahumma a'inni 'ala dhikrika wa shukrika wa husni 'ibadatik</div>
+                    <div class="meaning"><strong>Meaning:</strong> "O Allah, help me to remember You, to thank You, and to worship You in the best manner."</div>
+                    <div class="source">(Sunan Abi Dawud 1522) - He advised Mu'adh to never leave this after every prayer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="practical-steps">
+            <h2>🎯 30-Day Du'a Transformation Challenge</h2>
+            <ol class="steps-list">
+                <li><strong>Days 1-5: Master the Basics</strong> - Learn the etiquettes of du'a. Memorize one comprehensive du'a from the Qur'an (like Rabbana atina). Practice raising your hands properly and making du'a after each prayer.</li>
+                
+                <li><strong>Days 6-10: Capture Golden Times</strong> - Set an alarm for the last third of the night at least three times this week. Wake up, make wudu, pray 2 rak'ahs, and make heartfelt du'a for 10-15 minutes.</li>
+                
+                <li><strong>Days 11-15: Build Your Du'a List</strong> - Write down 20 specific things you want to ask Allah for (personal, family, ummah). Categorize them: worldly needs, spiritual needs, others' needs. Review this list daily in your du'as.</li>
+                
+                <li><strong>Days 16-20: Learn Prophetic Du'as</strong> - Memorize three new du'as from the Sunnah this week. Use them in their appropriate contexts (waking up, leaving home, anxiety, etc.).</li>
+                
+                <li><strong>Days 21-25: Du'a for Others</strong> - Each day, make sincere du'a for a different person or group: your parents, your spouse, Muslim ummah, the oppressed, your teachers, etc. Feel the love grow in your heart.</li>
+                
+                <li><strong>Days 26-27: Combine with Action</strong> - Pick one major thing you're making du'a for. In addition to daily du'a, take THREE concrete actions this week toward achieving it. Trust Allah with the results.</li>
+                
+                <li><strong>Days 28-29: Increase Salawat</strong> - Send 300 salawat upon the Prophet ﷺ. Use the Ibrahimi version at least 100 times. Notice how your du'as after salawat feel more powerful.</li>
+                
+                <li><strong>Day 30: Reflect and Commit</strong> - Review your 30 days. What changed? How is your relationship with Allah different? Commit to making du'a a permanent, powerful part of your daily life. Make a specific plan for maintaining these habits.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <h2>🤲 Closing Reflection</h2>
+            <div class="dua">
+                "Is not Allah sufficient for His Servant?"<br>
+                (Qur'an 39:36)
+            </div>
+            <p style="margin-top: 20px; font-size: 1.1em;">
+                Du'a is not just words you speak—it's the conversation of the soul with its Creator. It's the believer's weapon against all hardships, the key to all doors, the rope that connects earth to heaven. When you raise your hands in du'a, you're not just asking for things; you're declaring your complete dependence on Allah, acknowledging His power, expressing your trust in His wisdom, and drawing closer to Him than in any other act of worship.
+            </p>
+            <p style="margin-top: 20px;">
+                The Prophet ﷺ said: "Du'a is the essence of worship." (Sunan Abi Dawud 1479). When you make du'a, you ARE worshipping—perhaps in the most pure form. Never underestimate the power of sincere supplication. Never give up. Never stop asking. Allah loves to be asked, and He never turns away a raised hand empty.
+            </p>
+            <p style="margin-top: 20px; font-style: italic; color: #ffd700; font-size: 1.2em;">
+                رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ<br>
+                Rabbana taqabbal minna innaka antas-Sami'ul-'Alim<br>
+                "Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing."<br>
+                (Qur'an 2:127)
+            </p>
+        </div>
+    </div>
+</body>
+</html>

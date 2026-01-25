@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friday (Jumu'ah) - The Best Day | Islamic Education</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffa751 0%, #ffe259 100%);
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ffa751 0%, #ffe259 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header .arabic {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hadith-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hadith-box p {
+            font-size: 1.1em;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .hadith-box .citation {
+            font-size: 0.9em;
+            text-align: right;
+            opacity: 0.9;
+        }
+
+        .key-principle {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .key-principle h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .key-principle p {
+            font-size: 1.15em;
+            line-height: 1.8;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #ffa751;
+        }
+
+        .section h2 {
+            color: #ffa751;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h3 {
+            color: #ff8c42;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .verse-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffa751;
+        }
+
+        .verse-box .arabic {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            text-align: right;
+            color: #2d3748;
+            font-weight: bold;
+        }
+
+        .verse-box .translation {
+            font-style: italic;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .verse-box .citation {
+            font-size: 0.9em;
+            color: #4a5568;
+            text-align: right;
+        }
+
+        .virtues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .virtue-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #ffa751;
+            transition: transform 0.3s ease;
+        }
+
+        .virtue-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .virtue-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .virtue-card h4 {
+            color: #ffa751;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .virtue-card p {
+            font-size: 1em;
+            color: #4a5568;
+            text-align: center;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #f39c12;
+        }
+
+        .highlight-box strong {
+            color: #d35400;
+            font-size: 1.1em;
+        }
+
+        .preparation-list {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .preparation-item {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 3px solid #ffa751;
+            background: #f8f9fa;
+        }
+
+        .preparation-item strong {
+            color: #ffa751;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .timeline {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #fff9e6 0%, #ffe8cc 100%);
+            border-radius: 10px;
+            border-left: 4px solid #ffa751;
+        }
+
+        .timeline-time {
+            background: linear-gradient(135deg, #ffa751 0%, #ffe259 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            white-space: nowrap;
+            height: fit-content;
+        }
+
+        .timeline-content h4 {
+            color: #ffa751;
+            margin-bottom: 8px;
+        }
+
+        .special-hour-box {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            color: white;
+            text-align: center;
+            border: 3px solid #ff6b9d;
+        }
+
+        .special-hour-box h3 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .special-hour-box .time-options {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .kahf-section {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border: 3px solid #00acc1;
+        }
+
+        .kahf-section h4 {
+            color: #00695c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .benefits-list {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .benefits-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .benefits-list li:last-child {
+            border-bottom: none;
+        }
+
+        .do-dont-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .do-box {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .dont-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .do-box h4, .dont-box h4 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .do-box ul, .dont-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .do-box li, .dont-box li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
+
+        .do-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .dont-box li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .practical-steps {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 35px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .practical-steps h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .step {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+            align-items: start;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #ffa751 0%, #ffe259 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #ffa751;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+
+        .step-content p {
+            color: #4a5568;
+            font-size: 1em;
+        }
+
+        .example-box {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+        }
+
+        .example-box h4 {
+            color: #f57c00;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checklist {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 2px solid #ffa751;
+        }
+
+        .checklist h4 {
+            color: #ffa751;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .checklist-item {
+            padding: 12px;
+            margin: 8px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checklist-item:before {
+            content: "☑";
+            color: #ffa751;
+            font-size: 1.5em;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #ffa751 0%, #ffe259 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer .dua {
+            font-size: 1.3em;
+            font-style: italic;
+            margin-bottom: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .footer .arabic {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .virtues-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .do-dont-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="arabic">يَوْمُ الْجُمُعَةِ</div>
+            <h1>☀️ FRIDAY - THE BEST DAY ☀️</h1>
+            <h2>Jumu'ah: The Master of All Days</h2>
+            
+            <div class="hadith-box">
+                <p><strong>The Prophet ﷺ said:</strong></p>
+                <p>"The best day on which the sun rises is Friday. On it Adam was created, on it he entered Paradise, and on it he was expelled from it. And the Hour will not be established except on Friday."</p>
+                <div class="citation">— Sahih Muslim</div>
+            </div>
+        </div>
+
+        <div class="key-principle">
+            <h2>✨ Key Principle</h2>
+            <p>Friday is not just another day - it is the weekly celebration of Muslims, a day chosen by Allah for this Ummah. It is a day of gathering, worship, and special blessings. The believer approaches Friday with preparation, anticipation, and joy, recognizing it as an opportunity for forgiveness, answered prayers, and spiritual elevation that comes only once a week.</p>
+        </div>
+
+        <div class="content">
+            <!-- Virtues of Friday Section -->
+            <div class="section">
+                <h2>🌟 The Unique Virtues of Friday</h2>
+                
+                <p>Allah chose Friday for the Muslim Ummah above all other days. While previous nations were given other days, Friday was specially reserved for us.</p>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "We are the last (to come) but will be the foremost on the Day of Resurrection. They were given the Book before us and we were given the Quran after them. This (Friday) is the day about which they differed. So Allah gave us guidance. The people (Jews and Christians) come after us, the Jews on Saturday and the Christians on Sunday."</p>
+                    <div class="citation">— Sahih Bukhari & Muslim</div>
+                </div>
+
+                <h3>🎁 Special Blessings of Friday</h3>
+
+                <div class="virtues-grid">
+                    <div class="virtue-card">
+                        <div class="icon">👑</div>
+                        <h4>Master of Days</h4>
+                        <p>The Prophet ﷺ called it "Sayyid al-Ayyam" - the master/leader of all days, superior to even Eid days.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">🕊️</div>
+                        <h4>Adam's Creation</h4>
+                        <p>On this blessed day, Allah created Adam (peace be upon him), the father of humanity.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">🌸</div>
+                        <h4>Entry to Paradise</h4>
+                        <p>Adam entered Paradise on Friday, marking it as a day of mercy and blessing from the very beginning.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">⏰</div>
+                        <h4>Day of Judgment</h4>
+                        <p>The Hour (Day of Resurrection) will be established on Friday, making it the final day of this worldly life.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">🤲</div>
+                        <h4>Hour of Acceptance</h4>
+                        <p>Contains a special hour when no Muslim asks Allah for anything except that He grants it.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">🕌</div>
+                        <h4>Obligatory Gathering</h4>
+                        <p>The only day with an obligatory congregational prayer (Jumu'ah) that brings the community together.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">🧼</div>
+                        <h4>Sins Forgiven</h4>
+                        <p>Those who attend Jumu'ah properly have their sins between that Friday and the next forgiven.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">😇</div>
+                        <h4>Angels Record</h4>
+                        <p>Angels stand at the mosque doors recording those who come early, in order of arrival.</p>
+                    </div>
+
+                    <div class="virtue-card">
+                        <div class="icon">📿</div>
+                        <h4>Extra Salawat</h4>
+                        <p>Sending abundant blessings upon the Prophet ﷺ on Friday is especially recommended and rewarded.</p>
+                    </div>
+                </div>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "The five daily prayers, and from one Jumu'ah to the next, are an expiation for whatever sins come in between, so long as one does not commit any major sin."</p>
+                    <div class="citation">— Sahih Muslim</div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Profound Reality:</strong> Every single Friday that passes without taking advantage of its blessings is an opportunity lost forever. No other day of the week carries these same virtues. This should motivate us to prepare for and maximize every Friday!
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="section">
+                <h2>🎯 Preparing for Jumu'ah: Starting the Night Before</h2>
+                
+                <p>The blessed day of Friday actually begins from Thursday night (Islamic days start at sunset). The wise Muslim begins preparing early to maximize the blessings.</p>
+
+                <h3>🌙 Thursday Night Preparation</h3>
+
+                <div class="preparation-list">
+                    <div class="preparation-item">
+                        <strong>1. Increase Salawat (Blessings on the Prophet ﷺ)</strong>
+                        Start sending abundant blessings upon the Prophet ﷺ from Thursday evening. The Prophet ﷺ said: "Among the best of your days is Friday, so send abundant blessings upon me on that day." (Abu Dawud)
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>2. Plan Your Friday</strong>
+                        Organize your work and responsibilities so Friday is free for worship. Avoid scheduling important worldly matters during Jumu'ah time.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>3. Review Surah Al-Kahf</strong>
+                        Prepare to read it the next day. Some scholars recommend starting it after Maghrib on Thursday.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>4. Make Sincere Intention</strong>
+                        Intend to wake up early, prepare properly, arrive at the mosque early, and make the most of Friday's blessings.
+                    </div>
+                </div>
+
+                <h3>🌅 Friday Morning Preparation</h3>
+
+                <div class="preparation-list">
+                    <div class="preparation-item">
+                        <strong>1. Wake Up Early (Fajr Time)</strong>
+                        Start your blessed day with Fajr prayer. The Prophet ﷺ said there is barakah in waking up early.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>2. Take a Proper Bath (Ghusl)</strong>
+                        The Prophet ﷺ said: "It is obligatory upon every Muslim to take a bath on Friday." (Bukhari & Muslim) This ghusl is highly emphasized and should be done with the intention of purifying for Jumu'ah.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>3. Wear Your Best Clothes</strong>
+                        The Prophet ﷺ said: "Anyone of you attending the Friday prayer should take a bath." Some reports mention wearing your best clothes and using perfume.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>4. Use Perfume (For Men)</strong>
+                        Apply good fragrance. The Prophet ﷺ would wear perfume on Fridays. This shows respect for the gathering and the angels present.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>5. Use Miswak/Brush Teeth</strong>
+                        Ensure fresh breath and cleanliness. The Prophet ﷺ said: "If it were not a hardship on my Ummah, I would have commanded them to use the miswak before every prayer."
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>6. Trim Nails & Groom</strong>
+                        Take care of general cleanliness and grooming. Friday is like the weekly Eid for Muslims.
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 The Prophet's Example</h4>
+                    <p>The Prophet ﷺ had special clothes that he would wear for Friday and the two Eids. He would apply perfume and prepare himself in the most beautiful manner. This shows us that Friday deserves special preparation and honor.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Important:</strong> These preparations are not just external - they are acts of worship that honor the day and show respect for the gathering. When you prepare properly for Jumu'ah, you're saying with your actions: "This day matters to me, and I'm treating it as special because Allah made it special."
+                </div>
+            </div>
+
+            <!-- Prayer and Khutbah Section -->
+            <div class="section">
+                <h2>🕌 The Jumu'ah Prayer and Khutbah</h2>
+                
+                <h3>⏰ Going Early to the Mosque</h3>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "Whoever takes a bath on Friday, purifies himself as much as he can, then uses his hair oil or perfumes himself, then proceeds (to the mosque) and does not separate two persons sitting together, then prays what is written for him, then remains silent while the Imam is delivering the Khutbah, his sins in between the present and the last Friday will be forgiven."</p>
+                    <div class="citation">— Sahih Bukhari</div>
+                </div>
+
+                <div class="timeline">
+                    <h4 style="text-align: center; color: #ffa751; margin-bottom: 20px;">The Early Bird Gets the Greatest Reward</h4>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-time">1st Hour</div>
+                        <div class="timeline-content">
+                            <h4>Like Sacrificing a Camel</h4>
+                            <p>The one who comes in the first hour after sunrise is like one who sacrificed a camel for Allah - the greatest sacrifice.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">2nd Hour</div>
+                        <div class="timeline-content">
+                            <h4>Like Sacrificing a Cow</h4>
+                            <p>The second to arrive is like one who sacrificed a cow - a great sacrifice.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">3rd Hour</div>
+                        <div class="timeline-content">
+                            <h4>Like Sacrificing a Ram</h4>
+                            <p>The third is like one who sacrificed a horned ram - a good sacrifice.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">4th Hour</div>
+                        <div class="timeline-content">
+                            <h4>Like Sacrificing a Chicken</h4>
+                            <p>The fourth is like one who sacrificed a chicken - a lesser sacrifice.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">5th Hour</div>
+                        <div class="timeline-content">
+                            <h4>Like Offering an Egg</h4>
+                            <p>The fifth is like one who offered an egg - a small offering.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-time">Khutbah Starts</div>
+                        <div class="timeline-content">
+                            <h4>Angels Stop Recording & Listen</h4>
+                            <p>When the Imam sits on the minbar, the angels stop recording arrivals and close their scrolls to listen to the remembrance (the khutbah).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>The Lesson:</strong> The earlier you arrive, the greater your reward! Those who rush in just before the prayer miss out on massive blessings. The real winners are those who arrive early, pray voluntary prayers, read Quran, and make du'a while waiting.
+                </div>
+
+                <h3>📖 During the Khutbah: Rules and Etiquette</h3>
+
+                <div class="do-dont-grid">
+                    <div class="do-box">
+                        <h4>✅ DO</h4>
+                        <ul>
+                            <li>Listen attentively to every word</li>
+                            <li>Face the Imam and pay full attention</li>
+                            <li>Reflect on the message and take it to heart</li>
+                            <li>Remain completely silent</li>
+                            <li>Keep your phone on silent (or off)</li>
+                            <li>If you sneeze, say Alhamdulillah quietly</li>
+                            <li>Make du'a silently when the Imam makes du'a</li>
+                        </ul>
+                    </div>
+
+                    <div class="dont-box">
+                        <h4>❌ DON'T</h4>
+                        <ul>
+                            <li>Talk - even to tell someone to be quiet!</li>
+                            <li>Use your phone or check messages</li>
+                            <li>Step over people unnecessarily</li>
+                            <li>Play with prayer beads or anything else</li>
+                            <li>Look around or get distracted</li>
+                            <li>Respond if someone greets you</li>
+                            <li>Say "Yarhamukallah" if someone sneezes</li>
+                            <li>Whisper to anyone for any reason</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "If you say to your companion 'Be quiet' while the Imam is delivering the Khutbah on Friday, you have engaged in idle talk."</p>
+                    <div class="citation">— Sahih Bukhari & Muslim</div>
+                </div>
+
+                <h3>🕌 After the Khutbah: The Prayer</h3>
+
+                <div class="preparation-item">
+                    <strong>The Jumu'ah Prayer:</strong>
+                    Two rak'ahs led by the Imam, prayed in congregation. It replaces the Dhuhr prayer for those who attend. Pray it with full presence and focus - this is what you came for!
+                </div>
+
+                <div class="preparation-item">
+                    <strong>The Sunnah After Jumu'ah:</strong>
+                    The Prophet ﷺ would pray four rak'ahs after Jumu'ah. If you pray at home, pray two rak'ahs. These are important sunnah prayers not to be neglected.
+                </div>
+
+                <div class="example-box">
+                    <h4>⚠️ Important Warning</h4>
+                    <p>The Prophet ﷺ said: "Whoever misses three Jumu'ah prayers out of negligence, Allah will place a seal upon his heart." (Abu Dawud, Tirmidhi, Ahmad)</p>
+                    <p style="margin-top: 10px;">Jumu'ah is not optional for men who have the ability to attend. It is an obligation that must be prioritized above worldly work and concerns.</p>
+                </div>
+            </div>
+
+            <!-- Special Hour Section -->
+            <div class="section">
+                <h2>⏰ The Special Hour: When Du'a is Accepted</h2>
+                
+                <p>One of the greatest blessings of Friday is a special hour during which any du'a made by a Muslim standing in prayer will be answered.</p>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "There is an hour on Friday. If a Muslim happens to pray at that hour and ask Allah for something good, He will surely grant it to him."</p>
+                    <div class="citation">— Sahih Bukhari & Muslim</div>
+                </div>
+
+                <div class="special-hour-box">
+                    <h3>🤲 When is This Blessed Hour?</h3>
+                    <p style="margin-bottom: 15px;">The scholars have mentioned different opinions based on various hadiths:</p>
+                    
+                    <div class="time-options">
+                        <h4 style="margin-bottom: 15px;">Most Likely Times:</h4>
+                        <p style="margin-bottom: 10px;"><strong>1. From when the Imam sits on the minbar until the prayer ends</strong></p>
+                        <p style="margin-bottom: 10px; font-size: 0.95em;">This is a strong opinion. The hour of acceptance could be any moment from the start of the khutbah until the completion of the prayer.</p>
+                        
+                        <p style="margin-bottom: 10px; margin-top: 15px;"><strong>2. The last hour before Maghrib</strong></p>
+                        <p style="font-size: 0.95em;">After Asr until the sun sets. This is also a very strong opinion based on authentic hadiths.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Practical Solution:</strong> Since the exact time is not definitively known (perhaps by Allah's wisdom so we increase du'a throughout the day), make abundant du'a during BOTH times: during Jumu'ah prayer/khutbah, AND in the last hour before Maghrib. This way you're sure to catch it!
+                </div>
+
+                <h3>🤲 What to Ask For During This Hour</h3>
+
+                <div class="preparation-list">
+                    <div class="preparation-item">
+                        <strong>Prepare Your Du'as in Advance:</strong>
+                        Don't wait until the moment. Have a list ready of what you want to ask Allah for - for yourself, your family, the Ummah.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Ask for Both Dunya and Akhirah:</strong>
+                        It's permissible to ask for worldly needs (health, sustenance, success) and matters of the Hereafter (forgiveness, Paradise, good ending).
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Make Du'a in Sujud:</strong>
+                        The Prophet ﷺ said: "The closest a servant comes to his Lord is when he is in sujud, so make abundant du'a." (Muslim) Use your sujud during Jumu'ah prayer!
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Be Present and Sincere:</strong>
+                        Allah accepts du'a from an attentive, humble heart. Make your du'a with full presence, humility, and certainty that Allah hears and responds.
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 Recommended Du'as for Friday</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Forgiveness for your sins and those of your family</li>
+                        <li>Guidance for you and your loved ones</li>
+                        <li>Protection from trials and fitnah</li>
+                        <li>Help for the oppressed Muslims worldwide</li>
+                        <li>A good end and entry to Paradise</li>
+                        <li>Your specific needs (halal job, spouse, children, health)</li>
+                        <li>Increase in beneficial knowledge and rizq</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Surah Al-Kahf Section -->
+            <div class="section">
+                <h2>📖 Surah Al-Kahf on Friday</h2>
+                
+                <p>Reading Surah Al-Kahf (Chapter 18) on Friday is a highly emphasized Sunnah with tremendous rewards and protection.</p>
+
+                <div class="kahf-section">
+                    <h4>🌟 The Hadith About Al-Kahf</h4>
+                    <div class="hadith-box" style="background: white; border-left-color: #00acc1;">
+                        <p><strong>The Prophet ﷺ said:</strong> "Whoever reads Surah Al-Kahf on Friday, a light will shine for him between the two Fridays."</p>
+                        <div class="citation">— Al-Hakim, Bayhaqi (Sahih)</div>
+                    </div>
+
+                    <div class="hadith-box" style="background: white; border-left-color: #00acc1; margin-top: 15px;">
+                        <p><strong>The Prophet ﷺ said:</strong> "Whoever reads Surah Al-Kahf on the day of Jumu'ah, light will shine for him from beneath his feet to the clouds of the sky, which will shine for him on the Day of Resurrection, and he will be forgiven for what is between the two Fridays."</p>
+                        <div class="citation">— Narrated by Ibn Mardawayh (Hasan)</div>
+                    </div>
+                </div>
+
+                <h3>💡 Why Surah Al-Kahf?</h3>
+
+                <div class="benefits-list">
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>✨ Contains profound lessons:</strong> The surah teaches about trials of faith, wealth, knowledge, and power through four amazing stories.</li>
+                        <li><strong>🛡️ Protection from Dajjal:</strong> The Prophet ﷺ said whoever memorizes the first 10 verses of Al-Kahf will be protected from the Dajjal.</li>
+                        <li><strong>💡 Light between Fridays:</strong> Provides spiritual illumination and guidance throughout the week.</li>
+                        <li><strong>🧹 Forgiveness of sins:</strong> The hadith mentions forgiveness for sins between the two Fridays.</li>
+                        <li><strong>📚 Quranic engagement:</strong> Ensures you're connecting with Quran at least once a week in a meaningful way.</li>
+                    </ul>
+                </div>
+
+                <h3>⏰ When to Read It?</h3>
+
+                <div class="preparation-list">
+                    <div class="preparation-item">
+                        <strong>Any Time on Friday:</strong>
+                        From Maghrib on Thursday night (start of Friday in Islam) until Maghrib on Friday night. The entire Islamic day of Friday is acceptable.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Best Times (Suggested):</strong>
+                        Many prefer reading it after Fajr on Friday morning, or between Asr and Maghrib. Choose a time when you can read with focus and reflection.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Listen to Recitation:</strong>
+                        If you can't read Arabic well, listen to a beautiful recitation while following along with the translation. The reward is similar insha'Allah.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Make it a Habit:</strong>
+                        Set a specific time every Friday for Al-Kahf so it becomes automatic. Perhaps right after Fajr with a cup of coffee/tea!
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>📱 Practical Tip for Busy People</h4>
+                    <p>Surah Al-Kahf takes about 30-40 minutes to read (or 20-25 minutes to listen to). If you're very busy, break it into parts throughout Friday: read some after Fajr, some during lunch break, complete it before Maghrib. What matters is completing it within the Friday timeframe.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Don't Miss This!</strong> Reading Surah Al-Kahf takes less than an hour but gives you a week's worth of light and protection. It's one of the easiest good deeds with the highest rewards. Make it a non-negotiable part of your Friday routine!
+                </div>
+            </div>
+
+            <!-- Making Friday Special Section -->
+            <div class="section">
+                <h2>🎉 Making Friday a Truly Special Day</h2>
+                
+                <p>Beyond the obligatory and recommended acts, we can make Friday a weekly day of renewal, family time, and spiritual elevation.</p>
+
+                <h3>🌅 Morning Activities</h3>
+
+                <div class="preparation-list">
+                    <div class="preparation-item">
+                        <strong>Start with Fajr and Dhikr:</strong>
+                        Wake up for Fajr, pray it, then sit until sunrise making dhikr and du'a. The time after Fajr on Friday is especially blessed.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Read Surah Al-Kahf Early:</strong>
+                        Get it done in the morning so you carry its light and lessons throughout the day.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Send Abundant Salawat:</strong>
+                        Make it a habit to recite "Allahumma salli 'ala Muhammad" hundreds of times on Friday. Set a goal (100, 300, 1000 times).
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Quran Time:</strong>
+                        Besides Al-Kahf, read more Quran. Friday is a day to increase connection with Allah's words.
+                    </div>
+                </div>
+
+                <h3>👨‍👩‍👧‍👦 Family Friday Traditions</h3>
+
+                <div class="preparation-list">
+                    <div class="preparation-item">
+                        <strong>Special Friday Meal:</strong>
+                        Make Friday dinner or lunch special. The Prophet ﷺ would sometimes have specific foods on Friday. Make it a family tradition.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Family Quran Session:</strong>
+                        Read Surah Al-Kahf together as a family, discussing its lessons. Or take turns reading verses.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Islamic Learning:</strong>
+                        Watch an Islamic lecture together, discuss a hadith, or share something beneficial learned during the week.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Charity Together:</strong>
+                        Make Friday your weekly sadaqah day. Give together as a family, teaching children the importance of generosity.
+                    </div>
+                </div>
+
+                <h3>🌙 Evening Blessings</h3>
+
+                <div class="preparation-list">
+                    <div class="preparation-item">
+                        <strong>The Golden Hour (Before Maghrib):</strong>
+                        The last hour before Maghrib is prime time for du'a acceptance. Don't waste it! Be in a state of prayer or dhikr.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Reflect on the Week:</strong>
+                        Friday evening is perfect for weekly self-reflection. What went well? What needs improvement? Set intentions for the coming week.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Connect with Loved Ones:</strong>
+                        Call parents, siblings, or friends you haven't spoken to. Friday is a day of connection and maintaining ties.
+                    </div>
+
+                    <div class="preparation-item">
+                        <strong>Plan for Next Week:</strong>
+                        Use Friday evening to organize your week ahead, setting spiritual and worldly goals with clear intentions.
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 Creating a Friday Routine</h4>
+                    <p><strong>Sample Friday Schedule:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Fajr: Wake up, pray, dhikr until sunrise</li>
+                        <li>After sunrise: Read Surah Al-Kahf</li>
+                        <li>Mid-morning: Send abundant salawat (100+)</li>
+                        <li>Before Jumu'ah: Ghusl, best clothes, perfume, go early</li>
+                        <li>Jumu'ah: Arrive early, make du'a, attentive during khutbah</li>
+                        <li>After Jumu'ah: Sunnah prayer, personal duas</li>
+                        <li>Afternoon: Family time, good deeds, reading Quran</li>
+                        <li>Last hour before Maghrib: Intensive du'a session</li>
+                        <li>Evening: Reflection, family gathering, planning</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Practical Steps -->
+            <div class="practical-steps">
+                <h2>🎯 Your Friday Action Plan</h2>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Set Multiple Alarms for Fajr</h4>
+                        <p>Friday starts with Fajr. Don't miss it! Set multiple alarms and make the intention Thursday night to wake up for this blessed day.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Block Friday Prayer Time in Your Calendar</h4>
+                        <p>Treat Jumu'ah as your most important weekly appointment. Block out 2-3 hours (including travel and early arrival) in your calendar. No work meetings during this time!</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Prepare Your Friday Clothes Thursday Night</h4>
+                        <p>Have your best, clean clothes ready the night before. This ensures you don't rush or forget in the morning.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Download Surah Al-Kahf Audio</h4>
+                        <p>Have a beautiful recitation of Al-Kahf ready on your phone with translation. Make it easy to access so you never miss it.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Write Your Friday Du'a List</h4>
+                        <p>Keep a note on your phone or paper with your important du'as. Review and update it weekly. Have it ready for the special hour.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Set a Salawat Counter Goal</h4>
+                        <p>Decide on a number (100, 300, 1000) and use a digital tasbeeh counter or app to track your salawat on the Prophet ﷺ every Friday.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h4>Arrive at Least 30 Minutes Early</h4>
+                        <p>Aim to be among the first. The reward difference between first and last is enormous. Leave home with plenty of time buffer.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h4>Phone on Silent (or Off) During Khutbah</h4>
+                        <p>Before entering the mosque, silence your phone completely. Better yet, leave it in the car or turn it off. Nothing is more important than the khutbah.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">9</div>
+                    <div class="step-content">
+                        <h4>Stay for Du'a After Prayer</h4>
+                        <p>Don't rush out! Stay for at least 15-20 minutes making personal du'a, reciting Quran, or sitting in dhikr. The moment after Jumu'ah is precious.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">10</div>
+                    <div class="step-content">
+                        <h4>Give Sadaqah Every Friday</h4>
+                        <p>Make Friday your regular charity day. Even if it's a small amount, give something every single Friday without fail. Build this beautiful habit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checklist Section -->
+            <div class="checklist">
+                <h4>✅ Your Friday Checklist</h4>
+                <div class="checklist-item">Thursday night: Increase salawat, prepare for tomorrow</div>
+                <div class="checklist-item">Wake up for Fajr and pray on time</div>
+                <div class="checklist-item">Take ghusl (proper bath) for Friday</div>
+                <div class="checklist-item">Wear clean, best clothes</div>
+                <div class="checklist-item">Apply perfume (for men)</div>
+                <div class="checklist-item">Use miswak/brush teeth</div>
+                <div class="checklist-item">Read Surah Al-Kahf completely</div>
+                <div class="checklist-item">Send abundant salawat on the Prophet ﷺ (100+)</div>
+                <div class="checklist-item">Leave early to arrive at mosque before khutbah</div>
+                <div class="checklist-item">Pray voluntary prayers while waiting</div>
+                <div class="checklist-item">Listen attentively to entire khutbah (no talking!)</div>
+                <div class="checklist-item">Make intensive du'a during/after Jumu'ah</div>
+                <div class="checklist-item">Pray 4 rak'ah sunnah after Jumu'ah</div>
+                <div class="checklist-item">Make du'a in last hour before Maghrib</div>
+                <div class="checklist-item">Give sadaqah (even small amount)</div>
+                <div class="checklist-item">Spend quality time with family</div>
+                <div class="checklist-item">Reflect on the week and plan ahead</div>
+            </div>
+
+            <!-- Final Reminders -->
+            <div class="section">
+                <h2>💎 Final Wisdom</h2>
+                
+                <div class="highlight-box">
+                    <strong>A Weekly Gift:</strong> Every Friday is a gift from Allah - a chance to reset, renew, and reconnect. It's like a mini-Eid every week! The Muslims who truly understand this wake up excited for Friday, prepare for it properly, and leave feeling spiritually recharged for the week ahead.
+                </div>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "We are the last (to come) but will be the foremost on the Day of Resurrection."</p>
+                    <div class="citation">— Sahih Bukhari & Muslim</div>
+                </div>
+
+                <div class="example-box">
+                    <h4>🌟 Transform Your Week</h4>
+                    <p>When you properly honor Friday, you'll notice the entire week becomes better. Friday becomes the spiritual anchor that holds your week together. You'll find yourself saying: "I can't wait for Friday!" not because work is off, but because it's the day to reconnect with Allah in a special way.</p>
+                </div>
+
+                <div class="verse-box">
+                    <div class="arabic">يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نُودِىَ لِلصَّلَوٰةِ مِن يَوْمِ ٱلْجُمُعَةِ فَٱسْعَوْا۟ إِلَىٰ ذِكْرِ ٱللَّهِ وَذَرُوا۟ ٱلْبَيْعَ ۚ ذَٰلِكُمْ خَيْرٌۭ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ</div>
+                    <div class="translation">"O you who have believed, when the call to prayer is made on Friday, then hasten to the remembrance of Allah and leave trade. That is better for you, if only you knew."</div>
+                    <div class="citation">— Surah Al-Jumu'ah (62:9)</div>
+                </div>
+
+                <p style="margin-top: 30px; font-size: 1.15em; font-weight: bold; color: #ffa751; text-align: center;">May Allah make us among those who properly honor Friday, maximize its blessings, and are rewarded with light and forgiveness every week. May our Fridays be accepted and may we live to see many more blessed Fridays. Ameen!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="arabic">اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ</div>
+            <div class="dua">
+                "O Allah, send prayers and peace upon our Prophet Muhammad"
+            </div>
+            <p style="margin-top: 20px;">May every Friday be blessed for us and our families • Ameen 🤲</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Created for Islamic Education • Share to spread Friday's blessings</p>
+        </div>
+    </div>
+</body>
+</html>

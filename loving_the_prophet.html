@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving the Prophet Muhammad ﷺ - Islamic Infographic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .arabic {
+            font-size: 1.8em;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        
+        .header .verse {
+            font-style: italic;
+            font-size: 1.1em;
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            border-left: 4px solid #ffd700;
+        }
+        
+        .key-principle {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .key-principle h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .key-principle p {
+            font-size: 1.15em;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 5px solid #2c5364;
+        }
+        
+        .section h2 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h3 {
+            color: #2c5364;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+        
+        .hadith-box {
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #00838f;
+            font-style: italic;
+        }
+        
+        .hadith-box strong {
+            color: #00838f;
+        }
+        
+        .point-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .point-list li {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .point-list li strong {
+            color: #1e3c72;
+            font-size: 1.1em;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #ff9800;
+        }
+        
+        .signs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .sign-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #2c5364;
+        }
+        
+        .sign-card .icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #c62828;
+        }
+        
+        .warning-box h3 {
+            color: #c62828;
+            margin-bottom: 10px;
+        }
+        
+        .success-box {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        .success-box h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
+        .practical-steps {
+            background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .practical-steps h2 {
+            color: #01579b;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .steps-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .steps-list li {
+            counter-increment: step-counter;
+            padding: 15px 15px 15px 60px;
+            margin: 15px 0;
+            background: white;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #01579b;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .footer .dua {
+            font-size: 1.3em;
+            font-style: italic;
+            margin: 15px 0;
+            color: #ffd700;
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #7b1fa2;
+            font-style: italic;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .signs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💚 Loving the Prophet Muhammad ﷺ 💚</h1>
+            <div class="arabic">حُبُّ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ</div>
+            <div class="verse">
+                "Say, [O Muhammad], 'If you should love Allah, then follow me, [so] Allah will love you and forgive you your sins. And Allah is Forgiving and Merciful.'"<br>
+                <strong>(Qur'an 3:31)</strong>
+            </div>
+        </div>
+
+        <div class="key-principle">
+            <h2>🌟 The Foundation of Faith</h2>
+            <p>Loving the Prophet Muhammad ﷺ is not merely recommended—it is an essential pillar of true faith (iman). The Prophet ﷺ himself declared: <strong>"None of you will have faith until he loves me more than his father, his children, and all mankind."</strong> This profound love connects us to Allah, transforms our character, and illuminates the path to Paradise. It is through him that Allah's mercy reached humanity, and through loving him that we taste the sweetness of faith.</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>📖 Why We Must Love Him More Than Ourselves</h2>
+                
+                <div class="hadith-box">
+                    <strong>The Authentic Narration:</strong> 'Umar ibn al-Khattab (may Allah be pleased with him) said to the Prophet ﷺ: "O Messenger of Allah, you are dearer to me than everything except my own self." The Prophet ﷺ replied: "No, by Him in Whose Hand is my soul, not until I am dearer to you than your own self." 'Umar then said: "Now, by Allah, you are dearer to me than my own self." The Prophet ﷺ said: <strong>"Now, O 'Umar, [now you are a believer]."</strong><br>(Sahih al-Bukhari 6632)
+                </div>
+
+                <h3>🎯 The Reasons for This Profound Love:</h3>
+                <ul class="point-list">
+                    <li><strong>💎 He is Allah's Chosen Messenger:</strong> Allah selected him from all of creation to be the seal of the prophets and the mercy to the worlds. Loving him is loving the one Allah chose and honored.</li>
+                    
+                    <li><strong>🌍 He Saved Us from Darkness:</strong> Through him, Allah brought us from ignorance to knowledge, from disbelief to faith, from hellfire to the path of Paradise. Where would we be without his message?</li>
+                    
+                    <li><strong>💝 He Loves Us More Than We Love Ourselves:</strong> The Prophet ﷺ made du'a for us in the middle of the night, wept for his ummah, and saved his special intercession for us on the Day of Judgment. He said: "I am closer to the believers than their own selves." (Sahih al-Bukhari 6830)</li>
+                    
+                    <li><strong>⚖️ He Prioritized Our Salvation:</strong> He could have asked for Paradise for himself, but instead he said: "My ummah, my ummah!" He endured persecution, hunger, and hardship to deliver the message to us.</li>
+                    
+                    <li><strong>📚 Every Blessing We Have Comes Through Him:</strong> Our knowledge of how to pray, fast, make hajj, treat our families, earn halal income—all of it came through him. Our very ability to worship Allah correctly is because of him.</li>
+                    
+                    <li><strong>✨ Following Him Brings Allah's Love:</strong> Allah made loving and following the Prophet ﷺ the path to earning His own divine love: "If you should love Allah, then follow me, [so] Allah will love you" (Qur'an 3:31)</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <strong>🤔 Reflection:</strong> If someone saved your child from a burning building, you would never forget them. The Prophet ﷺ saved us from the eternal fire. How can we not love him with every fiber of our being?
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💚 How to Increase Love for the Prophet ﷺ</h2>
+                
+                <h3>1. 📖 Study His Life (Seerah)</h3>
+                <p>The more you learn about him, the more you will love him. Read about his mercy, his patience, his courage, his humor, his tenderness with children, his respect for women, his kindness to animals, and his devotion to Allah.</p>
+                
+                <div class="quote-box">
+                    <strong>The Companion's Experience:</strong> The Companions loved him so intensely that they would collect the water from his wudu for blessings, race to serve him, and could not bear to stare at him directly out of awe and reverence. Why? Because they knew him intimately—they witnessed his character firsthand.
+                </div>
+
+                <h3>2. 🌙 Implement His Sunnah in Daily Life</h3>
+                <ul class="point-list">
+                    <li><strong>In worship:</strong> Pray as he prayed, make dhikr as he made dhikr, recite Qur'an as he did</li>
+                    <li><strong>In character:</strong> Show mercy, forgive quickly, speak gently, smile often</li>
+                    <li><strong>In appearance:</strong> Keep the beard, use the miswak, wear modest clothing</li>
+                    <li><strong>In daily routines:</strong> Follow his morning and evening habits, his eating etiquette, his sleeping practices</li>
+                    <li><strong>In relationships:</strong> Treat family as he did, be a good neighbor, respect elders, be kind to children</li>
+                </ul>
+
+                <div class="success-box">
+                    <h3>✅ The Sweet Reward</h3>
+                    <p>The Prophet ﷺ said: "Whoever revives my Sunnah at a time when my Ummah has become corrupt will have the reward of one hundred martyrs." (At-Tabarani). Every time you consciously follow his example, you draw closer to him in this life and the next.</p>
+                </div>
+
+                <h3>3. 🤲 Send Abundant Salawat Upon Him</h3>
+                <p>Say "Allahumma salli 'ala Muhammad" frequently throughout your day. We will explore this in depth below.</p>
+
+                <h3>4. 🎤 Defend His Honor</h3>
+                <p>When you hear him insulted or misrepresented, defend him with wisdom, knowledge, and dignity. This is a sign of true love.</p>
+
+                <h3>5. 👥 Keep Company with Those Who Love Him</h3>
+                <p>Surround yourself with people who speak of him with reverence, who live his Sunnah, and who inspire you to follow his example.</p>
+
+                <h3>6. 🕌 Visit His Masjid in Madinah</h3>
+                <p>If Allah grants you the means, visit his blessed city. The Prophet ﷺ said: "Whoever visits my grave, my intercession becomes guaranteed for him." (Ad-Daraqutni - scholars differ on authenticity, but visiting his masjid is highly encouraged)</p>
+
+                <h3>7. 💭 Remember Him Often</h3>
+                <p>Think about him when you face difficulties (how would he handle this?), when you make decisions (what would please him?), and in your daily activities (how can I follow his example here?).</p>
+
+                <div class="highlight-box">
+                    <strong>🌟 Beautiful Promise:</strong> The Prophet ﷺ said: "A person will be with those he loves." (Sahih al-Bukhari 6168). If you truly love him in this world, you will be with him in Paradise!
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔍 Signs of True Love for the Prophet ﷺ</h2>
+                
+                <p>Love is not just an emotion—it manifests in actions and priorities. Here are the signs that your love is sincere:</p>
+
+                <div class="signs-grid">
+                    <div class="sign-card">
+                        <div class="icon">📚</div>
+                        <h3>Deep Knowledge</h3>
+                        <p>You actively seek to learn about his life, his teachings, and his character. You're never satisfied with surface-level knowledge.</p>
+                    </div>
+
+                    <div class="sign-card">
+                        <div class="icon">👣</div>
+                        <h3>Following His Way</h3>
+                        <p>You prioritize his Sunnah over cultural practices and personal preferences. His way becomes your way.</p>
+                    </div>
+
+                    <div class="sign-card">
+                        <div class="icon">😢</div>
+                        <h3>Emotional Connection</h3>
+                        <p>Your heart softens when you hear his name. You feel joy at his mention and sadness when thinking of his struggles.</p>
+                    </div>
+
+                    <div class="sign-card">
+                        <div class="icon">⚔️</div>
+                        <h3>Defending His Honor</h3>
+                        <p>You cannot tolerate disrespect toward him. You defend him with knowledge, dignity, and conviction.</p>
+                    </div>
+
+                    <div class="sign-card">
+                        <div class="icon">🤲</div>
+                        <h3>Constant Salawat</h3>
+                        <p>You frequently send blessings upon him, not just on Fridays but throughout your day and night.</p>
+                    </div>
+
+                    <div class="sign-card">
+                        <div class="icon">💖</div>
+                        <h3>Longing to Meet Him</h3>
+                        <p>You yearn for the Day when you will see his noble face, and this drives you to live righteously.</p>
+                    </div>
+
+                    <div class="sign-card">
+                        <div class="icon">🌟</div>
+                        <h3>Preferring His Guidance</h3>
+                        <p>When faced with choices, his example is your first reference point, even over worldly benefits.</p>
+                    </div>
+
+                    <div class="sign-card">
+                        <div class="icon">🕊️</div>
+                        <h3>Beautiful Character</h3>
+                        <p>You strive to embody his mercy, patience, generosity, and humility in your own life.</p>
+                    </div>
+                </div>
+
+                <div class="hadith-box">
+                    <strong>The Prophet's Own Words:</strong> "Among the people, the one with the strongest love for me is the one who will come after me, who would wish to give up his family and wealth for the chance to see me." (Sahih Muslim 2832)
+                </div>
+
+                <div class="warning-box">
+                    <h3>⚠️ False Claims of Love</h3>
+                    <p>Beware of claiming to love the Prophet ﷺ while habitually disobeying Allah, abandoning his Sunnah, or living in open contradiction to his teachings. The Companions said: "We used to know the hypocrites by their hatred of the Ansar and their lack of attendance at Fajr prayer." True love must be demonstrated through action.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🌟 Sending Salawat (Blessings) Upon Him</h2>
+                
+                <h3>The Command from Allah</h3>
+                <div class="hadith-box">
+                    "Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace."<br>
+                    <strong>(Qur'an 33:56)</strong>
+                </div>
+
+                <h3>💎 The Immense Benefits of Salawat</h3>
+                <ul class="point-list">
+                    <li><strong>Tenfold Reward:</strong> "Whoever sends blessings upon me once, Allah will send blessings upon him tenfold." (Sahih Muslim 384)</li>
+                    
+                    <li><strong>Sins Forgiven:</strong> "Whoever sends blessings upon me ten times in the morning and ten times in the evening will receive my intercession on the Day of Resurrection." (At-Tabarani)</li>
+                    
+                    <li><strong>Closeness on Judgment Day:</strong> "The people most entitled to my intercession on the Day of Resurrection will be those who said the most salawat upon me." (Jami' at-Tirmidhi 484)</li>
+                    
+                    <li><strong>Relief from Worries:</strong> A man said, "O Messenger of Allah, what if I devote all my prayer (du'a) to sending blessings upon you?" He ﷺ replied, "Then your worries will be taken care of and your sins will be forgiven." (Jami' at-Tirmidhi 2457)</li>
+                    
+                    <li><strong>Cure for Hardships:</strong> "Increase your salawat upon me on Friday, for it is witnessed [by the angels]... and there is no believer who sends salawat upon me except his salawat is presented to me." (Sunan Abi Dawud 1047)</li>
+                </ul>
+
+                <h3>📝 The Best Forms of Salawat</h3>
+                
+                <div class="highlight-box">
+                    <h4>1. Salat al-Ibrahimiyyah (The Ibrahimi Blessing)</h4>
+                    <p><strong>Arabic:</strong> اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</p>
+                    <p><strong>Transliteration:</strong> Allahumma salli 'ala Muhammadin wa 'ala ali Muhammadin kama sallayta 'ala Ibrahima wa 'ala ali Ibrahima innaka Hamidum Majid. Allahumma barik 'ala Muhammadin wa 'ala ali Muhammadin kama barakta 'ala Ibrahima wa 'ala ali Ibrahima innaka Hamidum Majid.</p>
+                    <p><strong>Meaning:</strong> "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim, verily You are Praiseworthy and Glorious. O Allah, send blessings upon Muhammad and upon the family of Muhammad as You sent blessings upon Ibrahim and upon the family of Ibrahim, verily You are Praiseworthy and Glorious."</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>2. The Simple Form (For Frequent Use)</h4>
+                    <p><strong>صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ</strong></p>
+                    <p><strong>Sallallahu 'alayhi wa sallam</strong> - "May Allah's peace and blessings be upon him"</p>
+                    <p>Use this whenever you hear or say his name!</p>
+                </div>
+
+                <h3>⏰ When to Send Salawat</h3>
+                <ul class="point-list">
+                    <li><strong>Every time his name is mentioned</strong> - Never let it pass without saying salawat</li>
+                    <li><strong>On Friday</strong> - The Prophet ﷺ specifically encouraged abundant salawat on this blessed day</li>
+                    <li><strong>In the morning and evening</strong> - Make it part of your daily adhkar</li>
+                    <li><strong>Between the adhan and iqamah</strong> - A time when du'a is accepted</li>
+                    <li><strong>In your du'as</strong> - Begin and end your supplications with salawat</li>
+                    <li><strong>During times of difficulty</strong> - Remember his promise of relief from worries</li>
+                    <li><strong>Before sleep</strong> - End your day with his blessed remembrance</li>
+                </ul>
+
+                <div class="success-box">
+                    <h3>🎯 Daily Goal</h3>
+                    <p>Challenge yourself to send at least 100 salawat upon the Prophet ﷺ every day. Use a tasbih counter or a tally sheet. Many scholars recommend setting aside time specifically for this blessed practice, as the rewards are immeasurable.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⚔️ Defending His Honor</h2>
+                
+                <p>Defending the Prophet ﷺ is not optional—it is an obligation upon every Muslim who claims to love him. In a world where his noble character is often attacked, we must be his defenders.</p>
+
+                <h3>📜 The Islamic Obligation</h3>
+                <div class="hadith-box">
+                    <strong>Allah says in the Qur'an:</strong> "Indeed, those who abuse Allah and His Messenger - Allah has cursed them in this world and the Hereafter and prepared for them a humiliating punishment." (Qur'an 33:57)
+                </div>
+
+                <div class="hadith-box">
+                    <strong>The Prophet ﷺ said:</strong> "None of you truly believes until I am more beloved to him than his father, his son, and all mankind." (Sahih al-Bukhari 15)
+                </div>
+
+                <h3>🛡️ How to Defend Him Properly</h3>
+
+                <ul class="point-list">
+                    <li><strong>1. 📚 Arm Yourself with Knowledge:</strong> You cannot defend what you don't know. Study his life, his character, his teachings, and the common accusations made against him. Learn how to respond with evidence and wisdom.</li>
+                    
+                    <li><strong>2. 🎯 Respond with Wisdom, Not Anger:</strong> While we feel hurt when he's insulted, our response should be strategic and effective. The Prophet ﷺ himself remained patient when mocked. Use his own character as your guide in defending him.</li>
+                    
+                    <li><strong>3. 📖 Clarify Misconceptions:</strong> Many attacks stem from ignorance. Gently correct false information with authentic sources. Share his true character: his mercy to all creation, his respect for women, his care for orphans, his honesty in business, his forgiveness of enemies.</li>
+                    
+                    <li><strong>4. 🌟 Live as His Example:</strong> The best defense is embodying his character. When people see Muslims who are honest, merciful, just, and noble, they see his teachings in action. Be a walking testament to his message.</li>
+                    
+                    <li><strong>5. 🗣️ Speak Up Appropriately:</strong> Don't remain silent when he's disrespected in your presence. Depending on the situation, respond with a correction, leave the gathering, or educate others later. Your silence might be seen as approval.</li>
+                    
+                    <li><strong>6. 📱 Use Social Media Wisely:</strong> In the digital age, defending him includes correcting misinformation online, sharing authentic stories about his life, and reporting genuinely offensive content that violates platform rules.</li>
+                    
+                    <li><strong>7. 🤝 Support Those Who Defend Him:</strong> Scholars, writers, and speakers who work to present his true character need our support. Share their work, fund their efforts, and amplify their voice.</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h3>⚠️ What NOT to Do</h3>
+                    <ul>
+                        <li>❌ Don't respond to insults with more insults—this violates his teachings</li>
+                        <li>❌ Don't share or spread blasphemous content "to show how bad it is"—this only amplifies it</li>
+                        <li>❌ Don't become violent or threaten violence—this contradicts everything he stood for</li>
+                        <li>❌ Don't fall into debates with those who have no intention of learning—it wastes your time and energy</li>
+                        <li>❌ Don't misrepresent Islam or his teachings in an attempt to make them more "acceptable"</li>
+                    </ul>
+                </div>
+
+                <div class="quote-box">
+                    <strong>Historical Inspiration:</strong> When Abu Bakr (may Allah be pleased with him) heard someone insulting the Prophet ﷺ, he became so upset that the Prophet ﷺ comforted him, reminding him that the angels were defending him. Later, when asked why he didn't respond, Abu Bakr said he would never let his tongue speak in the same gathering where the Prophet ﷺ was insulted. This shows the balance: deep offense at disrespect, but maintaining one's own dignity in response.
+                </div>
+
+                <h3>🌍 A Special Note on Living in Non-Muslim Lands</h3>
+                <p>For Muslims living in countries where they are minorities, defending the Prophet ﷺ requires wisdom. Use the legal means available to you: file formal complaints when appropriate, participate in interfaith dialogues to educate others, write op-eds, support organizations that work to combat Islamophobia, and most importantly, be such exemplary citizens that people naturally respect what you hold sacred.</p>
+
+                <div class="success-box">
+                    <h3>✅ The Greatest Defense</h3>
+                    <p>Ultimately, the greatest way to defend the Prophet ﷺ is to follow his Sunnah so completely that your life becomes a living refutation of the lies told about him. When you are honest in business, people will know he taught honesty. When you are merciful to the weak, they will know he taught mercy. When you are just with your family, they will know he taught justice. Your character is your testimony.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="practical-steps">
+            <h2>🎯 Practical Steps to Increase Your Love for the Prophet ﷺ</h2>
+            <ol class="steps-list">
+                <li><strong>Daily Seerah Reading:</strong> Dedicate 10 minutes each day to reading about his life. Start with an authentic seerah book and take notes on qualities that inspire you.</li>
+                
+                <li><strong>100 Salawat Challenge:</strong> Send blessings upon him at least 100 times daily. Set a reminder and use a counter. Make it a non-negotiable habit like brushing your teeth.</li>
+                
+                <li><strong>Weekly Sunnah Implementation:</strong> Each week, choose one specific Sunnah to revive in your life. It could be using the miswak, eating with the right hand, or greeting people with a smile.</li>
+                
+                <li><strong>His Name in Your Conversations:</strong> Make it a habit to say "The Prophet ﷺ said..." or "The Prophet ﷺ did..." frequently in your daily conversations, spreading his teachings naturally.</li>
+                
+                <li><strong>Friday Special Focus:</strong> Make Fridays your day of extra connection with him. Read more seerah, send abundant salawat, and teach your family something new about him.</li>
+                
+                <li><strong>Defend Him Online:</strong> At least once a week, share something beautiful about his character on social media. Counter the negativity with truth and beauty.</li>
+                
+                <li><strong>Connect with Like-Minded Believers:</strong> Join a Qur'an class, seerah study circle, or online community where his love is central. Surround yourself with those who inspire you.</li>
+                
+                <li><strong>Dhikr Before Sleep:</strong> End every day by sending salawat upon him and making du'a to meet him in Paradise. Let this be the last thought before you sleep.</li>
+                
+                <li><strong>Reflect and Ask:</strong> When facing decisions, ask yourself: "What would the Prophet ﷺ do?" Let his example be your moral compass in every situation.</li>
+                
+                <li><strong>Save for Madinah:</strong> If you haven't visited his masjid, start saving with the intention of visiting. If you have, plan to return. This physical connection to him is transformative.</li>
+            </ol>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>💫 The Ultimate Goal: To Meet Him</h2>
+                
+                <div class="hadith-box">
+                    <strong>The Prophet's Beautiful Promise:</strong> "You will surely see your Lord with your own eyes, just as you see this moon, and you will have no trouble seeing Him." (Sahih al-Bukhari 7434) And the greatest pleasure of Paradise will be seeing our beloved Prophet ﷺ.
+                </div>
+
+                <p>Imagine the Day when you will finally meet him. After a lifetime of loving him from afar, of following his example, of sending salawat upon him, of defending his honor—you will see his blessed face. He will recognize you as part of his ummah. He will intercede for you. And if Allah wills, you will drink from his blessed hand at the Hawd (Pool).</p>
+
+                <div class="highlight-box">
+                    <strong>💭 A Question to Ponder:</strong> If you knew you would meet him tomorrow, what would you change about your life today? The truth is, we will meet him—we just don't know when. Let that reality transform how you live right now.
+                </div>
+
+                <h3>🌟 The Sweetness of Faith</h3>
+                <div class="hadith-box">
+                    The Prophet ﷺ said: "Three qualities, whoever has them will taste the sweetness of faith: that Allah and His Messenger are more beloved to him than anyone else; that he loves a person only for the sake of Allah; and that he hates to return to disbelief after Allah has saved him from it, as he would hate to be thrown into the Fire." (Sahih al-Bukhari 16)
+                </div>
+
+                <p>Notice that loving the Prophet ﷺ more than anyone else is mentioned first—it is the gateway to experiencing the sweetness of faith, that indescribable joy that makes all the struggles of this life worthwhile.</p>
+
+                <div class="success-box">
+                    <h3>🤲 The Du'a of the Lover</h3>
+                    <p><strong>اللَّهُمَّ ارْزُقْنِي حُبَّكَ وَحُبَّ نَبِيِّكَ وَحُبَّ مَنْ يُحِبُّكَ وَحُبَّ كُلِّ عَمَلٍ يُقَرِّبُنِي إِلَى حُبِّكَ</strong></p>
+                    <p><strong>Transliteration:</strong> Allahumma arzuqni hubbaka wa hubba nabiyyika wa hubba man yuhibbuka wa hubba kulli 'amalin yuqarribuni ila hubbika</p>
+                    <p><strong>Meaning:</strong> "O Allah, grant me Your love, the love of Your Prophet, the love of those who love You, and the love of every deed that will bring me closer to Your love."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>🤲 Closing Du'a</h2>
+            <div class="dua">
+                اللَّهُمَّ إِنِّي أَسْأَلُكَ حُبَّكَ وَحُبَّ مَنْ يُحِبُّكَ وَالْعَمَلَ الَّذِي يُبَلِّغُنِي حُبَّكَ
+                <br><br>
+                "O Allah, I ask You for Your love, and the love of those who love You, and the actions that will bring me Your love."
+            </div>
+            <p style="margin-top: 20px; font-size: 1.1em;">
+                May Allah increase us in love for His Messenger ﷺ, grant us the ability to follow his Sunnah, make us among those who will drink from his blessed hand, and allow us to be in his company in the highest levels of Paradise. Ameen.
+            </p>
+            <p style="margin-top: 20px; font-style: italic;">
+                صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ
+                <br>
+                May Allah's peace and blessings be upon him, his family, his companions, and all those who follow him with sincerity until the Day of Judgment.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

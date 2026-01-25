@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihsan - Excellence in Worship | Islamic Education</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header .arabic {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hadith-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hadith-box p {
+            font-size: 1.1em;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .hadith-box .citation {
+            font-size: 0.9em;
+            text-align: right;
+            opacity: 0.9;
+        }
+
+        .key-principle {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .key-principle h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .key-principle p {
+            font-size: 1.15em;
+            line-height: 1.8;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .verse-box {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .verse-box .arabic {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            text-align: right;
+            color: #2d3748;
+            font-weight: bold;
+        }
+
+        .verse-box .translation {
+            font-style: italic;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .verse-box .citation {
+            font-size: 0.9em;
+            color: #4a5568;
+            text-align: right;
+        }
+
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .level-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .level-card h4 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .level-card .arabic-term {
+            color: #764ba2;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .level-card p {
+            font-size: 1em;
+            color: #4a5568;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #f39c12;
+        }
+
+        .highlight-box strong {
+            color: #d35400;
+            font-size: 1.1em;
+        }
+
+        .list-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .list-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .dos-donts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .do-box {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .dont-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .do-box h4, .dont-box h4 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .do-box ul, .dont-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .do-box li, .dont-box li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
+
+        .do-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .dont-box li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .practical-steps {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .practical-steps h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .step {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+            align-items: start;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+
+        .step-content p {
+            color: #4a5568;
+            font-size: 1em;
+        }
+
+        .example-box {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #4c51bf;
+        }
+
+        .example-box h4 {
+            color: #4c51bf;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer .dua {
+            font-size: 1.3em;
+            font-style: italic;
+            margin-bottom: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .footer .arabic {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .levels-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .dos-donts {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="arabic">الإحسان</div>
+            <h1>🌟 IHSAN 🌟</h1>
+            <h2>Excellence in Worship and Life</h2>
+            
+            <div class="hadith-box">
+                <p><strong>The Prophet ﷺ said:</strong></p>
+                <p>"Ihsan is to worship Allah as if you see Him, and if you cannot see Him, then indeed He sees you."</p>
+                <div class="citation">— Sahih Muslim, Hadith of Jibreel</div>
+            </div>
+        </div>
+
+        <div class="key-principle">
+            <h2>✨ Key Principle</h2>
+            <p>Ihsan represents the highest level of faith and worship in Islam. It is the state of spiritual excellence where every action, word, and thought is performed with the consciousness that Allah is watching. It transforms routine worship into a profound spiritual experience and elevates all aspects of life to acts of devotion.</p>
+        </div>
+
+        <div class="content">
+            <!-- Definition Section -->
+            <div class="section">
+                <h2>📖 Understanding Ihsan</h2>
+                
+                <p><strong>Ihsan (الإحسان)</strong> literally means "excellence," "perfection," or "beautiful conduct." In Islamic terminology, it refers to the highest level of consciousness and excellence in worship and behavior.</p>
+
+                <div class="verse-box">
+                    <div class="arabic">إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَـٰنِ</div>
+                    <div class="translation">"Indeed, Allah commands justice and Ihsan (excellence)..."</div>
+                    <div class="citation">— Surah An-Nahl (16:90)</div>
+                </div>
+
+                <p>The concept of Ihsan was beautifully explained in the famous Hadith of Jibreel, where the Angel Jibreel came in human form to teach the companions about their religion. When asked about Ihsan, the Prophet ﷺ gave the profound definition that encompasses the essence of spiritual excellence.</p>
+
+                <div class="highlight-box">
+                    <strong>The Core of Ihsan:</strong> Worshipping Allah with the consciousness that He sees you, even if you cannot see Him. This awareness transforms every moment into an opportunity for spiritual growth and nearness to Allah.
+                </div>
+            </div>
+
+            <!-- Three Levels Section -->
+            <div class="section">
+                <h2>📊 The Three Levels of Faith</h2>
+                
+                <p>In the Hadith of Jibreel, the Prophet ﷺ taught us that religion has three levels, each building upon the previous one:</p>
+
+                <div class="levels-grid">
+                    <div class="level-card">
+                        <h4>1️⃣ Islam</h4>
+                        <div class="arabic-term">الإسلام</div>
+                        <p><strong>Outward Submission</strong></p>
+                        <p>The foundational level involving the Five Pillars: Shahada, Salah, Zakat, Sawm, and Hajj. This is submission through actions and rituals.</p>
+                        <p style="margin-top: 10px; font-style: italic; color: #667eea;">What you do with your body</p>
+                    </div>
+
+                    <div class="level-card">
+                        <h4>2️⃣ Iman</h4>
+                        <div class="arabic-term">الإيمان</div>
+                        <p><strong>Inner Faith</strong></p>
+                        <p>Belief in the Six Articles of Faith: Allah, Angels, Books, Prophets, the Last Day, and Divine Decree. This is the conviction in your heart.</p>
+                        <p style="margin-top: 10px; font-style: italic; color: #667eea;">What you believe in your heart</p>
+                    </div>
+
+                    <div class="level-card">
+                        <h4>3️⃣ Ihsan</h4>
+                        <div class="arabic-term">الإحسان</div>
+                        <p><strong>Spiritual Excellence</strong></p>
+                        <p>The highest level where you worship Allah with full consciousness of His presence, as if you see Him. This perfects both action and intention.</p>
+                        <p style="margin-top: 10px; font-style: italic; color: #667eea;">The quality of your connection with Allah</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>The Relationship Between the Three:</strong> You cannot achieve Ihsan without Iman, and you cannot have true Iman without Islam. Each level encompasses the one before it while adding a deeper dimension. Islam is the foundation, Iman is the pillar, and Ihsan is the roof that completes the structure of faith.
+                </div>
+            </div>
+
+            <!-- Muraqabah Section -->
+            <div class="section">
+                <h2>👁️ Developing Consciousness of Allah (Muraqabah)</h2>
+                
+                <p><strong>Muraqabah (المراقبة)</strong> means "watchfulness" or "awareness." It is the practice of being constantly aware that Allah is watching you, knowing your every thought, intention, and action.</p>
+
+                <div class="verse-box">
+                    <div class="arabic">وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ</div>
+                    <div class="translation">"And He is with you wherever you are. And Allah is All-Seeing of what you do."</div>
+                    <div class="citation">— Surah Al-Hadid (57:4)</div>
+                </div>
+
+                <h3>🎯 How to Develop Muraqabah</h3>
+
+                <div class="list-item">
+                    <strong>1. Regular Dhikr (Remembrance)</strong>
+                    Keep your tongue moist with the remembrance of Allah throughout the day. Simple phrases like "SubhanAllah," "Alhamdulillah," and "Allahu Akbar" maintain your connection with Allah.
+                </div>
+
+                <div class="list-item">
+                    <strong>2. Reflection on Allah's Names and Attributes</strong>
+                    Contemplate that Allah is As-Samee' (All-Hearing), Al-Baseer (All-Seeing), Al-'Aleem (All-Knowing), and Ar-Raqeeb (The Watchful). This naturally increases your consciousness.
+                </div>
+
+                <div class="list-item">
+                    <strong>3. Mindful Prayer</strong>
+                    During Salah, truly focus on standing before Allah. Imagine yourself in His presence, speaking directly to Him, being watched by Him.
+                </div>
+
+                <div class="list-item">
+                    <strong>4. Pausing Before Actions</strong>
+                    Before any action, ask yourself: "If I could see Allah watching me right now, would I still do this?" This question is transformative.
+                </div>
+
+                <div class="list-item">
+                    <strong>5. Study the Quran and Seerah</strong>
+                    Learn about how the Prophet ﷺ lived with constant awareness of Allah. Read about the righteous who achieved this state.
+                </div>
+
+                <div class="list-item">
+                    <strong>6. Night Reflection (Muhasabah)</strong>
+                    Before sleep, review your day. Ask: "How many times today did I act knowing Allah was watching? How many times did I forget?"
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 Real-Life Example: Prophet Yusuf</h4>
+                    <p>When tempted by the wife of Al-Azeez in a locked room where no one could see, Prophet Yusuf (peace be upon him) refused, saying: "Indeed, he (your husband) is my master... And how could I do such evil and sin against Allah?" (Surah Yusuf 12:23)</p>
+                    <p style="margin-top: 10px; font-style: italic;">He chose Ihsan over desire because he knew Allah was watching, even in private.</p>
+                </div>
+            </div>
+
+            <!-- Excellence in All Areas Section -->
+            <div class="section">
+                <h2>🌍 Ihsan in All Areas of Life</h2>
+                
+                <p>Ihsan is not limited to formal worship. It extends to every aspect of life, transforming ordinary actions into acts of worship when done with excellence and consciousness of Allah.</p>
+
+                <div class="verse-box">
+                    <div class="arabic">وَأَحْسِن كَمَآ أَحْسَنَ ٱللَّهُ إِلَيْكَ</div>
+                    <div class="translation">"And do good as Allah has done good to you."</div>
+                    <div class="citation">— Surah Al-Qasas (28:77)</div>
+                </div>
+
+                <h3>🕌 1. Ihsan in Worship</h3>
+                <div class="list-item">
+                    <strong>Prayer with Presence:</strong> Stand in prayer as if it's your last. Focus on every word, every movement. Feel the meaning of what you recite.
+                </div>
+                <div class="list-item">
+                    <strong>Quality Over Quantity:</strong> Two rak'ahs prayed with Ihsan are better than a hundred prayed mechanically.
+                </div>
+                <div class="list-item">
+                    <strong>Beautiful Recitation:</strong> Recite the Quran slowly, with proper tajweed, reflecting on meanings.
+                </div>
+
+                <h3>👨‍👩‍👧‍👦 2. Ihsan in Family Relations</h3>
+                <div class="list-item">
+                    <strong>With Parents:</strong> Serve them with excellence, knowing Allah is watching how you treat them. Speak gently even when frustrated.
+                </div>
+                <div class="list-item">
+                    <strong>With Spouse:</strong> Be the best version of yourself at home. The Prophet ﷺ said: "The best of you are those who are best to their families."
+                </div>
+                <div class="list-item">
+                    <strong>With Children:</strong> Raise them with patience, love, and wisdom, knowing you'll be asked about this trust.
+                </div>
+
+                <h3>💼 3. Ihsan in Work and Business</h3>
+                <div class="list-item">
+                    <strong>Professional Excellence:</strong> Do your job with utmost quality, even if no supervisor is watching, because Allah is watching.
+                </div>
+                <div class="list-item">
+                    <strong>Honest Transactions:</strong> Be fair in business, give full measure, and never deceive. The Prophet ﷺ said: "Allah loves when any of you does a job, he does it with Ihsan."
+                </div>
+                <div class="list-item">
+                    <strong>Earning Halal:</strong> Be meticulous about the source of your income, knowing you'll be asked about it.
+                </div>
+
+                <h3>🤝 4. Ihsan in Character and Behavior</h3>
+                <div class="list-item">
+                    <strong>Beautiful Speech:</strong> Choose words carefully, speak kindly, avoid gossip and backbiting.
+                </div>
+                <div class="list-item">
+                    <strong>Controlling Anger:</strong> Even when wronged, respond with Ihsan by controlling yourself and forgiving.
+                </div>
+                <div class="list-item">
+                    <strong>Helping Others:</strong> When you help someone, do it excellently without seeking recognition, only Allah's pleasure.
+                </div>
+
+                <h3>🌱 5. Ihsan Even in Small Things</h3>
+                <div class="list-item">
+                    <strong>Eating and Drinking:</strong> Begin with Bismillah, eat with right hand, don't waste, express gratitude.
+                </div>
+                <div class="list-item">
+                    <strong>Walking on Streets:</strong> Lower your gaze, remove harmful objects, greet believers, spread salam.
+                </div>
+                <div class="list-item">
+                    <strong>Using Resources:</strong> Don't waste water, electricity, or food. Every blessing is from Allah and will be questioned.
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 Hadith: Ihsan in Everything</h4>
+                    <p>The Prophet ﷺ said: "Indeed Allah has prescribed Ihsan in all things. So when you kill, kill well, and when you slaughter, slaughter well. Let one of you sharpen his blade and let him spare suffering to the animal he slaughters."</p>
+                    <div class="citation" style="margin-top: 10px;">— Sahih Muslim</div>
+                    <p style="margin-top: 15px; font-style: italic;">If even in slaughtering an animal we must show Ihsan and minimize suffering, how much more should we practice excellence in all other aspects of life?</p>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="section">
+                <h2>🎁 The Fruits of Ihsan</h2>
+                
+                <h3>In This World:</h3>
+                <div class="list-item">
+                    <strong>Inner Peace and Tranquility:</strong> Living with Allah's consciousness brings serenity to the heart that nothing else can provide.
+                </div>
+                <div class="list-item">
+                    <strong>Protection from Sin:</strong> When you're aware Allah is watching, it becomes much easier to avoid wrongdoing.
+                </div>
+                <div class="list-item">
+                    <strong>Blessed Life:</strong> Allah puts barakah (blessing) in the time, wealth, and efforts of those who practice Ihsan.
+                </div>
+                <div class="list-item">
+                    <strong>Respect and Love:</strong> People naturally love and respect those who embody excellence in character and actions.
+                </div>
+
+                <h3>In the Hereafter:</h3>
+                <div class="verse-box">
+                    <div class="arabic">لِّلَّذِينَ أَحْسَنُوا۟ ٱلْحُسْنَىٰ وَزِيَادَةٌ</div>
+                    <div class="translation">"For those who have done Ihsan is the best reward and extra."</div>
+                    <div class="citation">— Surah Yunus (10:26)</div>
+                </div>
+
+                <div class="list-item">
+                    <strong>The Highest Ranks of Paradise:</strong> Those who worship with Ihsan are promised the best of Paradise.
+                </div>
+                <div class="list-item">
+                    <strong>The Vision of Allah:</strong> Many scholars say "extra" (ziyadah) means seeing Allah in Paradise - the ultimate reward for the Muhsineen.
+                </div>
+                <div class="list-item">
+                    <strong>Easy Reckoning:</strong> Those who lived consciously will have ease on the Day of Judgment.
+                </div>
+
+                <div class="verse-box">
+                    <div class="arabic">هَلْ جَزَآءُ ٱلْإِحْسَـٰنِ إِلَّا ٱلْإِحْسَـٰنُ</div>
+                    <div class="translation">"Is the reward for Ihsan anything except Ihsan?"</div>
+                    <div class="citation">— Surah Ar-Rahman (55:60)</div>
+                </div>
+            </div>
+
+            <!-- Dos and Don'ts -->
+            <div class="section">
+                <h2>⚖️ The Path to Ihsan: Dos and Don'ts</h2>
+                
+                <div class="dos-donts">
+                    <div class="do-box">
+                        <h4>✅ DO</h4>
+                        <ul>
+                            <li>Constantly remind yourself that Allah sees and hears everything</li>
+                            <li>Start each action with the intention of pleasing Allah</li>
+                            <li>Practice mindfulness in prayer and all acts of worship</li>
+                            <li>Strive for excellence even in small, unseen actions</li>
+                            <li>Reflect daily on your relationship with Allah</li>
+                            <li>Seek knowledge about how the Prophet ﷺ practiced Ihsan</li>
+                            <li>Make du'a to Allah to grant you Ihsan</li>
+                            <li>Practice self-accountability (muhasabah) regularly</li>
+                        </ul>
+                    </div>
+
+                    <div class="dont-box">
+                        <h4>❌ DON'T</h4>
+                        <ul>
+                            <li>Perform worship mechanically without presence of heart</li>
+                            <li>Do good deeds seeking praise from people</li>
+                            <li>Act differently when alone versus when with others</li>
+                            <li>Rush through prayers and acts of worship</li>
+                            <li>Neglect small good deeds thinking they don't matter</li>
+                            <li>Be satisfied with minimum effort in worship</li>
+                            <li>Forget that Allah knows your every intention</li>
+                            <li>Delay in repenting from sins</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practical Steps -->
+            <div class="practical-steps">
+                <h2>🎯 Practical Steps to Develop Ihsan</h2>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Morning Consciousness</h4>
+                        <p>Wake up for Fajr and start your day with dhikr. Before leaving your bed, remind yourself: "Today, I will live as if I can see Allah." Recite morning adhkar with full attention.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Master One Prayer First</h4>
+                        <p>Choose one daily prayer (start with Fajr) to perfect with complete focus. Stand as if you're seeing Allah. Don't let your mind wander. Once mastered, move to the next prayer.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Pre-Action Pause</h4>
+                        <p>Before any significant action, pause and ask: "Am I doing this knowing Allah is watching? Is this the best I can do?" This 3-second pause can transform your life.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Learn Allah's Names</h4>
+                        <p>Study one of Allah's 99 Names each week. Reflect deeply on what it means that Allah is Ar-Raqeeb (The Watchful), Al-Baseer (All-Seeing), As-Samee' (All-Hearing).</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Evening Review (Muhasabah)</h4>
+                        <p>Before sleeping, spend 10 minutes reviewing your day. Ask: What did I do with Ihsan today? Where did I fall short? Make specific du'a for improvement.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Choose One Area to Perfect</h4>
+                        <p>Pick one aspect of your life (prayer, work, family relations, character) and commit to practicing Ihsan in it for 30 days. Track your progress and make it a habit.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h4>Seek Righteous Company</h4>
+                        <p>Surround yourself with people who remind you of Allah and inspire you to excellence. Good company elevates your spiritual state.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h4>Regular Du'a for Ihsan</h4>
+                        <p>Make this du'a consistently: "O Allah, help me to remember You, to be grateful to You, and to worship You in the best manner." This was taught by the Prophet ﷺ.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Reminders -->
+            <div class="section">
+                <h2>💎 Final Wisdom</h2>
+                
+                <div class="highlight-box">
+                    <strong>Remember:</strong> Ihsan is a journey, not a destination. You may not always feel Allah's presence strongly, but the effort to be conscious of Him is itself an act of Ihsan. Don't be discouraged by setbacks. Every moment is a new opportunity to renew your commitment to excellence.
+                </div>
+
+                <div class="example-box">
+                    <h4>🌙 The Night Prayer of the Muhsineen</h4>
+                    <p>The Prophet ﷺ said: "Our Lord descends every night to the lowest heaven when one-third of the night remains and says: 'Who is calling upon Me that I may answer him? Who is asking from Me that I may give him? Who is seeking My forgiveness that I may forgive him?'" (Sahih Bukhari & Muslim)</p>
+                    <p style="margin-top: 10px; font-style: italic;">The people of Ihsan don't just know this hadith - they wake up for it, experiencing the closeness to Allah in the darkness of night when no one sees except Him.</p>
+                </div>
+
+                <div class="verse-box">
+                    <div class="arabic">إِنَّ ٱللَّهَ مَعَ ٱلَّذِينَ ٱتَّقَوا۟ وَّٱلَّذِينَ هُم مُّحْسِنُونَ</div>
+                    <div class="translation">"Indeed, Allah is with those who are mindful of Him and those who are Muhsineen (doers of excellence)."</div>
+                    <div class="citation">— Surah An-Nahl (16:128)</div>
+                </div>
+
+                <p style="margin-top: 20px; font-size: 1.1em; font-weight: bold; color: #667eea;">May Allah make us among the Muhsineen - those who worship Him with excellence, live with consciousness of His presence, and earn His special company in this life and the next. Ameen!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="arabic">اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ</div>
+            <div class="dua">
+                "O Allah, help me to remember You, to thank You, and to worship You in the best manner (bi-Ihsan)"
+            </div>
+            <p style="margin-top: 20px;">May Allah grant us Ihsan in all our affairs • Ameen 🤲</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Created for Islamic Education • Share with family and friends</p>
+        </div>
+    </div>
+</body>
+</html>

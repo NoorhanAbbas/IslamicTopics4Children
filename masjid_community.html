@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Masjid - Heart of the Community | Islamic Education</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header .arabic {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .verse-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .verse-box .arabic {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .verse-box .translation {
+            font-size: 1.1em;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .verse-box .citation {
+            font-size: 0.9em;
+            text-align: right;
+            opacity: 0.9;
+        }
+
+        .key-principle {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: white;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .key-principle h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .key-principle p {
+            font-size: 1.15em;
+            line-height: 1.8;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #4facfe;
+        }
+
+        .section h2 {
+            color: #4facfe;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h3 {
+            color: #0088cc;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .hadith-box {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #4facfe;
+        }
+
+        .hadith-box p {
+            font-style: italic;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .hadith-box .citation {
+            font-size: 0.9em;
+            color: #4a5568;
+            text-align: right;
+            font-style: normal;
+        }
+
+        .etiquette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .etiquette-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #4facfe;
+            transition: transform 0.3s ease;
+        }
+
+        .etiquette-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .etiquette-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .etiquette-card h4 {
+            color: #4facfe;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+        }
+
+        .etiquette-card p {
+            font-size: 1em;
+            color: #4a5568;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #f39c12;
+        }
+
+        .highlight-box strong {
+            color: #d35400;
+            font-size: 1.1em;
+        }
+
+        .rights-list {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rights-item {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 3px solid #4facfe;
+            background: #f8f9fa;
+        }
+
+        .rights-item strong {
+            color: #4facfe;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .role-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 4px solid #4facfe;
+        }
+
+        .role-card h4 {
+            color: #0088cc;
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .role-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .role-card li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .role-card li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0088cc;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .women-section {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border: 3px solid #ff6b6b;
+        }
+
+        .women-section h3 {
+            color: #c0392b;
+            margin-bottom: 15px;
+        }
+
+        .balanced-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .do-dont-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .do-box {
+            background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .dont-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .do-box h4, .dont-box h4 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .do-box ul, .dont-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .do-box li, .dont-box li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+        }
+
+        .do-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .dont-box li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .children-section {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffe8cc 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border: 3px solid #ffa751;
+        }
+
+        .children-section h4 {
+            color: #ff8c42;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .age-guide {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 4px solid #ffa751;
+        }
+
+        .age-guide h5 {
+            color: #ff8c42;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .support-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #43e97b;
+            transition: transform 0.3s ease;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .support-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .support-card h4 {
+            color: #43e97b;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+        }
+
+        .support-card p {
+            font-size: 1em;
+            color: #4a5568;
+        }
+
+        .practical-steps {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 35px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+
+        .practical-steps h2 {
+            color: #2d3748;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .step {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+            align-items: start;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #4facfe;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+
+        .step-content p {
+            color: #4a5568;
+            font-size: 1em;
+        }
+
+        .example-box {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #0ea5e9;
+        }
+
+        .example-box h4 {
+            color: #0369a1;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .rewards-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: center;
+            border: 3px solid #f39c12;
+        }
+
+        .rewards-box h3 {
+            color: #d35400;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .rewards-box .big-icon {
+            font-size: 4em;
+            margin: 15px 0;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer .dua {
+            font-size: 1.3em;
+            font-style: italic;
+            margin-bottom: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .footer .arabic {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .etiquette-grid, .roles-grid, .support-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .do-dont-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="arabic">المَسْجِد</div>
+            <h1>🕌 THE MASJID 🕌</h1>
+            <h2>Heart of the Muslim Community</h2>
+            
+            <div class="verse-box">
+                <div class="arabic">إِنَّمَا يَعْمُرُ مَسَـٰجِدَ ٱللَّهِ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَأَقَامَ ٱلصَّلَوٰةَ وَءَاتَى ٱلزَّكَوٰةَ وَلَمْ يَخْشَ إِلَّا ٱللَّهَ</div>
+                <div class="translation">"The mosques of Allah are only to be maintained by those who believe in Allah and the Last Day, establish prayer, give zakah, and fear none except Allah."</div>
+                <div class="citation">— Surah At-Tawbah (9:18)</div>
+            </div>
+        </div>
+
+        <div class="key-principle">
+            <h2>✨ Key Principle</h2>
+            <p>The masjid is far more than a building - it is the spiritual, educational, and social hub of the Muslim community. It is the house of Allah, the most beloved place on earth to Him, where believers gather to worship, learn, support one another, and strengthen their connection to their faith. Honoring the masjid and actively contributing to its vitality is a sign of true faith and a pathway to immense blessings.</p>
+        </div>
+
+        <div class="content">
+            <!-- Virtues and Status Section -->
+            <div class="section">
+                <h2>🌟 The Special Status of the Masjid</h2>
+                
+                <p>The masjid holds a unique and exalted position in Islam, being the house dedicated exclusively to the worship of Allah.</p>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "The most beloved places to Allah are the mosques, and the most hated places to Allah are the marketplaces."</p>
+                    <div class="citation">— Sahih Muslim</div>
+                </div>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "Whoever builds a mosque for Allah, Allah will build for him a house like it in Paradise."</p>
+                    <div class="citation">— Sahih Bukhari & Muslim</div>
+                </div>
+
+                <div class="rewards-box">
+                    <h3>💎 The Seven Shaded Under Allah's Throne</h3>
+                    <div class="big-icon">☀️</div>
+                    <p>The Prophet ﷺ mentioned seven types of people who will be shaded by Allah on the Day when there is no shade except His shade, and among them: <strong>"A person whose heart is attached to the mosques."</strong></p>
+                    <div class="citation" style="margin-top: 15px;">— Sahih Bukhari & Muslim</div>
+                </div>
+
+                <h3>📿 Rewards of Going to the Masjid</h3>
+
+                <div class="etiquette-grid">
+                    <div class="etiquette-card">
+                        <div class="icon">👣</div>
+                        <h4>Every Step Rewarded</h4>
+                        <p>Each step you take to the masjid raises you a degree and removes a sin from you.</p>
+                    </div>
+
+                    <div class="etiquette-card">
+                        <div class="icon">🤲</div>
+                        <h4>In Prayer While Waiting</h4>
+                        <p>The angels make du'a for you as long as you remain in the masjid: "O Allah, forgive him. O Allah, have mercy on him."</p>
+                    </div>
+
+                    <div class="etiquette-card">
+                        <div class="icon">🕌</div>
+                        <h4>Guest of Allah</h4>
+                        <p>When you go to the masjid, you are visiting Allah's house. He is the Most Generous Host!</p>
+                    </div>
+
+                    <div class="etiquette-card">
+                        <div class="icon">🌙</div>
+                        <h4>Night Journey Reward</h4>
+                        <p>Going to the masjid for Fajr or Isha in darkness has special rewards. The Prophet ﷺ promised complete light on the Day of Resurrection.</p>
+                    </div>
+
+                    <div class="etiquette-card">
+                        <div class="icon">🛡️</div>
+                        <h4>Protection from Hypocrisy</h4>
+                        <p>Regular attendance at the masjid, especially Fajr and Isha, is a sign of strong faith and protection from hypocrisy.</p>
+                    </div>
+
+                    <div class="etiquette-card">
+                        <div class="icon">🏠</div>
+                        <h4>House in Paradise</h4>
+                        <p>Going to the masjid morning and evening earns you preparation of a residence in Paradise each time.</p>
+                    </div>
+                </div>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "Whoever goes to the mosque in the morning or evening, Allah prepares for him a place in Paradise every time he goes in the morning or evening."</p>
+                    <div class="citation">— Sahih Bukhari & Muslim</div>
+                </div>
+            </div>
+
+            <!-- Etiquette Section -->
+            <div class="section">
+                <h2>🎯 Etiquette of the Masjid</h2>
+                
+                <p>The masjid is Allah's house and deserves the utmost respect and proper conduct. The Prophet ﷺ taught us specific etiquettes to observe when entering and being in the masjid.</p>
+
+                <h3>🚶 Before Entering</h3>
+
+                <div class="rights-list">
+                    <div class="rights-item">
+                        <strong>1. Perform Wudu at Home</strong>
+                        It's better to perform ablution at home before coming to the masjid. This shows preparation and respect.
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>2. Wear Clean, Modest Clothing</strong>
+                        Dress in your good, clean clothes. The masjid is a place of gathering before Allah, so dress appropriately and presentably.
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>3. Use Perfume (Avoiding Strong Scents)</strong>
+                        Men should use pleasant but not overpowering fragrance. Avoid strong perfumes that might disturb others.
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>4. Avoid Eating Foods with Strong Odors</strong>
+                        Don't eat garlic, onions, or strong-smelling foods before going to the masjid. The Prophet ﷺ specifically prohibited this to avoid disturbing others and the angels.
+                    </div>
+                </div>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "Whoever has eaten garlic or onions should stay away from us - or he said: from our mosque - and should stay at home."</p>
+                    <div class="citation">— Sahih Bukhari & Muslim</div>
+                </div>
+
+                <h3>🚪 Upon Entering</h3>
+
+                <div class="rights-list">
+                    <div class="rights-item">
+                        <strong>Enter with Right Foot & Say Du'a</strong>
+                        Step in with your right foot and say: "Allahumma iftah li abwaba rahmatik" (O Allah, open for me the doors of Your mercy).
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>Pray Tahiyyat al-Masjid (Greeting the Masjid)</strong>
+                        Before sitting, pray two rak'ahs as a greeting to the masjid. The Prophet ﷺ said: "When any one of you enters the mosque, he should not sit until he has prayed two rak'ahs." (Bukhari & Muslim)
+                    </div>
+                </div>
+
+                <h3>🕌 While in the Masjid</h3>
+
+                <div class="do-dont-grid">
+                    <div class="do-box">
+                        <h4>✅ DO</h4>
+                        <ul>
+                            <li>Maintain silence or speak quietly</li>
+                            <li>Keep the masjid clean - treat it like your own home (or better!)</li>
+                            <li>Pray voluntary prayers and read Quran</li>
+                            <li>Make dhikr and du'a</li>
+                            <li>Study Islamic knowledge</li>
+                            <li>Help with masjid activities and cleaning</li>
+                            <li>Greet others with salam quietly</li>
+                            <li>Turn off or silence your phone completely</li>
+                            <li>Sit with dignity and modesty</li>
+                            <li>Move gently, avoid running or loud movements</li>
+                        </ul>
+                    </div>
+
+                    <div class="dont-box">
+                        <h4>❌ DON'T</h4>
+                        <ul>
+                            <li>Engage in worldly business transactions</li>
+                            <li>Raise your voice unnecessarily</li>
+                            <li>Make lost-and-found announcements (masjid is not for this)</li>
+                            <li>Recite poetry for show or entertainment</li>
+                            <li>Step over people's shoulders to get to front rows</li>
+                            <li>Eat or drink (except water when needed)</li>
+                            <li>Spit or blow your nose indecently</li>
+                            <li>Crack knuckles or play with objects</li>
+                            <li>Sleep unless you're in i'tikaf or need brief rest</li>
+                            <li>Leave trash or create mess</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "When you see someone selling or buying in the mosque, say: 'May Allah not make your business profitable.' And when you see someone making an announcement about something lost, say: 'May Allah not return it to you.'"</p>
+                    <div class="citation">— Sunan At-Tirmidhi</div>
+                </div>
+
+                <h3>🚶 Upon Leaving</h3>
+
+                <div class="rights-list">
+                    <div class="rights-item">
+                        <strong>Exit with Left Foot & Say Du'a</strong>
+                        Step out with your left foot and say: "Allahumma inni as'aluka min fadlik" (O Allah, I ask You for Your bounty).
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 The Prophet's Behavior in the Masjid</h4>
+                    <p>The Prophet ﷺ treated the masjid with utmost reverence. He would sit in the masjid after Fajr until sunrise, teach his companions, receive delegations, and address community matters. His masjid was the center of the Muslim community in Madinah - a place of worship, education, governance, and brotherhood.</p>
+                </div>
+            </div>
+
+            <!-- Rights of the Masjid Section -->
+            <div class="section">
+                <h2>⚖️ The Rights of the Masjid Upon You</h2>
+                
+                <p>Just as we have rights, the masjid has rights upon us as believers. Fulfilling these rights is part of honoring Allah's houses.</p>
+
+                <div class="rights-list">
+                    <div class="rights-item">
+                        <strong>1. Attend Regular Prayers (Especially Fajr and Isha)</strong>
+                        The Prophet ﷺ emphasized the importance of praying in congregation, particularly Fajr and Isha. These prayers in the masjid are signs of strong faith and earn multiplied rewards.
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>2. Attend Jumu'ah Prayer</strong>
+                        Friday prayer is obligatory for men. Missing it without valid excuse is a major sin. The Prophet ﷺ warned: "Whoever misses three Jumu'ah prayers out of negligence, Allah will place a seal upon his heart."
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>3. Keep It Clean and Beautiful</strong>
+                        Cleanliness is part of faith. Help maintain the masjid's cleanliness - pick up trash, organize shoes, clean the wudu area, vacuum carpets. The Prophet ﷺ said removing harm from the path is charity - how much more so in Allah's house!
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>4. Support It Financially</strong>
+                        The masjid needs funds for utilities, maintenance, programs, and staff. Regular financial contributions are essential. Remember: "Whoever builds a masjid for Allah, Allah builds for him a house in Paradise."
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>5. Volunteer Your Time and Skills</strong>
+                        Offer to teach classes, help with youth programs, assist with events, or use your professional skills for the masjid's benefit. Every hour volunteered is an investment in the Hereafter.
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>6. Defend Its Honor and Sanctity</strong>
+                        If you see anyone disrespecting the masjid or violating its sanctity, politely remind them (with wisdom). Don't allow Allah's house to be treated carelessly.
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>7. Make It a Place of Unity, Not Division</strong>
+                        Don't bring political disputes, ethnic tensions, or personal conflicts into the masjid. The masjid should unite hearts, not divide them.
+                    </div>
+
+                    <div class="rights-item">
+                        <strong>8. Bring Your Family (Encourage Children and Spouses)</strong>
+                        Make the masjid a family affair. Bring children to familiarize them with the house of Allah, and support women's access to the masjid when they wish to attend.
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Important Reflection:</strong> Ask yourself honestly - when was the last time you volunteered at your masjid? When did you last donate specifically for its needs? When did you last attend a program beyond just the five daily prayers? The masjid gives you so much - what are you giving back?
+                </div>
+            </div>
+
+            <!-- Role Beyond Prayer Section -->
+            <div class="section">
+                <h2>🌍 The Masjid's Role Beyond Prayer</h2>
+                
+                <p>In the time of the Prophet ﷺ, the masjid was the vibrant center of all community life - not just a place to pray five times a day. We should revive this comprehensive role.</p>
+
+                <div class="roles-grid">
+                    <div class="role-card">
+                        <h4>📚 Center of Learning</h4>
+                        <ul>
+                            <li>Quranic studies and memorization</li>
+                            <li>Islamic knowledge classes</li>
+                            <li>Arabic language instruction</li>
+                            <li>Hadith circles</li>
+                            <li>Weekly lectures and seminars</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h4>🤝 Community Hub</h4>
+                        <ul>
+                            <li>Bringing Muslims together</li>
+                            <li>Interfaith dialogue</li>
+                            <li>Community events and celebrations</li>
+                            <li>Social support networks</li>
+                            <li>Conflict resolution and mediation</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h4>💰 Charity Distribution</h4>
+                        <ul>
+                            <li>Zakat collection and distribution</li>
+                            <li>Food banks and assistance</li>
+                            <li>Supporting struggling families</li>
+                            <li>Disaster relief coordination</li>
+                            <li>Connecting donors with needs</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h4>👨‍👩‍👧‍👦 Family Services</h4>
+                        <ul>
+                            <li>Marriage services and counseling</li>
+                            <li>Youth programs and mentoring</li>
+                            <li>Children's Islamic education</li>
+                            <li>Family support and guidance</li>
+                            <li>New Muslim support</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h4>🏥 Social Services</h4>
+                        <ul>
+                            <li>Visiting the sick</li>
+                            <li>Organizing funeral prayers</li>
+                            <li>Supporting new immigrants</li>
+                            <li>Job networking and assistance</li>
+                            <li>Mental health awareness</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h4>📢 Dawah and Outreach</h4>
+                        <ul>
+                            <li>Open houses and tours</li>
+                            <li>Educational programs for non-Muslims</li>
+                            <li>Representing Islam positively</li>
+                            <li>Building bridges with neighbors</li>
+                            <li>Addressing misconceptions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>📖 Historical Example: The Prophet's Masjid</h4>
+                    <p>The masjid of the Prophet ﷺ in Madinah was:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Where the Quran was taught and memorized</li>
+                        <li>Where the Prophet ﷺ judged between people</li>
+                        <li>Where delegations from other tribes were received</li>
+                        <li>Where the poor (Ahl al-Suffah) lived and studied</li>
+                        <li>Where community announcements were made</li>
+                        <li>Where the wounded were treated after battles</li>
+                        <li>Where marriages were conducted and celebrated</li>
+                        <li>Where important decisions affecting the Ummah were made</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-style: italic;">The masjid was truly the heart pumping life into the entire Muslim community!</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Modern Application:</strong> Your local masjid should be more than just a place you visit for 10 minutes, five times a day. It should be where you learn, where you meet your community, where you find support, where you volunteer, where you bring your family. Make it central to your life, not peripheral!
+                </div>
+            </div>
+
+            <!-- Women and Masjid Section -->
+            <div class="section">
+                <h2>👩 Women and the Masjid</h2>
+                
+                <p>Women's relationship with the masjid is an important topic that requires balanced understanding based on authentic guidance from the Quran and Sunnah.</p>
+
+                <div class="women-section">
+                    <h3>🌟 The Islamic Position</h3>
+                    
+                    <div class="hadith-box" style="background: white; border-left-color: #c0392b;">
+                        <p><strong>The Prophet ﷺ said:</strong> "Do not prevent the female servants of Allah from going to the mosques of Allah."</p>
+                        <div class="citation">— Sahih Bukhari & Muslim</div>
+                    </div>
+
+                    <div class="hadith-box" style="background: white; border-left-color: #c0392b; margin-top: 15px;">
+                        <p><strong>The Prophet ﷺ said:</strong> "When the wife of one of you asks permission to go to the mosque, he should not prevent her."</p>
+                        <div class="citation">— Sahih Muslim</div>
+                    </div>
+
+                    <div class="balanced-box">
+                        <h4 style="color: #c0392b; margin-bottom: 15px;">Key Principles:</h4>
+                        
+                        <div class="rights-item">
+                            <strong>1. Women Have the Right to Attend</strong>
+                            The Prophet ﷺ explicitly prohibited preventing women from going to the masjid. This is a clear right that should not be denied.
+                        </div>
+
+                        <div class="rights-item">
+                            <strong>2. Prayer at Home is Also Virtuous</strong>
+                            The Prophet ﷺ said: "The prayer of a woman in her house is better than her prayer in her courtyard, and her prayer in her bedroom is better than her prayer in her house." This shows that home prayer is excellent, but doesn't negate the right to attend the masjid.
+                        </div>
+
+                        <div class="rights-item">
+                            <strong>3. Proper Conditions Should Be Met</strong>
+                            Women attending should observe proper hijab, avoid perfume, and follow Islamic etiquette. The environment should be safe, respectful, and accommodating.
+                        </div>
+
+                        <div class="rights-item">
+                            <strong>4. Special Days Have Extra Encouragement</strong>
+                            For Eid prayers and Jumu'ah, there are narrations encouraging women's attendance, even menstruating women to attend Eid (though not praying).
+                        </div>
+                    </div>
+                </div>
+
+                <h3>🕌 Masjid Responsibilities Toward Women</h3>
+
+                <div class="do-box">
+                    <h4>✅ Masajid Should:</h4>
+                    <ul>
+                        <li>Provide clean, adequate space for women to pray</li>
+                        <li>Ensure women can hear the khutbah and lectures</li>
+                        <li>Offer programs specifically for women (classes, support groups)</li>
+                        <li>Have separate, clean wudu facilities</li>
+                        <li>Welcome women and make them feel part of the community</li>
+                        <li>Ensure safety and security in parking areas</li>
+                        <li>Provide accommodations for mothers with infants (nursing rooms)</li>
+                        <li>Include women in appropriate decision-making processes</li>
+                        <li>Offer Quran and Islamic education for women</li>
+                    </ul>
+                </div>
+
+                <div class="example-box">
+                    <h4>📖 Women in the Prophet's Time</h4>
+                    <p>During the Prophet's ﷺ time, women regularly attended the masjid for:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>The five daily prayers (especially Fajr and Isha)</li>
+                        <li>Jumu'ah prayer and khutbah</li>
+                        <li>Eid prayers (this was strongly encouraged)</li>
+                        <li>Learning sessions and lectures</li>
+                        <li>Special gatherings and consultations</li>
+                    </ul>
+                    <p style="margin-top: 10px;">The women's rows were behind the men's, and they would leave first after prayer to avoid crowding.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Finding Balance:</strong> While women's prayer at home is virtuous and rewarded, the masjid should never be made unwelcoming to them. A healthy community masjid balances respecting women's right to attend while also maintaining proper Islamic etiquette and environment. Both men and women have a responsibility in this.
+                </div>
+            </div>
+
+            <!-- Children in Masjid Section -->
+            <div class="section">
+                <h2>👶 Children in the Masjid</h2>
+                
+                <p>Children are the future of the Ummah, and their relationship with the masjid begins in childhood. The way we treat children in the masjid shapes their lifelong connection to Islam and community.</p>
+
+                <div class="children-section">
+                    <h4>🌟 The Prophetic Example with Children</h4>
+                    
+                    <div class="example-box" style="background: white; border-left-color: #ffa751;">
+                        <h4 style="color: #ff8c42;">💚 Beautiful Narrations:</h4>
+                        <p><strong>1. The Prophet ﷺ carried his granddaughter Umamah on his shoulder while leading prayer.</strong> When he went into prostration, he would put her down, and when he stood up, he would carry her again! (Bukhari & Muslim)</p>
+                        <p style="margin-top: 10px;"><strong>2. Once while the Prophet ﷺ was praying, his grandsons Al-Hasan and Al-Husayn climbed on his back during prostration.</strong> He prolonged his sujud so they could play, then stood up gently. (Ahmad, Nasa'i)</p>
+                        <p style="margin-top: 10px;"><strong>3. The Prophet ﷺ shortened a prayer when he heard a baby crying,</strong> saying: "I start the prayer intending to prolong it, then I hear a child crying and I shorten the prayer, knowing the distress his crying will cause his mother." (Bukhari)</p>
+                    </div>
+
+                    <div class="highlight-box" style="background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%); border-left-color: #27ae60;">
+                        <strong style="color: #27ae60;">The Lesson:</strong> The Prophet ﷺ - the best of creation - showed patience, mercy, and accommodation for children in the masjid. How can we do any less? He taught us by example that children belong in the masjid and should be welcomed warmly!
+                    </div>
+                </div>
+
+                <h3>👨‍👩‍👧‍👦 Age-Appropriate Guidance</h3>
+
+                <div class="age-guide">
+                    <h5>🍼 Infants and Toddlers (0-3 years)</h5>
+                    <p><strong>Parents should:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Bring them! Familiarize children with the masjid from early age</li>
+                        <li>Sit near the exit or in designated areas if baby might cry</li>
+                        <li>Take crying babies outside immediately to avoid disturbing others</li>
+                        <li>Bring quiet toys or books to keep them occupied</li>
+                        <li>Change diapers in designated areas, never in the prayer hall</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Community should:</strong> Be patient and understanding. Smile at children and parents. Offer help if a mother is struggling.</p>
+                </div>
+
+                <div class="age-guide">
+                    <h5>🧸 Young Children (4-7 years)</h5>
+                    <p><strong>Parents should:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Teach basic masjid etiquette: quiet voices, no running, respect</li>
+                        <li>Encourage them to join the prayer rows (they can pray with you!)</li>
+                        <li>Bring them regularly so it becomes normal and comfortable</li>
+                        <li>Supervise closely - don't let them run wild or disturb others</li>
+                        <li>Use masjid visits as teaching opportunities</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Masjid should:</strong> Have children's programs, activities, and designated play areas away from prayer halls.</p>
+                </div>
+
+                <div class="age-guide">
+                    <h5>📚 Older Children (8-12 years)</h5>
+                    <p><strong>At this age:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>They should pray regularly with the congregation</li>
+                        <li>Teach them full masjid etiquette and expect them to follow it</li>
+                        <li>Involve them in masjid programs, Quran classes, youth groups</li>
+                        <li>Let them volunteer and help with masjid activities</li>
+                        <li>Encourage friendships with other Muslim youth</li>
+                    </ul>
+                </div>
+
+                <div class="age-guide">
+                    <h5>🎓 Teenagers (13+ years)</h5>
+                    <p><strong>Critical age for connection:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Actively involve them in masjid leadership and programs</li>
+                        <li>Address their questions and doubts with wisdom and knowledge</li>
+                        <li>Create youth-specific programs and social events</li>
+                        <li>Give them responsibilities and trust them</li>
+                        <li>Make the masjid a place they want to be, not have to be</li>
+                    </ul>
+                </div>
+
+                <h3>⚖️ Finding the Balance</h3>
+
+                <div class="do-dont-grid">
+                    <div class="do-box">
+                        <h4>✅ Healthy Approach</h4>
+                        <ul>
+                            <li>Welcome children warmly and with smiles</li>
+                            <li>Understand children will sometimes make noise</li>
+                            <li>Teach parents and children proper etiquette kindly</li>
+                            <li>Create child-friendly spaces and programs</li>
+                            <li>Involve children in age-appropriate activities</li>
+                            <li>Be patient - today's child is tomorrow's imam!</li>
+                            <li>Support struggling parents instead of judging</li>
+                        </ul>
+                    </div>
+
+                    <div class="dont-box">
+                        <h4>❌ Harmful Approach</h4>
+                        <ul>
+                            <li>Yell at or shame children in the masjid</li>
+                            <li>Make parents feel unwelcome for bringing kids</li>
+                            <li>Expect children to be silent like adults</li>
+                            <li>Ban children from the masjid entirely</li>
+                            <li>Complain loudly about crying babies</li>
+                            <li>Give dirty looks to parents with children</li>
+                            <li>Forget that the Prophet ﷺ welcomed children</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Important Reality:</strong> If we make children feel unwelcome in the masjid, we risk losing an entire generation. The masjid should be the place they love, where they have friends, where they learn, where they feel they belong. Yes, parents must teach etiquette and supervise. But the community must show mercy, patience, and create an environment where families feel welcomed, not judged.
+                </div>
+            </div>
+
+            <!-- Supporting Your Masjid Section -->
+            <div class="section">
+                <h2>💚 Supporting Your Local Masjid</h2>
+                
+                <p>Your masjid needs you! It survives and thrives through the active participation and support of its community. Here's how you can make a real difference:</p>
+
+                <div class="support-grid">
+                    <div class="support-card">
+                        <div class="icon">💰</div>
+                        <h4>Financial Support</h4>
+                        <p>Set up automatic monthly donations. Contribute to building funds, utility costs, and program expenses. Remember: building a masjid earns you a house in Paradise!</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">⏰</div>
+                        <h4>Volunteer Your Time</h4>
+                        <p>Help with cleaning, organizing events, teaching classes, or administrative tasks. Even 2-3 hours a month makes a huge difference.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">📚</div>
+                        <h4>Share Your Skills</h4>
+                        <p>Are you a teacher, accountant, lawyer, IT professional, marketer? Offer your professional skills pro bono to your masjid.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">👨‍🏫</div>
+                        <h4>Teach and Mentor</h4>
+                        <p>Lead a Quran circle, teach children, mentor youth, or give Islamic talks. Share the knowledge Allah has given you.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">🤝</div>
+                        <h4>Build Community</h4>
+                        <p>Welcome new attendees, help converts, support struggling families, organize social events. Be the friendly face of your masjid.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">📢</div>
+                        <h4>Spread the Word</h4>
+                        <p>Invite others to the masjid, share programs on social media, bring your family and friends. Help your masjid grow!</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">🧹</div>
+                        <h4>Keep It Clean</h4>
+                        <p>Help clean after prayers and events. Organize the shoe area. Clean the wudu facilities. Small actions, huge rewards.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">🎤</div>
+                        <h4>Join Committees</h4>
+                        <p>Participate in masjid board, education committee, youth committee, or women's committee. Help make decisions that shape your community.</p>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="icon">👨‍👩‍👧‍👦</div>
+                        <h4>Bring Your Family</h4>
+                        <p>Make the masjid a family tradition. Regular family attendance strengthens both your family and the masjid community.</p>
+                    </div>
+                </div>
+
+                <div class="example-box">
+                    <h4>💡 Sadaqah Jariyah Through the Masjid</h4>
+                    <p>Supporting your masjid is one of the best forms of ongoing charity (sadaqah jariyah). Every prayer prayed, every Quran verse read, every person who finds guidance, every child who learns Islam - you share in the reward if you contributed to making it possible!</p>
+                </div>
+            </div>
+
+            <!-- Practical Steps -->
+            <div class="practical-steps">
+                <h2>🎯 Practical Action Steps</h2>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Commit to One Daily Prayer at the Masjid</h4>
+                        <p>Start with just one prayer a day at the masjid (Fajr, Maghrib, or Isha are great options). Build the habit gradually, then increase over time.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Set Up Automatic Monthly Donation</h4>
+                        <p>Even $20-50 monthly helps tremendously. Set it and forget it - your ongoing sadaqah jariyah that requires no further effort.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Volunteer for One Monthly Activity</h4>
+                        <p>Pick one thing: clean after Jumu'ah, help with Sunday school, organize the library, assist with events. Just one commitment makes a difference.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Introduce Yourself to Masjid Leadership</h4>
+                        <p>Meet the imam, board members, or masjid administrator. Let them know your skills and how you'd like to help. Don't wait to be asked!</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Make Friday at the Masjid Non-Negotiable</h4>
+                        <p>Block it in your calendar every week. Arrive 30 minutes early. This one commitment can transform your relationship with the masjid.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Bring Your Children Regularly</h4>
+                        <p>Start taking them at least once a week (Friday is perfect). Teach them to love the masjid early - this is an investment in their faith.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h4>Join or Start a Study Circle</h4>
+                        <p>Attend a weekly halaqa (study circle) or Quran class. If none exist, gather 2-3 friends and start one. The masjid is for learning!</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h4>Welcome Newcomers</h4>
+                        <p>Make it a habit to greet people you don't know. Introduce yourself to new faces. Be the person who makes others feel welcome.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">9</div>
+                    <div class="step-content">
+                        <h4>Attend Beyond Just Prayer</h4>
+                        <p>Go to lectures, community dinners, fundraisers, and social events. The masjid is your community center - be an active part of it!</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">10</div>
+                    <div class="step-content">
+                        <h4>Treat It Like Your Second Home</h4>
+                        <p>If you saw trash in your home, you'd pick it up. Do the same at the masjid. If you'd turn off lights at home, do it at the masjid. Own it!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Section -->
+            <div class="section">
+                <h2>💎 Final Wisdom</h2>
+                
+                <div class="hadith-box">
+                    <p><strong>The Prophet ﷺ said:</strong> "No people gather together in one of the houses of Allah, reciting the Book of Allah and studying it among themselves, except that tranquility descends upon them, mercy envelops them, the angels surround them, and Allah mentions them amongst those who are with Him."</p>
+                    <div class="citation">— Sahih Muslim</div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Transform Your Relationship:</strong> The masjid should not be a place you visit grudgingly for 10 minutes, five times a day. It should be where your heart finds peace, where your community gathers, where your children learn, where you give back, where you belong. When the masjid becomes the center of your life, watch how your iman, your family, and your entire existence transform!
+                </div>
+
+                <div class="verse-box" style="background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);">
+                    <div class="arabic">فِى بُيُوتٍ أَذِنَ ٱللَّهُ أَن تُرْفَعَ وَيُذْكَرَ فِيهَا ٱسْمُهُۥ يُسَبِّحُ لَهُۥ فِيهَا بِٱلْغُدُوِّ وَٱلْـَٔاصَالِ ۝ رِجَالٌۭ لَّا تُلْهِيهِمْ تِجَـٰرَةٌۭ وَلَا بَيْعٌ عَن ذِكْرِ ٱللَّهِ وَإِقَامِ ٱلصَّلَوٰةِ</div>
+                    <div class="translation">"In houses which Allah has permitted to be raised and that His name be mentioned therein; exalting Him within them in the morning and the evenings - Men whom neither commerce nor sale distracts from the remembrance of Allah and performance of prayer."</div>
+                    <div class="citation">— Surah An-Nur (24:36-37)</div>
+                </div>
+
+                <p style="margin-top: 30px; font-size: 1.15em; font-weight: bold; color: #4facfe; text-align: center;">May Allah make us among those whose hearts are attached to the masajid, who maintain His houses with love and devotion, and who are recognized by the angels as regular visitors to His home. May our masajid be filled with light, knowledge, and unity. Ameen!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="arabic">رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ</div>
+            <div class="dua">
+                "Our Lord, accept this from us. Indeed, You are the Hearing, the Knowing"
+            </div>
+            <p style="margin-top: 20px;">May our masajid be places of light and guidance • Ameen 🤲</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Created for Islamic Education • Share to strengthen our community</p>
+        </div>
+    </div>
+</body>
+</html>
